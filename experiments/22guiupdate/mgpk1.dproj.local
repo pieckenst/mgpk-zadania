@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.341,C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Frmsplashscreen.pas=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Frmsplash.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.341,C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Frmsplashscreen.dfm=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Frmsplash.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.583,=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.179,=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\frmmain.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.699,=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.748,C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Frmsplash.dfm=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Splashscreen.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.732,C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.725,C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Splashscreen.pas=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.377,C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\mgpk1.dproj=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.725,C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Splashscreen.dfm=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.438,=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.748,C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Frmsplash.pas=C:\Users\Andrey Savich\Documents\Embarcadero\Studio\Projects\Splashscreen.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="frmmain.pas"/>
+    <File Path="frmmain.dfm"/>
+    <File Path="Unit2.pas"/>
+    <File Path="Unit2.dfm"/>
+    <File Path="Frmsplashscreen.pas"/>
+    <File Path="Frmsplashscreen.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
