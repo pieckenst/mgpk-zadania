@@ -1,0 +1,20 @@
+program zsd1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var a,a1,resul:integer;
+
+begin
+  writeln('Vvodim a i a1');
+  readln(a, a1);
+  if a1 < a then
+     resul:= a1+a /2
+  else
+     resul:=a1*a;
+  writeln(resul);
+end.
