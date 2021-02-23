@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.625,=J:\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.689,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.492,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit5.pas=F:\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.983,C:\Users\User\Documents\Embarcadero\Studio\Projects\Project7.dproj=F:\Project7.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.926,=J:\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.492,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit5.dfm=F:\Unit5.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.703,=J:\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.188,=J:\Unit6.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.573,=J:\Unit3.pas</Transaction>
+    <Transaction>2021.02.23 17:57:22.478,=J:\Unit7.pas</Transaction>
+  </Transactions>
+</BorlandProject>

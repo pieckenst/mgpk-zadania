@@ -1,0 +1,80 @@
+unit Unit5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Graphics,
+  Controls, Forms, Dialogs, Menus, StdCtrls, Data.DB,
+  Data.Win.ADODB, ADODB, DB, StdCtrls, Controls, Classes;
+
+type
+  TForm5 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    edDate: TEdit;
+    Label3: TLabel;
+    cmbNumber: TComboBox;
+    Label4: TLabel;
+    dbeTime: TEdit;
+    dbeClass1: TEdit;
+    dbeClass2: TEdit;
+    Label5: TLabel;
+    Label6: TLabel;
+    btnzapros: TButton;
+    bttProdaga: TButton;
+    btnVozvrat: TButton;
+    ADOConnection1: TADOConnection;
+    ADOTable1: TADOTable;
+    ADOTable2: TADOTable;
+    ADOTable3: TADOTable;
+    ADOQuery1: TADOQuery;
+    procedure FormCreate(Sender: TObject);
+    procedure cmbNumberDropDown(Sender: TObject);
+
+
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+
+
+
+
+
+
+
+procedure TForm5.cmbNumberDropDown(Sender: TObject);
+begin
+
+ADOTable1.First;
+while  ADOTable1.Eof<>true do
+begin
+cmbNumber.Items.Add(ADOQuery1.FieldByName('Board_Number'));
+ADOTable1. Next;
+end;
+
+end;
+
+
+
+procedure TForm5.FormCreate(Sender: TObject);
+var d: tdatetime;
+begin
+   d:=date;
+   edDate.Text:=datetostr(d);
+
+end;
+
+
+
+end.
