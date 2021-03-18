@@ -29,6 +29,7 @@ type
     ADOTable1Sale_Date: TDateTimeField;
     ADOTable1Board_Number: TWideStringField;
     ADOTable1Class: TWideStringField;
+    Label3: TLabel;
     procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure Button1Click(Sender: TObject);

@@ -31,17 +31,16 @@ object Form4: TForm4
   end
   object Panel1: TPanel
     Left = 0
-    Top = -10
+    Top = 0
     Width = 556
-    Height = 36
-    BevelOuter = bvNone
+    Height = 27
     Color = 12615680
     ParentBackground = False
     TabOrder = 0
     OnMouseDown = Panel1MouseDown
     object Image1: TImage
       Left = 8
-      Top = 12
+      Top = 2
       Width = 22
       Height = 22
       Picture.Data = {
@@ -88,6 +87,19 @@ object Form4: TForm4
         0000000049454E44AE426082}
       Proportional = True
       OnClick = Image1Click
+    end
+    object Label3: TLabel
+      Left = 36
+      Top = 6
+      Width = 110
+      Height = 15
+      Caption = #1055#1088#1086#1076#1072#1078#1072' '#1040#1074#1080#1072#1073#1080#1083#1077#1090#1086#1074
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentFont = False
     end
   end
   object RadioButton1: TRadioButton

@@ -4,7 +4,7 @@ object Form8: TForm8
   BorderStyle = bsNone
   Caption = #1056#1077#1076#1072#1082#1090#1086#1088' '#1056#1077#1081#1089#1086#1074
   ClientHeight = 271
-  ClientWidth = 763
+  ClientWidth = 666
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -166,7 +166,7 @@ object Form8: TForm8
     TabOrder = 5
   end
   object Button1: TButton
-    Left = 554
+    Left = 458
     Top = 50
     Width = 209
     Height = 41
@@ -182,14 +182,14 @@ object Form8: TForm8
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
-    Left = 728
+    Left = 576
     Top = 240
   end
   object ADOTable1: TADOTable
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = #1057#1077#1075#1086#1076#1085#1103
-    Left = 688
+    Left = 536
     Top = 240
     object ADOTable1Num: TAutoIncField
       FieldName = 'Num'

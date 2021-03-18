@@ -29,13 +29,13 @@ object Form1: TForm1
     object Label1: TLabel
       Left = 59
       Top = 6
-      Width = 262
-      Height = 19
+      Width = 224
+      Height = 20
       Caption = #1057#1080#1089#1090#1077#1084#1072' '#1059#1087#1088#1072#1074#1083#1077#1085#1080#1103' '#1040#1101#1088#1086#1087#1086#1088#1090#1086#1084
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
       Font.Height = 20
-      Font.Name = 'Arial'
+      Font.Name = 'Franklin Gothic Medium'
       Font.Style = []
       ParentFont = False
       OnDblClick = Label1DblClick

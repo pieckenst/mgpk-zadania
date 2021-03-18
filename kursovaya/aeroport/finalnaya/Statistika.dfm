@@ -3,8 +3,8 @@ object Form6: TForm6
   Top = 309
   BorderStyle = bsNone
   Caption = #1058#1072#1073#1083#1080#1094#1072' '#1055#1088#1086#1076#1072#1078
-  ClientHeight = 378
-  ClientWidth = 1015
+  ClientHeight = 352
+  ClientWidth = 743
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,19 +16,6 @@ object Form6: TForm6
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object Label1: TLabel
-    Left = 32
-    Top = 336
-    Width = 151
-    Height = 20
-    Caption = #1057#1090#1072#1090#1080#1089#1090#1080#1082#1072' '#1055#1088#1086#1076#1072#1078' '
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = 20
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
   object Panel1: TPanel
     Left = 0
     Top = -3
@@ -195,11 +182,24 @@ object Form6: TForm6
       Proportional = True
       OnClick = Image2Click
     end
+    object Label1: TLabel
+      Left = 62
+      Top = 5
+      Width = 132
+      Height = 20
+      Caption = #1057#1090#1072#1090#1080#1089#1090#1080#1082#1072' '#1055#1088#1086#1076#1072#1078' '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = 20
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentFont = False
+    end
   end
   object DBGrid1: TDBGrid
     Left = 8
     Top = 31
-    Width = 999
+    Width = 721
     Height = 282
     DataSource = DataSource1
     TabOrder = 1
@@ -211,8 +211,8 @@ object Form6: TForm6
   end
   object DataSource1: TDataSource
     DataSet = ADOTable1
-    Left = 608
-    Top = 352
+    Left = 24
+    Top = 320
   end
   object ADOConnection1: TADOConnection
     ConnectionString = 
@@ -227,15 +227,15 @@ object Form6: TForm6
       'out Replica Repair=False;Jet OLEDB:SFP=False'
     LoginPrompt = False
     Provider = 'Microsoft.Jet.OLEDB.4.0'
-    Left = 648
-    Top = 352
+    Left = 64
+    Top = 320
   end
   object ADOTable1: TADOTable
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = #1055#1088#1086#1076#1072#1078#1080
-    Left = 696
-    Top = 352
+    Left = 104
+    Top = 320
     object ADOTable1Num: TAutoIncField
       FieldName = 'Num'
       ReadOnly = True

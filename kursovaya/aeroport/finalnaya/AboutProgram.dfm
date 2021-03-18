@@ -808,18 +808,17 @@ object Form2: TForm2
     Caption = #1060#1048#1054': '#1057#1072#1074#1080#1095' '#1040#1085#1076#1088#1077#1081' '#1054#1083#1077#1075#1086#1074#1080#1095
   end
   object Panel1: TPanel
-    Left = -6
-    Top = -1
-    Width = 660
+    Left = -1
+    Top = 0
+    Width = 649
     Height = 26
-    BevelOuter = bvNone
     Color = 12615680
     ParentBackground = False
     TabOrder = 0
     OnMouseDown = Panel1MouseDown
     object Image2: TImage
-      Left = 14
-      Top = 3
+      Left = 6
+      Top = 2
       Width = 21
       Height = 21
       Picture.Data = {
@@ -866,6 +865,19 @@ object Form2: TForm2
         0000000049454E44AE426082}
       Proportional = True
       OnClick = Image2Click
+    end
+    object Label7: TLabel
+      Left = 33
+      Top = 5
+      Width = 66
+      Height = 15
+      Caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Franklin Gothic Medium'
+      Font.Style = []
+      ParentFont = False
     end
   end
 end
