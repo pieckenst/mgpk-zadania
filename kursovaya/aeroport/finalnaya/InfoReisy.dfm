@@ -299,6 +299,7 @@ object Form5: TForm5
       Font.Name = 'Franklin Gothic Medium'
       Font.Style = []
       ParentFont = False
+      OnMouseDown = Label1MouseDown
     end
     object Label7: TLabel
       Left = 35

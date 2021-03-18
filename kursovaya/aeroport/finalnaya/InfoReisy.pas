@@ -45,6 +45,8 @@ type
     procedure bttProdagaClick(Sender: TObject);
     procedure Label7MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
+    procedure Label1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
 
 
 
@@ -83,6 +85,13 @@ end;
 procedure TForm5.Image1Click(Sender: TObject);
 begin
 Form5.Hide;
+end;
+
+procedure TForm5.Label1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+ReleaseCapture;
+Perform(WM_SysCommand,$F012,0);
 end;
 
 procedure TForm5.Label7MouseDown(Sender: TObject; Button: TMouseButton;
