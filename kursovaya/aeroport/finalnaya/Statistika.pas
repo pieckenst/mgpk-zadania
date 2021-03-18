@@ -21,6 +21,10 @@ type
     Label1: TLabel;
     Image1: TImage;
     Image2: TImage;
+    ADOTable1Num: TAutoIncField;
+    ADOTable1Sale_Date: TDateTimeField;
+    ADOTable1Board_Number: TWideStringField;
+    ADOTable1Class: TWideStringField;
     procedure FormCreate(Sender: TObject);
     procedure Image1Click(Sender: TObject);
     procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;

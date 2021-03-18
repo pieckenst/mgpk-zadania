@@ -11,7 +11,6 @@ object Form8: TForm8
   Font.Height = 15
   Font.Name = 'Tahoma'
   Font.Style = []
-  FormStyle = fsStayOnTop
   OldCreateOrder = False
   Position = poDesigned
   PixelsPerInch = 96
@@ -177,10 +176,9 @@ object Form8: TForm8
     OnClick = Button1Click
   end
   object ADOConnection1: TADOConnection
-    Connected = True
     ConnectionString = 
-      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=J:\'#1040#1101#1088#1086#1087#1086#1088#1090'.mdb;Per' +
-      'sist Security Info=False'
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=airport.mdb;Persist' +
+      ' Security Info=False'
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'

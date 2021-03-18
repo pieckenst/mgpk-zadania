@@ -1,4 +1,4 @@
-﻿object Form6: TForm6
+object Form6: TForm6
   Left = 0
   Top = 309
   BorderStyle = bsNone
@@ -11,7 +11,6 @@
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  FormStyle = fsStayOnTop
   OldCreateOrder = False
   Position = poDesigned
   OnCreate = FormCreate
@@ -216,12 +215,17 @@
     Top = 352
   end
   object ADOConnection1: TADOConnection
-    Connected = True
     ConnectionString = 
-      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=J:\'#1040#1101#1088#1086#1087#1086#1088#1090'.mdb;Per' +
-      'sist Security Info=False'
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=airpo' +
+      'rt.mdb;Mode=Share Deny None;Persist Security Info=False;Jet OLED' +
+      'B:System database="";Jet OLEDB:Registry Path="";Jet OLEDB:Databa' +
+      'se Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Lockin' +
+      'g Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bu' +
+      'lk Transactions=1;Jet OLEDB:New Database Password="";Jet OLEDB:C' +
+      'reate System Database=False;Jet OLEDB:Encrypt Database=False;Jet' +
+      ' OLEDB:Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compact With' +
+      'out Replica Repair=False;Jet OLEDB:SFP=False'
     LoginPrompt = False
-    Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
     Left = 648
     Top = 352
@@ -232,19 +236,19 @@
     TableName = #1055#1088#1086#1076#1072#1078#1080
     Left = 696
     Top = 352
-    object ADOTable1Код: TAutoIncField
-      FieldName = #1050#1086#1076
+    object ADOTable1Num: TAutoIncField
+      FieldName = 'Num'
       ReadOnly = True
     end
-    object ADOTable1Дата_Продажи: TDateTimeField
-      FieldName = #1044#1072#1090#1072'_'#1055#1088#1086#1076#1072#1078#1080
+    object ADOTable1Sale_Date: TDateTimeField
+      FieldName = 'Sale_Date'
     end
-    object ADOTable1Номер_Рейса: TWideStringField
-      FieldName = #1053#1086#1084#1077#1088'_'#1056#1077#1081#1089#1072
+    object ADOTable1Board_Number: TWideStringField
+      FieldName = 'Board_Number'
       Size = 255
     end
-    object ADOTable1Класс: TWideStringField
-      FieldName = #1050#1083#1072#1089#1089
+    object ADOTable1Class: TWideStringField
+      FieldName = 'Class'
       Size = 255
     end
   end

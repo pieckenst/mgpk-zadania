@@ -1,4 +1,4 @@
-﻿object Form5: TForm5
+object Form5: TForm5
   Left = 206
   Top = 77
   BiDiMode = bdLeftToRight
@@ -14,7 +14,6 @@
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  FormStyle = fsStayOnTop
   GlassFrame.Enabled = True
   OldCreateOrder = False
   ParentBiDiMode = False
@@ -219,23 +218,6 @@
     TabOrder = 7
     OnDropDown = cmbNumberDropDown
   end
-  object ADOConnection1: TADOConnection
-    ConnectionString = 
-      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=J:\'#1040#1101#1088#1086#1087#1086#1088#1090'.mdb;Mod' +
-      'e=ReadWrite|Share Deny None;Persist Security Info=False;Jet OLED' +
-      'B:System database="";Jet OLEDB:Registry Path="";Jet OLEDB:Databa' +
-      'se Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Lockin' +
-      'g Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bu' +
-      'lk Transactions=1;Jet OLEDB:New Database Password="";Jet OLEDB:C' +
-      'reate System Database=False;Jet OLEDB:Encrypt Database=False;Jet' +
-      ' OLEDB:Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compact With' +
-      'out Replica Repair=False;Jet OLEDB:SFP=False;'
-    LoginPrompt = False
-    Mode = cmReadWrite
-    Provider = 'Microsoft.Jet.OLEDB.4.0'
-    Left = 472
-    Top = 424
-  end
   object ADOTable1: TADOTable
     Connection = ADOConnection1
     CursorType = ctStatic
@@ -270,60 +252,6 @@
       FieldName = 'Second_Class'
     end
   end
-  object ADOTable2: TADOTable
-    Connection = ADOConnection1
-    CursorType = ctStatic
-    TableName = #1055#1086#1089#1083#1077#1079#1072#1074#1090#1088#1072
-    Left = 376
-    Top = 424
-    object ADOTable2Номер: TAutoIncField
-      FieldName = #1053#1086#1084#1077#1088
-      ReadOnly = True
-    end
-    object ADOTable2Дата: TDateTimeField
-      FieldName = #1044#1072#1090#1072
-    end
-    object ADOTable2Номер_Рейса: TWideStringField
-      FieldName = #1053#1086#1084#1077#1088'_'#1056#1077#1081#1089#1072
-      Size = 255
-    end
-    object ADOTable2Время_вылета: TDateTimeField
-      FieldName = #1042#1088#1077#1084#1103'_'#1074#1099#1083#1077#1090#1072
-    end
-    object ADOTable2Первый_класс: TIntegerField
-      FieldName = #1055#1077#1088#1074#1099#1081'_'#1082#1083#1072#1089#1089
-    end
-    object ADOTable2Второй_класс: TIntegerField
-      FieldName = #1042#1090#1086#1088#1086#1081'_'#1082#1083#1072#1089#1089
-    end
-  end
-  object ADOTable3: TADOTable
-    Connection = ADOConnection1
-    CursorType = ctStatic
-    TableName = #1047#1072#1074#1090#1088#1072
-    Left = 408
-    Top = 424
-    object ADOTable3Номер: TAutoIncField
-      FieldName = #1053#1086#1084#1077#1088
-      ReadOnly = True
-    end
-    object ADOTable3Дата: TDateTimeField
-      FieldName = #1044#1072#1090#1072
-    end
-    object ADOTable3Номер_Рейса: TWideStringField
-      FieldName = #1053#1086#1084#1077#1088'_'#1056#1077#1081#1089#1072
-      Size = 255
-    end
-    object ADOTable3Время_вылета: TDateTimeField
-      FieldName = #1042#1088#1077#1084#1103'_'#1074#1099#1083#1077#1090#1072
-    end
-    object ADOTable3Первый_класс: TIntegerField
-      FieldName = #1055#1077#1088#1074#1099#1081'_'#1082#1083#1072#1089#1089
-    end
-    object ADOTable3Второй_класс: TIntegerField
-      FieldName = #1042#1090#1086#1088#1086#1081'_'#1082#1083#1072#1089#1089
-    end
-  end
   object ADOQuery1: TADOQuery
     Connection = ADOConnection1
     Parameters = <>
@@ -333,6 +261,15 @@
   object DataSource1: TDataSource
     DataSet = ADOTable1
     Left = 512
+    Top = 424
+  end
+  object ADOConnection1: TADOConnection
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=airport.mdb;Persist' +
+      ' Security Info=False'
+    LoginPrompt = False
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 472
     Top = 424
   end
 end

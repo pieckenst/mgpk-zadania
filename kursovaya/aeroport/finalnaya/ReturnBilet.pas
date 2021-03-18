@@ -22,6 +22,10 @@ type
     ADOTable1Дата_Продажи: TDateTimeField;
     ADOTable1Номер_Рейса: TWideStringField;
     ADOTable1Класс: TWideStringField;
+    ADOTable1Num: TAutoIncField;
+    ADOTable1Sale_Date: TDateTimeField;
+    ADOTable1Board_Number: TWideStringField;
+    ADOTable1Class: TWideStringField;
     procedure Image1Click(Sender: TObject);
     procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);

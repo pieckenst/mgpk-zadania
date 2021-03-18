@@ -1,4 +1,4 @@
-unit OknoProdazhi;
+п»їunit OknoProdazhi;
 
 interface
 
@@ -16,15 +16,19 @@ type
     Button2: TButton;
     ADOConnection1: TADOConnection;
     ADOTable1: TADOTable;
-    ADOTable1Код: TAutoIncField;
-    ADOTable1Дата_Продажи: TDateTimeField;
-    ADOTable1Номер_Рейса: TWideStringField;
-    ADOTable1Класс: TWideStringField;
+    ADOTable1ГЉГ®Г¤: TAutoIncField;
+    ADOTable1Г„Г ГІГ _ГЏГ°Г®Г¤Г Г¦ГЁ: TDateTimeField;
+    ADOTable1ГЌГ®Г¬ГҐГ°_ГђГҐГ©Г±Г : TWideStringField;
+    ADOTable1ГЉГ«Г Г±Г±: TWideStringField;
     Label1: TLabel;
     Edit1: TEdit;
     Label2: TLabel;
     Edit2: TEdit;
     Image1: TImage;
+    ADOTable1Num: TAutoIncField;
+    ADOTable1Sale_Date: TDateTimeField;
+    ADOTable1Board_Number: TWideStringField;
+    ADOTable1Class: TWideStringField;
     procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure Button1Click(Sender: TObject);
@@ -48,18 +52,18 @@ begin
 if RadioButton1.Checked=true then
   ADOTable1.Open;
   ADOTable1.Insert;
-  ADOTable1.FieldByName('Класс').AsString:= 'Первый Класс';
-  ADOTable1.FieldByName('Номер_Рейса').AsString:=Edit1.Text;
-  ADOTable1.FieldByName('Дата_Продажи').AsString:=Edit2.Text;
+  ADOTable1.FieldByName('Class').AsString:= 'РџРµСЂРІС‹Р№ РљР»Р°СЃСЃ';
+  ADOTable1.FieldByName('Board_Number').AsString:=Edit1.Text;
+  ADOTable1.FieldByName('Sale_Date').AsString:=Edit2.Text;
   ADOTable1.Post;
 
 
 if RadioButton2.Checked=true then
   ADOTable1.Open;
   ADOTable1.Insert;
-  ADOTable1.FieldByName('Класс').AsString:= 'Второй Класс';
-  ADOTable1.FieldByName('Номер_Рейса').AsString:=Edit1.Text;
-  ADOTable1.FieldByName('Дата_Продажи').AsString:=Edit2.Text;
+  ADOTable1.FieldByName('Class').AsString:= 'Р’С‚РѕСЂРѕР№ РљР»Р°СЃСЃ';
+  ADOTable1.FieldByName('BBoard_Number').AsString:=Edit1.Text;
+  ADOTable1.FieldByName('Sale_Date').AsString:=Edit2.Text;
   ADOTable1.Post;
 
 

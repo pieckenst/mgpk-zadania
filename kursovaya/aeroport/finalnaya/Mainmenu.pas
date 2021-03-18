@@ -10,7 +10,6 @@ uses
 type
   TForm1 = class(TForm)
     Panel1: TPanel;
-    Panel2: TPanel;
     Label1: TLabel;
     Panel3: TPanel;
     Panel4: TPanel;
@@ -19,6 +18,7 @@ type
     Image1: TImage;
     Panel6: TPanel;
     Panel8: TPanel;
+    Image2: TImage;
     procedure Panel3Click(Sender: TObject);
     procedure Panel6Click(Sender: TObject);
     procedure Panel7Click(Sender: TObject);
@@ -27,6 +27,11 @@ type
     procedure Image1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Label1DblClick(Sender: TObject);
+    procedure Image2Click(Sender: TObject);
+    procedure Label1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+    procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
 
 
 
@@ -69,10 +74,29 @@ begin
 Application.Terminate;
 end;
 
+procedure TForm1.Image2Click(Sender: TObject);
+begin
+Application.Minimize;
+end;
+
 procedure TForm1.Label1DblClick(Sender: TObject);
 begin
 Panel8.Visible:=True;
 
+end;
+
+procedure TForm1.Label1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+ReleaseCapture;
+Perform(WM_SysCommand,$F012,0);
+end;
+
+procedure TForm1.Panel1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+ReleaseCapture;
+Perform(WM_SysCommand,$F012,0);
 end;
 
 procedure TForm1.Panel3Click(Sender: TObject);
