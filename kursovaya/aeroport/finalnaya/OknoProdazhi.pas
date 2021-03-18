@@ -35,6 +35,8 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Image1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Label3MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
   private
     { Private declarations }
   public
@@ -78,6 +80,13 @@ end;
 procedure TForm4.Image1Click(Sender: TObject);
 begin
 Form4.Close;
+end;
+
+procedure TForm4.Label3MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+ReleaseCapture;
+Perform(WM_SysCommand,$F012,0);
 end;
 
 procedure TForm4.Panel1MouseDown(Sender: TObject; Button: TMouseButton;

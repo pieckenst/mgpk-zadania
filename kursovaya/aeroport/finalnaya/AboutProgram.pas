@@ -22,6 +22,8 @@ type
     procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure Image2Click(Sender: TObject);
+    procedure Label7MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
   private
     { Private declarations }
   public
@@ -38,6 +40,13 @@ implementation
 procedure TForm2.Image2Click(Sender: TObject);
 begin
 Form2.Close;
+end;
+
+procedure TForm2.Label7MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+ReleaseCapture;
+Perform(WM_SysCommand,$F012,0);
 end;
 
 procedure TForm2.Panel1MouseDown(Sender: TObject; Button: TMouseButton;

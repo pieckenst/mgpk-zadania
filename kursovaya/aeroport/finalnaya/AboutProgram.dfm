@@ -878,6 +878,7 @@ object Form2: TForm2
       Font.Name = 'Franklin Gothic Medium'
       Font.Style = []
       ParentFont = False
+      OnMouseDown = Label7MouseDown
     end
   end
 end

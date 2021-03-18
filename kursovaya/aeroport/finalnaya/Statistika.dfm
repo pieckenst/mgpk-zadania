@@ -194,6 +194,7 @@ object Form6: TForm6
       Font.Name = 'Franklin Gothic Medium'
       Font.Style = []
       ParentFont = False
+      OnMouseDown = Label1MouseDown
     end
   end
   object DBGrid1: TDBGrid

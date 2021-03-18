@@ -100,6 +100,7 @@ object Form4: TForm4
       Font.Name = 'Franklin Gothic Medium'
       Font.Style = []
       ParentFont = False
+      OnMouseDown = Label3MouseDown
     end
   end
   object RadioButton1: TRadioButton

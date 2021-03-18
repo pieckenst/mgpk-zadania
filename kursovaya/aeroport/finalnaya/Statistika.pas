@@ -30,6 +30,8 @@ type
     procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure Image2Click(Sender: TObject);
+    procedure Label1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
   private
     { Private declarations }
   public
@@ -61,6 +63,13 @@ ADOTable1.Open;
 ADOTable1.Refresh;
 DBGrid1.Refresh;
 DBGrid1.Repaint;
+end;
+
+procedure TForm6.Label1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+ReleaseCapture;
+Perform(WM_SysCommand,$F012,0);
 end;
 
 procedure TForm6.Panel1MouseDown(Sender: TObject; Button: TMouseButton;
