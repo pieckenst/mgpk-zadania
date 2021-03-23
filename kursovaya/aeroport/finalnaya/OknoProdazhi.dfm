@@ -13,6 +13,7 @@ object Form4: TForm4
   Font.Style = []
   OldCreateOrder = False
   Position = poDesigned
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -125,7 +126,6 @@ object Form4: TForm4
     Width = 175
     Height = 41
     Caption = #1055#1088#1086#1076#1072#1078#1072
-    Style = bsCommandLink
     TabOrder = 3
     OnClick = Button1Click
   end
@@ -135,7 +135,6 @@ object Form4: TForm4
     Width = 175
     Height = 41
     Caption = #1042#1086#1079#1074#1088#1072#1090
-    Style = bsCommandLink
     TabOrder = 4
     OnClick = Button2Click
   end
@@ -158,6 +157,7 @@ object Form4: TForm4
     TabOrder = 6
   end
   object ADOConnection1: TADOConnection
+    Connected = True
     ConnectionString = 
       'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=airpo' +
       'rt.mdb;Mode=Share Deny None;Persist Security Info=False;Jet OLED' +
@@ -169,6 +169,7 @@ object Form4: TForm4
       ' OLEDB:Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compact With' +
       'out Replica Repair=False;Jet OLEDB:SFP=False'
     LoginPrompt = False
+    Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
     Left = 16
     Top = 200

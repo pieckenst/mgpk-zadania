@@ -203,6 +203,7 @@ object Form6: TForm6
     Width = 721
     Height = 282
     DataSource = DataSource1
+    DrawingStyle = gdsClassic
     TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText

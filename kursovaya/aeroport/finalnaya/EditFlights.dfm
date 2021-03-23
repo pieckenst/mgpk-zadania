@@ -13,6 +13,7 @@ object Form8: TForm8
   Font.Style = []
   OldCreateOrder = False
   Position = poDesigned
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 15
   object Label2: TLabel
@@ -166,12 +167,11 @@ object Form8: TForm8
     TabOrder = 5
   end
   object Button1: TButton
-    Left = 458
-    Top = 50
+    Left = 457
+    Top = 52
     Width = 209
     Height = 41
     Caption = #1054#1090#1087#1088#1072#1074#1080#1090#1100' '#1048#1079#1084#1077#1085#1077#1085#1080#1103' '
-    Style = bsCommandLink
     TabOrder = 6
     OnClick = Button1Click
   end

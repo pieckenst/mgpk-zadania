@@ -1,10 +1,10 @@
 object Form5: TForm5
-  Left = 206
-  Top = 77
+  Left = 300
+  Top = 208
   BiDiMode = bdLeftToRight
   BorderIcons = []
   BorderStyle = bsNone
-  Caption = #1057#1087#1080#1089#1086#1082' '#1044#1086#1089#1090#1091#1087#1085#1099#1093' '#1056#1077#1081#1089#1086#1074
+  Caption = 'Airport Management'
   ClientHeight = 234
   ClientWidth = 746
   Color = 14805226
@@ -100,6 +100,7 @@ object Form5: TForm5
     Height = 21
     DataField = 'Depart_Time'
     DataSource = DataSource1
+    ReadOnly = True
     TabOrder = 1
   end
   object dbeClass1: TDBEdit
@@ -111,6 +112,7 @@ object Form5: TForm5
     DataField = 'First_Class'
     DataSource = DataSource1
     ParentBiDiMode = False
+    ReadOnly = True
     TabOrder = 2
   end
   object dbeClass2: TDBEdit
@@ -120,21 +122,21 @@ object Form5: TForm5
     Height = 21
     DataField = 'Second_Class'
     DataSource = DataSource1
+    ReadOnly = True
     TabOrder = 3
   end
   object Panel1: TPanel
     Left = 0
-    Top = -10
-    Width = 1124
-    Height = 35
-    BevelOuter = bvNone
+    Top = 0
+    Width = 746
+    Height = 25
     Color = 12615680
     ParentBackground = False
     TabOrder = 4
     OnMouseDown = Panel1MouseDown
     object Image1: TImage
       Left = 8
-      Top = 12
+      Top = 2
       Width = 21
       Height = 21
       Picture.Data = {
@@ -184,9 +186,9 @@ object Form5: TForm5
     end
     object bttProdaga: TImage
       Left = 710
-      Top = 11
-      Width = 22
-      Height = 22
+      Top = 2
+      Width = 21
+      Height = 21
       Hint = #1053#1072#1078#1084#1080#1090#1077' '#1085#1072' '#1076#1072#1085#1085#1091#1102' '#1082#1085#1086#1087#1082#1091' '#1076#1083#1103' '#1074#1099#1079#1086#1074#1072' '#1086#1082#1085#1072' '#1087#1088#1086#1076#1072#1078#1080' '#1073#1080#1083#1077#1090#1086#1074
       HelpContext = 1
       Picture.Data = {
@@ -289,7 +291,7 @@ object Form5: TForm5
     end
     object Label1: TLabel
       Left = 523
-      Top = 14
+      Top = 4
       Width = 181
       Height = 15
       Caption = #1042#1099#1079#1086#1074' '#1055#1088#1086#1076#1072#1078#1080'/'#1042#1086#1079#1074#1088#1072#1090#1072' '#1041#1080#1083#1077#1090#1086#1074' >'
@@ -303,7 +305,7 @@ object Form5: TForm5
     end
     object Label7: TLabel
       Left = 35
-      Top = 14
+      Top = 4
       Width = 73
       Height = 15
       Caption = #1057#1087#1080#1089#1086#1082' '#1088#1077#1081#1089#1086#1074
@@ -323,6 +325,8 @@ object Form5: TForm5
     Height = 132
     BorderStyle = bsNone
     DataSource = DataSource1
+    DrawingStyle = gdsClassic
+    ReadOnly = True
     TabOrder = 5
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -338,6 +342,7 @@ object Form5: TForm5
     Style = csDropDownList
     DataField = 'Board_Number'
     DataSource = DataSource1
+    ReadOnly = True
     TabOrder = 6
     OnDropDown = cmbNumberDropDown
   end

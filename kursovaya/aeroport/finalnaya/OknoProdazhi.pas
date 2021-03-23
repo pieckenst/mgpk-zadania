@@ -16,20 +16,16 @@ type
     Button2: TButton;
     ADOConnection1: TADOConnection;
     ADOTable1: TADOTable;
-    ADOTable1Êîä: TAutoIncField;
-    ADOTable1Äàòà_Ïðîäàæè: TDateTimeField;
-    ADOTable1Íîìåð_Ðåéñà: TWideStringField;
-    ADOTable1Êëàññ: TWideStringField;
     Label1: TLabel;
     Edit1: TEdit;
     Label2: TLabel;
     Edit2: TEdit;
     Image1: TImage;
+    Label3: TLabel;
     ADOTable1Num: TAutoIncField;
     ADOTable1Sale_Date: TDateTimeField;
     ADOTable1Board_Number: TWideStringField;
     ADOTable1Class: TWideStringField;
-    Label3: TLabel;
     procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure Button1Click(Sender: TObject);
@@ -37,6 +33,7 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Label3MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -52,22 +49,43 @@ implementation
 
 procedure TForm4.Button1Click(Sender: TObject);
 begin
-if RadioButton1.Checked=true then
+if (RadioButton1.Checked=true) and (Trim(Edit1.Text) <> '') and (Trim(Edit2.Text) <> '') then begin
   ADOTable1.Open;
   ADOTable1.Insert;
   ADOTable1.FieldByName('Class').AsString:= 'Первый Класс';
   ADOTable1.FieldByName('Board_Number').AsString:=Edit1.Text;
   ADOTable1.FieldByName('Sale_Date').AsString:=Edit2.Text;
   ADOTable1.Post;
+end;
 
 
-if RadioButton2.Checked=true then
+
+if (RadioButton2.Checked=true) and (Trim(Edit1.Text) <> '') and (Trim(Edit2.Text) <> '') then begin
   ADOTable1.Open;
   ADOTable1.Insert;
   ADOTable1.FieldByName('Class').AsString:= 'Второй Класс';
-  ADOTable1.FieldByName('BBoard_Number').AsString:=Edit1.Text;
+  ADOTable1.FieldByName('Board_Number').AsString:=Edit1.Text;
   ADOTable1.FieldByName('Sale_Date').AsString:=Edit2.Text;
   ADOTable1.Post;
+end;
+
+
+if (RadioButton1.Checked=false) and (RadioButton2.Checked=false ) and (Edit1.Text = '') and (Edit2.Text = '') then begin
+  showmessage('Отсутсвует ввод данных!');
+end;
+
+if (RadioButton1.Checked=false) and (RadioButton2.Checked=false ) and (Trim(Edit1.Text) <> '') and (Trim(Edit2.Text) <> '') then begin
+  showmessage('Вы не указали класс бронирования билета!');
+end;
+
+if (RadioButton1.Checked=true) and (Edit1.Text = '') and (Edit2.Text = '') then begin
+  showmessage('Отсутвует ввод информации о номере рейса и дате продажи!');
+end;
+
+if (RadioButton2.Checked=true) and (Edit1.Text = '') and (Edit2.Text = '') then begin
+  showmessage('Отсутвует ввод информации о номере рейса и дате продажи!');
+end;
+
 
 
 end;
@@ -75,6 +93,11 @@ end;
 procedure TForm4.Button2Click(Sender: TObject);
 begin
 Form7.Show;
+end;
+
+procedure TForm4.FormCreate(Sender: TObject);
+begin
+ADOTable1.Open;
 end;
 
 procedure TForm4.Image1Click(Sender: TObject);

@@ -3,9 +3,9 @@ object Form1: TForm1
   Top = 0
   BorderStyle = bsNone
   Caption = #1043#1083#1072#1074#1085#1086#1077' '#1052#1077#1085#1102
-  ClientHeight = 85
+  ClientHeight = 104
   ClientWidth = 432
-  Color = 15792377
+  Color = 14147553
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -17,18 +17,17 @@ object Form1: TForm1
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1920
-    Height = 31
+    Width = 432
+    Height = 26
     BevelEdges = []
-    BevelOuter = bvNone
     Color = 12615680
     ParentBackground = False
     TabOrder = 0
     StyleElements = []
     OnMouseDown = Panel1MouseDown
     object Label1: TLabel
-      Left = 59
-      Top = 6
+      Left = 54
+      Top = 4
       Width = 224
       Height = 20
       Caption = #1057#1080#1089#1090#1077#1084#1072' '#1059#1087#1088#1072#1074#1083#1077#1085#1080#1103' '#1040#1101#1088#1086#1087#1086#1088#1090#1086#1084
@@ -44,8 +43,8 @@ object Form1: TForm1
     object Image1: TImage
       Left = 5
       Top = 4
-      Width = 21
-      Height = 21
+      Width = 20
+      Height = 20
       Picture.Data = {
         0954506E67496D61676589504E470D0A1A0A0000000D49484452000000800000
         00800806000000C33E61CB000000097048597300000EC300000EC301C76FA864
@@ -92,10 +91,10 @@ object Form1: TForm1
       OnClick = Image1Click
     end
     object Image2: TImage
-      Left = 32
+      Left = 28
       Top = 4
-      Width = 21
-      Height = 21
+      Width = 20
+      Height = 20
       Picture.Data = {
         0954506E67496D61676589504E470D0A1A0A0000000D49484452000000800000
         00800806000000C33E61CB000000097048597300000EC300000EC301C76FA864
@@ -153,48 +152,52 @@ object Form1: TForm1
   end
   object Panel3: TPanel
     Left = 0
-    Top = 31
+    Top = 32
     Width = 118
-    Height = 30
+    Height = 36
+    BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
-    Color = 14737632
+    Color = 14147553
     ParentBackground = False
     TabOrder = 1
     OnClick = Panel3Click
   end
   object Panel4: TPanel
-    Left = 112
-    Top = 56
-    Width = 118
+    Left = 118
+    Top = 68
+    Width = 110
     Height = 30
+    BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = #1056#1077#1076#1072#1082#1090#1086#1088' '#1056#1077#1081#1089#1086#1074
-    Color = 14737632
+    Color = 14147553
     ParentBackground = False
     TabOrder = 2
     OnClick = Panel4Click
   end
   object Panel5: TPanel
-    Left = 112
-    Top = 31
-    Width = 118
-    Height = 30
+    Left = 118
+    Top = 32
+    Width = 110
+    Height = 36
+    BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = #1057#1090#1072#1090#1080#1089#1090#1080#1082#1072
-    Color = 14737632
+    Color = 14147553
     ParentBackground = False
     TabOrder = 3
     OnClick = Panel5Click
   end
   object Panel7: TPanel
-    Left = 228
-    Top = 31
+    Left = 227
+    Top = 32
     Width = 204
-    Height = 30
+    Height = 36
+    BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = #1055#1088#1086#1076#1072#1078#1072' '#1040#1074#1080#1072#1073#1080#1083#1077#1090#1086#1074
-    Color = 14737632
+    Color = 14147553
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = 13
@@ -207,9 +210,10 @@ object Form1: TForm1
   end
   object Panel6: TPanel
     Left = 0
-    Top = 56
+    Top = 68
     Width = 118
     Height = 30
+    BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = #1050#1072#1083#1077#1085#1076#1072#1088#1100' '
     Color = 14147553
@@ -218,10 +222,11 @@ object Form1: TForm1
     OnClick = Panel6Click
   end
   object Panel8: TPanel
-    Left = 228
-    Top = 56
+    Left = 227
+    Top = 68
     Width = 204
     Height = 30
+    BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = #1058#1077#1089#1090#1086#1074#1072#1103' '#1050#1085#1086#1087#1082#1072
     Color = 14147553

@@ -14,10 +14,6 @@ type
     DataSource1: TDataSource;
     ADOConnection1: TADOConnection;
     ADOTable1: TADOTable;
-    ADOTable1Код: TAutoIncField;
-    ADOTable1Дата_Продажи: TDateTimeField;
-    ADOTable1Номер_Рейса: TWideStringField;
-    ADOTable1Класс: TWideStringField;
     Label1: TLabel;
     Image1: TImage;
     Image2: TImage;
@@ -52,6 +48,7 @@ end;
 
 procedure TForm6.Image1Click(Sender: TObject);
 begin
+DBGrid1.DataSource.DataSet.Refresh;
 Form6.Close;
 end;
 
@@ -61,6 +58,7 @@ Form6.Refresh;
 Form6.Repaint;
 ADOTable1.Open;
 ADOTable1.Refresh;
+DBGrid1.DataSource.DataSet.Refresh;
 DBGrid1.Refresh;
 DBGrid1.Repaint;
 end;

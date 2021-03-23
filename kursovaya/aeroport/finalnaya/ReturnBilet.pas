@@ -18,10 +18,6 @@ type
     DataSource1: TDataSource;
     Label2: TLabel;
     Button1: TButton;
-    ADOTable1Код: TAutoIncField;
-    ADOTable1Дата_Продажи: TDateTimeField;
-    ADOTable1Номер_Рейса: TWideStringField;
-    ADOTable1Класс: TWideStringField;
     ADOTable1Num: TAutoIncField;
     ADOTable1Sale_Date: TDateTimeField;
     ADOTable1Board_Number: TWideStringField;
