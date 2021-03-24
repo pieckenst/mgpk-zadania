@@ -8,7 +8,6 @@ object Form5: TForm5
   Caption = 'Airport Management'
   ClientHeight = 234
   ClientWidth = 746
-  Color = 14805226
   DragMode = dmAutomatic
   Font.Color = clWindowText
   Font.Height = -11

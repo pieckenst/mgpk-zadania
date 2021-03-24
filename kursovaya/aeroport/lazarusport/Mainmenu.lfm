@@ -56,7 +56,6 @@ object Form1: TForm1
     BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = 'О программе'
-    Color = 14147553
     ParentBackground = False
     ParentColor = False
     TabOrder = 1
@@ -70,7 +69,6 @@ object Form1: TForm1
     BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = 'Редактор Рейсов'
-    Color = 14147553
     ParentBackground = False
     ParentColor = False
     TabOrder = 2
@@ -84,7 +82,6 @@ object Form1: TForm1
     BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = 'Статистика'
-    Color = 14147553
     ParentBackground = False
     ParentColor = False
     TabOrder = 3
@@ -98,7 +95,6 @@ object Form1: TForm1
     BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = 'Продажа Авиабилетов'
-    Color = 14147553
     Font.Color = clWindowText
     Font.Height = 13
     Font.Name = 'Tahoma'
@@ -116,7 +112,6 @@ object Form1: TForm1
     BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = 'Календарь '
-    Color = 14147553
     ParentBackground = False
     ParentColor = False
     TabOrder = 5
@@ -130,7 +125,6 @@ object Form1: TForm1
     BevelInner = bvRaised
     BevelOuter = bvNone
     Caption = 'Тестовая Кнопка'
-    Color = 14147553
     ParentBackground = False
     ParentColor = False
     TabOrder = 6

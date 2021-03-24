@@ -7,7 +7,6 @@ object Form8: TForm8
   Caption = 'Редактор Рейсов'
   ClientHeight = 271
   ClientWidth = 666
-  Color = clBtnFace
   Font.Color = clWindowText
   Font.Height = 15
   Font.Name = 'Tahoma'

@@ -7,7 +7,6 @@ object Form4: TForm4
   Caption = 'Выбор Класса'
   ClientHeight = 228
   ClientWidth = 556
-  Color = clBtnFace
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'

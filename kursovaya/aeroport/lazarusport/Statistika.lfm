@@ -7,7 +7,6 @@ object Form6: TForm6
   Caption = 'Таблица Продаж'
   ClientHeight = 352
   ClientWidth = 743
-  Color = clBtnFace
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
@@ -56,7 +55,6 @@ object Form6: TForm6
     Height = 282
     Top = 31
     Width = 721
-    Color = clWindow
     Columns = <>
     DataSource = DataSource1
     TabOrder = 1

@@ -7,7 +7,6 @@ object Form7: TForm7
   Caption = 'Возврат Билета'
   ClientHeight = 267
   ClientWidth = 746
-  Color = clBtnFace
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
@@ -56,9 +55,8 @@ object Form7: TForm7
     Left = 8
     Height = 175
     Hint = 'Выберите Поле Которое Хотите удалить из базы данных( Тоже самое что возврат билета считай)'
-    Top = 26
+    Top = 24
     Width = 673
-    Color = clWindow
     Columns = <>
     TabOrder = 1
     TitleFont.Color = clWindowText

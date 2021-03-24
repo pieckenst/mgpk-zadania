@@ -7,7 +7,6 @@ object frmSplash: TfrmSplash
   BorderStyle = bsNone
   ClientHeight = 81
   ClientWidth = 564
-  Color = clBtnFace
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
