@@ -1,0 +1,90 @@
+Airport.lpi Note: К параметрам пользователя добавлены определения -dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL
+ Progress: Найдены все файлы модулей
+Airport.dpr(1,17) Note: После имени модуля добавлена директива MODE Delphi.
+ : 
+ : *** Преобразование файлов модулей, принадлежащих проекту/пакету ***
+InfoReisy.pas Note: Модуль "ADODB" в выражении Uses заменён на "sqldb".
+InfoReisy.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+InfoReisy.pas(1,16) Note: После имени модуля добавлена директива MODE Delphi.
+Mainmenu.pas(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+AboutProgram.pas(1,19) Note: После имени модуля добавлена директива MODE Delphi.
+Unit3.pas(1,12) Note: После имени модуля добавлена директива MODE Delphi.
+OknoProdazhi.pas Note: Кодировка изменена с utf8bom на UTF-8
+OknoProdazhi.pas(1,19) Note: После имени модуля добавлена директива MODE Delphi.
+Statistika.pas(1,17) Note: После имени модуля добавлена директива MODE Delphi.
+ReturnBilet.pas(1,18) Note: После имени модуля добавлена директива MODE Delphi.
+EditFlights.pas(1,18) Note: После имени модуля добавлена директива MODE Delphi.
+Calendar.pas(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+Splashscreen.pas(1,19) Note: После имени модуля добавлена директива MODE Delphi.
+ : 
+ : *** Исправление списков используемых модулей и файлов форм ***
+InfoReisy.pas Note: Тип "TADOConnection" заменён на "TSQLConnector".
+InfoReisy.pas Note: Тип "TADOQuery" заменён на "TSQLQuery".
+InfoReisy.pas Note: Тип "TADOTable" заменён на "TSQLQuery".
+InfoReisy.pas Note: Удалено свойство "TextHeight".
+InfoReisy.pas Note: Удалено свойство "OldCreateOrder".
+InfoReisy.pas Note: Удалено свойство "GlassFrame.Enabled".
+InfoReisy.pas Note: Удалено свойство "Provider".
+InfoReisy.pas Note: Удалено свойство "ConnectionString".
+InfoReisy.pas Note: Удалено свойство "Parameters".
+InfoReisy.pas Note: Удалено свойство "Connection".
+InfoReisy.pas Note: Удалено свойство "TableName".
+InfoReisy.pas Note: Удалено свойство "TableDirect".
+InfoReisy.pas Note: Удалено свойство "CursorType".
+InfoReisy.pas Note: Удалено свойство "Connection".
+InfoReisy.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+InfoReisy.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+InfoReisy.pas Note: Модуль "DBGrids" добавлен в выражение Uses.
+InfoReisy.pas Note: Удалено свойство "DrawingStyle".
+InfoReisy.pas Note: Изменена координата Top компонента TLabel с "4" на "2" внутри TPanel.
+InfoReisy.pas Note: Изменена координата Left компонента TLabel с "35" на "33" внутри TPanel.
+InfoReisy.pas Note: Изменена координата Top компонента TLabel с "4" на "2" внутри TPanel.
+InfoReisy.pas Note: Изменена координата Left компонента TLabel с "523" на "521" внутри TPanel.
+InfoReisy.pas Note: Изменена координата Top компонента TImage с "2" на "0" внутри TPanel.
+InfoReisy.pas Note: Изменена координата Left компонента TImage с "710" на "708" внутри TPanel.
+InfoReisy.pas Note: Изменена координата Top компонента TImage с "2" на "0" внутри TPanel.
+InfoReisy.pas Note: Изменена координата Left компонента TImage с "8" на "6" внутри TPanel.
+Mainmenu.pas Note: Удалено свойство "TextHeight".
+Mainmenu.pas Note: Удалено свойство "PixelsPerInch".
+Mainmenu.pas Note: Удалено свойство "OldCreateOrder".
+Mainmenu.pas Note: Удалено свойство "Font.Style".
+Mainmenu.pas Note: Удалено свойство "Font.Name".
+Mainmenu.pas Note: Удалено свойство "Font.Height".
+Mainmenu.pas Note: Удалено свойство "Font.Color".
+Mainmenu.pas Note: Удалено свойство "Font.Charset".
+Mainmenu.pas Note: Удалено свойство "Color".
+Mainmenu.pas Note: Удалено свойство "ClientWidth".
+Mainmenu.pas Note: Удалено свойство "ClientHeight".
+Mainmenu.pas Note: Удалено свойство "Caption".
+Mainmenu.pas Note: Удалено свойство "BorderStyle".
+Mainmenu.pas Note: Удалено свойство "Top".
+Mainmenu.pas Note: Удалено свойство "Left".
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "StdCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+Mainmenu.pas Note: Модуль "ExtCtrls" добавлен в выражение Uses.
+ Progress: Преобразование заняло: 00:00:32
+ : Преобразование завершено.

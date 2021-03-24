@@ -1,0 +1,71 @@
+object Form6: TForm6
+  Left = 820
+  Height = 352
+  Top = 84
+  Width = 743
+  BorderStyle = bsNone
+  Caption = 'Таблица Продаж'
+  ClientHeight = 352
+  ClientWidth = 743
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  LCLVersion = '2.0.12.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 28
+    Top = -3
+    Width = 1019
+    BevelOuter = bvNone
+    ClientHeight = 28
+    ClientWidth = 1019
+    Color = 12615680
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object Image1: TImage
+      Left = 8
+      Height = 21
+      Top = 4
+      Width = 21
+      Proportional = True
+    end
+    object Image2: TImage
+      Left = 35
+      Height = 21
+      Top = 4
+      Width = 21
+      Proportional = True
+    end
+    object Label1: TLabel
+      Left = 62
+      Height = 20
+      Top = 5
+      Width = 132
+      Caption = 'Статистика Продаж '
+      Font.Color = clWhite
+      Font.Height = 20
+      Font.Name = 'Franklin Gothic Medium'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 282
+    Top = 31
+    Width = 721
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+  end
+  object DataSource1: TDataSource
+    Left = 24
+    Top = 320
+  end
+end

@@ -1,0 +1,210 @@
+object Form5: TForm5
+  Left = 310
+  Height = 234
+  Top = 294
+  Width = 746
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Airport Management'
+  ClientHeight = 234
+  ClientWidth = 746
+  Color = 14805226
+  DragMode = dmAutomatic
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  ParentBiDiMode = False
+  LCLVersion = '2.0.12.0'
+  object Label2: TLabel
+    Left = 8
+    Height = 20
+    Top = 39
+    Width = 35
+    Caption = 'Дата'
+    Font.Color = clWindowText
+    Font.Height = 20
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 74
+    Width = 51
+    Caption = '№ рейса'
+    Font.Color = clWindowText
+    Font.Height = 15
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 15
+    Top = 102
+    Width = 81
+    Caption = 'Время Вылета'
+    Font.Color = clWindowText
+    Font.Height = 15
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 15
+    Top = 132
+    Width = 79
+    Caption = 'Первый Класс'
+    Font.Color = clWindowText
+    Font.Height = 15
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 8
+    Height = 15
+    Top = 162
+    Width = 77
+    Caption = 'Второй Класс'
+    Font.Color = clWindowText
+    Font.Height = 15
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object edDate: TEdit
+    Left = 97
+    Height = 21
+    Top = 42
+    Width = 270
+    TabOrder = 0
+  end
+  object dbeTime: TDBEdit
+    Left = 97
+    Height = 21
+    Top = 96
+    Width = 270
+    DataField = 'Depart_Time'
+    ReadOnly = True
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 1
+  end
+  object dbeClass1: TDBEdit
+    Left = 97
+    Height = 21
+    Top = 130
+    Width = 270
+    DataField = 'First_Class'
+    ReadOnly = True
+    CharCase = ecNormal
+    MaxLength = 0
+    ParentBiDiMode = False
+    TabOrder = 2
+  end
+  object dbeClass2: TDBEdit
+    Left = 97
+    Height = 21
+    Top = 162
+    Width = 270
+    DataField = 'Second_Class'
+    ReadOnly = True
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 3
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 25
+    Top = 0
+    Width = 746
+    ClientHeight = 25
+    ClientWidth = 746
+    Color = 12615680
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 4
+    object Image1: TImage
+      Left = 6
+      Height = 21
+      Top = 0
+      Width = 21
+      OnClick = Image1Click
+      Proportional = True
+    end
+    object bttProdaga: TImage
+      Left = 708
+      Height = 21
+      Hint = 'Нажмите на данную кнопку для вызова окна продажи билетов'
+      Top = 0
+      Width = 21
+      HelpContext = 1
+      OnClick = bttProdagaClick
+      Proportional = True
+    end
+    object Label1: TLabel
+      Left = 521
+      Height = 15
+      Top = 2
+      Width = 181
+      Caption = 'Вызов Продажи/Возврата Билетов >'
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Franklin Gothic Medium'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 33
+      Height = 15
+      Top = 2
+      Width = 73
+      Caption = 'Список рейсов'
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Franklin Gothic Medium'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 384
+    Height = 132
+    Top = 51
+    Width = 348
+    BorderStyle = bsNone
+    Color = clWindow
+    Columns = <>
+    ReadOnly = True
+    TabOrder = 5
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+  end
+  object cmbNumber: TDBComboBox
+    Left = 97
+    Height = 21
+    Top = 69
+    Width = 270
+    DataField = 'Board_Number'
+    ItemHeight = 13
+    MaxLength = 0
+    OnDropDown = cmbNumberDropDown
+    ReadOnly = True
+    Style = csDropDownList
+    TabOrder = 6
+  end
+  object ODBCConnection1: TODBCConnection
+    Connected = False
+    LoginPrompt = False
+    AfterConnect = ODBCConnection1AfterConnect
+    DatabaseName = 'airport.mdb'
+    KeepConnection = False
+    Left = 448
+    Top = 184
+  end
+end

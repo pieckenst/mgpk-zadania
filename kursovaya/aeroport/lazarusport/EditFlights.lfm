@@ -1,0 +1,134 @@
+object Form8: TForm8
+  Left = 387
+  Height = 271
+  Top = 270
+  Width = 666
+  BorderStyle = bsNone
+  Caption = 'Редактор Рейсов'
+  ClientHeight = 271
+  ClientWidth = 666
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = 15
+  Font.Name = 'Tahoma'
+  LCLVersion = '2.0.12.0'
+  object Label2: TLabel
+    Left = 35
+    Height = 15
+    Top = 64
+    Width = 74
+    Caption = 'Номер Рейса'
+    Font.Color = clWindowText
+    Font.Height = 15
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 35
+    Height = 15
+    Top = 94
+    Width = 81
+    Caption = 'Время Вылета'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 35
+    Height = 15
+    Top = 123
+    Width = 127
+    Caption = 'Места Первого Класса'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 36
+    Height = 15
+    Top = 160
+    Width = 126
+    Caption = 'Места Второго Класса'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 38
+    Height = 15
+    Top = 203
+    Width = 78
+    Caption = 'Дата И Время'
+    ParentColor = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 25
+    Top = 0
+    Width = 824
+    ClientHeight = 25
+    ClientWidth = 824
+    Color = 12615680
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object Image1: TImage
+      Left = 8
+      Height = 21
+      Top = 2
+      Width = 21
+      OnClick = Image1Click
+      Proportional = True
+    end
+    object Label1: TLabel
+      Left = 35
+      Height = 15
+      Top = 5
+      Width = 97
+      Caption = 'Редактор Рейсов'
+      Font.Color = clWhite
+      Font.Height = 15
+      Font.Name = 'Tahoma'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Edit1: TEdit
+    Left = 115
+    Height = 23
+    Top = 62
+    Width = 294
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 122
+    Height = 23
+    Top = 91
+    Width = 287
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 168
+    Height = 23
+    Top = 120
+    Width = 241
+    TabOrder = 3
+  end
+  object Edit4: TEdit
+    Left = 168
+    Height = 23
+    Top = 157
+    Width = 241
+    TabOrder = 4
+  end
+  object Edit5: TEdit
+    Left = 122
+    Height = 23
+    Top = 200
+    Width = 287
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 457
+    Height = 41
+    Top = 52
+    Width = 209
+    Caption = 'Отправить Изменения '
+    TabOrder = 6
+  end
+end

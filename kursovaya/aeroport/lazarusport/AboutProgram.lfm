@@ -1,0 +1,107 @@
+object Form2: TForm2
+  Left = 0
+  Height = 210
+  Top = 463
+  Width = 647
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'О программе'
+  ClientHeight = 210
+  ClientWidth = 647
+  Color = 14805226
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  FormStyle = fsStayOnTop
+  LCLVersion = '2.0.12.0'
+  object Image1: TImage
+    Left = 568
+    Height = 49
+    Top = 56
+    Width = 49
+    Proportional = True
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 20
+    Top = 32
+    Width = 185
+    Caption = 'Управление Аэропортом '
+    Font.Color = clWindowText
+    Font.Height = 20
+    Font.Name = 'Franklin Gothic Heavy'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 13
+    Top = 64
+    Width = 314
+    Caption = 'Сделанно в 2021 году для курсовой по Теме: <<Аэропорт>>'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 13
+    Top = 83
+    Width = 424
+    Caption = 'Предназначено для учета проданных билетов аэропорта  и их продажи/возврата '
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 13
+    Top = 111
+    Width = 553
+    Caption = 'Разработано студентом заочного отделения Могилевского государственного политехнического колледжа '
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 24
+    Height = 13
+    Top = 130
+    Width = 122
+    Caption = 'Учебная Группа ПО-455'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 168
+    Height = 13
+    Top = 130
+    Width = 154
+    Caption = 'ФИО: Савич Андрей Олегович'
+    ParentColor = False
+  end
+  object Panel1: TPanel
+    Left = -1
+    Height = 26
+    Top = 0
+    Width = 649
+    ClientHeight = 26
+    ClientWidth = 649
+    Color = 12615680
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object Image2: TImage
+      Left = 6
+      Height = 21
+      Top = 2
+      Width = 21
+      Proportional = True
+    end
+    object Label7: TLabel
+      Left = 33
+      Height = 15
+      Top = 5
+      Width = 66
+      Caption = 'О программе'
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Franklin Gothic Medium'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+end
