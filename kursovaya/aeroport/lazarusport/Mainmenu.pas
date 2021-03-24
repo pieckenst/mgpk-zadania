@@ -12,8 +12,9 @@ uses
   Vcl.Imaging.pngimage, Vcl.ExtCtrls, System.SysUtils, Winapi.Windows, Winapi.Messages, System.Variants, System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.WinXPickers,
 {$ELSE}
 {$ENDIF}
-  StdCtrls, ComCtrls, ExtCtrls, odbcconn,Interfaces,
-  Forms,Lresources,LCLType, LCLIntf,AboutProgram,Statistika,EditFlights,Calendar, Classes, Controls;
+  StdCtrls, ComCtrls, ExtCtrls, odbcconn, Interfaces, Forms, Lresources,
+  LCLType, LCLIntf, AboutProgram, Statistika, EditFlights, CheckBoxThemed,
+  Calendar, Classes, Controls;
 
 type
 
@@ -26,6 +27,7 @@ type
     Panel5: TPanel;
     Panel7: TPanel;
     Panel6: TPanel;
+    TrayIcon1: TTrayIcon;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormKeyPress(Sender: TObject; var Key: char);
     procedure FormWindowStateChange(Sender: TObject);

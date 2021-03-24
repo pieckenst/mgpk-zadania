@@ -49,6 +49,8 @@ type
     bttProdaga: TImage;
     Label1: TLabel;
     Label7: TLabel;
+    SQLQuery1: TSQLQuery;
+    SQLTransaction1: TSQLTransaction;
     procedure FormCreate(Sender: TObject);
     procedure cmbNumberDropDown(Sender: TObject);
     procedure Button1Click(Sender: TObject);

@@ -1,11 +1,11 @@
 object Form7: TForm7
-  Left = 494
-  Height = 264
-  Top = 282
+  Left = 391
+  Height = 287
+  Top = 539
   Width = 746
   BorderStyle = bsDialog
   Caption = 'Возврат Билета'
-  ClientHeight = 264
+  ClientHeight = 287
   ClientWidth = 746
   Font.Color = clWindowText
   Font.Height = -11
@@ -20,11 +20,11 @@ object Form7: TForm7
   end
   object Panel1: TPanel
     Left = 0
-    Height = 25
-    Top = 242
+    Height = 33
+    Top = 259
     Width = 1098
     BevelOuter = bvLowered
-    ClientHeight = 25
+    ClientHeight = 33
     ClientWidth = 1098
     Color = 12615680
     ParentBackground = False
@@ -55,10 +55,10 @@ object Form7: TForm7
   end
   object DBGrid1: TDBGrid
     Left = 8
-    Height = 175
+    Height = 226
     Hint = 'Выберите Поле Которое Хотите удалить из базы данных( Тоже самое что возврат билета считай)'
-    Top = 48
-    Width = 673
+    Top = 8
+    Width = 689
     Color = clWindow
     Columns = <>
     TabOrder = 1
@@ -68,10 +68,10 @@ object Form7: TForm7
     TitleStyle = tsNative
   end
   object Button1: TButton
-    Left = 496
-    Height = 26
-    Top = 8
-    Width = 241
+    Left = 544
+    Height = 18
+    Top = 264
+    Width = 193
     Caption = 'Удалить Данные О Билете из БД'
     TabOrder = 2
   end

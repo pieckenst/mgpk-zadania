@@ -1,7 +1,7 @@
 object Form8: TForm8
-  Left = 436
+  Left = 955
   Height = 287
-  Top = 306
+  Top = 314
   Width = 650
   BorderStyle = bsDialog
   Caption = 'Редактор Рейсов'
@@ -15,7 +15,7 @@ object Form8: TForm8
     Left = 17
     Height = 16
     Top = 24
-    Width = 82
+    Width = 75
     Caption = 'Номер Рейса'
     Font.Color = clWindowText
     Font.Height = -13
@@ -27,7 +27,7 @@ object Form8: TForm8
     Left = 17
     Height = 16
     Top = 72
-    Width = 88
+    Width = 83
     Caption = 'Время Вылета'
     Font.Color = clWindowText
     Font.Height = -13
@@ -39,7 +39,7 @@ object Form8: TForm8
     Left = 16
     Height = 16
     Top = 120
-    Width = 138
+    Width = 132
     Caption = 'Места Первого Класса'
     Font.Color = clWindowText
     Font.Height = -13
@@ -51,7 +51,7 @@ object Form8: TForm8
     Left = 17
     Height = 16
     Top = 168
-    Width = 137
+    Width = 130
     Caption = 'Места Второго Класса'
     Font.Color = clWindowText
     Font.Height = -13
@@ -63,7 +63,7 @@ object Form8: TForm8
     Left = 17
     Height = 16
     Top = 216
-    Width = 82
+    Width = 80
     Caption = 'Дата и время'
     Font.Color = clWindowText
     Font.Height = -13
@@ -85,7 +85,7 @@ object Form8: TForm8
     object Image1: TImage
       Left = 8
       Height = 21
-      Top = 2
+      Top = 8
       Width = 21
       OnClick = Image1Click
       Proportional = True
@@ -93,9 +93,9 @@ object Form8: TForm8
     end
     object Label1: TLabel
       Left = 35
-      Height = 20
-      Top = 5
-      Width = 123
+      Height = 15
+      Top = 8
+      Width = 97
       Caption = 'Редактор Рейсов'
       Font.Color = clWhite
       Font.Height = 15
@@ -107,35 +107,35 @@ object Form8: TForm8
   end
   object Edit1: TEdit
     Left = 168
-    Height = 40
+    Height = 23
     Top = 15
     Width = 241
     TabOrder = 1
   end
   object Edit2: TEdit
     Left = 168
-    Height = 40
+    Height = 23
     Top = 63
     Width = 240
     TabOrder = 2
   end
   object Edit3: TEdit
     Left = 168
-    Height = 40
+    Height = 23
     Top = 111
     Width = 241
     TabOrder = 3
   end
   object Edit4: TEdit
     Left = 168
-    Height = 40
+    Height = 23
     Top = 159
     Width = 241
     TabOrder = 4
   end
   object Edit5: TEdit
     Left = 168
-    Height = 40
+    Height = 23
     Top = 207
     Width = 240
     TabOrder = 5

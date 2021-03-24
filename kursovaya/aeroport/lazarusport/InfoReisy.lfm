@@ -1,7 +1,7 @@
 object Form5: TForm5
-  Left = 454
+  Left = 313
   Height = 252
-  Top = 420
+  Top = 452
   Width = 778
   BorderIcons = []
   BorderStyle = bsDialog
@@ -18,9 +18,9 @@ object Form5: TForm5
   LCLVersion = '2.0.12.0'
   object Label2: TLabel
     Left = 16
-    Height = 16
+    Height = 17
     Top = 24
-    Width = 29
+    Width = 27
     Caption = 'Дата'
     Font.Color = clWindowText
     Font.Height = -13
@@ -31,9 +31,9 @@ object Form5: TForm5
   end
   object Label3: TLabel
     Left = 16
-    Height = 16
+    Height = 17
     Top = 64
-    Width = 82
+    Width = 75
     Caption = 'Номер рейса'
     Font.Color = clWindowText
     Font.Height = -13
@@ -43,9 +43,9 @@ object Form5: TForm5
   end
   object Label4: TLabel
     Left = 16
-    Height = 16
+    Height = 17
     Top = 104
-    Width = 88
+    Width = 82
     Caption = 'Время Вылета'
     Font.Color = clWindowText
     Font.Height = -13
@@ -55,9 +55,9 @@ object Form5: TForm5
   end
   object Label5: TLabel
     Left = 16
-    Height = 16
+    Height = 17
     Top = 144
-    Width = 86
+    Width = 80
     Caption = 'Первый Класс'
     Font.Color = clWindowText
     Font.Height = -13
@@ -67,9 +67,9 @@ object Form5: TForm5
   end
   object Label6: TLabel
     Left = 16
-    Height = 16
+    Height = 17
     Top = 184
-    Width = 83
+    Width = 76
     Caption = 'Второй Класс'
     Font.Color = clWindowText
     Font.Height = -13
@@ -79,14 +79,14 @@ object Form5: TForm5
   end
   object edDate: TEdit
     Left = 112
-    Height = 35
+    Height = 21
     Top = 16
     Width = 270
     TabOrder = 0
   end
   object dbeTime: TDBEdit
     Left = 112
-    Height = 35
+    Height = 21
     Top = 96
     Width = 270
     DataField = 'Depart_Time'
@@ -97,7 +97,7 @@ object Form5: TForm5
   end
   object dbeClass1: TDBEdit
     Left = 112
-    Height = 35
+    Height = 21
     Top = 136
     Width = 270
     DataField = 'First_Class'
@@ -109,8 +109,8 @@ object Form5: TForm5
   end
   object dbeClass2: TDBEdit
     Left = 112
-    Height = 35
-    Top = 176
+    Height = 21
+    Top = 180
     Width = 270
     DataField = 'Second_Class'
     ReadOnly = True
@@ -150,9 +150,9 @@ object Form5: TForm5
     end
     object Label1: TLabel
       Left = 544
-      Height = 14
+      Height = 15
       Top = 7
-      Width = 194
+      Width = 181
       Caption = 'Вызов Продажи/Возврата Билетов >'
       Font.Color = clWhite
       Font.Height = -11
@@ -162,9 +162,9 @@ object Form5: TForm5
     end
     object Label7: TLabel
       Left = 32
-      Height = 14
+      Height = 15
       Top = 7
-      Width = 80
+      Width = 73
       Caption = 'Список рейсов'
       Font.Color = clWhite
       Font.Height = -11
@@ -191,11 +191,11 @@ object Form5: TForm5
   end
   object cmbNumber: TDBComboBox
     Left = 112
-    Height = 35
+    Height = 21
     Top = 56
     Width = 270
     DataField = 'Board_Number'
-    ItemHeight = 0
+    ItemHeight = 13
     MaxLength = 0
     OnDropDown = cmbNumberDropDown
     ReadOnly = True
@@ -206,9 +206,28 @@ object Form5: TForm5
     Connected = False
     LoginPrompt = False
     AfterConnect = ODBCConnection1AfterConnect
-    DatabaseName = 'airport.mdb'
+    DatabaseName = 'airport'
     KeepConnection = False
-    Left = 32
-    Top = 65528
+    Transaction = SQLTransaction1
+    Left = 704
+    Top = 176
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = ODBCConnection1
+    Left = 600
+    Top = 176
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 512
+    Top = 176
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = ODBCConnection1
+    Params = <>
+    Left = 440
+    Top = 176
   end
 end
