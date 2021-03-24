@@ -52,6 +52,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure cmbNumberDropDown(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure Label2Click(Sender: TObject);
     procedure ODBCConnection1AfterConnect(Sender: TObject);
     {procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);}
@@ -139,6 +140,11 @@ end;
 procedure TForm5.Button1Click(Sender: TObject);
 begin
 Close;
+end;
+
+procedure TForm5.Label2Click(Sender: TObject);
+begin
+
 end;
 
 procedure TForm5.ODBCConnection1AfterConnect(Sender: TObject);

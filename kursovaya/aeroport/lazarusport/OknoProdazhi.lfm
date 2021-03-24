@@ -1,7 +1,7 @@
 object Form4: TForm4
-  Left = 435
+  Left = 484
   Height = 228
-  Top = 294
+  Top = 380
   Width = 556
   BorderStyle = bsDialog
   Caption = 'Продажа Авиабилетов'
@@ -12,20 +12,28 @@ object Form4: TForm4
   Font.Name = 'Tahoma'
   LCLVersion = '2.0.12.0'
   object Label1: TLabel
-    Left = 24
-    Height = 13
-    Top = 136
-    Width = 45
+    Left = 16
+    Height = 16
+    Top = 96
+    Width = 52
     Caption = '№ Рейса'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
     ParentColor = False
+    ParentFont = False
   end
   object Label2: TLabel
-    Left = 8
-    Height = 13
-    Top = 176
-    Width = 75
+    Left = 16
+    Height = 16
+    Top = 136
+    Width = 89
     Caption = 'Дата Продажи'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
     ParentColor = False
+    ParentFont = False
   end
   object Panel1: TPanel
     Left = 0
@@ -49,9 +57,9 @@ object Form4: TForm4
     end
     object Label3: TLabel
       Left = 36
-      Height = 15
+      Height = 14
       Top = 6
-      Width = 110
+      Width = 121
       Caption = 'Продажа Авиабилетов'
       Font.Color = clWhite
       Font.Height = -11
@@ -62,49 +70,50 @@ object Form4: TForm4
     end
   end
   object RadioButton1: TRadioButton
-    Left = 24
-    Height = 19
-    Top = 48
-    Width = 91
+    Left = 16
+    Height = 32
+    Top = 16
+    Width = 108
     Caption = 'Первый Класс'
+    Checked = True
     TabOrder = 1
   end
   object RadioButton2: TRadioButton
-    Left = 24
-    Height = 19
-    Top = 88
-    Width = 88
+    Left = 16
+    Height = 32
+    Top = 48
+    Width = 106
     Caption = 'Второй Класс'
     TabOrder = 2
   end
   object Button1: TButton
-    Left = 381
+    Left = 360
     Height = 41
-    Top = 48
+    Top = 16
     Width = 175
     Caption = 'Продажа'
     TabOrder = 3
   end
   object Button2: TButton
-    Left = 381
+    Left = 360
     Height = 41
-    Top = 108
+    Top = 64
     Width = 175
     Caption = 'Возврат'
     OnClick = Button2Click
     TabOrder = 4
   end
   object Edit1: TEdit
-    Left = 89
-    Height = 21
-    Top = 133
+    Left = 120
+    Height = 35
+    Top = 86
     Width = 230
     TabOrder = 5
   end
   object Edit2: TEdit
-    Left = 89
-    Height = 21
-    Top = 173
+    Left = 120
+    Height = 35
+    Top = 128
     Width = 230
     TabOrder = 6
   end

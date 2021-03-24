@@ -1,66 +1,82 @@
 object Form8: TForm8
-  Left = 387
-  Height = 271
-  Top = 270
-  Width = 666
+  Left = 436
+  Height = 287
+  Top = 306
+  Width = 650
   BorderStyle = bsDialog
   Caption = 'Редактор Рейсов'
-  ClientHeight = 271
-  ClientWidth = 666
+  ClientHeight = 287
+  ClientWidth = 650
   Font.Color = clWindowText
   Font.Height = 15
   Font.Name = 'Tahoma'
   LCLVersion = '2.0.12.0'
   object Label2: TLabel
-    Left = 35
-    Height = 15
-    Top = 64
-    Width = 74
+    Left = 17
+    Height = 16
+    Top = 24
+    Width = 82
     Caption = 'Номер Рейса'
     Font.Color = clWindowText
-    Font.Height = 15
+    Font.Height = -13
     Font.Name = 'Tahoma'
     ParentColor = False
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 35
-    Height = 15
-    Top = 94
-    Width = 81
+    Left = 17
+    Height = 16
+    Top = 72
+    Width = 88
     Caption = 'Время Вылета'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
     ParentColor = False
+    ParentFont = False
   end
   object Label4: TLabel
-    Left = 35
-    Height = 15
-    Top = 123
-    Width = 127
+    Left = 16
+    Height = 16
+    Top = 120
+    Width = 138
     Caption = 'Места Первого Класса'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
     ParentColor = False
+    ParentFont = False
   end
   object Label5: TLabel
-    Left = 36
-    Height = 15
-    Top = 160
-    Width = 126
+    Left = 17
+    Height = 16
+    Top = 168
+    Width = 137
     Caption = 'Места Второго Класса'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
     ParentColor = False
+    ParentFont = False
   end
   object Label6: TLabel
-    Left = 38
-    Height = 15
-    Top = 203
-    Width = 78
-    Caption = 'Дата И Время'
+    Left = 17
+    Height = 16
+    Top = 216
+    Width = 82
+    Caption = 'Дата и время'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
     ParentColor = False
+    ParentFont = False
   end
   object Panel1: TPanel
     Left = 0
-    Height = 25
-    Top = 248
+    Height = 33
+    Top = 255
     Width = 824
-    ClientHeight = 25
+    ClientHeight = 33
     ClientWidth = 824
     Color = 12615680
     ParentBackground = False
@@ -77,9 +93,9 @@ object Form8: TForm8
     end
     object Label1: TLabel
       Left = 35
-      Height = 15
+      Height = 20
       Top = 5
-      Width = 97
+      Width = 123
       Caption = 'Редактор Рейсов'
       Font.Color = clWhite
       Font.Height = 15
@@ -90,44 +106,44 @@ object Form8: TForm8
     end
   end
   object Edit1: TEdit
-    Left = 115
-    Height = 23
-    Top = 62
-    Width = 294
+    Left = 168
+    Height = 40
+    Top = 15
+    Width = 241
     TabOrder = 1
   end
   object Edit2: TEdit
-    Left = 122
-    Height = 23
-    Top = 91
-    Width = 287
+    Left = 168
+    Height = 40
+    Top = 63
+    Width = 240
     TabOrder = 2
   end
   object Edit3: TEdit
     Left = 168
-    Height = 23
-    Top = 120
+    Height = 40
+    Top = 111
     Width = 241
     TabOrder = 3
   end
   object Edit4: TEdit
     Left = 168
-    Height = 23
-    Top = 157
+    Height = 40
+    Top = 159
     Width = 241
     TabOrder = 4
   end
   object Edit5: TEdit
-    Left = 122
-    Height = 23
-    Top = 200
-    Width = 287
+    Left = 168
+    Height = 40
+    Top = 207
+    Width = 240
     TabOrder = 5
   end
   object Button1: TButton
-    Left = 457
+    Left = 424
     Height = 41
-    Top = 52
+    Top = 16
     Width = 209
     Caption = 'Отправить Изменения '
     TabOrder = 6

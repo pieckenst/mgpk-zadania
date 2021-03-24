@@ -20,17 +20,11 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
-    Panel1: TPanel;
-    Label1: TLabel;
     Panel3: TPanel;
     Panel4: TPanel;
     Panel5: TPanel;
     Panel7: TPanel;
-    Image1: TImage;
     Panel6: TPanel;
-    Panel8: TPanel;
-    Image2: TImage;
-    TrayIcon1: TTrayIcon;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormHide(Sender: TObject);
     procedure FormWindowStateChange(Sender: TObject);
@@ -107,7 +101,6 @@ end;
 
 procedure TForm1.Label1DblClick(Sender: TObject);
 begin
-Panel8.Visible:=True;
 
 end;
 

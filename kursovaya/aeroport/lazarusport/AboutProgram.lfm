@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 155
+  Left = 631
   Height = 210
-  Top = 288
+  Top = 368
   Width = 647
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
@@ -22,9 +22,9 @@ object Form2: TForm2
   end
   object Label1: TLabel
     Left = 24
-    Height = 20
+    Height = 26
     Top = 32
-    Width = 185
+    Width = 246
     Caption = 'Управление Аэропортом '
     Font.Color = clWindowText
     Font.Height = 20
@@ -34,41 +34,41 @@ object Form2: TForm2
   end
   object Label2: TLabel
     Left = 24
-    Height = 13
+    Height = 14
     Top = 64
-    Width = 314
-    Caption = 'Сделанно в 2021 году для курсовой по Теме: <<Аэропорт>>'
+    Width = 304
+    Caption = 'Сделанно в 2021 году для курсовой по Теме: «Аэропорт»'
     ParentColor = False
   end
   object Label3: TLabel
     Left = 24
-    Height = 13
+    Height = 14
     Top = 83
-    Width = 424
+    Width = 445
     Caption = 'Предназначено для учета проданных билетов аэропорта  и их продажи/возврата '
     ParentColor = False
   end
   object Label4: TLabel
     Left = 24
-    Height = 13
+    Height = 14
     Top = 111
-    Width = 553
+    Width = 582
     Caption = 'Разработано студентом заочного отделения Могилевского государственного политехнического колледжа '
     ParentColor = False
   end
   object Label5: TLabel
     Left = 24
-    Height = 13
+    Height = 14
     Top = 130
-    Width = 122
+    Width = 130
     Caption = 'Учебная Группа ПО-455'
     ParentColor = False
   end
   object Label6: TLabel
     Left = 168
-    Height = 13
+    Height = 14
     Top = 130
-    Width = 154
+    Width = 164
     Caption = 'ФИО: Савич Андрей Олегович'
     ParentColor = False
   end
@@ -93,9 +93,9 @@ object Form2: TForm2
     end
     object Label7: TLabel
       Left = 33
-      Height = 15
+      Height = 14
       Top = 5
-      Width = 66
+      Width = 73
       Caption = 'О программе'
       Font.Color = clWhite
       Font.Height = -11
