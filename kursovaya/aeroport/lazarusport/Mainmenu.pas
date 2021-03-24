@@ -13,20 +13,21 @@ uses
 {$ELSE}
 {$ENDIF}
   StdCtrls, ComCtrls, ExtCtrls, odbcconn,Interfaces,
-  Forms,Lresources,LCLType, LCLIntf,AboutProgram,Statistika,EditFlights,Calendar, Classes;
+  Forms,Lresources,LCLType, LCLIntf,AboutProgram,Statistika,EditFlights,Calendar, Classes, Controls;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
+    Button1: TButton;
     Panel3: TPanel;
     Panel4: TPanel;
     Panel5: TPanel;
     Panel7: TPanel;
     Panel6: TPanel;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
-    procedure FormHide(Sender: TObject);
+    procedure FormKeyPress(Sender: TObject; var Key: char);
     procedure FormWindowStateChange(Sender: TObject);
     procedure Panel3Click(Sender: TObject);
     procedure Panel6Click(Sender: TObject);
@@ -76,11 +77,11 @@ uses InfoReisy;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-Form2.Show;
-Form8.Show;
-Form6.Show;
-{Form9.Show;}
-Form5.Show;
+form1.Show;
+form2.Show;
+form5.Show;
+form6.Show;
+form8.Show;
 end;
 
 procedure TForm1.Image1Click(Sender: TObject);
@@ -128,9 +129,12 @@ begin
 Application.Terminate;
 end;
 
-procedure TForm1.FormHide(Sender: TObject);
-begin
 
+
+
+procedure TForm1.FormKeyPress(Sender: TObject; var Key: char);
+begin
+Button1.Visible:=true;
 end;
 
 procedure TForm1.FormWindowStateChange(Sender: TObject);

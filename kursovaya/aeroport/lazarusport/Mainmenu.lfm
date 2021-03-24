@@ -8,7 +8,7 @@ object Form1: TForm1
   ClientHeight = 139
   ClientWidth = 537
   OnClose = FormClose
-  OnHide = FormHide
+  OnKeyPress = FormKeyPress
   OnWindowStateChange = FormWindowStateChange
   ShowInTaskBar = stAlways
   LCLVersion = '2.0.12.0'
@@ -79,5 +79,14 @@ object Form1: TForm1
     ParentColor = False
     TabOrder = 4
     OnClick = Panel6Click
+  end
+  object Button1: TButton
+    Left = 0
+    Height = 17
+    Top = 120
+    Width = 16
+    OnClick = Button1Click
+    TabOrder = 5
+    Visible = False
   end
 end
