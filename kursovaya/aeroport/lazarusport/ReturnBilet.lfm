@@ -65,6 +65,7 @@ object Form7: TForm7
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
+    TitleStyle = tsNative
   end
   object Button1: TButton
     Left = 496

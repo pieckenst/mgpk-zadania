@@ -77,16 +77,16 @@ object Form5: TForm5
     ParentFont = False
   end
   object edDate: TEdit
-    Left = 97
+    Left = 40
     Height = 21
-    Top = 42
+    Top = 39
     Width = 270
     TabOrder = 0
   end
   object dbeTime: TDBEdit
-    Left = 97
+    Left = 88
     Height = 21
-    Top = 96
+    Top = 98
     Width = 270
     DataField = 'Depart_Time'
     ReadOnly = True
@@ -95,9 +95,9 @@ object Form5: TForm5
     TabOrder = 1
   end
   object dbeClass1: TDBEdit
-    Left = 97
+    Left = 88
     Height = 21
-    Top = 130
+    Top = 128
     Width = 270
     DataField = 'First_Class'
     ReadOnly = True
@@ -107,9 +107,9 @@ object Form5: TForm5
     TabOrder = 2
   end
   object dbeClass2: TDBEdit
-    Left = 97
+    Left = 88
     Height = 21
-    Top = 162
+    Top = 155
     Width = 270
     DataField = 'Second_Class'
     ReadOnly = True
@@ -120,7 +120,7 @@ object Form5: TForm5
   object Panel1: TPanel
     Left = 0
     Height = 25
-    Top = 209
+    Top = 208
     Width = 746
     ClientHeight = 25
     ClientWidth = 746
@@ -174,9 +174,9 @@ object Form5: TForm5
     end
   end
   object DBGrid1: TDBGrid
-    Left = 384
-    Height = 132
-    Top = 51
+    Left = 376
+    Height = 152
+    Top = 24
     Width = 348
     BorderStyle = bsNone
     Color = clWindow
@@ -186,11 +186,12 @@ object Form5: TForm5
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
+    TitleStyle = tsNative
   end
   object cmbNumber: TDBComboBox
-    Left = 97
+    Left = 64
     Height = 21
-    Top = 69
+    Top = 68
     Width = 270
     DataField = 'Board_Number'
     ItemHeight = 13

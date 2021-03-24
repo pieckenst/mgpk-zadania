@@ -45,13 +45,13 @@ object frmSplash: TfrmSplash
     ParentColor = False
     TabOrder = 1
     object Label1: TLabel
-      Left = 12
-      Height = 20
+      Left = 8
+      Height = 17
       Top = 2
-      Width = 167
+      Width = 144
       Caption = 'Управление Аэропортом '
       Font.Color = clWhite
-      Font.Height = 20
+      Font.Height = -13
       Font.Name = 'Franklin Gothic Medium'
       ParentColor = False
       ParentFont = False

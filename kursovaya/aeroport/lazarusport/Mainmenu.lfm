@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 166
+  Left = 172
   Height = 97
-  Top = 203
+  Top = 341
   Width = 432
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Система Управления Аэропортом'
