@@ -1,10 +1,10 @@
 object Form4: TForm4
-  Left = 1030
+  Left = 435
   Height = 228
-  Top = 80
+  Top = 294
   Width = 556
-  BorderStyle = bsNone
-  Caption = 'Выбор Класса'
+  BorderStyle = bsDialog
+  Caption = 'Продажа Авиабилетов'
   ClientHeight = 228
   ClientWidth = 556
   Font.Color = clWindowText
@@ -30,7 +30,7 @@ object Form4: TForm4
   object Panel1: TPanel
     Left = 0
     Height = 27
-    Top = 0
+    Top = 201
     Width = 556
     ClientHeight = 27
     ClientWidth = 556
@@ -41,10 +41,11 @@ object Form4: TForm4
     object Image1: TImage
       Left = 8
       Height = 22
-      Top = 2
+      Top = 0
       Width = 22
       OnClick = Image1Click
       Proportional = True
+      Visible = False
     end
     object Label3: TLabel
       Left = 36
@@ -57,6 +58,7 @@ object Form4: TForm4
       Font.Name = 'Franklin Gothic Medium'
       ParentColor = False
       ParentFont = False
+      Visible = False
     end
   end
   object RadioButton1: TRadioButton

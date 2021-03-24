@@ -3,7 +3,7 @@ object Form6: TForm6
   Height = 352
   Top = 84
   Width = 743
-  BorderStyle = bsNone
+  BorderStyle = bsDialog
   Caption = 'Таблица Продаж'
   ClientHeight = 352
   ClientWidth = 743
@@ -14,7 +14,7 @@ object Form6: TForm6
   object Panel1: TPanel
     Left = 0
     Height = 28
-    Top = -3
+    Top = 328
     Width = 1019
     BevelOuter = bvNone
     ClientHeight = 28
@@ -29,6 +29,7 @@ object Form6: TForm6
       Top = 4
       Width = 21
       Proportional = True
+      Visible = False
     end
     object Image2: TImage
       Left = 35
@@ -36,6 +37,7 @@ object Form6: TForm6
       Top = 4
       Width = 21
       Proportional = True
+      Visible = False
     end
     object Label1: TLabel
       Left = 62
@@ -48,6 +50,7 @@ object Form6: TForm6
       Font.Name = 'Franklin Gothic Medium'
       ParentColor = False
       ParentFont = False
+      Visible = False
     end
   end
   object DBGrid1: TDBGrid
@@ -55,6 +58,7 @@ object Form6: TForm6
     Height = 282
     Top = 31
     Width = 721
+    Color = clWindow
     Columns = <>
     DataSource = DataSource1
     TabOrder = 1
@@ -63,7 +67,6 @@ object Form6: TForm6
     TitleFont.Name = 'Tahoma'
   end
   object DataSource1: TDataSource
-    Left = 24
-    Top = 320
+    Left = 704
   end
 end

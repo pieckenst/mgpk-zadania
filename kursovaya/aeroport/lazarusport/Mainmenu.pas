@@ -13,9 +13,12 @@ uses
 {$ELSE}
 {$ENDIF}
   StdCtrls, ComCtrls, ExtCtrls, odbcconn,Interfaces,
-  Forms,Lresources,LCLType, LCLIntf,AboutProgram,Statistika,EditFlights,Calendar;
+  Forms,Lresources,LCLType, LCLIntf,AboutProgram,Statistika,EditFlights,Calendar, Classes;
 
 type
+
+  { TForm1 }
+
   TForm1 = class(TForm)
     Panel1: TPanel;
     Label1: TLabel;
@@ -27,6 +30,10 @@ type
     Panel6: TPanel;
     Panel8: TPanel;
     Image2: TImage;
+    TrayIcon1: TTrayIcon;
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormHide(Sender: TObject);
+    procedure FormWindowStateChange(Sender: TObject);
     procedure Panel3Click(Sender: TObject);
     procedure Panel6Click(Sender: TObject);
     procedure Panel7Click(Sender: TObject);
@@ -36,6 +43,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Label1DblClick(Sender: TObject);
     procedure Image2Click(Sender: TObject);
+    procedure TrayIcon1Click(Sender: TObject);
     {procedure Label1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;
@@ -91,6 +99,12 @@ begin
 Application.Minimize;
 end;
 
+procedure TForm1.TrayIcon1Click(Sender: TObject);
+begin
+Form1.Show;
+Form5.Show;
+end;
+
 procedure TForm1.Label1DblClick(Sender: TObject);
 begin
 Panel8.Visible:=True;
@@ -114,6 +128,27 @@ end;}
 procedure TForm1.Panel3Click(Sender: TObject);
 begin
 form2.show;
+end;
+
+procedure TForm1.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+Application.Terminate;
+end;
+
+procedure TForm1.FormHide(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.FormWindowStateChange(Sender: TObject);
+begin
+if WindowState=wsMinimized then
+Form1.Hide;
+Form2.Hide;
+Form5.Hide;
+Form6.Hide;
+Form8.Hide;
+
 end;
 
 procedure TForm1.Panel4Click(Sender: TObject);

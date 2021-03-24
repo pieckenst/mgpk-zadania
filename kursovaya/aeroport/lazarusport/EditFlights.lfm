@@ -3,7 +3,7 @@ object Form8: TForm8
   Height = 271
   Top = 270
   Width = 666
-  BorderStyle = bsNone
+  BorderStyle = bsDialog
   Caption = 'Редактор Рейсов'
   ClientHeight = 271
   ClientWidth = 666
@@ -58,7 +58,7 @@ object Form8: TForm8
   object Panel1: TPanel
     Left = 0
     Height = 25
-    Top = 0
+    Top = 248
     Width = 824
     ClientHeight = 25
     ClientWidth = 824
@@ -73,6 +73,7 @@ object Form8: TForm8
       Width = 21
       OnClick = Image1Click
       Proportional = True
+      Visible = False
     end
     object Label1: TLabel
       Left = 35
@@ -85,6 +86,7 @@ object Form8: TForm8
       Font.Name = 'Tahoma'
       ParentColor = False
       ParentFont = False
+      Visible = False
     end
   end
   object Edit1: TEdit
