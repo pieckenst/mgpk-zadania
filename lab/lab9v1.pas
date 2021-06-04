@@ -17,16 +17,16 @@ for i:=1 to n do
   inc(sm,a[i]);
  end;
 writeln;
-writeln('?????=',sm)
+writeln('sm= ',sm)
 end;
 
 var a,b,c:mas;
     na,nb,nc,sa,sb,sc,mx:integer;
     ch:char;
 begin
-massiv(a,na,sa,'?????? ?');
-massiv(b,nb,sb,'?????? ?');
-massiv(c,nc,sc,'?????? ?');
+massiv(a,na,sa,'sa maximum');
+massiv(b,nb,sb,'sb maximum');
+massiv(c,nc,sc,'sc maximum');
 if sa>sb then
  begin
   mx:=sa;
@@ -42,5 +42,5 @@ if sc>mx then
   mx:=sc;
   ch:='C';
  end;
-writeln('?????????? ?????=',mx,' ? ??????? ',ch);
+writeln('maximalnoe chslo :',mx,' ch := ',ch);
 end.

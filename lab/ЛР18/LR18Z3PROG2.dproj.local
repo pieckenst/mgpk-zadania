@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.833,C:\Users\User\Documents\Embarcadero\Studio\Projects\vkamenunit.dfm=E:\ПО455\савич андрей олегович\ЛР18\vkamenunit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.122,C:\Users\User\Documents\Embarcadero\Studio\Projects\LR18Z3PROG2.dproj=E:\ПО455\савич андрей олегович\ЛР18\LR18Z3PROG2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.522,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit7.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\vkamenunit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.833,C:\Users\User\Documents\Embarcadero\Studio\Projects\vkamenunit.pas=E:\ПО455\савич андрей олегович\ЛР18\vkamenunit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.548,C:\Users\User\Documents\Embarcadero\Studio\Projects\Project9.dproj=C:\Users\User\Documents\Embarcadero\Studio\Projects\LR18Z3PROG2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.619,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit7.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.522,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit7.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\vkamenunit.pas</Transaction>
+  </Transactions>
+</BorlandProject>
