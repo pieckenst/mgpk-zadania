@@ -1,0 +1,7 @@
+C:\Users\Andrey Savich\source\repos\ZADANIE65\ZADANIE65\bin\Debug\ZADANIE65.exe.config
+C:\Users\Andrey Savich\source\repos\ZADANIE65\ZADANIE65\bin\Debug\ZADANIE65.exe
+C:\Users\Andrey Savich\source\repos\ZADANIE65\ZADANIE65\bin\Debug\ZADANIE65.pdb
+C:\Users\Andrey Savich\source\repos\ZADANIE65\ZADANIE65\obj\Debug\ZADANIE65.csproj.AssemblyReference.cache
+C:\Users\Andrey Savich\source\repos\ZADANIE65\ZADANIE65\obj\Debug\ZADANIE65.csproj.CoreCompileInputs.cache
+C:\Users\Andrey Savich\source\repos\ZADANIE65\ZADANIE65\obj\Debug\ZADANIE65.exe
+C:\Users\Andrey Savich\source\repos\ZADANIE65\ZADANIE65\obj\Debug\ZADANIE65.pdb
