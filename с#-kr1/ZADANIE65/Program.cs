@@ -16,12 +16,12 @@ namespace ZADANIE65
 			max = double.Parse(Console.ReadLine());
 			double t = 0.0;
 			int i = 0;
-            do
-            { 
+                        do
+                        { 
 				
 			    t = double.Parse(Console.ReadLine());
 				i ++;
-		    }
+		        }
 			while(t < max);
 			Console.WriteLine("Количество Отрицательных чисел - {0}", i);
 			Console.ReadLine();
