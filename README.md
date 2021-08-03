@@ -8,6 +8,8 @@
 ( БУДЕТ ПРИВАТНО ПОКА НЕ ЗАКОНЧУ КОЛЛЕДЖ )
 # English
 Solutions for Mogilev State Polytechnic College programing and theory tasks
-You can use this code for a coursework base or grab and already finished one
+
+You can use this code for a coursework base or grab an already finished one
+
 Otherwise just follow Mozilla Public License 2.0
 This repository will be private untill college graduation
