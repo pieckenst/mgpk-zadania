@@ -65,6 +65,6 @@ python-kr1 - Software Development Control Work  1 - Second Course - Python
 ```
 ___
 ```
-c#-kr1 - Control Work  1 on Program Design and Programming Languages. - Second course - C #
+c#-kr1 - Control Work  1 on Program Design and Programming Languages. - Second course - C#
 ```
 ___
