@@ -53,26 +53,21 @@
             Console.WriteLine("Количество строк не содержащих нулевые элементы: " + kolStr);
             Console.WriteLine();
     
-            //Находим максимальное значение в матрице
-            int maxElem = 0;
-            int kolVstrech = 0;
-            for (int i = 0; i < firstDimension; ++i)
+            //Находим максимальное значение в избранной строке матрицы
+            Console.Write("Введите строку в которой хотите произвести поиск: ");
+            int row = int.Parse(Console.ReadLine());
+            
+            int max = array[row, 0];
+            for (int j = 0; j < secondDimension; j++)
             {
-                for (int j = 0; j < secondDimension; ++j)
-                {
-                    if (array[i, j] == maxElem)
-                    {
-                        ++kolVstrech;
-                    }
- 
-                    if (array[i, j] > maxElem)
-                    {
-                        maxElem = array[i, j];
-                        kolVstrech = 1;
-                    }
- 
-                }
+              if (array[row, j] > max)
+			  {
+                max = array[row, j];
+			  }
             }
+            Console.WriteLine("Максимальный элемент в строке {0} равен {1}",row+1 , max);
+            
+            // закоментированный код логики повторного поиска максимального элемента повторяющегося два раза 
             //while (kolVstrech < 2)
             //{
                 //if (kolVstrech <= 1)
@@ -101,8 +96,8 @@
                 //}
             //}
  
-            // Находим максимальное 
-            Console.WriteLine("Максимальный элемент: {0}", maxElem);
+            
+            
             Console.ReadKey();
         }
     }
