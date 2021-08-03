@@ -2,7 +2,7 @@
 Контрольная 2 для первого курса колледжа сделанная на Pascal И Delphi
 Шифр 08(Шифр означает номер варианта контрольной- тоесть если на конце 8 -8 вариант )
 ```
-#English
+# English
 
 ```
 Control Work 2 for the first year of college made in Pascal and Delphi
