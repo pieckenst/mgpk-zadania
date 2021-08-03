@@ -73,36 +73,36 @@
  
                 }
             }
-            while (kolVstrech < 2)
-            {
-                if (kolVstrech <= 1)
-                {
-                    Console.WriteLine("Максимальное значение: {0} не повторяется в матрице, поэтому ищем новое максимальное значение, которое встречается два или более раз", maxElem);
-                    int maxElemPrediduschiy = maxElem;
-                    maxElem = 0;
-                    kolVstrech = 0;
-                    for (int i = 0; i < firstDimension; ++i)
-                    {
-                        for (int j = 0; j < secondDimension; ++j)
-                        {
-                            if ((array[i, j] == maxElem) && (array[i, j] < maxElemPrediduschiy))
-                            {
-                                ++kolVstrech;
-                            }
+            //while (kolVstrech < 2)
+            //{
+                //if (kolVstrech <= 1)
+                //{
+                    //Console.WriteLine("Максимальное значение: {0} не повторяется в матрице, поэтому ищем новое максимальное значение, которое встречается два или более раз", maxElem);
+                    //int maxElemPrediduschiy = maxElem;
+                    //maxElem = 0;
+                    //kolVstrech = 0;
+                    //for (int i = 0; i < firstDimension; ++i)
+                    //{
+                        //for (int j = 0; j < secondDimension; ++j)
+                        //{
+                            //if ((array[i, j] == maxElem) && (array[i, j] < maxElemPrediduschiy))
+                            //{
+                                //++kolVstrech;
+                            //}
  
-                            if ((array[i, j] > maxElem) && (array[i, j] < maxElemPrediduschiy))
-                            {
-                                maxElem = array[i, j];
-                                kolVstrech = 1;
-                            }
+                            //if ((array[i, j] > maxElem) && (array[i, j] < maxElemPrediduschiy))
+                            //{
+                                //maxElem = array[i, j];
+                                //kolVstrech = 1;
+                            //}
  
-                        }
-                    }
-                }
-            }
+                        //}
+                    //}
+                //}
+            //}
  
             // Находим максимальное 
-            Console.WriteLine("Максимальный элемент: {0}, встречается {1} раз(а)", maxElem, kolVstrech);
+            Console.WriteLine("Максимальный элемент: {0}", maxElem);
             Console.ReadKey();
         }
     }
