@@ -1,5 +1,5 @@
 # mgpk-zadania
-задания по алгоритмизации и програмированию - Могилёвский государственный политехнический колледж
+задания по предметам изучаемым в специальности 2-40 01 01 Программное обеспечение информационных технологий - Могилёвский государственный политехнический колледж
 
 Данный код можете взять за основу своей курсовой) или просто скопировать вставить мою
 
@@ -7,7 +7,7 @@
 
 ( БУДЕТ ПРИВАТНО ПОКА НЕ ЗАКОНЧУ КОЛЛЕДЖ )
 # English
-Solutions for Mogilev State Polytechnic College programing and theory tasks
+Solutions for Mogilev State Polytechnic College tasks on speciality 2-40 01 01 Information technology software
 
 You can use this code for a coursework base or grab an already finished one
 
