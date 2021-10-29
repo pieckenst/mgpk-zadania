@@ -41,7 +41,10 @@ ___
 с#-kr1 - Контрольная работа 1 по Конструированию Программ И Языкам Программирования. - Второй курс - C#
 ```
 ___
-
+```
+Seconadry Subjects - Контрольные работы по охране труда , высшей математике , теории вероятности и технологии разработки програмнного обеспечения
+```
+___
 # Table Of Contents
 
 ```
@@ -66,5 +69,9 @@ python-kr1 - Software Development Control Work  1 - Second Course - Python
 ___
 ```
 c#-kr1 - Control Work  1 on Program Design and Programming Languages. - Second course - C#
+```
+___
+```
+Seconadry Subjects - Control Works on labor protection, higher mathematics, probability theory and software development technology
 ```
 ___
