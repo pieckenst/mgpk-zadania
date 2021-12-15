@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KursovayaAvtoparkAvtobusovModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityType Name="Marshuti">
+    <Key>
+      <PropertyRef Name="Nomer_Marshuta" />
+    </Key>
+    <Property Name="Nomer_Marshuta" Type="Int64" Nullable="false" />
+    <Property Name="Nachalni_Punkt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Konechni_Punkt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Voditel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Model_Avtobusa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Vremya_Proezda" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="KursovayaAvtoparkAvtobusovEntities">
+    <EntitySet Name="Marshutis" EntityType="Self.Marshuti" />
+  </EntityContainer>
+</Schema>

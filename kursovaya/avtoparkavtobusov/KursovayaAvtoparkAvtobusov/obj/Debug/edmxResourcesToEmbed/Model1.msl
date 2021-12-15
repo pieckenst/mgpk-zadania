@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KursovayaAvtoparkAvtobusovModelStoreContainer" CdmEntityContainer="KursovayaAvtoparkAvtobusovEntities">
+    <EntitySetMapping Name="Marshutis">
+      <EntityTypeMapping TypeName="KursovayaAvtoparkAvtobusovModel.Marshuti">
+        <MappingFragment StoreEntitySet="Marshuti">
+          <ScalarProperty Name="Nomer_Marshuta" ColumnName="Nomer_Marshuta" />
+          <ScalarProperty Name="Nachalni_Punkt" ColumnName="Nachalni_Punkt" />
+          <ScalarProperty Name="Konechni_Punkt" ColumnName="Konechni_Punkt" />
+          <ScalarProperty Name="Voditel" ColumnName="Voditel" />
+          <ScalarProperty Name="Model_Avtobusa" ColumnName="Model_Avtobusa" />
+          <ScalarProperty Name="Vremya_Proezda" ColumnName="Vremya_Proezda" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

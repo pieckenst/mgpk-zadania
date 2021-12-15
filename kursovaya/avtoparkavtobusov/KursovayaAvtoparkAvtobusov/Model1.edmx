@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="KursovayaAvtoparkAvtobusovModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Marshuti">
+          <Key>
+            <PropertyRef Name="Nomer_Marshuta" />
+          </Key>
+          <Property Name="Nomer_Marshuta" Type="bigint" Nullable="false" />
+          <Property Name="Nachalni_Punkt" Type="ntext" />
+          <Property Name="Konechni_Punkt" Type="ntext" />
+          <Property Name="Voditel" Type="ntext" />
+          <Property Name="Model_Avtobusa" Type="ntext" />
+          <Property Name="Vremya_Proezda" Type="ntext" />
+        </EntityType>
+        <EntityContainer Name="KursovayaAvtoparkAvtobusovModelStoreContainer">
+          <EntitySet Name="Marshuti" EntityType="Self.Marshuti" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KursovayaAvtoparkAvtobusovModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityType Name="Marshuti">
+          <Key>
+            <PropertyRef Name="Nomer_Marshuta" />
+          </Key>
+          <Property Name="Nomer_Marshuta" Type="Int64" Nullable="false" />
+          <Property Name="Nachalni_Punkt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Konechni_Punkt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Voditel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Model_Avtobusa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Vremya_Proezda" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="KursovayaAvtoparkAvtobusovEntities">
+          <EntitySet Name="Marshutis" EntityType="Self.Marshuti" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KursovayaAvtoparkAvtobusovModelStoreContainer" CdmEntityContainer="KursovayaAvtoparkAvtobusovEntities">
+          <EntitySetMapping Name="Marshutis">
+            <EntityTypeMapping TypeName="KursovayaAvtoparkAvtobusovModel.Marshuti">
+              <MappingFragment StoreEntitySet="Marshuti">
+                <ScalarProperty Name="Nomer_Marshuta" ColumnName="Nomer_Marshuta" />
+                <ScalarProperty Name="Nachalni_Punkt" ColumnName="Nachalni_Punkt" />
+                <ScalarProperty Name="Konechni_Punkt" ColumnName="Konechni_Punkt" />
+                <ScalarProperty Name="Voditel" ColumnName="Voditel" />
+                <ScalarProperty Name="Model_Avtobusa" ColumnName="Model_Avtobusa" />
+                <ScalarProperty Name="Vremya_Proezda" ColumnName="Vremya_Proezda" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams />
+  </Designer>
+</edmx:Edmx>

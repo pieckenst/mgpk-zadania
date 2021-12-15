@@ -1,0 +1,23 @@
+﻿<Window x:Name="AboutSoft" x:Class="KursovayaAvtoparkAvtobusov.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KursovayaAvtoparkAvtobusov"
+        mc:Ignorable="d"
+        Title="О программе" Height="422" Width="264">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="136" Margin="55,20,0,0" VerticalAlignment="Top" Width="145" Source="/по-455.png" Grid.ColumnSpan="2" Stretch="UniformToFill"/>
+        <Label Content="Сделанно в 2021 году для курсовой" HorizontalAlignment="Left" Margin="17,185,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="221"/>
+        <Label Content="по теме &lt;&lt;Автопарк Автобусов&gt;&gt;" HorizontalAlignment="Left" Margin="17,211,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="202"/>
+        <Label Content="Учебная группа" HorizontalAlignment="Left" Margin="17,237,0,0" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
+        <Label Content="ПО-455" HorizontalAlignment="Left" Margin="17,263,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="76"/>
+        <Label Content="Учащийся" HorizontalAlignment="Left" Margin="18,284,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="75"/>
+        <Label Content="Савич Андрей Олегович" HorizontalAlignment="Left" Margin="19,310,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="175"/>
+
+    </Grid>
+</Window>
