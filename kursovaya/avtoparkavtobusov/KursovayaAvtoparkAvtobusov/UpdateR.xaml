@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KursovayaAvtoparkAvtobusov"
         mc:Ignorable="d"
-        Title="Обновление данных в БД" Height="380" Width="700">
+        Title="Обновление данных в БД" Height="699" Width="728">
     <Grid>
         <Label x:Name="lab1" Content="Num" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lab2" Content="Sale_Date" HorizontalAlignment="Left" Margin="12,63,0,0" VerticalAlignment="Top"/>
@@ -29,8 +29,23 @@
         <Label x:Name="lb5" Content="Model_Avtobusa" HorizontalAlignment="Left" Margin="375,159,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Editor6" HorizontalAlignment="Left" Margin="479,205,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
         <Label x:Name="lb6" Content="Vremya_Proezda" HorizontalAlignment="Left" Margin="376,201,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="SaleUpdateDB" Content="Обновить Данные о продажах" HorizontalAlignment="Left" Margin="12,232,0,0" VerticalAlignment="Top" Width="199" Height="43" Click="SaleUpdateDB_Click"/>
-        <Button x:Name="UpdateTransportTable" Content="Обновить Данные о Маршутах" HorizontalAlignment="Left" Margin="377,231,0,0" VerticalAlignment="Top" Height="44" Width="199" Click="UpdateTransportTable_Click"/>
+        <Button x:Name="SaleUpdateDB" Content="Обновить Данные о продажах" HorizontalAlignment="Left" Margin="12,231,0,0" VerticalAlignment="Top" Width="274" Height="44" Click="SaleUpdateDB_Click"/>
+        <Button x:Name="UpdateTransportTable" Content="Обновить Данные о Маршутах" HorizontalAlignment="Left" Margin="377,231,0,0" VerticalAlignment="Top" Height="44" Width="292" Click="UpdateTransportTable_Click"/>
+        <Label x:Name="Labos1" Content="Num" HorizontalAlignment="Left" Margin="6,365,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="AvEditor1" HorizontalAlignment="Left" Margin="130,373,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="AvEditor2" HorizontalAlignment="Left" Margin="130,418,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="AvEditor3" HorizontalAlignment="Left" Margin="130,457,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="AvEditor4" HorizontalAlignment="Left" Margin="130,490,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="AvEditor5" HorizontalAlignment="Left" Margin="130,524,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="AvEditor6" HorizontalAlignment="Left" Margin="130,558,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="AvEditor7" HorizontalAlignment="Left" Margin="130,590,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <Label x:Name="Labos2" Content="Model_Avtobusa" HorizontalAlignment="Left" Margin="6,414,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Labos3" Content="Data_Poslednego_Obsluzhivania" HorizontalAlignment="Left" Margin="6,456,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label x:Name="Labos4" Content="Ingener_Obsluzhivania" HorizontalAlignment="Left" Margin="6,486,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Labos5" Content="Problemi_Avtobusa" HorizontalAlignment="Left" Margin="7,520,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Labos6" Content="Data_Sledueschego_Obsluzivania" HorizontalAlignment="Left" Margin="7,558,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label x:Name="Labos7" Content="Goden_K_Doroge" HorizontalAlignment="Left" Margin="7,586,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="UpdateMaintenaceTable" Content="Обновить данные о обслуживании автобусов" HorizontalAlignment="Left" Margin="11,617,0,0" VerticalAlignment="Top" Height="43" Width="275" Click="UpdateMaintenaceTable_Click"/>
 
     </Grid>
 </Window>

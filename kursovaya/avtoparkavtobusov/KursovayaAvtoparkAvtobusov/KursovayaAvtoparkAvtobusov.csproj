@@ -79,6 +79,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TexObslugWindow.xaml.cs">
+      <DependentUpon>TexObslugWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UpdateR.xaml.cs">
       <DependentUpon>UpdateR.xaml</DependentUpon>
     </Compile>
@@ -107,6 +110,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TexObslugWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UpdateR.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

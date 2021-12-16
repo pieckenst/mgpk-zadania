@@ -29,3 +29,5 @@ C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtopark
 C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.baml
 C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.g.cs
 C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.baml
+C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.g.cs
+C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.baml

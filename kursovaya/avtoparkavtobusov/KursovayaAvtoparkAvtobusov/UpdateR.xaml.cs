@@ -67,5 +67,27 @@ namespace KursovayaAvtoparkAvtobusov
             Console.WriteLine("Connection established and the table updated!");
             cnn.Close();
         }
+
+        private void UpdateMaintenaceTable_Click(object sender, RoutedEventArgs e)
+        {
+            SqlConnection cnn;
+            string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+
+            cnn = new SqlConnection(conStr);
+            cnn.Open();
+            Console.Write("OPENING DB CONNECTION!!! \n");
+            var select = "UPDATE Maintenance SET Model_Avtobusa=@a1,Data_Poslednego_Obsluzhivania=@a2,Ingener_Obsluzhivania=@a3,Problemi_Avtobusa=@a4,Data_Sledueschego_Obsluzivania=@a5,Goden_K_Doroge=@a6 WHERE Num=@a7";
+            var commandBuilder = new SqlCommand(select, cnn);
+            commandBuilder.Parameters.AddWithValue("a1", AvEditor2.Text);
+            commandBuilder.Parameters.AddWithValue("a2", AvEditor3.Text);
+            commandBuilder.Parameters.AddWithValue("a3", AvEditor4.Text);
+            commandBuilder.Parameters.AddWithValue("a4", AvEditor5.Text);
+            commandBuilder.Parameters.AddWithValue("a5", AvEditor6.Text);
+            commandBuilder.Parameters.AddWithValue("a6", AvEditor7.Text);
+            commandBuilder.Parameters.AddWithValue("a7", int.Parse(AvEditor1.Text));
+            commandBuilder.ExecuteNonQuery();
+            Console.WriteLine("Connection established and the table updated!");
+            cnn.Close();
+        }
     }
 }

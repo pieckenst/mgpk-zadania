@@ -1,0 +1,33 @@
+﻿<Window x:Name="TexObsluzhivanie" x:Class="KursovayaAvtoparkAvtobusov.TexObslugWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KursovayaAvtoparkAvtobusov"
+        mc:Ignorable="d"
+        Title="Обслуживание транспорта" Height="450" Width="814">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="89*"/>
+            <ColumnDefinition Width="711*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dataGrid1" Margin="10,43,326,61" Grid.ColumnSpan="2" />
+        <Button x:Name="XdbSend" Content="Отправить данные в БД" HorizontalAlignment="Left" Margin="463,345,0,0" VerticalAlignment="Top" Height="74" Width="242" Click="Button_Click" Grid.Column="1"/>
+        <Button x:Name="UpdateGrid" Content="Обновить DataGrid" HorizontalAlignment="Left" Margin="10,387,0,0" VerticalAlignment="Top" Width="138" Click="UpdateGrid_Click" Grid.ColumnSpan="2"/>
+        <Label x:Name="Labos1" Content="Num" HorizontalAlignment="Left" Margin="417,35,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="AvEditor1" HorizontalAlignment="Left" Margin="541,43,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156" Grid.Column="1"/>
+        <TextBox x:Name="AvEditor2" HorizontalAlignment="Left" Margin="541,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156" Grid.Column="1"/>
+        <TextBox x:Name="AvEditor3" HorizontalAlignment="Left" Margin="541,127,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156" Grid.Column="1"/>
+        <TextBox x:Name="AvEditor4" HorizontalAlignment="Left" Margin="541,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156" Grid.Column="1"/>
+        <TextBox x:Name="AvEditor5" HorizontalAlignment="Left" Margin="541,194,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156" Grid.Column="1"/>
+        <TextBox x:Name="AvEditor6" HorizontalAlignment="Left" Margin="541,228,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156" Grid.Column="1"/>
+        <TextBox x:Name="AvEditor7" HorizontalAlignment="Left" Margin="541,260,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156" Grid.Column="1"/>
+        <Label x:Name="Labos2" Content="Model_Avtobusa" HorizontalAlignment="Left" Margin="417,84,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="Labos3" Content="Data_Poslednego_Obsluzhivania" HorizontalAlignment="Left" Margin="417,126,0,0" VerticalAlignment="Top" FontSize="8" Grid.Column="1"/>
+        <Label x:Name="Labos4" Content="Ingener_Obsluzhivania" HorizontalAlignment="Left" Margin="417,156,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="Labos5" Content="Problemi_Avtobusa" HorizontalAlignment="Left" Margin="418,190,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="Labos6" Content="Data_Sledueschego_Obsluzivania" HorizontalAlignment="Left" Margin="418,228,0,0" VerticalAlignment="Top" FontSize="8" Grid.Column="1"/>
+        <Label x:Name="Labos7" Content="Goden_K_Doroge" HorizontalAlignment="Left" Margin="418,256,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+
+    </Grid>
+</Window>

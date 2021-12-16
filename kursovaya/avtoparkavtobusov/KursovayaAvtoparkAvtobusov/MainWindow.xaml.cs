@@ -84,5 +84,11 @@ namespace KursovayaAvtoparkAvtobusov
             Window4 wndxXx = new Window4();
             wndxXx.Show();
         }
+
+        private void ObslugAvtobusov_Click(object sender, RoutedEventArgs e)
+        {
+            TexObslugWindow wndxXxx = new TexObslugWindow();
+            wndxXxx.Show();
+        }
     }
 }

@@ -17,6 +17,7 @@
                 <MenuItem x:Name="ProdBiletovMenu" Header="Продажа билетов" Click="ProdBiletovMenu_Click"/>
                 <MenuItem x:Name="UpdateDataInfo" Header="Обновление информациии" Click="UpdateDataInfo_Click"/>
                 <MenuItem x:Name="DeleteMenu" Header="Удаление данных" Click="DeleteMenu_Click"/>
+                <MenuItem x:Name="ObslugAvtobusov" Header="Техническое обслуживание автобусов" Click="ObslugAvtobusov_Click"/>
             </MenuItem>
             <MenuItem x:Name="InfoMenu" Header="Информация">
                 <MenuItem x:Name="AboutAutobus" Header="О программе" Click="AboutAutobus_Click"/>
