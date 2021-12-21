@@ -1,0 +1,28 @@
+﻿<Page
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    x:Class="UWPKursovayaAvtobus.Nav_salers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPKursovayaAvtobus"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <controls:DataGrid x:Name="dataGrid1" Margin="10,292,10,35" SelectionMode="Single" AutoGenerateColumns="False" GridLinesVisibility="All" AutomationProperties.LandmarkType="Form" Loaded="dataGrid1_Loaded" />
+        <Button x:Name="UpdateTable" Content="Обновить Данные" Margin="10,234,0,0" VerticalAlignment="Top" Height="38" Width="292" Click="UpdateTable_Click"/>
+        <Button x:Name="ClickSendDb" Content="Отправить данные в БД" Margin="10,192,0,0" VerticalAlignment="Top" Width="292" Height="37" Click="ClickSendDb_Click"/>
+        <TextBlock x:Name="lab1" Text="Num" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lab2" Text="Sale_Date" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lab3" Text="Nomer_Avtobusa" HorizontalAlignment="Left" Margin="174,11,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lab4" Text="Punkt_Posadki" HorizontalAlignment="Left" Margin="174,72,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lab5" Text="Stoimost" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.263,-0.153"/>
+        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="10,35,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="10,96,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="174,35,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="174,96,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="10,149,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+
+    </Grid>
+</Page>

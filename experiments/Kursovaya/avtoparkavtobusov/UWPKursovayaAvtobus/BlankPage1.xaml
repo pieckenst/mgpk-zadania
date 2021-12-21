@@ -1,0 +1,30 @@
+﻿<Page
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    x:Class="UWPKursovayaAvtobus.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPKursovayaAvtobus"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <controls:DataGrid x:Name="dataGrid1" Margin="10,373,10,35" SelectionMode="Single" AutoGenerateColumns="False" GridLinesVisibility="All" AutomationProperties.LandmarkType="Form" Loaded="dataGrid1_Loaded" />
+        <TextBlock x:Name="lb1" Text="Nomer_Marshuta" HorizontalAlignment="Left" Margin="17,10,0,0" VerticalAlignment="Top" Width="109"/>
+        <TextBlock x:Name="Lb2" Text="Nachalni_Punkt" HorizontalAlignment="Left" Margin="17,67,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lb3" Text="Konechni_Punkt" HorizontalAlignment="Left" Margin="16,115,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lb4" Text="Voditel" HorizontalAlignment="Left" Margin="16,174,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lb5" Text="Model_Avtobusa" HorizontalAlignment="Left" Margin="16,232,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lb6" Text="Vremya_Proezda" HorizontalAlignment="Left" Margin="17,285,0,0" VerticalAlignment="Top" Foreground="{ThemeResource DefaultTextForegroundThemeBrush}"/>
+
+        <TextBox x:Name="Editor1" HorizontalAlignment="Left" Margin="17,33,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="Editor2" HorizontalAlignment="Left" Margin="17,83,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="Editor3" HorizontalAlignment="Left" Margin="17,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="Editor4" HorizontalAlignment="Left" Margin="16,200,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="Editor5" HorizontalAlignment="Left" Margin="16,253,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="Editor6" HorizontalAlignment="Left" Margin="16,307,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <Button x:Name="UpdateTransportTable" Content="Обновить Данные" Margin="212,83,0,0" VerticalAlignment="Top" Height="38" Width="187" Click="UpdateTransportTable_Click"/>
+        <Button x:Name="ClickSendDb" Content="Отправить данные в БД" Margin="212,24,0,0" VerticalAlignment="Top" Width="187" Height="37" Click="ClickSendDb_Click"/>
+    </Grid>
+</Page>

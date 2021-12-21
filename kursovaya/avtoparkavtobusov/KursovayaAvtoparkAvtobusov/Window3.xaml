@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KursovayaAvtoparkAvtobusov"
         mc:Ignorable="d"
-        Title="Продажа билетов" Height="450" Width="800">
+        Title="Продажа билетов" Height="450" Width="800"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="71*"/>
@@ -18,13 +20,13 @@
         <Label x:Name="lab3" Grid.Column="2" Content="Nomer_Avtobusa" HorizontalAlignment="Left" Margin="428,142,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lab4" Grid.Column="2" Content="Punkt_Posadki" HorizontalAlignment="Left" Margin="428,199,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lab5" Grid.Column="2" Content="Stoimost" HorizontalAlignment="Left" Margin="428,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.263,-0.153"/>
-        <TextBox x:Name="Edit1" Grid.Column="2" HorizontalAlignment="Left" Margin="481,47,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="Edit2" Grid.Column="2" HorizontalAlignment="Left" Margin="503,99,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="Edit3" Grid.Column="2" HorizontalAlignment="Left" Margin="529,146,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="Edit4" Grid.Column="2" HorizontalAlignment="Left" Margin="514,203,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="Edit5" Grid.Column="2" HorizontalAlignment="Left" Margin="514,257,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="Edit1" Grid.Column="2" HorizontalAlignment="Left" Margin="534,39,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="Edit2" Grid.Column="2" HorizontalAlignment="Left" Margin="534,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="Edit3" Grid.Column="2" HorizontalAlignment="Left" Margin="534,135,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="Edit4" Grid.Column="2" HorizontalAlignment="Left" Margin="534,192,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="Edit5" Grid.Column="2" HorizontalAlignment="Left" Margin="534,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
         <Button Grid.Column="2" Content="Отправить данные в БД" HorizontalAlignment="Left" Margin="428,315,0,0" VerticalAlignment="Top" Height="74" Width="242" Click="Button_Click"/>
-        <Button x:Name="UpdateGrid" Content="Обновить DataGrid" HorizontalAlignment="Left" Margin="10,387,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="138" Click="UpdateGrid_Click"/>
+        <Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="10,387,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="154" Click="UpdateGrid_Click"/>
 
     </Grid>
 </Window>

@@ -90,5 +90,11 @@ namespace KursovayaAvtoparkAvtobusov
             TexObslugWindow wndxXxx = new TexObslugWindow();
             wndxXxx.Show();
         }
+
+        private void EmpMenu_Click(object sender, RoutedEventArgs e)
+        {
+            EmpRecord wndxXxxx = new EmpRecord();
+            wndxXxxx.Show();
+        }
     }
 }

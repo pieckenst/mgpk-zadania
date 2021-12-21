@@ -5,15 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KursovayaAvtoparkAvtobusov"
         mc:Ignorable="d"
-        Title="О программе" Height="422" Width="264">
+        Title="О программе" Height="422" Width="264"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="27*"/>
             <ColumnDefinition Width="73*"/>
         </Grid.ColumnDefinitions>
         <Image HorizontalAlignment="Left" Height="136" Margin="55,20,0,0" VerticalAlignment="Top" Width="145" Source="/по-455.png" Grid.ColumnSpan="2" Stretch="UniformToFill"/>
-        <Label Content="Сделанно в 2021 году для курсовой" HorizontalAlignment="Left" Margin="17,185,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="221"/>
-        <Label Content="по теме &lt;&lt;Автопарк Автобусов&gt;&gt;" HorizontalAlignment="Left" Margin="17,211,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="202"/>
+        <Label Content="Сделанно в 2021 году для курсовой" HorizontalAlignment="Left" Margin="17,185,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="237"/>
+        <Label Content="по теме &lt;&lt;Автопарк Автобусов&gt;&gt;" HorizontalAlignment="Left" Margin="17,211,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="237"/>
         <Label Content="Учебная группа" HorizontalAlignment="Left" Margin="17,237,0,0" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
         <Label Content="ПО-455" HorizontalAlignment="Left" Margin="17,263,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="76"/>
         <Label Content="Учащийся" HorizontalAlignment="Left" Margin="18,284,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="75"/>

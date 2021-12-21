@@ -5,19 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KursovayaAvtoparkAvtobusov"
         mc:Ignorable="d"
-        Title="Автопарк автобусов" Height="537" Width="812" WindowStyle="ThreeDBorderWindow">
+        Title="Автопарк автобусов" Height="537" Width="812" 
+        WindowStyle="ThreeDBorderWindow"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
         <Menu x:Name="ProgramMenu" Margin="0,0,0,472" RenderTransformOrigin="0.415,2.122">
             <MenuItem x:Name="FileMenu" Header="             Файл" Height="31" Width="125">
                 <MenuItem x:Name="ConnectDb" Header="Подключится к базе данных" Click="ConnectDb_Click"/>
                 <Separator/>
             </MenuItem>
-            <MenuItem x:Name="EditorMenu" Header="Редактирование данных">
+            <MenuItem x:Name="EditorMenu" Header="Работа с данными">
                 <MenuItem x:Name="OpenEditor" Header="Добавить информацию о автобусе" Click="OpenEditor_Click"/>
                 <MenuItem x:Name="ProdBiletovMenu" Header="Продажа билетов" Click="ProdBiletovMenu_Click"/>
                 <MenuItem x:Name="UpdateDataInfo" Header="Обновление информациии" Click="UpdateDataInfo_Click"/>
                 <MenuItem x:Name="DeleteMenu" Header="Удаление данных" Click="DeleteMenu_Click"/>
                 <MenuItem x:Name="ObslugAvtobusov" Header="Техническое обслуживание автобусов" Click="ObslugAvtobusov_Click"/>
+                <MenuItem x:Name="EmpMenu" Header="Информация о сотрудниках" Click="EmpMenu_Click"/>
             </MenuItem>
             <MenuItem x:Name="InfoMenu" Header="Информация">
                 <MenuItem x:Name="AboutAutobus" Header="О программе" Click="AboutAutobus_Click"/>

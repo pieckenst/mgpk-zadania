@@ -5,21 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KursovayaAvtoparkAvtobusov"
         mc:Ignorable="d"
-        Title="Редактор данных" Height="274" Width="522">
+        Title="Редактор данных" Height="274" Width="522"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
-        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="112,34,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
-        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="112,67,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="116,23,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="116,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
         <Label x:Name="lb1" Content="Nomer_Marshuta" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Lb2" Content="Nachalni_Punkt" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="112,96,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
-        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="112,126,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
-        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="112,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
-        <Label x:Name="lb3" Content="Konechni_Punkt" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lb4" Content="Voditel" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lb5" Content="Model_Avtobusa" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Edit6" HorizontalAlignment="Left" Margin="112,205,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
-        <Label x:Name="lb6" Content="Vremya_Proezda" HorizontalAlignment="Left" Margin="10,201,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="ClickSendDb" Content="Отправить данные в БД" HorizontalAlignment="Left" Margin="345,84,0,0" VerticalAlignment="Top" Height="50" Width="160" Click="Button_Click"/>
+        <Label x:Name="Lb2" Content="Nachalni_Punkt" HorizontalAlignment="Left" Margin="13,67,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="116,94,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="116,132,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="116,169,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <Label x:Name="lb3" Content="Konechni_Punkt" HorizontalAlignment="Left" Margin="12,100,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lb4" Content="Voditel" HorizontalAlignment="Left" Margin="13,139,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lb5" Content="Model_Avtobusa" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Edit6" HorizontalAlignment="Left" Margin="116,210,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <Label x:Name="lb6" Content="Vremya_Proezda" HorizontalAlignment="Left" Margin="8,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345"/>
+        <Button x:Name="ClickSendDb" Content="Отправить данные в БД" Margin="328,84,0,0" VerticalAlignment="Top" Height="50" Width="177" Click="Button_Click"/>
 
     </Grid>
 </Window>

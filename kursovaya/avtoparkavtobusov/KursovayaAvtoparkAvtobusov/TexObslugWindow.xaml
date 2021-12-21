@@ -5,15 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KursovayaAvtoparkAvtobusov"
         mc:Ignorable="d"
-        Title="Обслуживание транспорта" Height="450" Width="814">
+        Title="Обслуживание транспорта" Height="450" Width="814"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="89*"/>
             <ColumnDefinition Width="711*"/>
         </Grid.ColumnDefinitions>
         <DataGrid x:Name="dataGrid1" Margin="10,43,326,61" Grid.ColumnSpan="2" />
-        <Button x:Name="XdbSend" Content="Отправить данные в БД" HorizontalAlignment="Left" Margin="463,345,0,0" VerticalAlignment="Top" Height="74" Width="242" Click="Button_Click" Grid.Column="1"/>
-        <Button x:Name="UpdateGrid" Content="Обновить DataGrid" HorizontalAlignment="Left" Margin="10,387,0,0" VerticalAlignment="Top" Width="138" Click="UpdateGrid_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="XdbSend" Content="Отправить данные в БД" Margin="452,345,0,0" VerticalAlignment="Top" Height="74" Width="253" Click="Button_Click" Grid.Column="1"/>
+        <Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="10,387,0,0" VerticalAlignment="Top" Width="156" Click="UpdateGrid_Click" Grid.ColumnSpan="2"/>
         <Label x:Name="Labos1" Content="Num" HorizontalAlignment="Left" Margin="417,35,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <TextBox x:Name="AvEditor1" HorizontalAlignment="Left" Margin="541,43,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156" Grid.Column="1"/>
         <TextBox x:Name="AvEditor2" HorizontalAlignment="Left" Margin="541,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156" Grid.Column="1"/>
