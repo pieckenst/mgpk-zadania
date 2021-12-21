@@ -29,7 +29,7 @@
             </Fluent:Ribbon.Menu>
 
             <!-- Tabs -->
-            <Fluent:RibbonTabItem Header="Начало">
+            <Fluent:RibbonTabItem Header="Начало" Margin="6,0,55,1" ActiveTabBackground="{x:Null}" ActiveTabBorderBrush="{x:Null}">
                 <Fluent:RibbonGroupBox Header="Функцуионал" Fluent:RibbonProperties.IconSize="Medium" Margin="0,-8,0,0">
                     <Fluent:Button x:Name="ConnectDb"
                         
