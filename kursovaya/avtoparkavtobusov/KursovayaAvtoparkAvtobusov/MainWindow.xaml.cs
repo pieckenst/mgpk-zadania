@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModernWpf;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -95,6 +96,68 @@ namespace KursovayaAvtoparkAvtobusov
         {
             EmpRecord wndxXxxx = new EmpRecord();
             wndxXxxx.Show();
+        }
+
+        private void Ribbon_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (ThemeManager.Current.ActualApplicationTheme == ApplicationTheme.Dark)
+            {
+                ThemeManager.Current.ApplicationTheme = ApplicationTheme.Dark;
+                ControlzEx.Theming.ThemeManager.Current.ChangeThemeBaseColor(Application.Current, "Dark");
+            }
+            else
+            {
+                ThemeManager.Current.ApplicationTheme = ApplicationTheme.Light;
+                ControlzEx.Theming.ThemeManager.Current.ChangeThemeBaseColor(Application.Current, "Light");
+            }
+        }
+
+        private void exiter_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void UpdateTransportTable_Click(object sender, RoutedEventArgs e)
+        {
+            SqlConnection cnn;
+            string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+
+            cnn = new SqlConnection(conStr);
+            cnn.Open();
+            Console.Write("OPENING DB CONNECTION!!! \n");
+            var select = "UPDATE Marshuti SET Nachalni_Punkt=@a1,Konechni_Punkt=@a2,Voditel=@a3,Model_Avtobusa=@a4,Vremya_Proezda=@a5 WHERE Nomer_Marshuta=@a6";
+            var commandBuilder = new SqlCommand(select, cnn);
+            commandBuilder.Parameters.AddWithValue("a1", Editor2.Text);
+            commandBuilder.Parameters.AddWithValue("a2", Editor3.Text);
+            commandBuilder.Parameters.AddWithValue("a3", Editor4.Text);
+            commandBuilder.Parameters.AddWithValue("a4", Editor5.Text);
+            commandBuilder.Parameters.AddWithValue("a5", Editor6.Text);
+            commandBuilder.Parameters.AddWithValue("a6", int.Parse(Editor1.Text));
+            commandBuilder.ExecuteNonQuery();
+            Console.WriteLine("Connection established and the table updated!");
+            cnn.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string NomeMarshuta = Editor1.Text;
+            string NachalnPunkt = Editor2.Text;
+            string KonechnPunkt = Editor3.Text;
+            string Vodit = Editor4.Text;
+            string Modelvtobusa = Editor5.Text;
+            string VremProezda = Editor6.Text;
+            string query = "INSERT INTO Marshuti(Nomer_Marshuta, Nachalni_Punkt, Konechni_Punkt, Voditel,Model_Avtobusa,Vremya_Proezda) " +
+               "Values('" + NomeMarshuta + "', '" + NachalnPunkt + "', '" + KonechnPunkt + "', '" + Vodit + "','" + Modelvtobusa + "', '" + VremProezda + "')";
+            SqlConnection cnn;
+            string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+
+            cnn = new SqlConnection(conStr);
+            cnn.Open();
+            SqlCommand command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            Console.WriteLine("Data inserted!\n Closing connection ");
+            cnn.Close();
+            Console.WriteLine("Connection has been closed , database ready for next operation!");
         }
     }
 }

@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
+      "ControlzEx/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.31"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {}
+        }
+      },
       "EntityFramework/6.4.4": {
         "type": "package",
         "frameworkAssemblies": [
@@ -18,6 +34,23 @@
         "build": {
           "buildTransitive/EntityFramework.props": {},
           "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "Fluent.Ribbon/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[5.0.1, 6.0.0)"
+        },
+        "frameworkAssemblies": [
+          "UIAutomationProvider",
+          "UIAutomationTypes",
+          "WindowsFormsIntegration"
+        ],
+        "compile": {
+          "lib/net462/Fluent.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Fluent.dll": {}
         }
       },
       "Microsoft.Windows.SDK.Contracts/10.0.18362.2005": {
@@ -116,6 +149,24 @@
         "build": {
           "build/Microsoft.Windows.SDK.Contracts.props": {},
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Core",
+          "System.XML",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
         }
       },
       "ModernWpfUI/0.9.4": {
@@ -575,6 +626,22 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
+      "ControlzEx/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.31"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {}
+        }
+      },
       "EntityFramework/6.4.4": {
         "type": "package",
         "frameworkAssemblies": [
@@ -591,6 +658,23 @@
         "build": {
           "buildTransitive/EntityFramework.props": {},
           "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "Fluent.Ribbon/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[5.0.1, 6.0.0)"
+        },
+        "frameworkAssemblies": [
+          "UIAutomationProvider",
+          "UIAutomationTypes",
+          "WindowsFormsIntegration"
+        ],
+        "compile": {
+          "lib/net462/Fluent.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Fluent.dll": {}
         }
       },
       "Microsoft.Windows.SDK.Contracts/10.0.18362.2005": {
@@ -689,6 +773,24 @@
         "build": {
           "build/Microsoft.Windows.SDK.Contracts.props": {},
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Core",
+          "System.XML",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
         }
       },
       "ModernWpfUI/0.9.4": {
@@ -1148,6 +1250,22 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x64": {
+      "ControlzEx/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.31"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {}
+        }
+      },
       "EntityFramework/6.4.4": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1164,6 +1282,23 @@
         "build": {
           "buildTransitive/EntityFramework.props": {},
           "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "Fluent.Ribbon/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[5.0.1, 6.0.0)"
+        },
+        "frameworkAssemblies": [
+          "UIAutomationProvider",
+          "UIAutomationTypes",
+          "WindowsFormsIntegration"
+        ],
+        "compile": {
+          "lib/net462/Fluent.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Fluent.dll": {}
         }
       },
       "Microsoft.Windows.SDK.Contracts/10.0.18362.2005": {
@@ -1262,6 +1397,24 @@
         "build": {
           "build/Microsoft.Windows.SDK.Contracts.props": {},
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Core",
+          "System.XML",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
         }
       },
       "ModernWpfUI/0.9.4": {
@@ -1721,6 +1874,22 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
+      "ControlzEx/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.31"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {}
+        }
+      },
       "EntityFramework/6.4.4": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1737,6 +1906,23 @@
         "build": {
           "buildTransitive/EntityFramework.props": {},
           "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "Fluent.Ribbon/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[5.0.1, 6.0.0)"
+        },
+        "frameworkAssemblies": [
+          "UIAutomationProvider",
+          "UIAutomationTypes",
+          "WindowsFormsIntegration"
+        ],
+        "compile": {
+          "lib/net462/Fluent.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Fluent.dll": {}
         }
       },
       "Microsoft.Windows.SDK.Contracts/10.0.18362.2005": {
@@ -1835,6 +2021,24 @@
         "build": {
           "build/Microsoft.Windows.SDK.Contracts.props": {},
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Core",
+          "System.XML",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
         }
       },
       "ModernWpfUI/0.9.4": {
@@ -2295,6 +2499,30 @@
     }
   },
   "libraries": {
+    "ControlzEx/5.0.1": {
+      "sha512": "DVJJmmnKXcVh3Bs2gKpAdPCT8HrkYTagSbFg0P9xHjp8dox9bKeaoVj9VGhPRzP9+LHs5MUXxN07/oGqeXNNcg==",
+      "type": "package",
+      "path": "controlzex/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "controlzex.5.0.1.nupkg.sha512",
+        "controlzex.nuspec",
+        "lib/net452/ControlzEx.dll",
+        "lib/net452/ControlzEx.pdb",
+        "lib/net452/ControlzEx.xml",
+        "lib/net462/ControlzEx.dll",
+        "lib/net462/ControlzEx.pdb",
+        "lib/net462/ControlzEx.xml",
+        "lib/net5.0-windows7.0/ControlzEx.dll",
+        "lib/net5.0-windows7.0/ControlzEx.pdb",
+        "lib/net5.0-windows7.0/ControlzEx.xml",
+        "lib/netcoreapp3.1/ControlzEx.dll",
+        "lib/netcoreapp3.1/ControlzEx.pdb",
+        "lib/netcoreapp3.1/ControlzEx.xml",
+        "logo-mini.png"
+      ]
+    },
     "EntityFramework/6.4.4": {
       "sha512": "yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
       "type": "package",
@@ -2350,6 +2578,31 @@
         "tools/netcoreapp3.0/any/ef6.dll",
         "tools/netcoreapp3.0/any/ef6.pdb",
         "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
+      ]
+    },
+    "Fluent.Ribbon/9.0.0": {
+      "sha512": "29N3G7EM1WFgNofj4wEaufFaB8Iakjn/CZskq3kHKR93myxJ2iV0k6xLH3rhg9l/QATboPExV0WONT/ZfQcOVg==",
+      "type": "package",
+      "path": "fluent.ribbon/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.png",
+        "fluent.ribbon.9.0.0.nupkg.sha512",
+        "fluent.ribbon.nuspec",
+        "lib/net452/Fluent.dll",
+        "lib/net452/Fluent.pdb",
+        "lib/net452/Fluent.xml",
+        "lib/net462/Fluent.dll",
+        "lib/net462/Fluent.pdb",
+        "lib/net462/Fluent.xml",
+        "lib/net5.0-windows7.0/Fluent.dll",
+        "lib/net5.0-windows7.0/Fluent.pdb",
+        "lib/net5.0-windows7.0/Fluent.xml",
+        "lib/netcoreapp3.1/Fluent.dll",
+        "lib/netcoreapp3.1/Fluent.pdb",
+        "lib/netcoreapp3.1/Fluent.xml",
+        "license/License.txt"
       ]
     },
     "Microsoft.Windows.SDK.Contracts/10.0.18362.2005": {
@@ -2521,6 +2774,31 @@
         "ref/netstandard2.0/en/Windows.UI.Xaml.Core.Direct.XamlDirectContract.xml",
         "ref/netstandard2.0/en/Windows.UI.Xaml.Hosting.HostingContract.xml",
         "ref/netstandard2.0/en/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.xml"
+      ]
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+      "sha512": "LZpuf82ACZWldmfMuv3CTUMDh3o0xo0uHUaybR5HgqVLDBJJ9RZLykplQ/bTJd0/VDt3EhD4iDgUgbdIUAM+Kg==",
+      "type": "package",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.31",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Design/Microsoft.Xaml.Behaviors.Design.dll",
+        "lib/net45/Microsoft.Xaml.Behaviors.dll",
+        "lib/net45/Microsoft.Xaml.Behaviors.pdb",
+        "lib/net45/Microsoft.Xaml.Behaviors.xml",
+        "lib/net5.0-windows7.0/Design/Microsoft.Xaml.Behaviors.DesignTools.dll",
+        "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll",
+        "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.pdb",
+        "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.xml",
+        "lib/netcoreapp3.1/Design/Microsoft.Xaml.Behaviors.DesignTools.dll",
+        "lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.dll",
+        "lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.pdb",
+        "lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.xml",
+        "microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+        "microsoft.xaml.behaviors.wpf.nuspec",
+        "tools/Install.ps1"
       ]
     },
     "ModernWpfUI/0.9.4": {
@@ -3276,6 +3554,7 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
       "EntityFramework >= 6.4.4",
+      "Fluent.Ribbon >= 9.0.0",
       "Microsoft.Windows.SDK.Contracts >= 10.0.18362.2005",
       "ModernWpfUI >= 0.9.4",
       "System.Runtime.WindowsRuntime >= 4.6.0",
@@ -3324,6 +3603,10 @@
           "EntityFramework": {
             "target": "Package",
             "version": "[6.4.4, )"
+          },
+          "Fluent.Ribbon": {
+            "target": "Package",
+            "version": "[9.0.0, )"
           },
           "Microsoft.Windows.SDK.Contracts": {
             "target": "Package",

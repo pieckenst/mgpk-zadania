@@ -5,22 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KursovayaAvtoparkAvtobusov"
         mc:Ignorable="d"
-        Title="Window4" Height="193" Width="371" WindowStyle="None"
+        Title="Удаление данных из БД" Height="209" Width="371" WindowStyle="ThreeDBorderWindow"
         xmlns:ui="http://schemas.modernwpf.com/2019"
-        ui:WindowHelper.UseModernWindowStyle="True">
+        ui:WindowHelper.UseModernWindowStyle="True" WindowState="Normal">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle HorizontalAlignment="Center" Height="27" Stroke="Black" VerticalAlignment="Top" Width="414" Fill="Black" MouseDown="Rectangle_MouseDown" Margin="0,-1,0,0"/>
-        <Label Content="УДАЛЕНИЕ ДАННЫХ ИЗ БД" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" Height="26" Width="183"/>
-        <Button x:Name="deletedbdata" Content="УДАЛИТЬ ИЗ ТАБЛИЦЫ" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Height="29" Width="173" Click="deletedbdata_Click"/>
-        <Label Content="КЛЮЧ" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26" Width="45" RenderTransformOrigin="0.481,0.218" Margin="0,92,0,0"/>
-        <TextBox x:Name="keybox" HorizontalAlignment="Center" Margin="0,120,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="230" Height="26"/>
-        <TextBox x:Name="TableName" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="230" Height="26" Margin="0,61,0,0"/>
-        <Label Content="ТАБЛИЦА" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Height="26" Width="65"/>
-        <Button x:Name="closer" Content="ЗАКРЫТЬ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" FontSize="7" Width="50" Click="closer_Click" Margin="311,3,0,0"/>
+        <Button x:Name="deletedbdata" Content="УДАЛИТЬ ИЗ ТАБЛИЦЫ" HorizontalAlignment="Center" Margin="0,138,0,0" VerticalAlignment="Top" Height="29" Width="173" Click="deletedbdata_Click" RenderTransformOrigin="0.522,-2.704"/>
+        <Label Content="КЛЮЧ" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26" Width="45" RenderTransformOrigin="0.481,0.218" Margin="0,70,0,0"/>
+        <TextBox x:Name="keybox" HorizontalAlignment="Center" Margin="0,98,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="229" Height="26"/>
+        <TextBox x:Name="TableName" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="229" Height="26" Margin="0,39,0,0"/>
+        <Label Content="ТАБЛИЦА" HorizontalAlignment="Center" Margin="0,9,0,0" VerticalAlignment="Top" Height="26" Width="65"/>
 
     </Grid>
 </Window>

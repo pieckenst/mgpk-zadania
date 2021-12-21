@@ -167,3 +167,9 @@ C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtopark
 C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\zh-CN\ModernWpf.Controls.resources.dll
 C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\zh-TW\ModernWpf.Controls.resources.dll
 C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\App.baml
+C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\ControlzEx.dll
+C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\ControlzEx.pdb
+C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Fluent.dll
+C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Fluent.pdb
+C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Xaml.Behaviors.pdb

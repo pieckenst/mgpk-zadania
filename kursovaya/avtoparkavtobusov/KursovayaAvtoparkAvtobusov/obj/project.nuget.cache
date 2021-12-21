@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "3P1LJ948i9H5YV51U4ATyb4AkWINLJQ/6cMSCRGF2oqqXzlftvAxtfdBn9vm2h5Q4E5lkA4jbI+vOr9wxkpv/Q==",
+  "dgSpecHash": "KKpwp81luP5Ra6aBH4I65wbDSIobbeXkJ//x04puqaJOVBA4VHXD+yiGkcWqNJHDqT2UR1i8N7NFi+AqISDrZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andrey Savich\\source\\repos\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Andrey Savich\\.nuget\\packages\\controlzex\\5.0.1\\controlzex.5.0.1.nupkg.sha512",
     "C:\\Users\\Andrey Savich\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\Andrey Savich\\.nuget\\packages\\fluent.ribbon\\9.0.0\\fluent.ribbon.9.0.0.nupkg.sha512",
     "C:\\Users\\Andrey Savich\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.18362.2005\\microsoft.windows.sdk.contracts.10.0.18362.2005.nupkg.sha512",
+    "C:\\Users\\Andrey Savich\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
     "C:\\Users\\Andrey Savich\\.nuget\\packages\\modernwpfui\\0.9.4\\modernwpfui.0.9.4.nupkg.sha512",
     "C:\\Users\\Andrey Savich\\.nuget\\packages\\system.runtime.windowsruntime\\4.6.0\\system.runtime.windowsruntime.4.6.0.nupkg.sha512",
     "C:\\Users\\Andrey Savich\\.nuget\\packages\\system.runtime.windowsruntime.ui.xaml\\4.6.0\\system.runtime.windowsruntime.ui.xaml.4.6.0.nupkg.sha512",

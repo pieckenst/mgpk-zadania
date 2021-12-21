@@ -42,6 +42,10 @@
               "target": "Package",
               "version": "[6.4.4, )"
             },
+            "Fluent.Ribbon": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.Windows.SDK.Contracts": {
               "target": "Package",
               "version": "[10.0.18362.2005, )"

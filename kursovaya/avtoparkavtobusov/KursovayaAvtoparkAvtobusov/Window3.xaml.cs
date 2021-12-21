@@ -69,5 +69,25 @@ namespace KursovayaAvtoparkAvtobusov
             cnn.Close();
             Console.WriteLine("Connection has been closed , database ready for next operation!");
         }
+
+        private void SaleUpdateDB_Click(object sender, RoutedEventArgs e)
+        {
+            SqlConnection cnn;
+            string conStrs = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+
+            cnn = new SqlConnection(conStrs);
+            cnn.Open();
+            Console.Write("OPENING DB CONNECTION!!! \n");
+            var querier = "UPDATE Prodazhi SET Sale_Date=@a1,Nomer_Avtobusa=@a2,Punkt_Posadki=@a3,Stoimost=@a4 WHERE Num=@a5";
+            var commandBuilder = new SqlCommand(querier, cnn);
+            commandBuilder.Parameters.AddWithValue("a1", Edit2.Text);
+            commandBuilder.Parameters.AddWithValue("a2", int.Parse(Edit3.Text));
+            commandBuilder.Parameters.AddWithValue("a3", Edit4.Text);
+            commandBuilder.Parameters.AddWithValue("a4", Edit5.Text);
+            commandBuilder.Parameters.AddWithValue("a5", int.Parse(Edit1.Text));
+            commandBuilder.ExecuteNonQuery();
+            Console.WriteLine("Connection established and the table updated!");
+            cnn.Close();
+        }
     }
 }

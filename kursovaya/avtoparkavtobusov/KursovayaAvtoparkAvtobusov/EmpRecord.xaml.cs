@@ -71,5 +71,27 @@ namespace KursovayaAvtoparkAvtobusov
             cnn.Close();
             Console.WriteLine("Connection has been closed , database ready for next operation!");
         }
+
+        private void EmpUpdat_Click(object sender, RoutedEventArgs e)
+        {
+            SqlConnection cnn;
+            string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+
+            cnn = new SqlConnection(conStr);
+            cnn.Open();
+            Console.Write("OPENING DB CONNECTION!!! \n");
+            var select = "UPDATE Employees SET Surname=@a1,Name=@a2,Patronym=@a3,Employed_Since=@a4,Job=@a5,Internship=@a6 WHERE Num=@a7";
+            var commandBuilder = new SqlCommand(select, cnn);
+            commandBuilder.Parameters.AddWithValue("a1", Exed2.Text);
+            commandBuilder.Parameters.AddWithValue("a2", Exed3.Text);
+            commandBuilder.Parameters.AddWithValue("a3", Exed4.Text);
+            commandBuilder.Parameters.AddWithValue("a4", Exed5.Text);
+            commandBuilder.Parameters.AddWithValue("a5", Exed6.Text);
+            commandBuilder.Parameters.AddWithValue("a6", Exed7.Text);
+            commandBuilder.Parameters.AddWithValue("a7", int.Parse(Exed1.Text));
+            commandBuilder.ExecuteNonQuery();
+            Console.WriteLine("Connection established and the table updated!");
+            cnn.Close();
+        }
     }
 }
