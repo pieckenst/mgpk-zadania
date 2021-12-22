@@ -96,6 +96,27 @@ namespace KursovayaAvtoparkAvtobusov
                     MessageBox.Show(ex.Message);
                 }
             }
+            else if (TableName.Text == "Employees")
+            {
+                SqlConnection cnn;
+                string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+
+                cnn = new SqlConnection(conStr);
+                cnn.Open();
+                Console.Write("OPENING DB CONNECTION!!! \n");
+                var select = "DELETE FROM Employees WHERE Num=@a2";
+                var commandBuilder = new SqlCommand(select, cnn);
+                commandBuilder.Parameters.AddWithValue("a2", keybox.Text);
+                try
+                {
+                    commandBuilder.ExecuteNonQuery();
+                    Console.WriteLine("Delete operation successful!");
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
             else
             {
                 MessageBox.Show("Введено неправильное имя таблицы! Пожалуйста введите одно из следующих - Prodazhi или Marshuti или Maintenance!");
