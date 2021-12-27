@@ -1,24 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace KursovayaAvtoparkAvtobusov
 {
     /// <summary>
-    /// Interaction logic for EmpRecord.xaml
+    ///     Interaction logic for EmpRecord.xaml
     /// </summary>
     public partial class EmpRecord : Window
     {
@@ -32,7 +21,7 @@ namespace KursovayaAvtoparkAvtobusov
             try
             {
                 SqlConnection cnn;
-                string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
@@ -43,37 +32,39 @@ namespace KursovayaAvtoparkAvtobusov
                 var commandBuilder = new SqlCommand(select, cnn);
                 commandBuilder.ExecuteNonQuery();
 
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(commandBuilder);
-                DataTable ds = new DataTable("Avtobusx");
+                var dataAdapter = new SqlDataAdapter(commandBuilder);
+                var ds = new DataTable("Avtobusx");
                 dataAdapter.Fill(ds);
                 dataGrid1.ItemsSource = ds.DefaultView;
                 Console.WriteLine("Connection established and the datagrid filled!");
                 cnn.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("An error has occured! Traceback: {0} ",ex.Message);
+                MessageBox.Show("An error has occured! Traceback: " + ex.Message);
             }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try {
-                string Num = Exed1.Text;
-                string EmpName = Exed2.Text;
-                string EmpsName = Exed3.Text;
-                string Emppat = Exed4.Text;
-                string EmpES = Exed5.Text;
-                string Emptitle = Exed6.Text;
-                string Empint = Exed7.Text;
-                string query = "INSERT INTO Employees(Num, Surname, Name, Patronym,Employed_Since,Job,Internship) " +
-                   "Values('" + Num + "', '" + EmpName + "', '" + EmpsName + "', '" + Emppat + "','" + EmpES + "','" + Emptitle + "','" + Empint + "')";
+            try
+            {
+                var Num = Exed1.Text;
+                var EmpName = Exed2.Text;
+                var EmpsName = Exed3.Text;
+                var Emppat = Exed4.Text;
+                var EmpES = Exed5.Text;
+                var Emptitle = Exed6.Text;
+                var Empint = Exed7.Text;
+                var query = "INSERT INTO Employees(Num, Surname, Name, Patronym,Employed_Since,Job,Internship) " +
+                            "Values('" + Num + "', '" + EmpName + "', '" + EmpsName + "', '" + Emppat + "','" + EmpES +
+                            "','" + Emptitle + "','" + Empint + "')";
                 SqlConnection cnn;
-                string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
-                SqlCommand command = new SqlCommand(query, cnn);
+                var command = new SqlCommand(query, cnn);
                 command.ExecuteNonQuery();
                 Console.WriteLine("Data inserted!\n Closing connection ");
                 cnn.Close();
@@ -81,20 +72,22 @@ namespace KursovayaAvtoparkAvtobusov
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error has occured! Traceback: {0} ", ex.Message);
+                MessageBox.Show("An error has occured! Traceback: " + ex.Message);
             }
         }
 
         private void EmpUpdat_Click(object sender, RoutedEventArgs e)
         {
-            try {
+            try
+            {
                 SqlConnection cnn;
-                string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
                 Console.Write("OPENING DB CONNECTION!!! \n");
-                var select = "UPDATE Employees SET Surname=@a1,Name=@a2,Patronym=@a3,Employed_Since=@a4,Job=@a5,Internship=@a6 WHERE Num=@a7";
+                var select =
+                    "UPDATE Employees SET Surname=@a1,Name=@a2,Patronym=@a3,Employed_Since=@a4,Job=@a5,Internship=@a6 WHERE Num=@a7";
                 var commandBuilder = new SqlCommand(select, cnn);
                 commandBuilder.Parameters.AddWithValue("a1", Exed2.Text);
                 commandBuilder.Parameters.AddWithValue("a2", Exed3.Text);
@@ -106,12 +99,11 @@ namespace KursovayaAvtoparkAvtobusov
                 commandBuilder.ExecuteNonQuery();
                 Console.WriteLine("Connection established and the table updated!");
                 cnn.Close();
-
             }
-            
+
             catch (Exception ex)
             {
-                MessageBox.Show("An error has occured! Traceback: {0} ", ex.Message);
+                MessageBox.Show("An error has occured! Traceback: " + ex.Message);
             }
         }
     }

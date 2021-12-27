@@ -1,24 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using PostSharp.Patterns.Diagnostics;
+using System;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace KursovayaAvtoparkAvtobusov
 {
     /// <summary>
-    /// Interaction logic for Window4.xaml
+    ///     Interaction logic for Window4.xaml
     /// </summary>
     public partial class Window4 : Window
     {
@@ -32,103 +22,118 @@ namespace KursovayaAvtoparkAvtobusov
             Close();
         }
 
-        private void deletedbdata_Click(object sender, RoutedEventArgs e)
+        [Log("Audit")]
+        private void deletedbdata_Click(object sender,
+            RoutedEventArgs e)
         {
-            if (TableName.Text == "Prodazhi")
+            switch (TableName.Text)
             {
-                SqlConnection cnn;
-                string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                case "Prodazhi":
+                    {
+                        SqlConnection cnn;
+                        var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
 
-                cnn = new SqlConnection(conStr);
-                cnn.Open();
-                Console.Write("OPENING DB CONNECTION!!! \n");
-                var select = "DELETE FROM Prodazhi WHERE Num=@a2";
-                var commandBuilder = new SqlCommand(select, cnn);
-                commandBuilder.Parameters.AddWithValue("a2", keybox.Text);
-                try
-                {
-                    commandBuilder.ExecuteNonQuery();
-                    Console.WriteLine("Delete operation successful!");
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                        cnn = new SqlConnection(conStr);
+                        cnn.Open();
+                        Console.Write("OPENING DB CONNECTION!!! \n");
+                        var select = "DELETE FROM Prodazhi WHERE Num=@a2";
+                        var commandBuilder = new SqlCommand(select, cnn);
+                        commandBuilder.Parameters.AddWithValue("a2", keybox.Text);
+                        try
+                        {
+                            commandBuilder.ExecuteNonQuery();
+                            Console.WriteLine("Delete operation successful!");
+                        }
+                        catch (SqlException ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
 
-            }
-            else if (TableName.Text ==  "Marshuti") {
-                SqlConnection cnn;
-                string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                        break;
+                    }
 
-                cnn = new SqlConnection(conStr);
-                cnn.Open();
-                Console.Write("OPENING DB CONNECTION!!! \n");
-                var select = "DELETE FROM Marshuti WHERE Nomer_Marshuta=@a2";
-                var commandBuilder = new SqlCommand(select, cnn);
-                commandBuilder.Parameters.AddWithValue("a2", keybox.Text);
-                try
-                {
-                    commandBuilder.ExecuteNonQuery();
-                    Console.WriteLine("Delete operation successful!");
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-            else if (TableName.Text == "Maintenance") {
-                SqlConnection cnn;
-                string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                case "Marshuti":
+                    {
+                        SqlConnection cnn;
+                        var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
 
-                cnn = new SqlConnection(conStr);
-                cnn.Open();
-                Console.Write("OPENING DB CONNECTION!!! \n");
-                var select = "DELETE FROM Maintenance WHERE Num=@a2";
-                var commandBuilder = new SqlCommand(select, cnn);
-                commandBuilder.Parameters.AddWithValue("a2", keybox.Text);
-                try
-                {
-                    commandBuilder.ExecuteNonQuery();
-                    Console.WriteLine("Delete operation successful!");
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-            else if (TableName.Text == "Employees")
-            {
-                SqlConnection cnn;
-                string conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                        cnn = new SqlConnection(conStr);
+                        cnn.Open();
+                        Console.Write("OPENING DB CONNECTION!!! \n");
+                        var select = "DELETE FROM Marshuti WHERE Nomer_Marshuta=@a2";
+                        var commandBuilder = new SqlCommand(select, cnn);
+                        commandBuilder.Parameters.AddWithValue("a2", keybox.Text);
+                        try
+                        {
+                            commandBuilder.ExecuteNonQuery();
+                            Console.WriteLine("Delete operation successful!");
+                        }
+                        catch (SqlException ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
 
-                cnn = new SqlConnection(conStr);
-                cnn.Open();
-                Console.Write("OPENING DB CONNECTION!!! \n");
-                var select = "DELETE FROM Employees WHERE Num=@a2";
-                var commandBuilder = new SqlCommand(select, cnn);
-                commandBuilder.Parameters.AddWithValue("a2", keybox.Text);
-                try
-                {
-                    commandBuilder.ExecuteNonQuery();
-                    Console.WriteLine("Delete operation successful!");
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Введено неправильное имя таблицы! Пожалуйста введите одно из следующих - Prodazhi или Marshuti или Maintenance!");
+                        break;
+                    }
+
+                case "Maintenance":
+                    {
+                        SqlConnection cnn;
+                        var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+
+                        cnn = new SqlConnection(conStr);
+                        cnn.Open();
+                        Console.Write("OPENING DB CONNECTION!!! \n");
+                        var select = "DELETE FROM Maintenance WHERE Num=@a2";
+                        var commandBuilder = new SqlCommand(select, cnn);
+                        commandBuilder.Parameters.AddWithValue("a2", keybox.Text);
+                        try
+                        {
+                            commandBuilder.ExecuteNonQuery();
+                            Console.WriteLine("Delete operation successful!");
+                        }
+                        catch (SqlException ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+
+                        break;
+                    }
+
+                case "Employees":
+                    {
+                        SqlConnection cnn;
+                        var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+
+                        cnn = new SqlConnection(conStr);
+                        cnn.Open();
+                        Console.Write("OPENING DB CONNECTION!!! \n");
+                        var select = "DELETE FROM Employees WHERE Num=@a2";
+                        var commandBuilder = new SqlCommand(select, cnn);
+                        commandBuilder.Parameters.AddWithValue("a2", keybox.Text);
+                        try
+                        {
+                            commandBuilder.ExecuteNonQuery();
+                            Console.WriteLine("Delete operation successful!");
+                        }
+                        catch (SqlException ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+
+                        break;
+                    }
+
+                default:
+                    MessageBox.Show(
+                        "Введено неправильное имя таблицы! Пожалуйста введите одно из следующих - Prodazhi или Marshuti или Maintenance!");
+                    break;
             }
         }
 
         private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                DragMove();
-            }
+            if (e.ChangedButton == MouseButton.Left) DragMove();
         }
     }
 }

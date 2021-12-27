@@ -3,31 +3,43 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:KursovayaAvtoparkAvtobusov"
         mc:Ignorable="d"
         Title="Продажа билетов" Height="450" Width="800"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="71*"/>
-            <ColumnDefinition Width="8*"/>
-            <ColumnDefinition Width="721*"/>
+            <ColumnDefinition Width="71*" />
+            <ColumnDefinition Width="8*" />
+            <ColumnDefinition Width="721*" />
         </Grid.ColumnDefinitions>
         <DataGrid Name="dataGrid1" Margin="10,43,308,61" Grid.ColumnSpan="3" />
-        <Label x:Name="lab1" Grid.Column="2" Content="Num" HorizontalAlignment="Left" Margin="428,43,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lab2" Grid.Column="2" Content="Sale_Date" HorizontalAlignment="Left" Margin="428,95,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lab3" Grid.Column="2" Content="Nomer_Avtobusa" HorizontalAlignment="Left" Margin="428,142,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lab4" Grid.Column="2" Content="Punkt_Posadki" HorizontalAlignment="Left" Margin="428,199,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lab5" Grid.Column="2" Content="Stoimost" HorizontalAlignment="Left" Margin="428,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.263,-0.153"/>
-        <TextBox x:Name="Edit1" Grid.Column="2" HorizontalAlignment="Left" Margin="534,39,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="Edit2" Grid.Column="2" HorizontalAlignment="Left" Margin="534,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="Edit3" Grid.Column="2" HorizontalAlignment="Left" Margin="534,135,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="Edit4" Grid.Column="2" HorizontalAlignment="Left" Margin="534,192,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="Edit5" Grid.Column="2" HorizontalAlignment="Left" Margin="534,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156"/>
-        <Button Content="Отправить данные в БД" Margin="489,344,0,0" VerticalAlignment="Top" Height="32" Width="201" Click="Button_Click" Grid.Column="2"/>
-        <Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="10,387,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="154" Click="UpdateGrid_Click"/>
-        <Button x:Name="SaleUpdateDB" Content="Обновить Данные о продажах" Margin="489,387,0,0" VerticalAlignment="Top" Width="201" Height="32" Click="SaleUpdateDB_Click" Grid.Column="2" FontSize="12"/>
+        <Label x:Name="lab1" Grid.Column="2" Content="Num" HorizontalAlignment="Left" Margin="428,43,0,0"
+               VerticalAlignment="Top" />
+        <Label x:Name="lab2" Grid.Column="2" Content="Sale_Date" HorizontalAlignment="Left" Margin="428,95,0,0"
+               VerticalAlignment="Top" />
+        <Label x:Name="lab3" Grid.Column="2" Content="Nomer_Avtobusa" HorizontalAlignment="Left" Margin="428,142,0,0"
+               VerticalAlignment="Top" />
+        <Label x:Name="lab4" Grid.Column="2" Content="Punkt_Posadki" HorizontalAlignment="Left" Margin="428,199,0,0"
+               VerticalAlignment="Top" />
+        <Label x:Name="lab5" Grid.Column="2" Content="Stoimost" HorizontalAlignment="Left" Margin="428,253,0,0"
+               VerticalAlignment="Top" RenderTransformOrigin="-1.263,-0.153" />
+        <TextBox x:Name="Edit1" Grid.Column="2" HorizontalAlignment="Left" Margin="534,39,0,0" TextWrapping="Wrap"
+                 Text="TextBox" VerticalAlignment="Top" Width="156" />
+        <TextBox x:Name="Edit2" Grid.Column="2" HorizontalAlignment="Left" Margin="534,95,0,0" TextWrapping="Wrap"
+                 Text="TextBox" VerticalAlignment="Top" Width="156" />
+        <TextBox x:Name="Edit3" Grid.Column="2" HorizontalAlignment="Left" Margin="534,135,0,0" TextWrapping="Wrap"
+                 Text="TextBox" VerticalAlignment="Top" Width="156" />
+        <TextBox x:Name="Edit4" Grid.Column="2" HorizontalAlignment="Left" Margin="534,192,0,0" TextWrapping="Wrap"
+                 Text="TextBox" VerticalAlignment="Top" Width="156" />
+        <TextBox x:Name="Edit5" Grid.Column="2" HorizontalAlignment="Left" Margin="534,246,0,0" TextWrapping="Wrap"
+                 Text="TextBox" VerticalAlignment="Top" Width="156" />
+        <Button Content="Отправить данные в БД" Margin="489,344,0,0" VerticalAlignment="Top" Height="32" Width="201"
+                Click="Button_Click" Grid.Column="2" />
+        <Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="10,387,0,0" VerticalAlignment="Top"
+                Grid.ColumnSpan="3" Width="154" Click="UpdateGrid_Click" />
+        <Button x:Name="SaleUpdateDB" Content="Обновить Данные о продажах" Margin="489,387,0,0" VerticalAlignment="Top"
+                Width="201" Height="32" Click="SaleUpdateDB_Click" Grid.Column="2" FontSize="12" />
 
     </Grid>
 </Window>
