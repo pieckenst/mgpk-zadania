@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MsgBoxEx;
+using System;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -41,7 +42,11 @@ namespace KursovayaAvtoparkAvtobusov
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error has occured! Traceback: " + ex.Message);
+                MsgBoxExtendedFunctionality ext = new MsgBoxExtendedFunctionality()
+                {
+                    DetailsText = ex.StackTrace
+                };
+                MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
             }
         }
 
@@ -72,7 +77,11 @@ namespace KursovayaAvtoparkAvtobusov
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error has occured! Traceback: " + ex.Message);
+                MsgBoxExtendedFunctionality ext = new MsgBoxExtendedFunctionality()
+                {
+                    DetailsText = ex.StackTrace
+                };
+                MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
             }
         }
 
@@ -103,7 +112,11 @@ namespace KursovayaAvtoparkAvtobusov
 
             catch (Exception ex)
             {
-                MessageBox.Show("An error has occured! Traceback: " + ex.Message);
+                MsgBoxExtendedFunctionality ext = new MsgBoxExtendedFunctionality()
+                {
+                    DetailsText = ex.StackTrace
+                };
+                MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
             }
         }
     }

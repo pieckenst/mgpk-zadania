@@ -1,6 +1,7 @@
 ﻿using FastReport;
 using FastReport.Export.Image;
 using Microsoft.Win32;
+using MsgBoxEx;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -45,7 +46,11 @@ namespace KursovayaAvtoparkAvtobusov
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error has occured! Traceback: " + ex.Message);
+                MsgBoxExtendedFunctionality ext = new MsgBoxExtendedFunctionality()
+                {
+                    DetailsText = ex.StackTrace
+                };
+                MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
             }
 
         }

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="01/03/2022 13:58:12" ReportInfo.Modified="01/03/2022 13:58:14" ReportInfo.CreatorVersion="2022.1.0.0">
+  <Dictionary>
+    <MsSqlDataConnection ConnectionString="rijcmlqomabmqtwD7y3BaVO988Xrij7/n3cmbrAhg1Q8Ua+VCDG81ardwIRyWRMalWLQhBEQxeLY7t0tFNYJLaSnE4+ebhH0Uh5VibvwvHOy7G4bmPWdqhdkymOMXXspoKF2uyH">
+      <TableDataSource Name="Marshuti" DataType="System.Int32" Enabled="true" TableName="Marshuti">
+        <Column Name="Nomer_Marshuta" DataType="System.Int64"/>
+        <Column Name="Nachalni_Punkt" DataType="System.String"/>
+        <Column Name="Konechni_Punkt" DataType="System.String"/>
+        <Column Name="Voditel" DataType="System.String"/>
+        <Column Name="Model_Avtobusa" DataType="System.String"/>
+        <Column Name="Vremya_Proezda" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="Prodazhi" DataType="System.Int32" Enabled="true" TableName="Prodazhi">
+        <Column Name="Num" DataType="System.Int64"/>
+        <Column Name="Sale_Date" DataType="System.String"/>
+        <Column Name="Nomer_Avtobusa" DataType="System.Int64"/>
+        <Column Name="Punkt_Posadki" DataType="System.String"/>
+        <Column Name="Stoimost" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="Maintenance" DataType="System.Int32" Enabled="true" TableName="Maintenance">
+        <Column Name="Num" DataType="System.Int64"/>
+        <Column Name="Model_Avtobusa" DataType="System.String"/>
+        <Column Name="Data_Poslednego_Obsluzhivania" DataType="System.String"/>
+        <Column Name="Ingener_Obsluzhivania" DataType="System.String"/>
+        <Column Name="Problemi_Avtobusa" DataType="System.String"/>
+        <Column Name="Data_Sledueschego_Obsluzivania" DataType="System.String"/>
+        <Column Name="Goden_K_Doroge" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="Employees" DataType="System.Int32" Enabled="true" TableName="Employees">
+        <Column Name="Num" DataType="System.Int64"/>
+        <Column Name="Surname" DataType="System.String"/>
+        <Column Name="Name" DataType="System.String"/>
+        <Column Name="Patronym" DataType="System.String"/>
+        <Column Name="Employed_Since" DataType="System.String"/>
+        <Column Name="Job" DataType="System.String"/>
+        <Column Name="Internship" DataType="System.String"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Height="151.2">
+      <TextObject Left="37.8" Top="37.8" Width="642.6" Height="75.6" Border.Lines="All" Border.Width="4" Fill.Color="Wheat" Text="Avtopark Report" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 32pt"/>
+      <TextObject Top="102.06" Width="718.2" Height="30.24" Border.Lines="All" Border.Width="4" Fill.Color="Wheat" Text="Employees Table" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 16pt"/>
+      <TextObject Top="268.38" Width="718.2" Height="30.24" Border.Lines="All" Border.Width="4" Fill.Color="Wheat" Text="Maintenance Table" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 16pt"/>
+      <TextObject Top="419.58" Width="718.2" Height="30.24" Border.Lines="All" Border.Width="4" Fill.Color="Wheat" Text="Prodazhi Table" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 16pt"/>
+      <TextObject Top="570.78" Width="718.2" Height="30.24" Border.Lines="All" Border.Width="4" Fill.Color="Wheat" Text="Marshuti Table" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 16pt"/>
+    </ReportTitleBand>
+    <DataBand Height="56.7" DataSource="Employees">
+      <TextObject Name="Text1" Width="37.8" Height="18.9" Border.Lines="All" Text="Num" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text2" Left="37.8" Width="113.4" Height="18.9" Border.Lines="All" Text="Surname" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text3" Left="151.2" Width="756" Height="18.9" Border.Lines="All" Text="Name" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text4" Left="279.72" Width="945" Height="18.9" Border.Lines="All" Text="Patronym" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text5" Left="374.22" Width="756" Height="18.9" Border.Lines="All" Text="Employed_Since" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text6" Left="529.2" Width="1134" Height="18.9" Border.Lines="All" Text="Job" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text7" Left="661.5" Width="945" Height="18.9" Border.Lines="All" Text="Internship" Font="Times New Roman, 5pt"/>
+      <TextObject Top="25" Width="37.8" Height="18.9" Border.Lines="All" Text="[Employees.Num]" HorzAlign="Center" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text8" Left="37.8" Top="25" Width="113.4" Height="18.9" Border.Lines="All" Text="[Employees.Surname]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text9" Left="151.2" Top="25" Width="756" Height="18.9" Border.Lines="All" Text="[Employees.Name]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text10" Left="279.72" Top="25" Width="756" Height="18.9" Border.Lines="All" Text="[Employees.Patronym]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text11" Left="374.22" Top="25" Width="1134" Height="18.9" Border.Lines="All" Text="[Employees.Employed_Since]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text12" Left="529.2" Top="25" Width="189" Height="18.9" Border.Lines="All" Text="[Employees.Job]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text13" Left="661.5" Top="25" Width="189" Height="18.9" Border.Lines="All" Text="[Employees.Internship]" Font="Times New Roman, 5pt"/>
+    </DataBand>
+    <DataBand Height="189" DataSource="Maintenance">
+      <TextObject Name="Text14" Top="39.9" Width="26.46" Height="18.9" Border.Lines="All" Text="Num" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text15" Left="26.46" Top="39.9" Width="264.6" Height="18.9" Border.Lines="All" Text="Model_Avtobusa" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text16" Left="170.1" Top="39.9" Width="567" Height="18.9" Border.Lines="All" Text="Data_Poslednego_Obsluzhivania" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text17" Left="291.06" Top="39.9" Width="756" Height="18.9" Border.Lines="All" Text="Ingener_Obsluzhivania" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text18" Left="393.12" Top="39.9" Width="756" Height="18.9" Border.Lines="All" Text="Problemi_Avtobusa" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text19" Left="567" Top="39.9" Width="567" Height="18.9" Border.Lines="All" Text="Data_Sledueschego_Obsluzivania" Font="Times New Roman, 4pt"/>
+      <TextObject Name="Text20" Left="661.5" Top="39.9" Width="982.8" Height="18.9" Border.Lines="All" Text="Goden_K_Doroge" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text21" Top="60.9" Width="26.46" Height="18.9" Border.Lines="All" Text="[Maintenance.Num]" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text22" Left="26.46" Top="60.9" Width="264.6" Height="18.9" Border.Lines="All" Text="[Maintenance.Model_Avtobusa]" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text23" Left="170.1" Top="60.9" Width="567" Height="18.9" Border.Lines="All" Text="[Maintenance.Data_Poslednego_Obsluzhivania]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text24" Left="291.06" Top="60.9" Width="756" Height="18.9" Border.Lines="All" Text="[Maintenance.Ingener_Obsluzhivania]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text25" Left="393.12" Top="60.9" Width="756" Height="18.9" Border.Lines="All" Text="[Maintenance.Problemi_Avtobusa]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text26" Left="567" Top="60.9" Width="567" Height="18.9" Border.Lines="All" Text="[Maintenance.Data_Sledueschego_Obsluzivania]" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text27" Left="661.5" Top="60.9" Width="982.8" Height="18.9" Border.Lines="All" Text="[Maintenance.Goden_K_Doroge]" Font="Times New Roman, 6pt"/>
+    </DataBand>
+    <DataBand Height="189" DataSource="Prodazhi">
+      <TextObject Name="Text28" Top="43.99" Width="26.46" Height="18.9" Border.Lines="All" Text="Num" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text29" Left="26.46" Top="43.99" Width="264.6" Height="18.9" Border.Lines="All" Text="Sale_Date" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text30" Left="170.1" Top="43.99" Width="567" Height="18.9" Border.Lines="All" Text="Nomer_Avtobusa" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text31" Left="291.06" Top="43.99" Width="756" Height="18.9" Border.Lines="All" Text="Punkt_Posadki" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text32" Left="393.12" Top="43.99" Width="756" Height="18.9" Border.Lines="All" Text="Stoimost" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text33" Top="53.99" Width="26.46" Height="18.9" Border.Lines="All" Text="[Prodazhi.Num]" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text34" Left="26.46" Top="53.99" Width="264.6" Height="18.9" Border.Lines="All" Text="[Prodazhi.Sale_Date]" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text35" Left="170.1" Top="53.99" Width="567" Height="18.9" Border.Lines="All" Text="[Prodazhi.Nomer_Avtobusa]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text36" Left="291.06" Top="53.99" Width="756" Height="18.9" Border.Lines="All" Text="[Prodazhi.Punkt_Posadki]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text37" Left="393.12" Top="53.99" Width="756" Height="18.9" Border.Lines="All" Text="[Prodazhi.Stoimost]" Font="Times New Roman, 5pt"/>
+    </DataBand>
+    <DataBand Height="75.6" DataSource="Marshuti">
+      <TextObject Name="Text38" Top="58.9" Width="26.46" Height="18.9" Border.Lines="All" Text="Nomer_Marshuta" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text39" Left="26.46" Top="58.9" Width="264.6" Height="18.9" Border.Lines="All" Text="Nachalni_Punkt" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text40" Left="170.1" Top="58.9" Width="567" Height="18.9" Border.Lines="All" Text="Konechni_Punkt" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text41" Left="291.06" Top="58.9" Width="756" Height="18.9" Border.Lines="All" Text="Voditel" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text42" Left="393.12" Top="58.9" Width="756" Height="18.9" Border.Lines="All" Text="Model_Avtobusa" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text43" Left="567" Top="58.9" Width="567" Height="18.9" Border.Lines="All" Text="Vremya_Proezda" Font="Times New Roman, 4pt"/>
+      <TextObject Name="Text44" Top="82.9" Width="26.46" Height="18.9" Border.Lines="All" Text="[Marshuti.Nomer_Marshuta]" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text45" Left="26.46" Top="82.9" Width="264.6" Height="18.9" Border.Lines="All" Text="[Marshuti.Nachalni_Punkt]" Font="Times New Roman, 6pt"/>
+      <TextObject Name="Text46" Left="170.1" Top="82.9" Width="567" Height="18.9" Border.Lines="All" Text="[Marshuti.Konechni_Punkt]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text47" Left="291.06" Top="82.9" Width="756" Height="18.9" Border.Lines="All" Text="[Marshuti.Voditel]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text48" Left="393.12" Top="82.9" Width="756" Height="18.9" Border.Lines="All" Text="[Marshuti.Model_Avtobusa]" Font="Times New Roman, 5pt"/>
+      <TextObject Name="Text49" Left="567" Top="82.9" Width="567" Height="18.9" Border.Lines="All" Text="[Marshuti.Vremya_Proezda]" Font="Times New Roman, 4pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Height="18.9">
+      <TextObject Width="718.2" Height="18.9" Fill.Color="Wheat" Text="Page [Page]" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

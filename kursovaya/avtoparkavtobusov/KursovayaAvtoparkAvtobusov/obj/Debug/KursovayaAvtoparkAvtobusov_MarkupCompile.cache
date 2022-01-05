@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\
 KursovayaAvtoparkAvtobusov
 none
 false
 DEBUG;TRACE
-C:\Users\Andrey Savich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\App.xaml
-8807561726
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\App.xaml
+10-1989844664
 
-14825307312
-229-120571837
-EmpRecord.xaml;MainWindow.xaml;TexObslugWindow.xaml;UpdateR.xaml;Window1.xaml;Window2.xaml;Window3.xaml;Window4.xaml;
+16-2010288709
+232-1330289849
+EmpRecord.xaml;MainWindow.xaml;ReportExport.xaml;TexObslugWindow.xaml;UpdateR.xaml;Window1.xaml;Window2.xaml;Window3.xaml;Window4.xaml;WPFReports.xaml;
 
 False
 

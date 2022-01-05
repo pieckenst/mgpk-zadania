@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:Fluent="urn:fluent-ribbon"
-        Title="Экспорт отчетов" Height="499" Width="578" ui:WindowHelper.UseModernWindowStyle="True">
+        Title="Экспорт отчетов" Height="247" Width="578" ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
-        <Button x:Name="SimpleRepExport" Content="Экспортировать простой отчет" Margin="0,373,0,0" VerticalAlignment="Top" Height="37" Width="294" HorizontalAlignment="Center" Click="SimpleRepExport_Click"/>
-        <Button x:Name="ComplexRepExport" Content="Экспортировать сложный отчет" Margin="0,422,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="294"/>
+        <Button x:Name="SimpleRepExport" Content="Экспортировать простой отчет" Margin="0,23,0,0" VerticalAlignment="Top" Height="37" Width="294" Click="SimpleRepExport_Click" HorizontalAlignment="Center"/>
+        <Button x:Name="ComplexRepExport" Content="Экспортировать сложный отчет" Margin="0,89,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="294" Click="ComplexRepExport_Click"/>
 
     </Grid>
 </Window>

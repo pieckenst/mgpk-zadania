@@ -11,5 +11,10 @@ namespace KursovayaAvtoparkAvtobusov
         {
             InitializeComponent();
         }
+
+        private void Agreed_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

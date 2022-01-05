@@ -1,4 +1,5 @@
-﻿using PostSharp.Patterns.Diagnostics;
+﻿using MsgBoxEx;
+using PostSharp.Patterns.Diagnostics;
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -46,7 +47,7 @@ namespace KursovayaAvtoparkAvtobusov
                         }
                         catch (SqlException ex)
                         {
-                            MessageBox.Show(ex.Message);
+                            MessageBoxEx.ShowEx(ex.Message);
                         }
 
                         break;
@@ -70,7 +71,7 @@ namespace KursovayaAvtoparkAvtobusov
                         }
                         catch (SqlException ex)
                         {
-                            MessageBox.Show(ex.Message);
+                            MessageBoxEx.ShowEx(ex.Message);
                         }
 
                         break;
@@ -94,7 +95,7 @@ namespace KursovayaAvtoparkAvtobusov
                         }
                         catch (SqlException ex)
                         {
-                            MessageBox.Show(ex.Message);
+                            MessageBoxEx.ShowEx(ex.Message);
                         }
 
                         break;
@@ -118,14 +119,14 @@ namespace KursovayaAvtoparkAvtobusov
                         }
                         catch (SqlException ex)
                         {
-                            MessageBox.Show(ex.Message);
+                            MessageBoxEx.ShowEx(ex.Message);
                         }
 
                         break;
                     }
 
                 default:
-                    MessageBox.Show(
+                    MessageBoxEx.ShowEx(
                         "Введено неправильное имя таблицы! Пожалуйста введите одно из следующих - Prodazhi или Marshuti или Maintenance!");
                     break;
             }

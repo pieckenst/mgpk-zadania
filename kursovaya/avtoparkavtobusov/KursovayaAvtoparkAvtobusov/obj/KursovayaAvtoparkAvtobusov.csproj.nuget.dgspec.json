@@ -23,20 +23,24 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net46"
+          "net48"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net46": {
-            "projectReferences": {}
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+                "projectPath": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
+              }
+            }
           }
         }
       },
       "frameworks": {
-        "net46": {
+        "net48": {
           "dependencies": {
             "FastReport.Data.MsSql": {
               "target": "Package",
@@ -66,7 +70,15 @@
               "target": "Package",
               "version": "[6.10.5, )"
             },
+            "PostSharp.Patterns.Common.Redist": {
+              "target": "Package",
+              "version": "[6.10.5, )"
+            },
             "PostSharp.Patterns.Diagnostics.Log4Net": {
+              "target": "Package",
+              "version": "[6.10.5, )"
+            },
+            "PostSharp.Patterns.Diagnostics.Redist": {
               "target": "Package",
               "version": "[6.10.5, )"
             },
@@ -100,6 +112,21 @@
         "win-x86": {
           "#import": []
         }
+      }
+    },
+    "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+        "projectName": "WpfMessageBoxEx",
+        "projectPath": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

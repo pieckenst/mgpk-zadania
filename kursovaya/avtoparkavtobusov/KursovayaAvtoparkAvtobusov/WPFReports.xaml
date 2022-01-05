@@ -7,7 +7,7 @@
         xmlns:fluent="urn:fluent-ribbon" x:Class="KursovayaAvtoparkAvtobusov.WPFReports"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         mc:Ignorable="d"
-        Title="Report Viewer" Height="865" Width="765" ResizeMode="CanResizeWithGrip" SizeToContent="Width" ui:WindowHelper.UseModernWindowStyle="True">
+        Title="Report Viewer" Height="865" Width="765" ResizeMode="CanResizeWithGrip" SizeToContent="Width" ui:WindowHelper.UseModernWindowStyle="False">
     <Grid HorizontalAlignment="Center" Width="760">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto">
@@ -15,9 +15,11 @@
                     <BindingGroup/>
                 </ColumnDefinition.BindingGroup>
             </ColumnDefinition>
+            <ColumnDefinition Width="92*"/>
+            <ColumnDefinition Width="27*"/>
 
         </Grid.ColumnDefinitions>
-        <ToolBar Height="25" VerticalAlignment="Top" Grid.ColumnSpan="5" Margin="0,0,10,0" Background="White">
+        <ToolBar Height="25" VerticalAlignment="Top" Margin="0,0,10,0" Background="White">
             <Button x:Name="Open" Click="Open_Click">
                 <Image Source="Resources/001.ico"></Image>
             </Button>
@@ -38,7 +40,7 @@
             <Button x:Name="Zoom_out" Width="35" VerticalAlignment="Stretch" Click="Zoom_out_Click">-</Button>
         </ToolBar>
         <ScrollViewer VerticalScrollBarVisibility="Visible"
-                   HorizontalScrollBarVisibility="Visible" Margin="0,25,-475,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="760">
+                   HorizontalScrollBarVisibility="Visible" Margin="0,25,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="760" Grid.ColumnSpan="3">
             <ScrollViewer.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1xL7o8VuylbFtjQambghyx2EOtTn2Uz8ZTferDtiqKrBRJd7sZDyV2Nl6qU4lGmxDlYhT0cfP1Z8oEHcZ61JpQ==",
+  "dgSpecHash": "YQtYdHfU1CemvWvuslaGl1MOWVLuCpTi3k8HYG6eiErVhvtGEKoSQCU68vdtNmsDt5pSqrPJB1MSOlbg6ooNXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
   "expectedPackageFiles": [
@@ -19,7 +19,6 @@
     "C:\\Users\\AndreySavich\\.nuget\\packages\\postsharp.patterns.diagnostics.log4net\\6.10.5\\postsharp.patterns.diagnostics.log4net.6.10.5.nupkg.sha512",
     "C:\\Users\\AndreySavich\\.nuget\\packages\\postsharp.patterns.diagnostics.redist\\6.10.5\\postsharp.patterns.diagnostics.redist.6.10.5.nupkg.sha512",
     "C:\\Users\\AndreySavich\\.nuget\\packages\\postsharp.redist\\6.10.5\\postsharp.redist.6.10.5.nupkg.sha512",
-    "C:\\Users\\AndreySavich\\.nuget\\packages\\system.data.common\\4.3.0\\system.data.common.4.3.0.nupkg.sha512",
     "C:\\Users\\AndreySavich\\.nuget\\packages\\system.data.sqlclient\\4.4.3\\system.data.sqlclient.4.4.3.nupkg.sha512",
     "C:\\Users\\AndreySavich\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
     "C:\\Users\\AndreySavich\\.nuget\\packages\\system.runtime.windowsruntime\\4.7.0\\system.runtime.windowsruntime.4.7.0.nupkg.sha512",

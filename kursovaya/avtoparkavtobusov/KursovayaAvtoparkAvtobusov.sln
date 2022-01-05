@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KursovayaAvtoparkAvtobusov", "KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov.csproj", "{97945356-C5B5-4F40-A12F-AF1B1EC162DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMessageBoxEx", "WpfMessageBoxEx\WpfMessageBoxEx.csproj", "{F00F9C8D-4FAD-4ACA-BD40-75CEB10C6760}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{97945356-C5B5-4F40-A12F-AF1B1EC162DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97945356-C5B5-4F40-A12F-AF1B1EC162DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97945356-C5B5-4F40-A12F-AF1B1EC162DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00F9C8D-4FAD-4ACA-BD40-75CEB10C6760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00F9C8D-4FAD-4ACA-BD40-75CEB10C6760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00F9C8D-4FAD-4ACA-BD40-75CEB10C6760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00F9C8D-4FAD-4ACA-BD40-75CEB10C6760}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
