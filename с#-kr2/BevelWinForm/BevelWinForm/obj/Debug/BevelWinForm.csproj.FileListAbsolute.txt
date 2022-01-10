@@ -1,0 +1,12 @@
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\bin\Debug\BevelWinForm.exe
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\bin\Debug\BevelWinForm.pdb
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\bin\Debug\ClassLibrary1.dll
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\bin\Debug\ClassLibrary1.pdb
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\obj\Debug\BevelWinForm.csproj.AssemblyReference.cache
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\obj\Debug\BevelWinForm.Form1.resources
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\obj\Debug\BevelWinForm.Properties.Resources.resources
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\obj\Debug\BevelWinForm.csproj.GenerateResource.cache
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\obj\Debug\BevelWinForm.csproj.CoreCompileInputs.cache
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\obj\Debug\BevelWinForm.csproj.CopyComplete
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\obj\Debug\BevelWinForm.exe
+C:\Users\AndreySavich\source\repos\BevelWinForm\BevelWinForm\obj\Debug\BevelWinForm.pdb

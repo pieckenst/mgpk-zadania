@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31911.260
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BevelWinForm", "BevelWinForm\BevelWinForm.csproj", "{2941D36B-1DD3-426C-AB0D-82ACA98931C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{8DBD99BD-0E2F-411A-AF6A-FEC455D41FC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2941D36B-1DD3-426C-AB0D-82ACA98931C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2941D36B-1DD3-426C-AB0D-82ACA98931C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2941D36B-1DD3-426C-AB0D-82ACA98931C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2941D36B-1DD3-426C-AB0D-82ACA98931C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DBD99BD-0E2F-411A-AF6A-FEC455D41FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBD99BD-0E2F-411A-AF6A-FEC455D41FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBD99BD-0E2F-411A-AF6A-FEC455D41FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBD99BD-0E2F-411A-AF6A-FEC455D41FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2701ED3C-5A3F-4883-9059-3F2699801FE5}
+	EndGlobalSection
+EndGlobal
