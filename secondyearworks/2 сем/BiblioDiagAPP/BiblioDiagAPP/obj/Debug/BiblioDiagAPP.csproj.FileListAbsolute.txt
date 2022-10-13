@@ -1,0 +1,10 @@
+C:\Users\AndreySavich\source\repos\BiblioDiagAPP\BiblioDiagAPP\bin\Debug\BiblioDiagAPP.exe.config
+C:\Users\AndreySavich\source\repos\BiblioDiagAPP\BiblioDiagAPP\bin\Debug\BiblioDiagAPP.exe
+C:\Users\AndreySavich\source\repos\BiblioDiagAPP\BiblioDiagAPP\bin\Debug\BiblioDiagAPP.pdb
+C:\Users\AndreySavich\source\repos\BiblioDiagAPP\BiblioDiagAPP\obj\Debug\BiblioDiagAPP.csproj.AssemblyReference.cache
+C:\Users\AndreySavich\source\repos\BiblioDiagAPP\BiblioDiagAPP\obj\Debug\BiblioDiagAPP.Form1.resources
+C:\Users\AndreySavich\source\repos\BiblioDiagAPP\BiblioDiagAPP\obj\Debug\BiblioDiagAPP.Properties.Resources.resources
+C:\Users\AndreySavich\source\repos\BiblioDiagAPP\BiblioDiagAPP\obj\Debug\BiblioDiagAPP.csproj.GenerateResource.cache
+C:\Users\AndreySavich\source\repos\BiblioDiagAPP\BiblioDiagAPP\obj\Debug\BiblioDiagAPP.csproj.CoreCompileInputs.cache
+C:\Users\AndreySavich\source\repos\BiblioDiagAPP\BiblioDiagAPP\obj\Debug\BiblioDiagAPP.exe
+C:\Users\AndreySavich\source\repos\BiblioDiagAPP\BiblioDiagAPP\obj\Debug\BiblioDiagAPP.pdb

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>zadanie2</title>
+</head>
+
+<body>
+	<script> function dothing(){
+			let name =document.querySelector('input[name=Name]').value;
+		    let sname = document.querySelector('input[name=Suname]').value;
+		    let otchestvo = document.querySelector('input[name=Father]').value;
+			setInterval(() =>{document.title = "pauza"}, 2000);;
+		    setInterval(() => {document.title = sname +" " + name +" "  + otchestvo}, 6000);
+
+			
+			
+		} 
+		
+        function changeColor(colorParam) {
+          let color = colorParam.value.toLowerCase();
+          var optionElement = document.getElementById('rgb');
+          document.body.style.backgroundColor = color;
+        };
+		
+        function logicthing() {
+          let x = parseInt(document.querySelector('input[name=log]:checked').value);
+          let z = parseInt(document.querySelector('input[name=seclog]:checked').value);
+		  let yXor = x ^ z;
+		  document.title = yXor.toString();
+        };
+	</script>
+	<table width = "300" border="0" bordercolor = "#000000" cellpadding = "2" cellspacing = "0">
+<tr>
+<td align = "left">Фамилия:</td>
+<td><input name="Suname" style="color:white; background-color: #99AAFF; font-style: oblique" required placeholder=""></td>
+</tr>
+<tr>
+<td align = "left">Имя:</td>
+<td><input name="Name" style="color:white; background-color: #99AAFF; font-style: oblique" required placeholder=""></td>
+</tr>
+<tr >
+<td align = "left">Отчество:</td>
+<td><input name="Father" style="color:white; background-color: #99AAFF; font-style: oblique" required placeholder=""></td>
+</tr>
+</table><br/>
+<input id="clickMe" type="button" value="clickme" onclick="show()" />
+<select onchange="changeColor(this);" class="color" id="rgb">
+  <option id="red" value="Red">Red</option>
+  <option id="green" value="Green">Green</option>
+  <option id="blue" value="Blue">Blue</option>
+  <option id="white" value="White">White</option>
+  <option id="pink" value="Pink">Pink</option>
+</select>
+
+    <p><input name="log" type="radio" value="1"> 1</p>
+    <p><input name="log" type="radio" value="0" > 0</p>
+	<p><input name="seclog" type="radio" value="1" > 1</p>
+	<p><input name="seclog" type="radio" value="0" > 0</p>
+    <p><input type="submit" value="Выбрать" onclick="logicthing()" ></p>
+</body>
+</html>
