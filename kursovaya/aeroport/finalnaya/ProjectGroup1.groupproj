@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A2EDC00E-091C-432B-AD50-4C5658B287E6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Airport.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ENU\Airport_ENU.bdsproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Airport">
+        <MSBuild Projects="Airport.dproj"/>
+    </Target>
+    <Target Name="Airport:Clean">
+        <MSBuild Projects="Airport.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Airport:Make">
+        <MSBuild Projects="Airport.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Airport_ENU">
+        <MSBuild Projects="ENU\Airport_ENU.bdsproj"/>
+    </Target>
+    <Target Name="Airport_ENU:Clean">
+        <MSBuild Projects="ENU\Airport_ENU.bdsproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Airport_ENU:Make">
+        <MSBuild Projects="ENU\Airport_ENU.bdsproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Airport;Airport_ENU"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Airport:Clean;Airport_ENU:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Airport:Make;Airport_ENU:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

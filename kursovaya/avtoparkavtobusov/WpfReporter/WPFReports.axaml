@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="WpfReporter.ReporterWindow"
+        Title="Report Viewer" Height="900" Width="800" SizeToContent="Width" CanResize="false" >
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#16777215" Height="40">
+            <Button Name="Open" Margin="5" Background="Transparent">
+				🗀
+            </Button>
+            <Button Name="First" Click="FirstClick" Margin="5" Background="Transparent">
+               First
+            </Button>
+            <Button Name="Prev" Click="Prev_Click" Margin="5" Background="Transparent">
+				⎗
+            </Button>
+            <TextBox Name="PageNumber" Height="30" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="50" KeyDown="PageNumber_KeyDown"/>
+            <Button Name="Next" Click="Next_Click" Margin="5" Background="Transparent">
+				⎘
+            </Button>
+            <Button Name="Last" Click="Last_Click" Margin="5" Background="Transparent">
+                Last
+            </Button>
+            <Button Name="ZoomIn" Click="Zoom_in_Click" Margin="5" Background="Transparent">
+                +
+            </Button>
+            <Button Name="ZoomOut" Click="Zoom_out_Click" Margin="5" Background="Transparent">
+                -
+            </Button>
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Visible"
+                      HorizontalScrollBarVisibility="Visible" Margin="0,37,0,0" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="800" >
+            <Image Name="img" RenderTransformOrigin="0.5,0.5" Stretch="None" />
+        </ScrollViewer>
+    </Grid>
+</Window>

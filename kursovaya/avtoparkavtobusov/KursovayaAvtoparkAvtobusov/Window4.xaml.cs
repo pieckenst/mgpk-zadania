@@ -27,12 +27,13 @@ namespace KursovayaAvtoparkAvtobusov
         private void deletedbdata_Click(object sender,
             RoutedEventArgs e)
         {
-            switch (TableName.Text)
+            string value = SlctTable.SelectionBoxItem.ToString();
+            switch (value)
             {
                 case "Prodazhi":
                     {
                         SqlConnection cnn;
-                        var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                        var conStr = MainWindow.formations;
 
                         cnn = new SqlConnection(conStr);
                         cnn.Open();
@@ -56,7 +57,7 @@ namespace KursovayaAvtoparkAvtobusov
                 case "Marshuti":
                     {
                         SqlConnection cnn;
-                        var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                        var conStr = MainWindow.formations;
 
                         cnn = new SqlConnection(conStr);
                         cnn.Open();
@@ -80,7 +81,7 @@ namespace KursovayaAvtoparkAvtobusov
                 case "Maintenance":
                     {
                         SqlConnection cnn;
-                        var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                        var conStr = MainWindow.formations;
 
                         cnn = new SqlConnection(conStr);
                         cnn.Open();
@@ -104,7 +105,7 @@ namespace KursovayaAvtoparkAvtobusov
                 case "Employees":
                     {
                         SqlConnection cnn;
-                        var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                        var conStr = MainWindow.formations;
 
                         cnn = new SqlConnection(conStr);
                         cnn.Open();
@@ -127,7 +128,7 @@ namespace KursovayaAvtoparkAvtobusov
 
                 default:
                     MessageBoxEx.ShowEx(
-                        "Введено неправильное имя таблицы! Пожалуйста введите одно из следующих - Prodazhi или Marshuti или Maintenance!");
+                        "Введено неправильное имя таблицы! Пожалуйста введите одно из следующих - Prodazhi или Marshuti или Maintenance или Employees!");
                     break;
             }
         }
@@ -136,5 +137,6 @@ namespace KursovayaAvtoparkAvtobusov
         {
             if (e.ChangedButton == MouseButton.Left) DragMove();
         }
+
     }
 }

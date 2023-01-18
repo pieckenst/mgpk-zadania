@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj": {}
+    "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj": {
+    "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+        "projectUniqueName": "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
         "projectName": "KursovayaAvtoparkAvtobusov",
-        "projectPath": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
-        "packagesPath": "C:\\Users\\AndreySavich\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov\\obj\\",
+        "projectPath": "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "G:\\sdk\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\AndreySavich\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,11 @@
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
-                "projectPath": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
+              "G:\\Курсовой Проект-год2\\SQLServerLogin\\LogOnHelper.csproj": {
+                "projectPath": "G:\\Курсовой Проект-год2\\SQLServerLogin\\LogOnHelper.csproj"
+              },
+              "G:\\Курсовой Проект-год2\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+                "projectPath": "G:\\Курсовой Проект-год2\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
               }
             }
           }
@@ -74,6 +77,10 @@
               "target": "Package",
               "version": "[6.10.5, )"
             },
+            "PostSharp.Patterns.Diagnostics": {
+              "target": "Package",
+              "version": "[6.10.5, )"
+            },
             "PostSharp.Patterns.Diagnostics.Log4Net": {
               "target": "Package",
               "version": "[6.10.5, )"
@@ -81,6 +88,10 @@
             "PostSharp.Patterns.Diagnostics.Redist": {
               "target": "Package",
               "version": "[6.10.5, )"
+            },
+            "ReactiveUI.WPF": {
+              "target": "Package",
+              "version": "[17.1.17, )"
             },
             "System.Runtime.WindowsRuntime": {
               "target": "Package",
@@ -114,19 +125,34 @@
         }
       }
     },
-    "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+    "G:\\Курсовой Проект-год2\\SQLServerLogin\\LogOnHelper.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
-        "projectName": "WpfMessageBoxEx",
-        "projectPath": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+        "projectUniqueName": "G:\\Курсовой Проект-год2\\SQLServerLogin\\LogOnHelper.csproj",
+        "projectName": "LogOnHelper",
+        "projectPath": "G:\\Курсовой Проект-год2\\SQLServerLogin\\LogOnHelper.csproj",
         "frameworks": {
-          "net472": {
+          "net48": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net472": {}
+        "net48": {}
+      }
+    },
+    "G:\\Курсовой Проект-год2\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+      "restore": {
+        "projectUniqueName": "G:\\Курсовой Проект-год2\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+        "projectName": "WpfMessageBoxEx",
+        "projectPath": "G:\\Курсовой Проект-год2\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
       }
     }
   }

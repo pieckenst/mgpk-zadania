@@ -149,37 +149,37 @@
 		<Border x:Name="stackButtons" Grid.Row="3" Padding="10" 
 				Background="{Binding Path=ButtonBackground}" >
 			<StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" >
-				<Button x:Name="btnOK" Content=" Okay " MinWidth="75" Margin="5,0,5,0" 
+				<Button x:Name="btnOK" Content="Принять" MinWidth="75" Margin="5,0,5,0" 
 						Width="{Binding Path=ButtonWidth}" 
 						Visibility="{Binding Path=ShowOk}" 
 						IsDefault="{Binding Path=IsDefaultOK}" 
 						Click="BtnOK_Click" />
-				<Button x:Name="btnYes" Content=" Yes " MinWidth="75" Margin="5,0,5,0" 
+				<Button x:Name="btnYes" Content="Да" MinWidth="75" Margin="5,0,5,0" 
 						Width="{Binding Path=ButtonWidth}" 
 						Visibility="{Binding Path=ShowYes}" 
 						IsDefault="{Binding Path=IsDefaultYes}" 
 						Click="BtnYes_Click"/>
-				<Button x:Name="btnNo" Content=" No " MinWidth="75" Margin="5,0,5,0" 
+				<Button x:Name="btnNo" Content="Нет" MinWidth="75" Margin="5,0,5,0" 
 						Width="{Binding Path=ButtonWidth}" 
 						Visibility="{Binding Path=ShowNo}" 
 						IsDefault="{Binding Path=IsDefaultNo}" 
 						Click="BtnNo_Click"/>
-				<Button x:Name="btnAbort" Content=" Abort " MinWidth="75" Margin="5,0,5,0" 
+				<Button x:Name="btnAbort" Content="Прервать" MinWidth="75" Margin="5,0,5,0" 
 						Width="{Binding Path=ButtonWidth}" 
 						Visibility="{Binding Path=ShowAbort}" 
 						IsDefault="{Binding Path=IsDefaultAbort}" 
 						Click="BtnAbort_Click"/>
-				<Button x:Name="btnRetry" Content=" Retry " MinWidth="75" Margin="5,0,5,0" 
+				<Button x:Name="btnRetry" Content="Повторить" MinWidth="75" Margin="5,0,5,0" 
 						Width="{Binding Path=ButtonWidth}" 
 						Visibility="{Binding Path=ShowRetry}" 
 						IsDefault="{Binding Path=IsDefaultRetry}" 
 						Click="BtnRetry_Click"/>
-				<Button x:Name="btnIgnore" Content=" Ignore " MinWidth="75" Margin="5,0,5,0" 
+				<Button x:Name="btnIgnore" Content="Игнорировать" MinWidth="75" Margin="5,0,5,0" 
 						Width="{Binding Path=ButtonWidth}" 
 						Visibility="{Binding Path=ShowIgnore}" 
 						IsDefault="{Binding Path=IsDefaultIgnore}" 
 						Click="BtnIgnore_Click"/>
-				<Button x:Name="btnCancel" Content=" Cancel " MinWidth="75" Margin="5,0,5,0" 
+				<Button x:Name="btnCancel" Content="Отмена" MinWidth="75" Margin="5,0,5,0" 
 						Width="{Binding Path=ButtonWidth}" 
 						Visibility="{Binding Path=ShowCancel}" 
 						IsDefault="{Binding Path=IsDefaultCancel}" 
@@ -187,7 +187,7 @@
 			</StackPanel>
 		</Border>
 
-		<Expander Grid.Row="4" Header="Details" 
+		<Expander Grid.Row="4" Header="Детали" 
 				  IsExpanded="{Binding Path=Expanded}" 
 				  Visibility="{Binding Path=ShowDetailsBtn}"
 				  >

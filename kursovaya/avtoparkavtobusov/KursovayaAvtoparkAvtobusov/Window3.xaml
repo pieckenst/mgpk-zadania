@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Продажа билетов" Height="450" Width="800"
+        Title="Продажа билетов" Height="473" Width="800"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
@@ -25,15 +25,15 @@
         <Label x:Name="lab5" Grid.Column="2" Content="Stoimost" HorizontalAlignment="Left" Margin="428,253,0,0"
                VerticalAlignment="Top" RenderTransformOrigin="-1.263,-0.153" />
         <TextBox x:Name="Edit1" Grid.Column="2" HorizontalAlignment="Left" Margin="534,39,0,0" TextWrapping="Wrap"
-                 Text="TextBox" VerticalAlignment="Top" Width="156" />
+                 Text="TextBox" VerticalAlignment="Top" Width="156" MouseDoubleClick="Edit1_MouseDown" />
         <TextBox x:Name="Edit2" Grid.Column="2" HorizontalAlignment="Left" Margin="534,95,0,0" TextWrapping="Wrap"
-                 Text="TextBox" VerticalAlignment="Top" Width="156" />
+                 Text="TextBox" VerticalAlignment="Top" Width="156" MouseDoubleClick="Edit2_MouseDown" />
         <TextBox x:Name="Edit3" Grid.Column="2" HorizontalAlignment="Left" Margin="534,135,0,0" TextWrapping="Wrap"
-                 Text="TextBox" VerticalAlignment="Top" Width="156" />
+                 Text="TextBox" VerticalAlignment="Top" Width="156" MouseDoubleClick="Edit3_MouseDown" />
         <TextBox x:Name="Edit4" Grid.Column="2" HorizontalAlignment="Left" Margin="534,192,0,0" TextWrapping="Wrap"
-                 Text="TextBox" VerticalAlignment="Top" Width="156" />
+                 Text="TextBox" VerticalAlignment="Top" Width="156" MouseDoubleClick="Edit4_MouseDown" />
         <TextBox x:Name="Edit5" Grid.Column="2" HorizontalAlignment="Left" Margin="534,246,0,0" TextWrapping="Wrap"
-                 Text="TextBox" VerticalAlignment="Top" Width="156" />
+                 Text="TextBox" VerticalAlignment="Top" Width="156" MouseDoubleClick="Edit5_MouseDown" />
         <Button Content="Отправить данные в БД" Margin="489,344,0,0" VerticalAlignment="Top" Height="32" Width="201"
                 Click="Button_Click" Grid.Column="2" />
         <Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="10,387,0,0" VerticalAlignment="Top"

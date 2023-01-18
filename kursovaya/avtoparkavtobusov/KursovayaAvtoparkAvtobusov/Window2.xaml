@@ -4,9 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="О программе" Height="352" Width="641"
+        Title="О программе" Height="438" Width="641"
         xmlns:ui="http://schemas.modernwpf.com/2019"
-        ui:WindowHelper.UseModernWindowStyle="True" WindowStyle="None">
+        ui:WindowHelper.UseModernWindowStyle="True" WindowStyle="None" ResizeMode="CanMinimize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="27*" />
@@ -18,12 +18,13 @@
                VerticalAlignment="Top" Width="238" Grid.ColumnSpan="2" />
         <Label Content="по теме &lt;&lt;Автопарк Автобусов&gt;&gt;" HorizontalAlignment="Left" Margin="123,177,0,0"
                VerticalAlignment="Top" Width="238" Grid.Column="1" RenderTransformOrigin="0.411,8.163" />
-        <Label Content="Учебная группа" HorizontalAlignment="Left" Margin="59,201,0,0" VerticalAlignment="Top"
+        <Label Content="Учебная группа" HorizontalAlignment="Left" Margin="59,246,0,0" VerticalAlignment="Top"
                Width="184" Grid.ColumnSpan="2" />
-        <Label Content="ПО-455" HorizontalAlignment="Left" Margin="59,224,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-1.105,1.611" />
-        <Label Content="Учащийся" HorizontalAlignment="Left" Margin="70,201,0,0" VerticalAlignment="Top" Width="74" Grid.Column="1" />
-        <Label Content="Савич Андрей Олегович" HorizontalAlignment="Left" Margin="70,220,0,0" VerticalAlignment="Top" Width="176" Grid.Column="1" />
-        <Button x:Name="Agreed" Grid.Column="1" Content="OK" Margin="97,255,0,0" VerticalAlignment="Top" Height="42" Width="100" Click="Agreed_Click"/>
+        <Label Content="ПО-455" HorizontalAlignment="Left" Margin="59,270,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-1.105,1.611" />
+        <Label Content="Учащийся" HorizontalAlignment="Left" Margin="70,246,0,0" VerticalAlignment="Top" Width="74" Grid.Column="1" />
+        <Label Content="Савич Андрей Олегович" HorizontalAlignment="Left" Margin="70,266,0,0" VerticalAlignment="Top" Width="176" Grid.Column="1" />
+        <Button x:Name="Agreed" Grid.Column="1" Content="OK" Margin="97,292,0,0" VerticalAlignment="Top" Height="42" Width="100" Click="Agreed_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="59,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Text="Предназначенно для автоматизации работы автопарка автобусов" FontSize="14"/>
 
     </Grid>
 </Window>

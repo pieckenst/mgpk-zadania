@@ -19,6 +19,8 @@ type
     Panel1: TPanel;
     Image2: TImage;
     Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
     procedure Panel1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure Image2Click(Sender: TObject);

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServerLoginTemplate", "SQLServerLoginTemplate.csproj", "{109F7496-230E-4CA6-806E-5E767967228C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{109F7496-230E-4CA6-806E-5E767967228C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{109F7496-230E-4CA6-806E-5E767967228C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{109F7496-230E-4CA6-806E-5E767967228C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109F7496-230E-4CA6-806E-5E767967228C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27575A43-547B-453F-81EC-0E93A7C5859F}
+	EndGlobalSection
+EndGlobal

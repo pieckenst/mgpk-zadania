@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Информация о сотрудниках" Height="577" Width="880"
+        Title="Информация о сотрудниках" Height="602.5" Width="880"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         ui:WindowHelper.UseModernWindowStyle="True" WindowStyle="ThreeDBorderWindow">
     <Grid Margin="0,0,0,-6">
@@ -24,19 +24,19 @@
         <Label x:Name="Labos7" Content="Internship" HorizontalAlignment="Left" Margin="565,355,0,0"
                VerticalAlignment="Top" />
         <TextBox x:Name="Exed1" HorizontalAlignment="Left" Margin="144,346,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" />
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed1_MouseDown" />
         <TextBox x:Name="Exed3" HorizontalAlignment="Left" Margin="144,431,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" />
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed3_MouseDown" />
         <TextBox x:Name="Exed2" HorizontalAlignment="Left" Margin="144,389,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" />
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed2_MouseDown" />
         <TextBox x:Name="Exed4" HorizontalAlignment="Left" Margin="424,348,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" />
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed4_MouseDown" />
         <TextBox x:Name="Exed6" HorizontalAlignment="Left" Margin="424,433,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" />
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed6_MouseDown" />
         <TextBox x:Name="Exed5" HorizontalAlignment="Left" Margin="424,389,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" />
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed5_MouseDown" />
         <TextBox x:Name="Exed7" HorizontalAlignment="Left" Margin="644,348,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" />
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed7_MouseDown" />
         <Button x:Name="EmpUpdat" Content="Обновить данные" Margin="596,482,0,0" VerticalAlignment="Top" Width="253"
                 Height="41" Click="EmpUpdat_Click" />
 

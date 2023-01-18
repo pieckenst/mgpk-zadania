@@ -1,45 +1,89 @@
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.AssemblyReference.cache
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\EmpRecord.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\MainWindow.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window1.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window2.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window3.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\App.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\EmpRecord.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\MainWindow.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\ReportExport.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window1.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window2.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window3.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\WPFReports.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\App.g.cs
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov_MarkupCompile.cache
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov_MarkupCompile.lref
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\ReportExport.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\WPFReports.baml
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.g.resources
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.Properties.Resources.resources
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.GenerateResource.cache
-I:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.CoreCompileInputs.cache
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.AssemblyReference.cache
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.SuggestedBindingRedirects.cache
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.exe.config
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\EmpRecord.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window1.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window2.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window3.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\App.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\EmpRecord.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\MainWindow.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\ReportExport.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window1.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window2.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window3.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\App.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov_MarkupCompile.cache
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov_MarkupCompile.lref
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\ReportExport.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.exe
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.pdb
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.pssym
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.pspdb
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.exe.config
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.exe
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.pdb
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Animation.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Base.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Controls.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.DesignerSupport.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.DesktopRuntime.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Dialogs.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Input.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Interactivity.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Layout.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Markup.Xaml.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Markup.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.MicroCom.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.OpenGL.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Styling.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Themes.Default.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Themes.Fluent.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Visuals.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Remote.Protocol.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Avalonia.Win32.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\ControlzEx.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\ControlzEx.pdb
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\DynamicData.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.Compat.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.OpenSource.Export.PdfSimple.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Fluent.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Fluent.pdb
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\JetBrains.Annotations.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\log4net.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.AspNetCore.Hosting.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.AspNetCore.Http.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Net.Http.Headers.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Xaml.Behaviors.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\ModernWpf.Controls.dll
@@ -180,35 +224,28 @@ C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkA
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.Patterns.Diagnostics.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\ReactiveUI.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\ReactiveUI.Wpf.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Splat.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Buffers.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Collections.Immutable.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.ComponentModel.Annotations.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Data.SqlClient.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Drawing.Common.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Memory.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Reactive.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\System.ValueTuple.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.Data.MsSql.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.CSharp.dll
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.AssemblyReference.cache
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\EmpRecord.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\WpfMessageBoxEx.dll
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\WpfMessageBoxEx.pdb
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\MainWindow.baml
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.baml
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.baml
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window1.baml
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window2.baml
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window3.baml
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.baml
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\App.baml
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\EmpRecord.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\MainWindow.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\ReportExport.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window1.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window2.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window3.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\WPFReports.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\App.g.cs
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov_MarkupCompile.cache
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov_MarkupCompile.lref
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\ReportExport.baml
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\WPFReports.baml
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.g.resources
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.Properties.Resources.resources
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.GenerateResource.cache
@@ -216,9 +253,420 @@ C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkA
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\touch
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\AdditionalBuildDependencies.txt
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.CopyComplete
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.exe
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.pdb
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\postsharp.app.config
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\WpfMessageBoxEx.dll
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\WpfMessageBoxEx.pdb
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.SuggestedBindingRedirects.cache
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\LogForm.g.cs
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\LogForm.baml
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\SQLServerLoginTemplate.exe
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\SQLServerLoginTemplate.pdb
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\SQLServerLoginTemplate.exe.config
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.exe
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.pdb
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.AssemblyReference.cache
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.SuggestedBindingRedirects.cache
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.exe.config
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\EmpRecord.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window1.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window2.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window3.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\App.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\EmpRecord.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\LogForm.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\MainWindow.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\ReportExport.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window1.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window2.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window3.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\App.g.cs
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov_MarkupCompile.cache
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov_MarkupCompile.lref
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\LogForm.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\MainWindow.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\ReportExport.baml
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.g.resources
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.Properties.Resources.resources
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.GenerateResource.cache
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.CoreCompileInputs.cache
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.pssym
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.pspdb
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.exe.config
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.exe
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.pdb
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ControlzEx.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ControlzEx.pdb
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\DynamicData.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.Compat.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.OpenSource.Export.PdfSimple.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Fluent.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Fluent.pdb
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\log4net.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Xaml.Behaviors.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ModernWpf.Controls.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ModernWpf.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\af-ZA\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\af-ZA\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\am-ET\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\am-ET\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ar-SA\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ar-SA\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\az-Latn-AZ\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\az-Latn-AZ\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\be-BY\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\be-BY\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bg-BG\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bg-BG\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bn-BD\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bn-BD\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bs-Latn-BA\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bs-Latn-BA\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ca-ES\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ca-ES\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\cs-CZ\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\cs-CZ\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\da-DK\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\da-DK\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\de-DE\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\de-DE\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\el-GR\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\el-GR\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\en-GB\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\en-GB\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\es-ES\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\es-ES\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\es-MX\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\es-MX\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\et-EE\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\et-EE\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\eu-ES\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\eu-ES\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fa-IR\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fa-IR\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fi-FI\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fi-FI\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fr-CA\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fr-CA\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fr-FR\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fr-FR\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\gl-ES\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\gl-ES\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ha-Latn-NG\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ha-Latn-NG\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\he-IL\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\he-IL\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hi-IN\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hi-IN\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hr-HR\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hr-HR\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hu-HU\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hu-HU\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\id-ID\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\id-ID\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\is-IS\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\is-IS\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\it-IT\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\it-IT\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ja-JP\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ja-JP\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ka-GE\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ka-GE\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\kk-KZ\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\kk-KZ\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\km-KH\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\km-KH\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\kn-IN\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\kn-IN\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ko-KR\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ko-KR\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lo-LA\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lo-LA\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lt-LT\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lt-LT\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lv-LV\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lv-LV\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\mk-MK\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\mk-MK\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ml-IN\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ml-IN\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ms-MY\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ms-MY\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nb-NO\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nb-NO\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nl-NL\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nl-NL\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nn-NO\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nn-NO\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pl-PL\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pl-PL\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pt-BR\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pt-BR\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pt-PT\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pt-PT\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ro-RO\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ro-RO\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ru-RU\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ru-RU\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sk-SK\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sk-SK\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sl-SI\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sl-SI\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sq-AL\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sq-AL\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sr-Latn-RS\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sr-Latn-RS\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sv-SE\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sv-SE\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sw-KE\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sw-KE\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ta-IN\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ta-IN\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\te-IN\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\te-IN\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\th-TH\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\th-TH\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\tr-TR\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\tr-TR\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\uk-UA\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\uk-UA\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\uz-Latn-UZ\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\uz-Latn-UZ\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\vi-VN\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\vi-VN\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\zh-CN\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\zh-CN\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\zh-TW\ModernWpf.Controls.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\zh-TW\ModernWpf.resources.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.Patterns.Common.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.Patterns.Diagnostics.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ReactiveUI.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ReactiveUI.Wpf.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Splat.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\System.Data.SqlClient.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\System.Reactive.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\System.Threading.Tasks.Extensions.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\System.ValueTuple.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.Data.MsSql.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.CSharp.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\WpfMessageBoxEx.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\WpfMessageBoxEx.pdb
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\touch
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\AdditionalBuildDependencies.txt
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.CopyComplete
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\postsharp.app.config
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.AssemblyReference.cache
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.exe.config
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\EmpRecord.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\MainWindow.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window1.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window2.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window3.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\App.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\EmpRecord.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\LogForm.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\MainWindow.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\ReportExport.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\TexObslugWindow.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\UpdateR.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window1.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window2.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window3.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\Window4.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\App.g.cs
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov_MarkupCompile.cache
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov_MarkupCompile.lref
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\LogForm.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\ReportExport.baml
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.g.resources
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.Properties.Resources.resources
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.GenerateResource.cache
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.CoreCompileInputs.cache
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.pssym
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.pspdb
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.exe.config
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.exe
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\KursovayaAvtoparkAvtobusov.pdb
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ControlzEx.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ControlzEx.pdb
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\DynamicData.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.Compat.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.OpenSource.Export.PdfSimple.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Fluent.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Fluent.pdb
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\log4net.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Xaml.Behaviors.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ModernWpf.Controls.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ModernWpf.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\af-ZA\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\af-ZA\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\am-ET\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\am-ET\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ar-SA\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ar-SA\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\az-Latn-AZ\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\az-Latn-AZ\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\be-BY\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\be-BY\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bg-BG\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bg-BG\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bn-BD\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bn-BD\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bs-Latn-BA\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\bs-Latn-BA\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ca-ES\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ca-ES\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\cs-CZ\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\cs-CZ\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\da-DK\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\da-DK\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\de-DE\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\de-DE\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\el-GR\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\el-GR\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\en-GB\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\en-GB\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\es-ES\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\es-ES\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\es-MX\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\es-MX\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\et-EE\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\et-EE\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\eu-ES\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\eu-ES\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fa-IR\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fa-IR\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fi-FI\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fi-FI\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fr-CA\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fr-CA\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fr-FR\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\fr-FR\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\gl-ES\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\gl-ES\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ha-Latn-NG\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ha-Latn-NG\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\he-IL\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\he-IL\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hi-IN\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hi-IN\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hr-HR\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hr-HR\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hu-HU\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\hu-HU\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\id-ID\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\id-ID\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\is-IS\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\is-IS\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\it-IT\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\it-IT\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ja-JP\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ja-JP\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ka-GE\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ka-GE\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\kk-KZ\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\kk-KZ\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\km-KH\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\km-KH\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\kn-IN\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\kn-IN\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ko-KR\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ko-KR\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lo-LA\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lo-LA\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lt-LT\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lt-LT\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lv-LV\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\lv-LV\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\mk-MK\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\mk-MK\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ml-IN\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ml-IN\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ms-MY\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ms-MY\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nb-NO\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nb-NO\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nl-NL\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nl-NL\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nn-NO\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\nn-NO\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pl-PL\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pl-PL\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pt-BR\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pt-BR\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pt-PT\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\pt-PT\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ro-RO\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ro-RO\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ru-RU\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ru-RU\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sk-SK\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sk-SK\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sl-SI\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sl-SI\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sq-AL\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sq-AL\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sr-Latn-RS\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sr-Latn-RS\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sv-SE\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sv-SE\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sw-KE\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\sw-KE\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ta-IN\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ta-IN\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\te-IN\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\te-IN\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\th-TH\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\th-TH\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\tr-TR\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\tr-TR\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\uk-UA\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\uk-UA\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\uz-Latn-UZ\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\uz-Latn-UZ\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\vi-VN\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\vi-VN\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\zh-CN\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\zh-CN\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\zh-TW\ModernWpf.Controls.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\zh-TW\ModernWpf.resources.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.Patterns.Common.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.Patterns.Diagnostics.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\PostSharp.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ReactiveUI.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\ReactiveUI.Wpf.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Splat.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\System.Data.SqlClient.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\System.Reactive.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\System.Threading.Tasks.Extensions.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\System.ValueTuple.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\FastReport.Data.MsSql.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\Microsoft.CSharp.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\WpfMessageBoxEx.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\WpfMessageBoxEx.pdb
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\touch
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\AdditionalBuildDependencies.txt
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.CopyComplete
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.exe
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.pdb
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\postsharp.app.config
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\LogOnHelper.dll
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\LogOnHelper.pdb
+H:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\LogOnHelper.dll.config
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\LogOnHelper.dll
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\LogOnHelper.pdb
+G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\bin\Debug\LogOnHelper.dll.config

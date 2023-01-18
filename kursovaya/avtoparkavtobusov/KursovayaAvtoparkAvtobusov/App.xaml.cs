@@ -2,6 +2,8 @@
 using System.Diagnostics;
 using System.Windows;
 
+using Application = System.Windows.Application;
+
 namespace KursovayaAvtoparkAvtobusov
 {
     /// <summary>
@@ -9,11 +11,18 @@ namespace KursovayaAvtoparkAvtobusov
     /// </summary>
     public partial class App : Application
     {
+
         protected override void OnStartup(StartupEventArgs e)
         {
+            
             var textWriterTraceListener = new TextWriterTraceListener(Console.Out);
             Debug.Listeners.Add(textWriterTraceListener);
+#if DEBUG
             Console.WriteLine("STARTING DEBUG SESSION !!!");
+#else
+            Console.WriteLine("Starting application!");
+#endif
+
         }
 
     }

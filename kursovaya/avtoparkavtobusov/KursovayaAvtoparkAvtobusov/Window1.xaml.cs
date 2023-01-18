@@ -31,7 +31,7 @@ namespace KursovayaAvtoparkAvtobusov
                     "Values('" + NomeMarshuta + "', '" + NachalnPunkt + "', '" + KonechnPunkt + "', '" + Vodit + "','" +
                     Modelvtobusa + "', '" + VremProezda + "')";
                 SqlConnection cnn;
-                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = MainWindow.formations;
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();

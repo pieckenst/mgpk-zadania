@@ -1,13 +1,39 @@
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\bin\Debug\WpfMessageBoxEx.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\bin\Debug\WpfMessageBoxEx.pdb
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.AssemblyReference.cache
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\MessageBoxEx.baml
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\MessageBoxEx.g.cs
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx_MarkupCompile.cache
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx_MarkupCompile.lref
+C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\MessageBoxEx.baml
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.g.resources
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.Properties.Resources.resources
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.GenerateResource.cache
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.CoreCompileInputs.cache
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.dll
 C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.pdb
-C:\Users\AndreySavich\source\repos\KursovayaAvtoparkAvtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx_MarkupCompile.lref
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\MessageBoxEx.g.cs
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx_MarkupCompile.cache
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx_MarkupCompile.lref
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.dll
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.pdb
+G:\Курсовой Проект-год2\WpfMessageBoxEx\bin\Debug\WpfMessageBoxEx.dll
+G:\Курсовой Проект-год2\WpfMessageBoxEx\bin\Debug\WpfMessageBoxEx.pdb
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.AssemblyReference.cache
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\MessageBoxEx.baml
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.g.resources
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.Properties.Resources.resources
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.GenerateResource.cache
+G:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.CoreCompileInputs.cache
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.AssemblyReference.cache
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\MessageBoxEx.g.cs
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx_MarkupCompile.cache
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx_MarkupCompile.lref
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\MessageBoxEx.baml
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.g.resources
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.Properties.Resources.resources
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.GenerateResource.cache
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.CoreCompileInputs.cache
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.pdb
+H:\Курсовой Проект-год2\WpfMessageBoxEx\bin\Debug\WpfMessageBoxEx.dll
+H:\Курсовой Проект-год2\WpfMessageBoxEx\bin\Debug\WpfMessageBoxEx.pdb
+H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.dll

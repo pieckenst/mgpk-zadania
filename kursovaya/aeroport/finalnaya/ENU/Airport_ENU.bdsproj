@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">W32ResourceDLL.Personality</Option>
+			<Option Name="ProjectType">ResourceDLL</Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{84226F19-13A0-4A86-950B-031ED214069F}</Option>
+		</Option>
+	</PersonalityInfo>
+	<W32ResourceDLL.Personality>
+		<Source>
+			<Source Name="MainSource">Airport.dpr</Source>
+		</Source>
+		<Options>
+			<Options Name="BaseLang">1049</Options>
+			<Options Name="TargetName">..\Win32\Release\Airport.ENU</Options>
+			<Options Name="BRCC_IncludePath"></Options>
+			<Options Name="Company"></Options>
+			<Options Name="Configuration"></Options>
+			<Options Name="Copyright"></Options>
+			<Options Name="Description"></Options>
+			<Options Name="Trademark"></Options>
+			<Options Name="Product"></Options>
+			<Options Name="ProductVersion"></Options>
+			<Options Name="Title"></Options>
+			<Options Name="FileVersion"></Options>
+			<Options Name="Evidence"></Options>
+			<Options Name="KeyFile"></Options>
+			<Options Name="KeyName"></Options>
+		</Options>
+		<FileList>
+			<File FileName="AboutProgram.dfm" ContainerId="W32Form" ModuleName="AboutProgram.dfm"/>
+			<File FileName="Calendar.dfm" ContainerId="W32Form" ModuleName="Calendar.dfm"/>
+			<File FileName="EditFlights.dfm" ContainerId="W32Form" ModuleName="EditFlights.dfm"/>
+			<File FileName="InfoReisy.dfm" ContainerId="W32Form" ModuleName="InfoReisy.dfm"/>
+			<File FileName="Mainmenu.dfm" ContainerId="W32Form" ModuleName="Mainmenu.dfm"/>
+			<File FileName="OknoProdazhi.dfm" ContainerId="W32Form" ModuleName="OknoProdazhi.dfm"/>
+			<File FileName="ReturnBilet.dfm" ContainerId="W32Form" ModuleName="ReturnBilet.dfm"/>
+			<File FileName="Statistika.dfm" ContainerId="W32Form" ModuleName="Statistika.dfm"/>
+			<File FileName="Unit3.dfm" ContainerId="W32Form" ModuleName="Unit3.dfm"/>
+			<File FileName="Win32\Release\Airport_DRC.rc" ContainerId="W32RC" ModuleName="Airport_DRC.rc"/>
+		</FileList>
+	</W32ResourceDLL.Personality>
+</BorlandProject>

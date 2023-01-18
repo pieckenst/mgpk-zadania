@@ -385,9 +385,9 @@ namespace MsgBoxEx
             // set the form's colors (you can also set these colors in your program's startup code 
             // (either in app.xaml.cs or MainWindow.cs) before you use the MessageBox for the 
             // first time
-            MessageBackground = (MessageBackground == null) ? new SolidColorBrush(Colors.White) : MessageBackground;
-            MessageForeground = (MessageForeground == null) ? new SolidColorBrush(Colors.Black) : MessageForeground;
-            ButtonBackground = (ButtonBackground == null) ? new SolidColorBrush(ColorFromString("#cdcdcd")) : ButtonBackground;
+            MessageBackground = (MessageBackground == null) ? new SolidColorBrush(Colors.Black) : MessageBackground;
+            MessageForeground = (MessageForeground == null) ? new SolidColorBrush(Colors.White) : MessageForeground;
+            ButtonBackground = (ButtonBackground == null) ? new SolidColorBrush(Colors.Black) : ButtonBackground;
 
             this.MessageIcon = null;
 

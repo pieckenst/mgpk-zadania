@@ -1,10 +1,16 @@
 ﻿using ModernWpf;
+
 using MsgBoxEx;
 using System;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
+using System.IO;
 using System.Windows;
+using System.Windows.Forms;
+using SQLServerLoginTemplate;
+using Application = System.Windows.Application;
 
 namespace KursovayaAvtoparkAvtobusov
 {
@@ -13,9 +19,21 @@ namespace KursovayaAvtoparkAvtobusov
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static string a;
+        public static string formations;
         public MainWindow()
         {
+            System.Windows.Forms.Application.EnableVisualStyles();
             InitializeComponent();
+            var form1 = new FormConnectToSQLServer();
+            form1.ShowDialog();
+            a = form1.ConnectionString;
+            formations = a + ";Initial Catalog=KursovayaAvtoparkAvtobusov";
+#if DEBUG
+            Console.WriteLine(a);
+            Console.WriteLine(formations);
+#endif
+
         }
 
         private void ConnectDb_Click(object sender, RoutedEventArgs e)
@@ -23,7 +41,7 @@ namespace KursovayaAvtoparkAvtobusov
             try
             {
                 SqlConnection cnn;
-                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = MainWindow.formations;
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
@@ -106,7 +124,7 @@ namespace KursovayaAvtoparkAvtobusov
             try
             {
                 SqlConnection cnn;
-                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = MainWindow.formations;
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
@@ -123,6 +141,7 @@ namespace KursovayaAvtoparkAvtobusov
                 commandBuilder.ExecuteNonQuery();
                 Console.WriteLine("Connection established and the table updated!");
                 cnn.Close();
+                ConnectDb_Click(sender, e);
             }
             catch (Exception ex)
             {
@@ -149,7 +168,7 @@ namespace KursovayaAvtoparkAvtobusov
                     "Values('" + NomeMarshuta + "', '" + NachalnPunkt + "', '" + KonechnPunkt + "', '" + Vodit + "','" +
                     Modelvtobusa + "', '" + VremProezda + "')";
                 SqlConnection cnn;
-                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = MainWindow.formations;
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
@@ -158,6 +177,7 @@ namespace KursovayaAvtoparkAvtobusov
                 Console.WriteLine("Data inserted!\n Closing connection ");
                 cnn.Close();
                 Console.WriteLine("Connection has been closed , database ready for next operation!");
+                ConnectDb_Click(sender,e);
             }
             catch (Exception ex)
             {
@@ -171,14 +191,57 @@ namespace KursovayaAvtoparkAvtobusov
 
         private void RepView_Click(object sender, RoutedEventArgs e)
         {
-            var wndxXxxxX = new WPFReports();
-            wndxXxxxX.Show();
+            var fbd = new FolderBrowserDialog();
+            string sSelectedPath = null;
+            fbd.Description = "Please locate your report viewer path";
+            if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                sSelectedPath = fbd.SelectedPath;
+            }
+            else
+            {
+                return;
+            }
+            Process avReportLaunchProcess = new Process();
+            avReportLaunchProcess.StartInfo.FileName = Path.Combine(sSelectedPath, "WpfReporter.exe");
+            avReportLaunchProcess.Start();
+
         }
 
         private void Repexp_Click(object sender, RoutedEventArgs e)
         {
             var wndxXxxxX = new ReportExport();
             wndxXxxxX.Show();
+        }
+
+        private void Editor1_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Editor1.Clear();
+        }
+
+        private void Editor3_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Editor3.Clear();
+        }
+
+        private void Editor5_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Editor5.Clear();
+        }
+
+        private void Editor2_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Editor2.Clear();
+        }
+
+        private void Editor4_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Editor4.Clear();
+        }
+
+        private void Editor6_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Editor6.Clear();
         }
     }
 }

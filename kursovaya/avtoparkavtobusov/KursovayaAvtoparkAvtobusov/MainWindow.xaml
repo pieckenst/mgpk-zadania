@@ -7,7 +7,7 @@
     xmlns:Fluent="urn:fluent-ribbon"
     x:Class="KursovayaAvtoparkAvtobusov.MainWindow"
     mc:Ignorable="d"
-    Title="Автопарк автобусов" Height="692" Width="1200"
+    Title="Автопарк автобусов" Height="713" Width="1200"
     WindowStyle="ThreeDBorderWindow"
     ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
@@ -16,44 +16,8 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <Fluent:Ribbon Grid.Row="0" Loaded="Ribbon_Loaded" IsSimplified="True">
-            <!-- Backstage -->
-            <Fluent:Ribbon.Menu>
-                <Fluent:Backstage x:Name="menuRib" Background="#FFFF7413" Width="57">
-                    <Fluent:Button x:Name="exiter"
 
-                                   Header="Выйти из программы" Click="exiter_Click" FontSize="10" />
-                </Fluent:Backstage>
-            </Fluent:Ribbon.Menu>
-
-            <!-- Tabs -->
-            <Fluent:RibbonTabItem Header="Начало" Margin="6,0,55,1" ActiveTabBackground="{x:Null}"
-                                  ActiveTabBorderBrush="{x:Null}">
-                <Fluent:RibbonGroupBox Header="Функцуионал" Fluent:RibbonProperties.IconSize="Medium" Margin="0,-8,0,0">
-                    <Fluent:Button x:Name="ConnectDb"
-
-                                   Header="Подключится к базе данных" Click="ConnectDb_Click" FontSize="10" Height="33" />
-
-                    <Fluent:Button
-                        x:Name="ProdBiletovMenu" Header="Продажа билетов" Click="ProdBiletovMenu_Click" FontSize="10"
-                        Height="33" />
-                    <Fluent:Button
-                        x:Name="DeleteMenu" Header="Удаление данных" Click="DeleteMenu_Click" FontSize="10" Height="33" />
-                    <Fluent:Button
-                        x:Name="ObslugAvtobusov" Header="Техническое обслуживание автобусов"
-                        Click="ObslugAvtobusov_Click" FontSize="10" Height="33" />
-                    <Fluent:Button x:Name="EmpMenu" Header="Информация о сотрудниках" Click="EmpMenu_Click"
-                                   FontSize="10" Height="33" />
-                    <Fluent:Button x:Name="RepView" Header="Просмотр отчетов" Click="RepView_Click"
-                                   FontSize="10" Height="33" />
-                    <Fluent:Button x:Name="Repexp" Header="Экспорт отчетов" Click="Repexp_Click"
-                                   FontSize="10" Height="33" />
-                    <Fluent:Button x:Name="AboutAutobus" Header="О программе" Click="AboutAutobus_Click" FontSize="10"
-                                   Height="33" />
-                </Fluent:RibbonGroupBox>
-            </Fluent:RibbonTabItem>
-        </Fluent:Ribbon>
-        <DataGrid x:Name="dataGrid1" Margin="0,17,10,10" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+        <DataGrid x:Name="dataGrid1" Margin="338,5,8,1" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
             <DataGrid.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform />
@@ -64,36 +28,56 @@
             </DataGrid.RenderTransform>
         </DataGrid>
 
-        <Label x:Name="lb1" Content="Nomer_Marshuta" HorizontalAlignment="Left" Margin="13,81,0,0"
-               VerticalAlignment="Top" FontSize="10" Height="14" Width="72" />
-        <Label x:Name="Lb2" Content="Nachalni_Punkt" HorizontalAlignment="Left" Margin="13,128,0,0"
-               VerticalAlignment="Top" FontSize="10" Height="13" Width="64" />
+        <Label x:Name="lb1" Content="Nomer_Marshuta" HorizontalAlignment="Left" Margin="6,236,0,0"
+               VerticalAlignment="Top" FontSize="10" Height="14" Width="72" Grid.Row="1" />
+        <Label x:Name="Lb2" Content="Nachalni_Punkt" HorizontalAlignment="Left" Margin="165,295,0,0"
+               VerticalAlignment="Top" FontSize="10" Height="13" Width="64" Grid.Row="1" />
 
-        <Label x:Name="lb3" Content="Konechni_Punkt" HorizontalAlignment="Left" Margin="172,81,0,0"
-               VerticalAlignment="Top" FontSize="10" Height="14" Width="66" />
-        <Label x:Name="lb4" Content="Voditel" HorizontalAlignment="Left" Margin="174,128,0,0" VerticalAlignment="Top"
-               FontSize="10" Height="13" Width="31" />
-        <Label x:Name="lb5" Content="Model_Avtobusa" HorizontalAlignment="Left" Margin="324,80,0,0"
-               VerticalAlignment="Top" FontSize="10" Height="14" Width="70" />
+        <Label x:Name="lb3" Content="Konechni_Punkt" HorizontalAlignment="Left" Margin="165,236,0,0"
+               VerticalAlignment="Top" FontSize="10" Height="14" Width="66" Grid.Row="1" />
+        <Label x:Name="lb4" Content="Voditel" HorizontalAlignment="Left" Margin="10,349,0,0" VerticalAlignment="Top"
+               FontSize="10" Height="12" Width="31" Grid.Row="1" />
+        <Label x:Name="lb5" Content="Model_Avtobusa" HorizontalAlignment="Left" Margin="8,291,0,0"
+               VerticalAlignment="Top" FontSize="10" Height="14" Width="70" Grid.Row="1" />
 
-        <Label x:Name="lb6" Content="Vremya_Proezda" HorizontalAlignment="Left" Margin="324,128,0,0"
-               VerticalAlignment="Top" FontSize="10" Height="13" Width="69" />
-        <TextBox x:Name="Editor1" HorizontalAlignment="Left" Margin="13,96,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="150" Height="32" />
-        <TextBox x:Name="Editor2" HorizontalAlignment="Left" Margin="13,141,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="150" Height="32" />
-        <TextBox x:Name="Editor3" HorizontalAlignment="Left" Margin="172,96,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="148" Height="32" />
-        <TextBox x:Name="Editor4" HorizontalAlignment="Left" Margin="172,141,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="148" Height="32" />
-        <TextBox x:Name="Editor5" HorizontalAlignment="Left" Margin="324,96,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="149" Height="32" />
-        <TextBox x:Name="Editor6" HorizontalAlignment="Left" Margin="323,141,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="149" Height="32" />
-        <Button x:Name="UpdateTransportTable" Content="Обновить Данные о Маршутах" Margin="484,135,0,0"
-                VerticalAlignment="Top" Height="33" Width="218" Click="UpdateTransportTable_Click" />
-        <Button x:Name="ClickSendDb" Content="Отправить данные в БД" Margin="484,92,0,0" VerticalAlignment="Top"
-                Height="32" Width="218" Click="Button_Click" />
+        <Label x:Name="lb6" Content="Vremya_Proezda" HorizontalAlignment="Left" Margin="166,349,0,0"
+               VerticalAlignment="Top" FontSize="10" Height="12" Width="69" Grid.Row="1" />
+        <TextBox x:Name="Editor1" HorizontalAlignment="Left" Margin="6,251,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="150" Height="32" MouseDoubleClick="Editor1_MouseDown" Grid.Row="1" />
+        <TextBox x:Name="Editor2" HorizontalAlignment="Left" Margin="165,307,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="150" Height="32" MouseDoubleClick="Editor2_MouseDown" Grid.Row="1" />
+        <TextBox x:Name="Editor3" HorizontalAlignment="Left" Margin="165,251,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="148" Height="32" MouseDoubleClick="Editor3_MouseDown" Grid.Row="1" />
+        <TextBox x:Name="Editor4" HorizontalAlignment="Left" Margin="8,361,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="148" Height="32" MouseDoubleClick="Editor4_MouseDown" Grid.Row="1" />
+        <TextBox x:Name="Editor5" HorizontalAlignment="Left" Margin="8,307,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="149" Height="32" MouseDoubleClick="Editor5_MouseDown" Grid.Row="1" />
+        <TextBox x:Name="Editor6" HorizontalAlignment="Left" Margin="165,361,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="149" Height="32" MouseDoubleClick="Editor6_MouseDown" Grid.Row="1" />
+        <Button x:Name="UpdateTransportTable" Content="Обновить Данные о Маршутах" Margin="13,455,0,0"
+                VerticalAlignment="Top" Height="33" Width="218" Click="UpdateTransportTable_Click" Grid.Row="1" />
+        <Button x:Name="ClickSendDb" Content="Отправить данные в БД" Margin="15,411,0,0" VerticalAlignment="Top"
+                Height="33" Width="218" Click="Button_Click" Grid.Row="1" />
+        <ListBox Margin="0,0,885,348" Grid.RowSpan="2">
+            <ListBoxItem x:Name="ConnectDb"
+
+                                   Content="Подключится к базе данных" MouseDoubleClick="ConnectDb_Click" />
+
+            <ListBoxItem
+                        x:Name="ProdBiletovMenu" Content="Продажа билетов" MouseDoubleClick="ProdBiletovMenu_Click" />
+            <ListBoxItem
+                        x:Name="DeleteMenu" Content="Удаление данных" MouseDoubleClick="DeleteMenu_Click" />
+            <ListBoxItem
+                        x:Name="ObslugAvtobusov" Content="Техническое обслуживание автобусов"
+                        MouseDoubleClick="ObslugAvtobusov_Click" />
+            <ListBoxItem x:Name="EmpMenu" Content="Информация о сотрудниках" MouseDoubleClick="EmpMenu_Click"
+                                   />
+            <ListBoxItem x:Name="RepView" Content="Просмотр отчетов" MouseDoubleClick="RepView_Click"
+                                   />
+            <ListBoxItem x:Name="Repexp" Content="Экспорт отчетов" MouseDoubleClick="Repexp_Click"
+                                   />
+            <ListBoxItem x:Name="AboutAutobus" Content="О программе" MouseDoubleClick="AboutAutobus_Click" />
+        </ListBox>
 
     </Grid>
 

@@ -18,6 +18,18 @@
           "lib/net462/ControlzEx.dll": {}
         }
       },
+      "DynamicData/7.4.9": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net461/DynamicData.dll": {}
+        },
+        "runtime": {
+          "lib/net461/DynamicData.dll": {}
+        }
+      },
       "FastReport.Compat/2021.3.0": {
         "type": "package",
         "compile": {
@@ -660,6 +672,19 @@
           "build/PostSharp.targets": {}
         }
       },
+      "PostSharp.Patterns.Common/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp": "[6.10.5, 7.0.0)",
+          "PostSharp.Patterns.Common.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/_._": {}
+        }
+      },
       "PostSharp.Patterns.Common.Redist/6.10.5": {
         "type": "package",
         "dependencies": {
@@ -670,6 +695,19 @@
         },
         "runtime": {
           "lib/net47/PostSharp.Patterns.Common.dll": {}
+        }
+      },
+      "PostSharp.Patterns.Diagnostics/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp.Patterns.Common": "[6.10.5, 7.0.0)",
+          "PostSharp.Patterns.Diagnostics.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/_._": {}
         }
       },
       "PostSharp.Patterns.Diagnostics.Log4Net/6.10.5": {
@@ -706,6 +744,40 @@
           "lib/net45/PostSharp.dll": {}
         }
       },
+      "ReactiveUI/17.1.17": {
+        "type": "package",
+        "dependencies": {
+          "DynamicData": "7.4.9",
+          "Splat": "14.1.17"
+        },
+        "compile": {
+          "lib/net472/ReactiveUI.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ReactiveUI.dll": {}
+        }
+      },
+      "ReactiveUI.WPF/17.1.17": {
+        "type": "package",
+        "dependencies": {
+          "ReactiveUI": "17.1.17"
+        },
+        "compile": {
+          "lib/net48/ReactiveUI.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net48/ReactiveUI.Wpf.dll": {}
+        }
+      },
+      "Splat/14.1.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Splat.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.4.3": {
         "type": "package",
         "frameworkAssemblies": [
@@ -728,6 +800,35 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net472/System.Reactive.dll": {}
+        },
+        "runtime": {
+          "lib/net472/System.Reactive.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
@@ -766,6 +867,21 @@
           "build/net461/System.Runtime.WindowsRuntime.UI.Xaml.targets": {}
         }
       },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
       "System.ValueTuple/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -776,6 +892,15 @@
         },
         "runtime": {
           "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "LogOnHelper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/LogOnHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogOnHelper.dll": {}
         }
       },
       "WpfMessageBoxEx/1.0.0": {
@@ -805,6 +930,18 @@
           "lib/net462/ControlzEx.dll": {}
         }
       },
+      "DynamicData/7.4.9": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net461/DynamicData.dll": {}
+        },
+        "runtime": {
+          "lib/net461/DynamicData.dll": {}
+        }
+      },
       "FastReport.Compat/2021.3.0": {
         "type": "package",
         "compile": {
@@ -1447,6 +1584,19 @@
           "build/PostSharp.targets": {}
         }
       },
+      "PostSharp.Patterns.Common/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp": "[6.10.5, 7.0.0)",
+          "PostSharp.Patterns.Common.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/_._": {}
+        }
+      },
       "PostSharp.Patterns.Common.Redist/6.10.5": {
         "type": "package",
         "dependencies": {
@@ -1457,6 +1607,19 @@
         },
         "runtime": {
           "lib/net47/PostSharp.Patterns.Common.dll": {}
+        }
+      },
+      "PostSharp.Patterns.Diagnostics/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp.Patterns.Common": "[6.10.5, 7.0.0)",
+          "PostSharp.Patterns.Diagnostics.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/_._": {}
         }
       },
       "PostSharp.Patterns.Diagnostics.Log4Net/6.10.5": {
@@ -1493,6 +1656,40 @@
           "lib/net45/PostSharp.dll": {}
         }
       },
+      "ReactiveUI/17.1.17": {
+        "type": "package",
+        "dependencies": {
+          "DynamicData": "7.4.9",
+          "Splat": "14.1.17"
+        },
+        "compile": {
+          "lib/net472/ReactiveUI.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ReactiveUI.dll": {}
+        }
+      },
+      "ReactiveUI.WPF/17.1.17": {
+        "type": "package",
+        "dependencies": {
+          "ReactiveUI": "17.1.17"
+        },
+        "compile": {
+          "lib/net48/ReactiveUI.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net48/ReactiveUI.Wpf.dll": {}
+        }
+      },
+      "Splat/14.1.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Splat.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.4.3": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1505,6 +1702,35 @@
         },
         "runtime": {
           "runtimes/win/lib/net461/System.Data.SqlClient.dll": {}
+        }
+      },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net472/System.Reactive.dll": {}
+        },
+        "runtime": {
+          "lib/net472/System.Reactive.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
@@ -1543,6 +1769,21 @@
           "build/net461/System.Runtime.WindowsRuntime.UI.Xaml.targets": {}
         }
       },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
       "System.ValueTuple/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1553,6 +1794,15 @@
         },
         "runtime": {
           "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "LogOnHelper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/LogOnHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogOnHelper.dll": {}
         }
       },
       "WpfMessageBoxEx/1.0.0": {
@@ -1582,6 +1832,18 @@
           "lib/net462/ControlzEx.dll": {}
         }
       },
+      "DynamicData/7.4.9": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net461/DynamicData.dll": {}
+        },
+        "runtime": {
+          "lib/net461/DynamicData.dll": {}
+        }
+      },
       "FastReport.Compat/2021.3.0": {
         "type": "package",
         "compile": {
@@ -2224,6 +2486,19 @@
           "build/PostSharp.targets": {}
         }
       },
+      "PostSharp.Patterns.Common/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp": "[6.10.5, 7.0.0)",
+          "PostSharp.Patterns.Common.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/_._": {}
+        }
+      },
       "PostSharp.Patterns.Common.Redist/6.10.5": {
         "type": "package",
         "dependencies": {
@@ -2234,6 +2509,19 @@
         },
         "runtime": {
           "lib/net47/PostSharp.Patterns.Common.dll": {}
+        }
+      },
+      "PostSharp.Patterns.Diagnostics/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp.Patterns.Common": "[6.10.5, 7.0.0)",
+          "PostSharp.Patterns.Diagnostics.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/_._": {}
         }
       },
       "PostSharp.Patterns.Diagnostics.Log4Net/6.10.5": {
@@ -2270,6 +2558,40 @@
           "lib/net45/PostSharp.dll": {}
         }
       },
+      "ReactiveUI/17.1.17": {
+        "type": "package",
+        "dependencies": {
+          "DynamicData": "7.4.9",
+          "Splat": "14.1.17"
+        },
+        "compile": {
+          "lib/net472/ReactiveUI.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ReactiveUI.dll": {}
+        }
+      },
+      "ReactiveUI.WPF/17.1.17": {
+        "type": "package",
+        "dependencies": {
+          "ReactiveUI": "17.1.17"
+        },
+        "compile": {
+          "lib/net48/ReactiveUI.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net48/ReactiveUI.Wpf.dll": {}
+        }
+      },
+      "Splat/14.1.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Splat.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.4.3": {
         "type": "package",
         "frameworkAssemblies": [
@@ -2282,6 +2604,35 @@
         },
         "runtime": {
           "lib/net461/System.Data.SqlClient.dll": {}
+        }
+      },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net472/System.Reactive.dll": {}
+        },
+        "runtime": {
+          "lib/net472/System.Reactive.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
@@ -2320,6 +2671,21 @@
           "build/net461/System.Runtime.WindowsRuntime.UI.Xaml.targets": {}
         }
       },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
       "System.ValueTuple/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -2330,6 +2696,15 @@
         },
         "runtime": {
           "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "LogOnHelper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/LogOnHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogOnHelper.dll": {}
         }
       },
       "WpfMessageBoxEx/1.0.0": {
@@ -2359,6 +2734,18 @@
           "lib/net462/ControlzEx.dll": {}
         }
       },
+      "DynamicData/7.4.9": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net461/DynamicData.dll": {}
+        },
+        "runtime": {
+          "lib/net461/DynamicData.dll": {}
+        }
+      },
       "FastReport.Compat/2021.3.0": {
         "type": "package",
         "compile": {
@@ -3001,6 +3388,19 @@
           "build/PostSharp.targets": {}
         }
       },
+      "PostSharp.Patterns.Common/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp": "[6.10.5, 7.0.0)",
+          "PostSharp.Patterns.Common.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/_._": {}
+        }
+      },
       "PostSharp.Patterns.Common.Redist/6.10.5": {
         "type": "package",
         "dependencies": {
@@ -3011,6 +3411,19 @@
         },
         "runtime": {
           "lib/net47/PostSharp.Patterns.Common.dll": {}
+        }
+      },
+      "PostSharp.Patterns.Diagnostics/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp.Patterns.Common": "[6.10.5, 7.0.0)",
+          "PostSharp.Patterns.Diagnostics.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/_._": {}
         }
       },
       "PostSharp.Patterns.Diagnostics.Log4Net/6.10.5": {
@@ -3047,6 +3460,40 @@
           "lib/net45/PostSharp.dll": {}
         }
       },
+      "ReactiveUI/17.1.17": {
+        "type": "package",
+        "dependencies": {
+          "DynamicData": "7.4.9",
+          "Splat": "14.1.17"
+        },
+        "compile": {
+          "lib/net472/ReactiveUI.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ReactiveUI.dll": {}
+        }
+      },
+      "ReactiveUI.WPF/17.1.17": {
+        "type": "package",
+        "dependencies": {
+          "ReactiveUI": "17.1.17"
+        },
+        "compile": {
+          "lib/net48/ReactiveUI.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net48/ReactiveUI.Wpf.dll": {}
+        }
+      },
+      "Splat/14.1.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Splat.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.4.3": {
         "type": "package",
         "frameworkAssemblies": [
@@ -3059,6 +3506,35 @@
         },
         "runtime": {
           "lib/net461/System.Data.SqlClient.dll": {}
+        }
+      },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net472/System.Reactive.dll": {}
+        },
+        "runtime": {
+          "lib/net472/System.Reactive.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
@@ -3097,6 +3573,21 @@
           "build/net461/System.Runtime.WindowsRuntime.UI.Xaml.targets": {}
         }
       },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
       "System.ValueTuple/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -3107,6 +3598,15 @@
         },
         "runtime": {
           "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "LogOnHelper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/LogOnHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogOnHelper.dll": {}
         }
       },
       "WpfMessageBoxEx/1.0.0": {
@@ -3143,6 +3643,30 @@
         "lib/netcoreapp3.1/ControlzEx.pdb",
         "lib/netcoreapp3.1/ControlzEx.xml",
         "logo-mini.png"
+      ]
+    },
+    "DynamicData/7.4.9": {
+      "sha512": "bzw9n1WgfflkhsScIaC7tzPlKFTJkfWVTOg2pjJjqzVqxF63ztaJ7HH306Iyx6bs+pC77fQbtE53UoPTpt+8dQ==",
+      "type": "package",
+      "path": "dynamicdata/7.4.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "dynamicdata.7.4.9.nupkg.sha512",
+        "dynamicdata.nuspec",
+        "lib/net461/DynamicData.dll",
+        "lib/net461/DynamicData.xml",
+        "lib/net5.0/DynamicData.dll",
+        "lib/net5.0/DynamicData.xml",
+        "lib/net6.0/DynamicData.dll",
+        "lib/net6.0/DynamicData.xml",
+        "lib/netstandard2.0/DynamicData.dll",
+        "lib/netstandard2.0/DynamicData.xml",
+        "lib/uap10.0.16299/DynamicData.dll",
+        "lib/uap10.0.16299/DynamicData.pri",
+        "lib/uap10.0.16299/DynamicData.xml",
+        "logo.png"
       ]
     },
     "FastReport.Compat/2021.3.0": {
@@ -4100,6 +4624,23 @@
         "postsharp.nuspec"
       ]
     },
+    "PostSharp.Patterns.Common/6.10.5": {
+      "sha512": "eFjEqVzE1g5XFf5xALwYmDCuy476KuEq+LX50sGrbGQdsrC+M0VaMLJCQlGAhVlUft8sKSiuVyu9W1kUQMMf0Q==",
+      "type": "package",
+      "path": "postsharp.patterns.common/6.10.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "icon.png",
+        "lib/net40/_._",
+        "lib/netstandard1.3/_._",
+        "postsharp.patterns.common.6.10.5.nupkg.sha512",
+        "postsharp.patterns.common.nuspec",
+        "tools/PostSharp.Patterns.Common.Weaver.dll"
+      ]
+    },
     "PostSharp.Patterns.Common.Redist/6.10.5": {
       "sha512": "SiiKoaM9XsY/ho2g/fpQEfEY50kXxwLClWdlVIJE8JfJs5XFOpPOH59hrgat9V9kQlD1pGaHuf95g2LcVrKrtg==",
       "type": "package",
@@ -4125,6 +4666,23 @@
         "lib/netstandard2.0/PostSharp.Patterns.Common.xml",
         "postsharp.patterns.common.redist.6.10.5.nupkg.sha512",
         "postsharp.patterns.common.redist.nuspec"
+      ]
+    },
+    "PostSharp.Patterns.Diagnostics/6.10.5": {
+      "sha512": "mvtTUjWy8Tr6Wcmql7bMX6uCw+uyUoSS78Dm4wbQOYJaCl+HiiFSMmfwsIJneAv+irXayFypVCs+8Ia28zt9Qw==",
+      "type": "package",
+      "path": "postsharp.patterns.diagnostics/6.10.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "icon.png",
+        "lib/net40/_._",
+        "lib/netstandard1.3/_._",
+        "postsharp.patterns.diagnostics.6.10.5.nupkg.sha512",
+        "postsharp.patterns.diagnostics.nuspec",
+        "tools/PostSharp.Patterns.Diagnostics.Weaver.dll"
       ]
     },
     "PostSharp.Patterns.Diagnostics.Log4Net/6.10.5": {
@@ -4202,6 +4760,88 @@
         "postsharp.redist.nuspec"
       ]
     },
+    "ReactiveUI/17.1.17": {
+      "sha512": "0DLq44k4CVvfXcWHE4uigQa/wySOzxOTnWg50j2qZDpWzl9OP7QfIDJo39X3ffEjaVcCUFcbF9xAmm7fRX/q2g==",
+      "type": "package",
+      "path": "reactiveui/17.1.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "lib/monoandroid11.0/ReactiveUI.dll",
+        "lib/monoandroid11.0/ReactiveUI.pdb",
+        "lib/monoandroid11.0/ReactiveUI.xml",
+        "lib/net462/ReactiveUI.dll",
+        "lib/net462/ReactiveUI.xml",
+        "lib/net472/ReactiveUI.dll",
+        "lib/net472/ReactiveUI.xml",
+        "lib/net6.0-android31.0/ReactiveUI.dll",
+        "lib/net6.0-android31.0/ReactiveUI.xml",
+        "lib/net6.0-ios15.0/ReactiveUI.dll",
+        "lib/net6.0-ios15.0/ReactiveUI.xml",
+        "lib/net6.0-macos12.0/ReactiveUI.dll",
+        "lib/net6.0-macos12.0/ReactiveUI.xml",
+        "lib/net6.0-tvos15.0/ReactiveUI.dll",
+        "lib/net6.0-tvos15.0/ReactiveUI.xml",
+        "lib/net6.0/ReactiveUI.dll",
+        "lib/net6.0/ReactiveUI.xml",
+        "lib/netstandard2.0/ReactiveUI.dll",
+        "lib/netstandard2.0/ReactiveUI.xml",
+        "lib/tizen40/ReactiveUI.dll",
+        "lib/tizen40/ReactiveUI.xml",
+        "lib/uap10.0.16299/ReactiveUI.dll",
+        "lib/uap10.0.16299/ReactiveUI.pri",
+        "lib/uap10.0.16299/ReactiveUI.xml",
+        "lib/xamarinios10/ReactiveUI.dll",
+        "lib/xamarinios10/ReactiveUI.xml",
+        "lib/xamarinmac20/ReactiveUI.dll",
+        "lib/xamarinmac20/ReactiveUI.xml",
+        "lib/xamarintvos10/ReactiveUI.dll",
+        "lib/xamarintvos10/ReactiveUI.xml",
+        "logo.png",
+        "reactiveui.17.1.17.nupkg.sha512",
+        "reactiveui.nuspec"
+      ]
+    },
+    "ReactiveUI.WPF/17.1.17": {
+      "sha512": "ddU3hahs2h0HqdVhXxxx+5f492GlA8g3zzHf/x7DhFGasfrRZLhdipu+Ro7RFSLLqtDVy5NfjNMk8BGFLzdOzQ==",
+      "type": "package",
+      "path": "reactiveui.wpf/17.1.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "lib/net462/ReactiveUI.Wpf.dll",
+        "lib/net462/ReactiveUI.Wpf.xml",
+        "lib/net472/ReactiveUI.Wpf.dll",
+        "lib/net472/ReactiveUI.Wpf.xml",
+        "lib/net48/ReactiveUI.Wpf.dll",
+        "lib/net48/ReactiveUI.Wpf.xml",
+        "lib/net6.0-windows10.0.19041/ReactiveUI.Wpf.dll",
+        "lib/net6.0-windows10.0.19041/ReactiveUI.Wpf.xml",
+        "lib/net6.0-windows7.0/ReactiveUI.Wpf.dll",
+        "lib/net6.0-windows7.0/ReactiveUI.Wpf.xml",
+        "logo.png",
+        "reactiveui.wpf.17.1.17.nupkg.sha512",
+        "reactiveui.wpf.nuspec"
+      ]
+    },
+    "Splat/14.1.17": {
+      "sha512": "orBlJcQS4b1VZUlT+sJIensH0MsTYyCJlStT6bRwt71OFqNYD6V1SpkoIt6vKSf8YXgDT7QH/LuwWdLfTyHPrw==",
+      "type": "package",
+      "path": "splat/14.1.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "lib/net6.0/Splat.dll",
+        "lib/net6.0/Splat.xml",
+        "lib/netstandard2.0/Splat.dll",
+        "lib/netstandard2.0/Splat.xml",
+        "splat.14.1.17.nupkg.sha512",
+        "splat.nuspec"
+      ]
+    },
     "System.Data.SqlClient/4.4.3": {
       "sha512": "D1hEOS1oPLJ6WcGCzpTWe8SauWVxnDoDTUWhv5XCNdRm/QeSUk4BQ3ZDe7BH+zNVHDBkPYjVzpVjnCl43eOSGg==",
       "type": "package",
@@ -4266,6 +4906,64 @@
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll",
         "system.data.sqlclient.4.4.3.nupkg.sha512",
         "system.data.sqlclient.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Reactive/5.0.0": {
+      "sha512": "erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "type": "package",
+      "path": "system.reactive/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net5.0/_._",
+        "build/netcoreapp3.1/System.Reactive.dll",
+        "build/netcoreapp3.1/System.Reactive.targets",
+        "build/netcoreapp3.1/System.Reactive.xml",
+        "buildTransitive/net5.0/_._",
+        "buildTransitive/netcoreapp3.1/System.Reactive.targets",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net5.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net5.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net5.0/System.Reactive.dll",
+        "lib/net5.0/System.Reactive.xml",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "system.reactive.5.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -4471,6 +5169,43 @@
         "version.txt"
       ]
     },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.ValueTuple/4.5.0": {
       "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
       "type": "package",
@@ -4515,6 +5250,11 @@
         "version.txt"
       ]
     },
+    "LogOnHelper/1.0.0": {
+      "type": "project",
+      "path": "../SQLServerLogin/LogOnHelper.csproj",
+      "msbuildProject": "../SQLServerLogin/LogOnHelper.csproj"
+    },
     "WpfMessageBoxEx/1.0.0": {
       "type": "project",
       "path": "../WpfMessageBoxEx/WpfMessageBoxEx.csproj",
@@ -4527,12 +5267,15 @@
       "FastReport.OpenSource >= 2022.1.0",
       "FastReport.OpenSource.Export.PdfSimple >= 2022.1.0",
       "Fluent.Ribbon >= 9.0.1",
+      "LogOnHelper >= 1.0.0",
       "Microsoft.Windows.SDK.Contracts >= 10.0.22000.196",
       "ModernWpfUI >= 0.9.4",
       "PostSharp >= 6.10.5",
       "PostSharp.Patterns.Common.Redist >= 6.10.5",
+      "PostSharp.Patterns.Diagnostics >= 6.10.5",
       "PostSharp.Patterns.Diagnostics.Log4Net >= 6.10.5",
       "PostSharp.Patterns.Diagnostics.Redist >= 6.10.5",
+      "ReactiveUI.WPF >= 17.1.17",
       "System.Runtime.WindowsRuntime >= 4.7.0",
       "System.Runtime.WindowsRuntime.UI.Xaml >= 4.7.0",
       "System.ValueTuple >= 4.5.0",
@@ -4540,24 +5283,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AndreySavich\\.nuget\\packages\\": {},
-    "G:\\sdk\\NuGetPackages": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+      "projectUniqueName": "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
       "projectName": "KursovayaAvtoparkAvtobusov",
-      "projectPath": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
-      "packagesPath": "C:\\Users\\AndreySavich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov\\obj\\",
+      "projectPath": "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "G:\\sdk\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\AndreySavich\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4571,8 +5314,11 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
-              "projectPath": "C:\\Users\\AndreySavich\\source\\repos\\KursovayaAvtoparkAvtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
+            "G:\\Курсовой Проект-год2\\SQLServerLogin\\LogOnHelper.csproj": {
+              "projectPath": "G:\\Курсовой Проект-год2\\SQLServerLogin\\LogOnHelper.csproj"
+            },
+            "G:\\Курсовой Проект-год2\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+              "projectPath": "G:\\Курсовой Проект-год2\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
             }
           }
         }
@@ -4613,6 +5359,10 @@
             "target": "Package",
             "version": "[6.10.5, )"
           },
+          "PostSharp.Patterns.Diagnostics": {
+            "target": "Package",
+            "version": "[6.10.5, )"
+          },
           "PostSharp.Patterns.Diagnostics.Log4Net": {
             "target": "Package",
             "version": "[6.10.5, )"
@@ -4620,6 +5370,10 @@
           "PostSharp.Patterns.Diagnostics.Redist": {
             "target": "Package",
             "version": "[6.10.5, )"
+          },
+          "ReactiveUI.WPF": {
+            "target": "Package",
+            "version": "[17.1.17, )"
           },
           "System.Runtime.WindowsRuntime": {
             "target": "Package",

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="J:\курсовая\Unit3.dfm" source-language="ru-RU" target-language="en-US" datatype="delphiform" tool="ETM v10.0" ts="J:\курсовая\Unit3.dfm">
+    <header>
+      <prop-group name="ITEHeaderProp">
+        <prop prop-type="Version">9.0</prop>
+        <prop prop-type="SelfDateTime">44258.7921296296</prop>
+        <prop prop-type="OrigDateTime">44249.6099305556</prop>
+        <prop prop-type="XlatDateTime">44249.6099305556</prop>
+        <prop prop-type="Translated">0</prop>
+        <prop prop-type="UnTranslated">3</prop>
+      </prop-group>
+    </header>
+    <body>
+      <trans-unit id="O:DataModule3.OldCreateOrder" resname="O:DataModule3.OldCreateOrder">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44258.7921312269</prop><prop prop-type="Status">0</prop><prop prop-type="Order">0</prop><prop prop-type="Type">TDataModule3</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.Height" resname="O:DataModule3.Height">
+        <source>429</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44258.7921312269</prop><prop prop-type="Status">0</prop><prop prop-type="Order">1</prop><prop prop-type="Type">TDataModule3</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.Width" resname="O:DataModule3.Width">
+        <source>994</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44258.7921312269</prop><prop prop-type="Status">0</prop><prop prop-type="Order">2</prop><prop prop-type="Type">TDataModule3</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

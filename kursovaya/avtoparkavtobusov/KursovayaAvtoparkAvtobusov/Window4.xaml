@@ -6,23 +6,27 @@
         mc:Ignorable="d"
         Title="Удаление данных из БД" Height="209" Width="371" WindowStyle="ThreeDBorderWindow"
         xmlns:ui="http://schemas.modernwpf.com/2019"
-        ui:WindowHelper.UseModernWindowStyle="True" WindowState="Normal">
+        ui:WindowHelper.UseModernWindowStyle="True" WindowState="Normal" ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition Width="0*" />
         </Grid.ColumnDefinitions>
-        <Button x:Name="deletedbdata" Content="УДАЛИТЬ ИЗ ТАБЛИЦЫ" HorizontalAlignment="Center" Margin="0,138,0,0"
-                VerticalAlignment="Top" Height="29" Width="173" Click="deletedbdata_Click"
+        <Button x:Name="deletedbdata" Content="УДАЛИТЬ ИЗ ТАБЛИЦЫ" HorizontalAlignment="Center" Margin="68,138,68,0"
+                VerticalAlignment="Top" Height="32" Width="229" Click="deletedbdata_Click"
                 RenderTransformOrigin="0.522,-2.704" />
         <Label Content="КЛЮЧ" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26" Width="45"
                RenderTransformOrigin="0.481,0.218" Margin="0,70,0,0" />
         <TextBox x:Name="keybox" HorizontalAlignment="Center" Margin="0,98,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="229" Height="26" />
-        <TextBox x:Name="TableName" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="229" Height="26" Margin="0,39,0,0" />
         <Label Content="ТАБЛИЦА" HorizontalAlignment="Center" Margin="0,9,0,0" VerticalAlignment="Top" Height="26"
                Width="65" />
+        <ComboBox x:Name="SlctTable" HorizontalAlignment="Left" Margin="67,35,0,0" VerticalAlignment="Top" Width="230">
+            <ComboBoxItem Content="Marshuti"/>
+            <ComboBoxItem Content="Prodazhi"/>
+            <ComboBoxItem Content="Maintenance"/>
+            <ComboBoxItem Content="Employees"/>
+        </ComboBox>
 
     </Grid>
 </Window>

@@ -19,10 +19,11 @@ namespace KursovayaAvtoparkAvtobusov
 
         private void UpdateGrid_Click(object sender, RoutedEventArgs e)
         {
+
             try
             {
                 SqlConnection cnn;
-                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = MainWindow.formations;
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
@@ -65,7 +66,7 @@ namespace KursovayaAvtoparkAvtobusov
                             "Values('" + Num + "', '" + EmpName + "', '" + EmpsName + "', '" + Emppat + "','" + EmpES +
                             "','" + Emptitle + "','" + Empint + "')";
                 SqlConnection cnn;
-                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = MainWindow.formations;
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
@@ -74,6 +75,7 @@ namespace KursovayaAvtoparkAvtobusov
                 Console.WriteLine("Data inserted!\n Closing connection ");
                 cnn.Close();
                 Console.WriteLine("Connection has been closed , database ready for next operation!");
+                UpdateGrid_Click(sender,e);
             }
             catch (Exception ex)
             {
@@ -90,7 +92,7 @@ namespace KursovayaAvtoparkAvtobusov
             try
             {
                 SqlConnection cnn;
-                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = MainWindow.formations;
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
@@ -108,6 +110,7 @@ namespace KursovayaAvtoparkAvtobusov
                 commandBuilder.ExecuteNonQuery();
                 Console.WriteLine("Connection established and the table updated!");
                 cnn.Close();
+                UpdateGrid_Click(sender,e);
             }
 
             catch (Exception ex)
@@ -118,6 +121,41 @@ namespace KursovayaAvtoparkAvtobusov
                 };
                 MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
             }
+        }
+
+        private void Exed1_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Exed1.Clear();
+        }
+
+        private void Exed4_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Exed4.Clear();
+        }
+
+        private void Exed7_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Exed7.Clear();
+        }
+
+        private void Exed2_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Exed2.Clear();
+        }
+
+        private void Exed5_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Exed5.Clear();
+        }
+
+        private void Exed3_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Exed3.Clear();
+        }
+
+        private void Exed6_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Exed6.Clear();
         }
     }
 }

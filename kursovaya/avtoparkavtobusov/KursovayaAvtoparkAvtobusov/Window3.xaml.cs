@@ -22,7 +22,7 @@ namespace KursovayaAvtoparkAvtobusov
             try
             {
                 SqlConnection cnn;
-                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = MainWindow.formations;
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
@@ -63,7 +63,7 @@ namespace KursovayaAvtoparkAvtobusov
                             "Values('" + Num + "', '" + SaleDat + "', '" + NomAvtobus + "', '" + Punkt + "','" +
                             Stoimost + "')";
                 SqlConnection cnn;
-                var conStr = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStr = MainWindow.formations;
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
@@ -72,6 +72,7 @@ namespace KursovayaAvtoparkAvtobusov
                 Console.WriteLine("Data inserted!\n Closing connection ");
                 cnn.Close();
                 Console.WriteLine("Connection has been closed , database ready for next operation!");
+                UpdateGrid_Click(sender, e);
             }
 
             catch (Exception ex)
@@ -89,7 +90,7 @@ namespace KursovayaAvtoparkAvtobusov
             try
             {
                 SqlConnection cnn;
-                var conStrs = ConfigurationManager.ConnectionStrings["KursovayaAvtoparkAvtobusov"].ToString();
+                var conStrs = MainWindow.formations;
 
                 cnn = new SqlConnection(conStrs);
                 cnn.Open();
@@ -105,6 +106,7 @@ namespace KursovayaAvtoparkAvtobusov
                 commandBuilder.ExecuteNonQuery();
                 Console.WriteLine("Connection established and the table updated!");
                 cnn.Close();
+                UpdateGrid_Click(sender, e);
             }
 
             catch (Exception ex)
@@ -115,6 +117,31 @@ namespace KursovayaAvtoparkAvtobusov
                 };
                 MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
             }
+        }
+
+        private void Edit1_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Edit1.Clear();
+        }
+
+        private void Edit2_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Edit2.Clear();
+        }
+
+        private void Edit3_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Edit3.Clear();
+        }
+
+        private void Edit4_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Edit4.Clear();
+        }
+
+        private void Edit5_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Edit5.Clear();
         }
     }
 }
