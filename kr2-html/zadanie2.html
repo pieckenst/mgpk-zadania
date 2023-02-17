@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>zadanie2</title>
+</head>
+<body>
+       <script>
+        var arr = [1,2,3,4,5,6,7,8,9,10];
+/* вернет индекс минимального элемента из массива arr. */
+function getMinIndex(arr)
+{
+var min = 0;
+for(var i=1; i<arr.length; i++) if (arr[i]<arr[min]) min = i;
+return min;
+}
+/* вернет индекс максимального элемента из массива arr. */
+function getMaxIndex(arr)
+{
+var max = 0;
+for(var i=1; i<arr.length; i++) if (arr[i]>arr[max]) max = i;
+return max;
+}
+/* переставляет местами элементы массива arr, с индексами a и b. */
+function exchange(arr, a, b)
+{
+var tmp = arr[a];
+arr[a] = arr[b];
+arr[b] = tmp;
+}
+     function dothing(){var K, N, i;
+        alert("Массив до манипуляций:\n"+arr);
+min = getMinIndex(arr);
+max = getMaxIndex(arr);
+exchange(arr,min,max);
+alert("Массив после манипуляций:\n"+arr);
+    }
+    </script>
+<input id="clickMe" type="button" value="clickme" onclick="dothing()" />
+</body>
+</html>

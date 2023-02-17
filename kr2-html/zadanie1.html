@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>zadanie2</title>
+</head>
+<body>
+  <script> function dothing(){var K, N, i;
+    K = Number.parseInt(document.querySelector('input[name=Name]').value);
+    N = Number.parseInt(document.querySelector('input[name=Suname]').value);
+    i = K + 1;    
+    if (K < N) {
+      while (i !== N) {
+        console.log(i);
+        i = i + 1;
+      }
+    }
+    }    
+  </script>
+  <table width = "300" border="0" bordercolor = "#000000" cellpadding = "2" cellspacing = "0">
+<tr>
+<td align = "left">Номер 1:</td>
+<td><input name="Suname" style="color:white; background-color: #99AAFF; font-style: oblique" required placeholder=""></td>
+</tr>
+<tr>
+<td align = "left">Номер 2:</td>
+<td><input name="Name" style="color:white; background-color: #99AAFF; font-style: oblique" required placeholder=""></td>
+</tr>
+<tr >
+</tr>
+</table><br/>
+<input id="clickMe" type="button" value="clickme" onclick="dothing()" />
+
+</body>
+</html>
