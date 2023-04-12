@@ -37,3 +37,16 @@ H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBox
 H:\Курсовой Проект-год2\WpfMessageBoxEx\bin\Debug\WpfMessageBoxEx.dll
 H:\Курсовой Проект-год2\WpfMessageBoxEx\bin\Debug\WpfMessageBoxEx.pdb
 H:\Курсовой Проект-год2\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.dll
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\bin\Debug\WpfMessageBoxEx.dll
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\bin\Debug\WpfMessageBoxEx.pdb
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.AssemblyReference.cache
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\MessageBoxEx.g.cs
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx_MarkupCompile.cache
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx_MarkupCompile.lref
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\MessageBoxEx.baml
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.g.resources
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.Properties.Resources.resources
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.GenerateResource.cache
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.csproj.CoreCompileInputs.cache
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.dll
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\WpfMessageBoxEx.pdb

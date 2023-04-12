@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\obj\Debug\
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\
 KursovayaAvtoparkAvtobusov
 none
 false
 DEBUG;TRACE
-G:\Курсовой Проект-год2\KursovayaAvtoparkAvtobusov\App.xaml
+C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\App.xaml
 10-445917606
 
 17-7927625
-2411037051143
+2412018728520
 EmpRecord.xaml;LogForm.xaml;MainWindow.xaml;ReportExport.xaml;TexObslugWindow.xaml;UpdateR.xaml;Window1.xaml;Window2.xaml;Window3.xaml;Window4.xaml;
 
-False
+True
 

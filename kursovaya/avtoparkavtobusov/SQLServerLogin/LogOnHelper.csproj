@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>SQLServerLoginTemplate</RootNamespace>
     <AssemblyName>LogOnHelper</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -38,6 +38,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="libmsstyle">
+      <HintPath>.\libmsstyle.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Security" />
@@ -52,6 +55,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DarkAwareControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FakeCommandLink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FakeCommandLink.Designer.cs">
+      <DependentUpon>FakeCommandLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupBox.Designer.cs">
+      <DependentUpon>GroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NavButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControlWithoutHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControlWithoutHeader.Designer.cs">
+      <DependentUpon>TabControlWithoutHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ThemedLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WinUIButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DataProtectionExtensions.cs" />
     <Compile Include="FormConnectToSQLServer.cs">
       <SubType>Form</SubType>
@@ -62,6 +98,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="Theme.cs" />
     <EmbeddedResource Include="FormConnectToSQLServer.resx">
       <DependentUpon>FormConnectToSQLServer.cs</DependentUpon>
     </EmbeddedResource>

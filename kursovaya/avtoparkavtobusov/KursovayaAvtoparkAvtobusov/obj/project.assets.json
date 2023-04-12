@@ -12,10 +12,14 @@
           "System.Web.Extensions"
         ],
         "compile": {
-          "lib/net462/ControlzEx.dll": {}
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/ControlzEx.dll": {}
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "DynamicData/7.4.9": {
@@ -24,10 +28,14 @@
           "System.Reactive": "5.0.0"
         },
         "compile": {
-          "lib/net461/DynamicData.dll": {}
+          "lib/net461/DynamicData.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/DynamicData.dll": {}
+          "lib/net461/DynamicData.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FastReport.Compat/2021.3.0": {
@@ -70,10 +78,14 @@
           "System.Xml"
         ],
         "compile": {
-          "lib/net40/FastReport.dll": {}
+          "lib/net40/FastReport.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net40/FastReport.dll": {}
+          "lib/net40/FastReport.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/FastReport.OpenSource.props": {}
@@ -105,19 +117,27 @@
           "WindowsFormsIntegration"
         ],
         "compile": {
-          "lib/net462/Fluent.dll": {}
+          "lib/net462/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/Fluent.dll": {}
+          "lib/net462/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "log4net/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/net40-full/log4net.dll": {}
+          "lib/net40-full/log4net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net40-full/log4net.dll": {}
+          "lib/net40-full/log4net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
@@ -234,10 +254,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "ModernWpfUI/0.9.4": {
@@ -250,12 +274,20 @@
           "netstandard"
         ],
         "compile": {
-          "lib/net462/ModernWpf.Controls.dll": {},
-          "lib/net462/ModernWpf.dll": {}
+          "lib/net462/ModernWpf.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net462/ModernWpf.dll": {
+            "related": ".Controls.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/ModernWpf.Controls.dll": {},
-          "lib/net462/ModernWpf.dll": {}
+          "lib/net462/ModernWpf.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net462/ModernWpf.dll": {
+            "related": ".Controls.xml;.xml"
+          }
         },
         "resource": {
           "lib/net462/af-ZA/ModernWpf.Controls.resources.dll": {
@@ -691,10 +723,14 @@
           "PostSharp.Redist": "[6.10.5, 7.0.0)"
         },
         "compile": {
-          "lib/net47/PostSharp.Patterns.Common.dll": {}
+          "lib/net47/PostSharp.Patterns.Common.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net47/PostSharp.Patterns.Common.dll": {}
+          "lib/net47/PostSharp.Patterns.Common.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Patterns.Diagnostics/6.10.5": {
@@ -717,10 +753,14 @@
           "log4net": "2.0.0"
         },
         "compile": {
-          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {}
+          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {}
+          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Patterns.Diagnostics.Redist/6.10.5": {
@@ -729,19 +769,27 @@
           "PostSharp.Patterns.Common.Redist": "[6.10.5, 7.0.0)"
         },
         "compile": {
-          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {}
+          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {}
+          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Redist/6.10.5": {
         "type": "package",
         "compile": {
-          "lib/net45/PostSharp.dll": {}
+          "lib/net45/PostSharp.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/PostSharp.dll": {}
+          "lib/net45/PostSharp.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveUI/17.1.17": {
@@ -751,10 +799,14 @@
           "Splat": "14.1.17"
         },
         "compile": {
-          "lib/net472/ReactiveUI.dll": {}
+          "lib/net472/ReactiveUI.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/ReactiveUI.dll": {}
+          "lib/net472/ReactiveUI.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveUI.WPF/17.1.17": {
@@ -763,19 +815,27 @@
           "ReactiveUI": "17.1.17"
         },
         "compile": {
-          "lib/net48/ReactiveUI.Wpf.dll": {}
+          "lib/net48/ReactiveUI.Wpf.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net48/ReactiveUI.Wpf.dll": {}
+          "lib/net48/ReactiveUI.Wpf.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Splat/14.1.17": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Splat.dll": {}
+          "lib/netstandard2.0/Splat.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Splat.dll": {}
+          "lib/netstandard2.0/Splat.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Data.SqlClient/4.4.3": {
@@ -786,7 +846,9 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Data.SqlClient.dll": {}
+          "ref/net461/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/net461/System.Data.SqlClient.dll": {}
@@ -813,10 +875,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net472/System.Reactive.dll": {}
+          "lib/net472/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/System.Reactive.dll": {}
+          "lib/net472/System.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.3": {
@@ -825,10 +891,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
@@ -876,10 +946,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.ValueTuple/4.5.0": {
@@ -891,7 +965,9 @@
           "ref/net47/System.ValueTuple.dll": {}
         },
         "runtime": {
-          "lib/net47/System.ValueTuple.dll": {}
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
         }
       },
       "LogOnHelper/1.0.0": {
@@ -924,10 +1000,14 @@
           "System.Web.Extensions"
         ],
         "compile": {
-          "lib/net462/ControlzEx.dll": {}
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/ControlzEx.dll": {}
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "DynamicData/7.4.9": {
@@ -936,10 +1016,14 @@
           "System.Reactive": "5.0.0"
         },
         "compile": {
-          "lib/net461/DynamicData.dll": {}
+          "lib/net461/DynamicData.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/DynamicData.dll": {}
+          "lib/net461/DynamicData.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FastReport.Compat/2021.3.0": {
@@ -982,10 +1066,14 @@
           "System.Xml"
         ],
         "compile": {
-          "lib/net40/FastReport.dll": {}
+          "lib/net40/FastReport.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net40/FastReport.dll": {}
+          "lib/net40/FastReport.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/FastReport.OpenSource.props": {}
@@ -1017,19 +1105,27 @@
           "WindowsFormsIntegration"
         ],
         "compile": {
-          "lib/net462/Fluent.dll": {}
+          "lib/net462/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/Fluent.dll": {}
+          "lib/net462/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "log4net/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/net40-full/log4net.dll": {}
+          "lib/net40-full/log4net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net40-full/log4net.dll": {}
+          "lib/net40-full/log4net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
@@ -1146,10 +1242,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "ModernWpfUI/0.9.4": {
@@ -1162,12 +1262,20 @@
           "netstandard"
         ],
         "compile": {
-          "lib/net462/ModernWpf.Controls.dll": {},
-          "lib/net462/ModernWpf.dll": {}
+          "lib/net462/ModernWpf.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net462/ModernWpf.dll": {
+            "related": ".Controls.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/ModernWpf.Controls.dll": {},
-          "lib/net462/ModernWpf.dll": {}
+          "lib/net462/ModernWpf.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net462/ModernWpf.dll": {
+            "related": ".Controls.xml;.xml"
+          }
         },
         "resource": {
           "lib/net462/af-ZA/ModernWpf.Controls.resources.dll": {
@@ -1603,10 +1711,14 @@
           "PostSharp.Redist": "[6.10.5, 7.0.0)"
         },
         "compile": {
-          "lib/net47/PostSharp.Patterns.Common.dll": {}
+          "lib/net47/PostSharp.Patterns.Common.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net47/PostSharp.Patterns.Common.dll": {}
+          "lib/net47/PostSharp.Patterns.Common.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Patterns.Diagnostics/6.10.5": {
@@ -1629,10 +1741,14 @@
           "log4net": "2.0.0"
         },
         "compile": {
-          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {}
+          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {}
+          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Patterns.Diagnostics.Redist/6.10.5": {
@@ -1641,19 +1757,27 @@
           "PostSharp.Patterns.Common.Redist": "[6.10.5, 7.0.0)"
         },
         "compile": {
-          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {}
+          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {}
+          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Redist/6.10.5": {
         "type": "package",
         "compile": {
-          "lib/net45/PostSharp.dll": {}
+          "lib/net45/PostSharp.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/PostSharp.dll": {}
+          "lib/net45/PostSharp.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveUI/17.1.17": {
@@ -1663,10 +1787,14 @@
           "Splat": "14.1.17"
         },
         "compile": {
-          "lib/net472/ReactiveUI.dll": {}
+          "lib/net472/ReactiveUI.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/ReactiveUI.dll": {}
+          "lib/net472/ReactiveUI.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveUI.WPF/17.1.17": {
@@ -1675,19 +1803,27 @@
           "ReactiveUI": "17.1.17"
         },
         "compile": {
-          "lib/net48/ReactiveUI.Wpf.dll": {}
+          "lib/net48/ReactiveUI.Wpf.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net48/ReactiveUI.Wpf.dll": {}
+          "lib/net48/ReactiveUI.Wpf.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Splat/14.1.17": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Splat.dll": {}
+          "lib/netstandard2.0/Splat.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Splat.dll": {}
+          "lib/netstandard2.0/Splat.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Data.SqlClient/4.4.3": {
@@ -1698,7 +1834,9 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Data.SqlClient.dll": {}
+          "ref/net461/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "runtimes/win/lib/net461/System.Data.SqlClient.dll": {}
@@ -1715,10 +1853,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net472/System.Reactive.dll": {}
+          "lib/net472/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/System.Reactive.dll": {}
+          "lib/net472/System.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.3": {
@@ -1727,10 +1869,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
@@ -1778,10 +1924,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.ValueTuple/4.5.0": {
@@ -1793,7 +1943,987 @@
           "ref/net47/System.ValueTuple.dll": {}
         },
         "runtime": {
-          "lib/net47/System.ValueTuple.dll": {}
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LogOnHelper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/LogOnHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogOnHelper.dll": {}
+        }
+      },
+      "WpfMessageBoxEx/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/WpfMessageBoxEx.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WpfMessageBoxEx.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-arm64": {
+      "ControlzEx/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.31"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "DynamicData/7.4.9": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net461/DynamicData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/DynamicData.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FastReport.Compat/2021.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/FastReport.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net40/FastReport.Compat.dll": {}
+        }
+      },
+      "FastReport.Data.MsSql/2022.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Data.SqlClient": "4.4.3"
+        },
+        "compile": {
+          "lib/net452/_._": {}
+        },
+        "runtime": {
+          "lib/net452/_._": {}
+        },
+        "build": {
+          "buildTransitive/net452/FastReport.Data.MsSql.props": {},
+          "buildTransitive/net452/FastReport.Data.MsSql.targets": {}
+        }
+      },
+      "FastReport.OpenSource/2022.1.0": {
+        "type": "package",
+        "dependencies": {
+          "FastReport.Compat": "2021.3.0"
+        },
+        "frameworkAssemblies": [
+          "Accessibility",
+          "System",
+          "System.Data",
+          "System.Drawing",
+          "System.Security",
+          "System.Windows.Forms",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net40/FastReport.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/FastReport.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/FastReport.OpenSource.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/FastReport.OpenSource.props": {}
+        }
+      },
+      "FastReport.OpenSource.Export.PdfSimple/2022.1.0": {
+        "type": "package",
+        "dependencies": {
+          "FastReport.OpenSource": "2022.1.0"
+        },
+        "compile": {
+          "lib/net40/FastReport.OpenSource.Export.PdfSimple.dll": {}
+        },
+        "runtime": {
+          "lib/net40/FastReport.OpenSource.Export.PdfSimple.dll": {}
+        }
+      },
+      "Fluent.Ribbon/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[5.0.1, 6.0.0)"
+        },
+        "frameworkAssemblies": [
+          "UIAutomationProvider",
+          "UIAutomationTypes",
+          "WindowsFormsIntegration"
+        ],
+        "compile": {
+          "lib/net462/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "log4net/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40-full/log4net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net40-full/log4net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
+          "System.Runtime.WindowsRuntime": "4.6.0",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Windows.AI.MachineLearning.MachineLearningContract.winmd": {},
+          "ref/netstandard2.0/Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.ContactActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.Background.CallsBackgroundContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsPhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.CallsVoipContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Calls.LockScreenCallContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.FullTrustAppContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.InkWorkspace.PreviewInkWorkspaceContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Preview.Notes.PreviewNotesContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Resources.Management.ResourceIndexerContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.Core.SearchCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Search.SearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.SocialInfo.SocialInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.StartupTaskContract.winmd": {},
+          "ref/netstandard2.0/Windows.ApplicationModel.Wallet.WalletContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Custom.CustomDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.DevicesLowLevelContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Portable.PortableDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.Extensions.ExtensionsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Printers.PrintersContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Scanners.ScannerDeviceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.SmartCards.SmartCardEmulatorContract.winmd": {},
+          "ref/netstandard2.0/Windows.Devices.Sms.LegacySmsApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Embedded.DeviceLockdown.DeviceLockdownContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.FoundationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Foundation.UniversalApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Input.GamingInputPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.Preview.GamesEnumerationContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GameChatOverlayContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.UI.GamingUIProviderContract.winmd": {},
+          "ref/netstandard2.0/Windows.Gaming.XboxLive.StorageApiContract.winmd": {},
+          "ref/netstandard2.0/Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Graphics.Printing3D.Printing3DContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Deployment.Preview.DeploymentPreviewContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Deployment.SharedPackageContainerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Management.Workplace.WorkplaceSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppBroadcasting.AppBroadcastingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.AppRecording.AppRecordingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppBroadcastContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.AppCaptureMetadataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.CameraCaptureUIContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Capture.GameBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Devices.CallControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.MediaControlContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Playlists.PlaylistsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Media.Protection.ProtectionRenewalContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.Connectivity.WwanContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.LegacyNetworkOperatorsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.NetworkOperators.NetworkOperatorsFdnContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Networking.Sockets.ControlChannelTriggerContract.winmd": {},
+          "ref/netstandard2.0/Windows.Networking.XboxLive.XboxLiveSecureSocketsContract.winmd": {},
+          "ref/netstandard2.0/Windows.Perception.Automation.Core.PerceptionAutomationCoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.PhoneContract.winmd": {},
+          "ref/netstandard2.0/Windows.Phone.StartScreen.DualSimTileContract.WinMD": {},
+          "ref/netstandard2.0/Windows.Security.EnterpriseData.EnterpriseDataContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.ExchangeActiveSyncProvisioning.EasContract.winmd": {},
+          "ref/netstandard2.0/Windows.Security.Isolation.Isolatedwindowsenvironmentcontract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.GuidanceContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Maps.LocalSearchContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.Store.StoreContract.winmd": {},
+          "ref/netstandard2.0/Windows.Services.TargetedContent.TargetedContentContract.winmd": {},
+          "ref/netstandard2.0/Windows.Storage.Provider.CloudFilesContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileHardwareTokenContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileRetailInfoContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.ProfileSharedModeContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.Profile.SystemManufacturers.SystemManufacturersContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.SystemManagementContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileContract.winmd": {},
+          "ref/netstandard2.0/Windows.System.UserProfile.UserProfileLockScreenContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ApplicationSettings.ApplicationsSettingsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.AnimationMetrics.AnimationMetricsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Core.CoreWindowDialogsContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Shell.SecurityAppManagerContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.UIAutomation.UIAutomationContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.ViewManagement.ViewManagementViewScalingContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.WebUI.Core.WebUICommandBarContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Core.Direct.XamlDirectContract.winmd": {},
+          "ref/netstandard2.0/Windows.UI.Xaml.Hosting.HostingContract.winmd": {},
+          "ref/netstandard2.0/Windows.Web.Http.Diagnostics.HttpDiagnosticsContract.winmd": {},
+          "ref/netstandard2.0/Windows.WinMD": {}
+        },
+        "build": {
+          "build/Microsoft.Windows.SDK.Contracts.props": {},
+          "build/Microsoft.Windows.SDK.Contracts.targets": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Core",
+          "System.XML",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "ModernWpfUI/0.9.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Windows.SDK.Contracts": "10.0.18362.2005",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "netstandard"
+        ],
+        "compile": {
+          "lib/net462/ModernWpf.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net462/ModernWpf.dll": {
+            "related": ".Controls.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/ModernWpf.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net462/ModernWpf.dll": {
+            "related": ".Controls.xml;.xml"
+          }
+        },
+        "resource": {
+          "lib/net462/af-ZA/ModernWpf.Controls.resources.dll": {
+            "locale": "af-ZA"
+          },
+          "lib/net462/af-ZA/ModernWpf.resources.dll": {
+            "locale": "af-ZA"
+          },
+          "lib/net462/am-ET/ModernWpf.Controls.resources.dll": {
+            "locale": "am-ET"
+          },
+          "lib/net462/am-ET/ModernWpf.resources.dll": {
+            "locale": "am-ET"
+          },
+          "lib/net462/ar-SA/ModernWpf.Controls.resources.dll": {
+            "locale": "ar-SA"
+          },
+          "lib/net462/ar-SA/ModernWpf.resources.dll": {
+            "locale": "ar-SA"
+          },
+          "lib/net462/az-Latn-AZ/ModernWpf.Controls.resources.dll": {
+            "locale": "az-Latn-AZ"
+          },
+          "lib/net462/az-Latn-AZ/ModernWpf.resources.dll": {
+            "locale": "az-Latn-AZ"
+          },
+          "lib/net462/be-BY/ModernWpf.Controls.resources.dll": {
+            "locale": "be-BY"
+          },
+          "lib/net462/be-BY/ModernWpf.resources.dll": {
+            "locale": "be-BY"
+          },
+          "lib/net462/bg-BG/ModernWpf.Controls.resources.dll": {
+            "locale": "bg-BG"
+          },
+          "lib/net462/bg-BG/ModernWpf.resources.dll": {
+            "locale": "bg-BG"
+          },
+          "lib/net462/bn-BD/ModernWpf.Controls.resources.dll": {
+            "locale": "bn-BD"
+          },
+          "lib/net462/bn-BD/ModernWpf.resources.dll": {
+            "locale": "bn-BD"
+          },
+          "lib/net462/bs-Latn-BA/ModernWpf.Controls.resources.dll": {
+            "locale": "bs-Latn-BA"
+          },
+          "lib/net462/bs-Latn-BA/ModernWpf.resources.dll": {
+            "locale": "bs-Latn-BA"
+          },
+          "lib/net462/ca-ES/ModernWpf.Controls.resources.dll": {
+            "locale": "ca-ES"
+          },
+          "lib/net462/ca-ES/ModernWpf.resources.dll": {
+            "locale": "ca-ES"
+          },
+          "lib/net462/cs-CZ/ModernWpf.Controls.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net462/cs-CZ/ModernWpf.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net462/da-DK/ModernWpf.Controls.resources.dll": {
+            "locale": "da-DK"
+          },
+          "lib/net462/da-DK/ModernWpf.resources.dll": {
+            "locale": "da-DK"
+          },
+          "lib/net462/de-DE/ModernWpf.Controls.resources.dll": {
+            "locale": "de-DE"
+          },
+          "lib/net462/de-DE/ModernWpf.resources.dll": {
+            "locale": "de-DE"
+          },
+          "lib/net462/el-GR/ModernWpf.Controls.resources.dll": {
+            "locale": "el-GR"
+          },
+          "lib/net462/el-GR/ModernWpf.resources.dll": {
+            "locale": "el-GR"
+          },
+          "lib/net462/en-GB/ModernWpf.Controls.resources.dll": {
+            "locale": "en-GB"
+          },
+          "lib/net462/en-GB/ModernWpf.resources.dll": {
+            "locale": "en-GB"
+          },
+          "lib/net462/es-ES/ModernWpf.Controls.resources.dll": {
+            "locale": "es-ES"
+          },
+          "lib/net462/es-ES/ModernWpf.resources.dll": {
+            "locale": "es-ES"
+          },
+          "lib/net462/es-MX/ModernWpf.Controls.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net462/es-MX/ModernWpf.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net462/et-EE/ModernWpf.Controls.resources.dll": {
+            "locale": "et-EE"
+          },
+          "lib/net462/et-EE/ModernWpf.resources.dll": {
+            "locale": "et-EE"
+          },
+          "lib/net462/eu-ES/ModernWpf.Controls.resources.dll": {
+            "locale": "eu-ES"
+          },
+          "lib/net462/eu-ES/ModernWpf.resources.dll": {
+            "locale": "eu-ES"
+          },
+          "lib/net462/fa-IR/ModernWpf.Controls.resources.dll": {
+            "locale": "fa-IR"
+          },
+          "lib/net462/fa-IR/ModernWpf.resources.dll": {
+            "locale": "fa-IR"
+          },
+          "lib/net462/fi-FI/ModernWpf.Controls.resources.dll": {
+            "locale": "fi-FI"
+          },
+          "lib/net462/fi-FI/ModernWpf.resources.dll": {
+            "locale": "fi-FI"
+          },
+          "lib/net462/fr-CA/ModernWpf.Controls.resources.dll": {
+            "locale": "fr-CA"
+          },
+          "lib/net462/fr-CA/ModernWpf.resources.dll": {
+            "locale": "fr-CA"
+          },
+          "lib/net462/fr-FR/ModernWpf.Controls.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "lib/net462/fr-FR/ModernWpf.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "lib/net462/gl-ES/ModernWpf.Controls.resources.dll": {
+            "locale": "gl-ES"
+          },
+          "lib/net462/gl-ES/ModernWpf.resources.dll": {
+            "locale": "gl-ES"
+          },
+          "lib/net462/ha-Latn-NG/ModernWpf.Controls.resources.dll": {
+            "locale": "ha-Latn-NG"
+          },
+          "lib/net462/ha-Latn-NG/ModernWpf.resources.dll": {
+            "locale": "ha-Latn-NG"
+          },
+          "lib/net462/he-IL/ModernWpf.Controls.resources.dll": {
+            "locale": "he-IL"
+          },
+          "lib/net462/he-IL/ModernWpf.resources.dll": {
+            "locale": "he-IL"
+          },
+          "lib/net462/hi-IN/ModernWpf.Controls.resources.dll": {
+            "locale": "hi-IN"
+          },
+          "lib/net462/hi-IN/ModernWpf.resources.dll": {
+            "locale": "hi-IN"
+          },
+          "lib/net462/hr-HR/ModernWpf.Controls.resources.dll": {
+            "locale": "hr-HR"
+          },
+          "lib/net462/hr-HR/ModernWpf.resources.dll": {
+            "locale": "hr-HR"
+          },
+          "lib/net462/hu-HU/ModernWpf.Controls.resources.dll": {
+            "locale": "hu-HU"
+          },
+          "lib/net462/hu-HU/ModernWpf.resources.dll": {
+            "locale": "hu-HU"
+          },
+          "lib/net462/id-ID/ModernWpf.Controls.resources.dll": {
+            "locale": "id-ID"
+          },
+          "lib/net462/id-ID/ModernWpf.resources.dll": {
+            "locale": "id-ID"
+          },
+          "lib/net462/is-IS/ModernWpf.Controls.resources.dll": {
+            "locale": "is-IS"
+          },
+          "lib/net462/is-IS/ModernWpf.resources.dll": {
+            "locale": "is-IS"
+          },
+          "lib/net462/it-IT/ModernWpf.Controls.resources.dll": {
+            "locale": "it-IT"
+          },
+          "lib/net462/it-IT/ModernWpf.resources.dll": {
+            "locale": "it-IT"
+          },
+          "lib/net462/ja-JP/ModernWpf.Controls.resources.dll": {
+            "locale": "ja-JP"
+          },
+          "lib/net462/ja-JP/ModernWpf.resources.dll": {
+            "locale": "ja-JP"
+          },
+          "lib/net462/ka-GE/ModernWpf.Controls.resources.dll": {
+            "locale": "ka-GE"
+          },
+          "lib/net462/ka-GE/ModernWpf.resources.dll": {
+            "locale": "ka-GE"
+          },
+          "lib/net462/kk-KZ/ModernWpf.Controls.resources.dll": {
+            "locale": "kk-KZ"
+          },
+          "lib/net462/kk-KZ/ModernWpf.resources.dll": {
+            "locale": "kk-KZ"
+          },
+          "lib/net462/km-KH/ModernWpf.Controls.resources.dll": {
+            "locale": "km-KH"
+          },
+          "lib/net462/km-KH/ModernWpf.resources.dll": {
+            "locale": "km-KH"
+          },
+          "lib/net462/kn-IN/ModernWpf.Controls.resources.dll": {
+            "locale": "kn-IN"
+          },
+          "lib/net462/kn-IN/ModernWpf.resources.dll": {
+            "locale": "kn-IN"
+          },
+          "lib/net462/ko-KR/ModernWpf.Controls.resources.dll": {
+            "locale": "ko-KR"
+          },
+          "lib/net462/ko-KR/ModernWpf.resources.dll": {
+            "locale": "ko-KR"
+          },
+          "lib/net462/lo-LA/ModernWpf.Controls.resources.dll": {
+            "locale": "lo-LA"
+          },
+          "lib/net462/lo-LA/ModernWpf.resources.dll": {
+            "locale": "lo-LA"
+          },
+          "lib/net462/lt-LT/ModernWpf.Controls.resources.dll": {
+            "locale": "lt-LT"
+          },
+          "lib/net462/lt-LT/ModernWpf.resources.dll": {
+            "locale": "lt-LT"
+          },
+          "lib/net462/lv-LV/ModernWpf.Controls.resources.dll": {
+            "locale": "lv-LV"
+          },
+          "lib/net462/lv-LV/ModernWpf.resources.dll": {
+            "locale": "lv-LV"
+          },
+          "lib/net462/mk-MK/ModernWpf.Controls.resources.dll": {
+            "locale": "mk-MK"
+          },
+          "lib/net462/mk-MK/ModernWpf.resources.dll": {
+            "locale": "mk-MK"
+          },
+          "lib/net462/ml-IN/ModernWpf.Controls.resources.dll": {
+            "locale": "ml-IN"
+          },
+          "lib/net462/ml-IN/ModernWpf.resources.dll": {
+            "locale": "ml-IN"
+          },
+          "lib/net462/ms-MY/ModernWpf.Controls.resources.dll": {
+            "locale": "ms-MY"
+          },
+          "lib/net462/ms-MY/ModernWpf.resources.dll": {
+            "locale": "ms-MY"
+          },
+          "lib/net462/nb-NO/ModernWpf.Controls.resources.dll": {
+            "locale": "nb-NO"
+          },
+          "lib/net462/nb-NO/ModernWpf.resources.dll": {
+            "locale": "nb-NO"
+          },
+          "lib/net462/nl-NL/ModernWpf.Controls.resources.dll": {
+            "locale": "nl-NL"
+          },
+          "lib/net462/nl-NL/ModernWpf.resources.dll": {
+            "locale": "nl-NL"
+          },
+          "lib/net462/nn-NO/ModernWpf.Controls.resources.dll": {
+            "locale": "nn-NO"
+          },
+          "lib/net462/nn-NO/ModernWpf.resources.dll": {
+            "locale": "nn-NO"
+          },
+          "lib/net462/pl-PL/ModernWpf.Controls.resources.dll": {
+            "locale": "pl-PL"
+          },
+          "lib/net462/pl-PL/ModernWpf.resources.dll": {
+            "locale": "pl-PL"
+          },
+          "lib/net462/pt-BR/ModernWpf.Controls.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net462/pt-BR/ModernWpf.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net462/pt-PT/ModernWpf.Controls.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/net462/pt-PT/ModernWpf.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/net462/ro-RO/ModernWpf.Controls.resources.dll": {
+            "locale": "ro-RO"
+          },
+          "lib/net462/ro-RO/ModernWpf.resources.dll": {
+            "locale": "ro-RO"
+          },
+          "lib/net462/ru-RU/ModernWpf.Controls.resources.dll": {
+            "locale": "ru-RU"
+          },
+          "lib/net462/ru-RU/ModernWpf.resources.dll": {
+            "locale": "ru-RU"
+          },
+          "lib/net462/sk-SK/ModernWpf.Controls.resources.dll": {
+            "locale": "sk-SK"
+          },
+          "lib/net462/sk-SK/ModernWpf.resources.dll": {
+            "locale": "sk-SK"
+          },
+          "lib/net462/sl-SI/ModernWpf.Controls.resources.dll": {
+            "locale": "sl-SI"
+          },
+          "lib/net462/sl-SI/ModernWpf.resources.dll": {
+            "locale": "sl-SI"
+          },
+          "lib/net462/sq-AL/ModernWpf.Controls.resources.dll": {
+            "locale": "sq-AL"
+          },
+          "lib/net462/sq-AL/ModernWpf.resources.dll": {
+            "locale": "sq-AL"
+          },
+          "lib/net462/sr-Latn-RS/ModernWpf.Controls.resources.dll": {
+            "locale": "sr-Latn-RS"
+          },
+          "lib/net462/sr-Latn-RS/ModernWpf.resources.dll": {
+            "locale": "sr-Latn-RS"
+          },
+          "lib/net462/sv-SE/ModernWpf.Controls.resources.dll": {
+            "locale": "sv-SE"
+          },
+          "lib/net462/sv-SE/ModernWpf.resources.dll": {
+            "locale": "sv-SE"
+          },
+          "lib/net462/sw-KE/ModernWpf.Controls.resources.dll": {
+            "locale": "sw-KE"
+          },
+          "lib/net462/sw-KE/ModernWpf.resources.dll": {
+            "locale": "sw-KE"
+          },
+          "lib/net462/ta-IN/ModernWpf.Controls.resources.dll": {
+            "locale": "ta-IN"
+          },
+          "lib/net462/ta-IN/ModernWpf.resources.dll": {
+            "locale": "ta-IN"
+          },
+          "lib/net462/te-IN/ModernWpf.Controls.resources.dll": {
+            "locale": "te-IN"
+          },
+          "lib/net462/te-IN/ModernWpf.resources.dll": {
+            "locale": "te-IN"
+          },
+          "lib/net462/th-TH/ModernWpf.Controls.resources.dll": {
+            "locale": "th-TH"
+          },
+          "lib/net462/th-TH/ModernWpf.resources.dll": {
+            "locale": "th-TH"
+          },
+          "lib/net462/tr-TR/ModernWpf.Controls.resources.dll": {
+            "locale": "tr-TR"
+          },
+          "lib/net462/tr-TR/ModernWpf.resources.dll": {
+            "locale": "tr-TR"
+          },
+          "lib/net462/uk-UA/ModernWpf.Controls.resources.dll": {
+            "locale": "uk-UA"
+          },
+          "lib/net462/uk-UA/ModernWpf.resources.dll": {
+            "locale": "uk-UA"
+          },
+          "lib/net462/uz-Latn-UZ/ModernWpf.Controls.resources.dll": {
+            "locale": "uz-Latn-UZ"
+          },
+          "lib/net462/uz-Latn-UZ/ModernWpf.resources.dll": {
+            "locale": "uz-Latn-UZ"
+          },
+          "lib/net462/vi-VN/ModernWpf.Controls.resources.dll": {
+            "locale": "vi-VN"
+          },
+          "lib/net462/vi-VN/ModernWpf.resources.dll": {
+            "locale": "vi-VN"
+          },
+          "lib/net462/zh-CN/ModernWpf.Controls.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net462/zh-CN/ModernWpf.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net462/zh-TW/ModernWpf.Controls.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net462/zh-TW/ModernWpf.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "PostSharp/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net35-client/_._": {}
+        },
+        "runtime": {
+          "lib/net35-client/_._": {}
+        },
+        "build": {
+          "build/PostSharp.props": {},
+          "build/PostSharp.targets": {}
+        }
+      },
+      "PostSharp.Patterns.Common/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp": "[6.10.5, 7.0.0)",
+          "PostSharp.Patterns.Common.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/_._": {}
+        }
+      },
+      "PostSharp.Patterns.Common.Redist/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net47/PostSharp.Patterns.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/PostSharp.Patterns.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "PostSharp.Patterns.Diagnostics/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp.Patterns.Common": "[6.10.5, 7.0.0)",
+          "PostSharp.Patterns.Diagnostics.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/_._": {}
+        }
+      },
+      "PostSharp.Patterns.Diagnostics.Log4Net/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp.Patterns.Diagnostics.Redist": "[6.10.5, 7.0.0)",
+          "log4net": "2.0.0"
+        },
+        "compile": {
+          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "PostSharp.Patterns.Diagnostics.Redist/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp.Patterns.Common.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "PostSharp.Redist/6.10.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/PostSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/PostSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ReactiveUI/17.1.17": {
+        "type": "package",
+        "dependencies": {
+          "DynamicData": "7.4.9",
+          "Splat": "14.1.17"
+        },
+        "compile": {
+          "lib/net472/ReactiveUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net472/ReactiveUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ReactiveUI.WPF/17.1.17": {
+        "type": "package",
+        "dependencies": {
+          "ReactiveUI": "17.1.17"
+        },
+        "compile": {
+          "lib/net48/ReactiveUI.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/ReactiveUI.Wpf.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Splat/14.1.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Splat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Splat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Data.SqlClient/4.4.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Data.SqlClient.dll": {}
+        }
+      },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net472/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net472/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "buildTransitive/net461/System.Runtime.WindowsRuntime.targets": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime.UI.Xaml/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.7.0"
+        },
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "build/net461/System.Runtime.WindowsRuntime.UI.Xaml.targets": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
         }
       },
       "LogOnHelper/1.0.0": {
@@ -1826,10 +2956,14 @@
           "System.Web.Extensions"
         ],
         "compile": {
-          "lib/net462/ControlzEx.dll": {}
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/ControlzEx.dll": {}
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "DynamicData/7.4.9": {
@@ -1838,10 +2972,14 @@
           "System.Reactive": "5.0.0"
         },
         "compile": {
-          "lib/net461/DynamicData.dll": {}
+          "lib/net461/DynamicData.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/DynamicData.dll": {}
+          "lib/net461/DynamicData.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FastReport.Compat/2021.3.0": {
@@ -1884,10 +3022,14 @@
           "System.Xml"
         ],
         "compile": {
-          "lib/net40/FastReport.dll": {}
+          "lib/net40/FastReport.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net40/FastReport.dll": {}
+          "lib/net40/FastReport.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/FastReport.OpenSource.props": {}
@@ -1919,19 +3061,27 @@
           "WindowsFormsIntegration"
         ],
         "compile": {
-          "lib/net462/Fluent.dll": {}
+          "lib/net462/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/Fluent.dll": {}
+          "lib/net462/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "log4net/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/net40-full/log4net.dll": {}
+          "lib/net40-full/log4net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net40-full/log4net.dll": {}
+          "lib/net40-full/log4net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
@@ -2048,10 +3198,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "ModernWpfUI/0.9.4": {
@@ -2064,12 +3218,20 @@
           "netstandard"
         ],
         "compile": {
-          "lib/net462/ModernWpf.Controls.dll": {},
-          "lib/net462/ModernWpf.dll": {}
+          "lib/net462/ModernWpf.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net462/ModernWpf.dll": {
+            "related": ".Controls.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/ModernWpf.Controls.dll": {},
-          "lib/net462/ModernWpf.dll": {}
+          "lib/net462/ModernWpf.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net462/ModernWpf.dll": {
+            "related": ".Controls.xml;.xml"
+          }
         },
         "resource": {
           "lib/net462/af-ZA/ModernWpf.Controls.resources.dll": {
@@ -2505,10 +3667,14 @@
           "PostSharp.Redist": "[6.10.5, 7.0.0)"
         },
         "compile": {
-          "lib/net47/PostSharp.Patterns.Common.dll": {}
+          "lib/net47/PostSharp.Patterns.Common.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net47/PostSharp.Patterns.Common.dll": {}
+          "lib/net47/PostSharp.Patterns.Common.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Patterns.Diagnostics/6.10.5": {
@@ -2531,10 +3697,14 @@
           "log4net": "2.0.0"
         },
         "compile": {
-          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {}
+          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {}
+          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Patterns.Diagnostics.Redist/6.10.5": {
@@ -2543,19 +3713,27 @@
           "PostSharp.Patterns.Common.Redist": "[6.10.5, 7.0.0)"
         },
         "compile": {
-          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {}
+          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {}
+          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Redist/6.10.5": {
         "type": "package",
         "compile": {
-          "lib/net45/PostSharp.dll": {}
+          "lib/net45/PostSharp.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/PostSharp.dll": {}
+          "lib/net45/PostSharp.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveUI/17.1.17": {
@@ -2565,10 +3743,14 @@
           "Splat": "14.1.17"
         },
         "compile": {
-          "lib/net472/ReactiveUI.dll": {}
+          "lib/net472/ReactiveUI.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/ReactiveUI.dll": {}
+          "lib/net472/ReactiveUI.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveUI.WPF/17.1.17": {
@@ -2577,19 +3759,27 @@
           "ReactiveUI": "17.1.17"
         },
         "compile": {
-          "lib/net48/ReactiveUI.Wpf.dll": {}
+          "lib/net48/ReactiveUI.Wpf.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net48/ReactiveUI.Wpf.dll": {}
+          "lib/net48/ReactiveUI.Wpf.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Splat/14.1.17": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Splat.dll": {}
+          "lib/netstandard2.0/Splat.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Splat.dll": {}
+          "lib/netstandard2.0/Splat.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Data.SqlClient/4.4.3": {
@@ -2600,7 +3790,9 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Data.SqlClient.dll": {}
+          "ref/net461/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/net461/System.Data.SqlClient.dll": {}
@@ -2617,10 +3809,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net472/System.Reactive.dll": {}
+          "lib/net472/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/System.Reactive.dll": {}
+          "lib/net472/System.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.3": {
@@ -2629,10 +3825,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
@@ -2680,10 +3880,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.ValueTuple/4.5.0": {
@@ -2695,7 +3899,9 @@
           "ref/net47/System.ValueTuple.dll": {}
         },
         "runtime": {
-          "lib/net47/System.ValueTuple.dll": {}
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
         }
       },
       "LogOnHelper/1.0.0": {
@@ -2728,10 +3934,14 @@
           "System.Web.Extensions"
         ],
         "compile": {
-          "lib/net462/ControlzEx.dll": {}
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/ControlzEx.dll": {}
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "DynamicData/7.4.9": {
@@ -2740,10 +3950,14 @@
           "System.Reactive": "5.0.0"
         },
         "compile": {
-          "lib/net461/DynamicData.dll": {}
+          "lib/net461/DynamicData.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/DynamicData.dll": {}
+          "lib/net461/DynamicData.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FastReport.Compat/2021.3.0": {
@@ -2786,10 +4000,14 @@
           "System.Xml"
         ],
         "compile": {
-          "lib/net40/FastReport.dll": {}
+          "lib/net40/FastReport.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net40/FastReport.dll": {}
+          "lib/net40/FastReport.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/FastReport.OpenSource.props": {}
@@ -2821,19 +4039,27 @@
           "WindowsFormsIntegration"
         ],
         "compile": {
-          "lib/net462/Fluent.dll": {}
+          "lib/net462/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/Fluent.dll": {}
+          "lib/net462/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "log4net/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/net40-full/log4net.dll": {}
+          "lib/net40-full/log4net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net40-full/log4net.dll": {}
+          "lib/net40-full/log4net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
@@ -2950,10 +4176,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "ModernWpfUI/0.9.4": {
@@ -2966,12 +4196,20 @@
           "netstandard"
         ],
         "compile": {
-          "lib/net462/ModernWpf.Controls.dll": {},
-          "lib/net462/ModernWpf.dll": {}
+          "lib/net462/ModernWpf.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net462/ModernWpf.dll": {
+            "related": ".Controls.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/net462/ModernWpf.Controls.dll": {},
-          "lib/net462/ModernWpf.dll": {}
+          "lib/net462/ModernWpf.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net462/ModernWpf.dll": {
+            "related": ".Controls.xml;.xml"
+          }
         },
         "resource": {
           "lib/net462/af-ZA/ModernWpf.Controls.resources.dll": {
@@ -3407,10 +4645,14 @@
           "PostSharp.Redist": "[6.10.5, 7.0.0)"
         },
         "compile": {
-          "lib/net47/PostSharp.Patterns.Common.dll": {}
+          "lib/net47/PostSharp.Patterns.Common.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net47/PostSharp.Patterns.Common.dll": {}
+          "lib/net47/PostSharp.Patterns.Common.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Patterns.Diagnostics/6.10.5": {
@@ -3433,10 +4675,14 @@
           "log4net": "2.0.0"
         },
         "compile": {
-          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {}
+          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {}
+          "lib/net45/PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Patterns.Diagnostics.Redist/6.10.5": {
@@ -3445,19 +4691,27 @@
           "PostSharp.Patterns.Common.Redist": "[6.10.5, 7.0.0)"
         },
         "compile": {
-          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {}
+          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {}
+          "lib/net47/PostSharp.Patterns.Diagnostics.dll": {
+            "related": ".xml"
+          }
         }
       },
       "PostSharp.Redist/6.10.5": {
         "type": "package",
         "compile": {
-          "lib/net45/PostSharp.dll": {}
+          "lib/net45/PostSharp.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/PostSharp.dll": {}
+          "lib/net45/PostSharp.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveUI/17.1.17": {
@@ -3467,10 +4721,14 @@
           "Splat": "14.1.17"
         },
         "compile": {
-          "lib/net472/ReactiveUI.dll": {}
+          "lib/net472/ReactiveUI.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/ReactiveUI.dll": {}
+          "lib/net472/ReactiveUI.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveUI.WPF/17.1.17": {
@@ -3479,19 +4737,27 @@
           "ReactiveUI": "17.1.17"
         },
         "compile": {
-          "lib/net48/ReactiveUI.Wpf.dll": {}
+          "lib/net48/ReactiveUI.Wpf.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net48/ReactiveUI.Wpf.dll": {}
+          "lib/net48/ReactiveUI.Wpf.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Splat/14.1.17": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Splat.dll": {}
+          "lib/netstandard2.0/Splat.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Splat.dll": {}
+          "lib/netstandard2.0/Splat.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Data.SqlClient/4.4.3": {
@@ -3502,7 +4768,9 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Data.SqlClient.dll": {}
+          "ref/net461/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/net461/System.Data.SqlClient.dll": {}
@@ -3519,10 +4787,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net472/System.Reactive.dll": {}
+          "lib/net472/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/System.Reactive.dll": {}
+          "lib/net472/System.Reactive.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.3": {
@@ -3531,10 +4803,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
@@ -3582,10 +4858,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.ValueTuple/4.5.0": {
@@ -3597,7 +4877,9 @@
           "ref/net47/System.ValueTuple.dll": {}
         },
         "runtime": {
-          "lib/net47/System.ValueTuple.dll": {}
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
         }
       },
       "LogOnHelper/1.0.0": {
@@ -5283,24 +6565,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Yvazh\\.nuget\\packages\\": {},
+    "D:\\sdk\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+      "projectUniqueName": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
       "projectName": "KursovayaAvtoparkAvtobusov",
-      "projectPath": "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "G:\\Курсовой Проект-год2\\KursovayaAvtoparkAvtobusov\\obj\\",
+      "projectPath": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+      "packagesPath": "C:\\Users\\Yvazh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\sdk\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Yvazh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5314,11 +6596,11 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "G:\\Курсовой Проект-год2\\SQLServerLogin\\LogOnHelper.csproj": {
-              "projectPath": "G:\\Курсовой Проект-год2\\SQLServerLogin\\LogOnHelper.csproj"
+            "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj": {
+              "projectPath": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj"
             },
-            "G:\\Курсовой Проект-год2\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
-              "projectPath": "G:\\Курсовой Проект-год2\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
+            "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+              "projectPath": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
             }
           }
         }
@@ -5387,16 +6669,14 @@
             "target": "Package",
             "version": "[4.5.0, )"
           }
-        },
-        "imports": [
-          "uap10.0.22000"
-        ],
-        "assetTargetFallback": true,
-        "warn": true
+        }
       }
     },
     "runtimes": {
       "win": {
+        "#import": []
+      },
+      "win-arm64": {
         "#import": []
       },
       "win-x64": {
