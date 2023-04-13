@@ -7,7 +7,7 @@
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
     Title="DashboardPage"
     d:DataContext="{d:DesignInstance local:DashboardPage, IsDesignTimeCreatable=False}"
-    d:DesignHeight="450"
+    d:DesignHeight="500"
     d:DesignWidth="800"
     d:Background="{DynamicResource ApplicationBackgroundBrush}"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
@@ -27,9 +27,9 @@
 				</TransformGroup>
 			</DataGrid.RenderTransform>
 		</DataGrid>
-		<ui:Button x:Name="XdbSend" Content="Отправить данные в БД" Margin="13,317,0,0" VerticalAlignment="Top"
+		<ui:Button x:Name="XdbSend" Content="Отправить данные в БД" Margin="13,419,0,0" VerticalAlignment="Top"
                 Height="40" Width="253" Click="Button_Click" />
-		<ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="13,432,0,0" VerticalAlignment="Top" Width="253"
+		<ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="13,532,0,0" VerticalAlignment="Top" Width="253"
                 Click="UpdateGrid_Click" Height="41" />
 		<TextBlock x:Name="Labos1" Text="Num" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" />
 		<TextBlock x:Name="Labos2" Text="Surname" HorizontalAlignment="Left" Margin="13,144,0,0" VerticalAlignment="Top" />
@@ -38,9 +38,9 @@
                VerticalAlignment="Top" />
 		<TextBlock x:Name="Labos5" Text="Employed_Since" HorizontalAlignment="Left" Margin="13,241,0,0"
                VerticalAlignment="Top" />
-		<TextBlock x:Name="Labos6" Text="Job" HorizontalAlignment="Left" Margin="13,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="-7.296,-1.689" />
-		<TextBlock x:Name="Labos7" Text="Internship" HorizontalAlignment="Left" Margin="13,98,0,0"
-               VerticalAlignment="Top" RenderTransformOrigin="-5.684,0.629" />
+		<TextBlock x:Name="Labos6" Text="Job" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Center"  />
+		<TextBlock x:Name="Labos7" Text="Internship" HorizontalAlignment="Left" Margin="10,106,0,0"
+               VerticalAlignment="Top" />
 		<TextBox x:Name="Exed1" HorizontalAlignment="Left" Margin="112,10,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed1_MouseDown" />
 		<TextBox x:Name="Exed3" HorizontalAlignment="Left" Margin="112,188,0,0" TextWrapping="Wrap" Text="TextBox"
@@ -49,13 +49,13 @@
                  VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed2_MouseDown" />
 		<TextBox x:Name="Exed4" HorizontalAlignment="Left" Margin="112,51,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed4_MouseDown" />
-		<TextBox x:Name="Exed6" HorizontalAlignment="Left" Margin="112,0,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Center" Width="120" MouseDoubleClick="Exed6_MouseDown" />
+		<TextBox x:Name="Exed6" HorizontalAlignment="Left" Margin="13,309,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed6_MouseDown" />
 		<TextBox x:Name="Exed5" HorizontalAlignment="Left" Margin="112,233,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed5_MouseDown" />
 		<TextBox x:Name="Exed7" HorizontalAlignment="Left" Margin="112,98,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed7_MouseDown" />
-		<ui:Button x:Name="EmpUpdat" Content="Обновить данные" Margin="13,374,0,0" VerticalAlignment="Top" Width="253"
+		<ui:Button x:Name="EmpUpdat" Content="Обновить данные" Margin="13,475,0,0" VerticalAlignment="Top" Width="253"
                 Height="41" Click="EmpUpdat_Click" />
     </Grid>
 </ui:UiPage>
