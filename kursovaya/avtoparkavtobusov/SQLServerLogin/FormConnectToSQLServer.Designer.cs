@@ -1,309 +1,297 @@
 ﻿namespace SQLServerLoginTemplate
 {
-	partial class FormConnectToSQLServer
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class FormConnectToSQLServer
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-            this.labelServerName = new System.Windows.Forms.Label();
-            this.labelAuthentication = new System.Windows.Forms.Label();
-            this.labelLogin = new System.Windows.Forms.Label();
-            this.labelPassword = new System.Windows.Forms.Label();
-            this.comboBoxServerName = new System.Windows.Forms.ComboBox();
-            this.comboBoxLogin = new System.Windows.Forms.ComboBox();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.buttonConnect = new System.Windows.Forms.Button();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonHelp = new System.Windows.Forms.Button();
-            this.buttonOptions = new System.Windows.Forms.Button();
-            this.checkBoxRememberPassword = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.labelSQLServer = new System.Windows.Forms.Label();
-            this.comboBoxAuthentication = new System.Windows.Forms.ComboBox();
-            this.labelServerType = new System.Windows.Forms.Label();
-            this.comboBoxServerType = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            labelServerName = new System.Windows.Forms.Label();
+            labelAuthentication = new System.Windows.Forms.Label();
+            labelLogin = new System.Windows.Forms.Label();
+            labelPassword = new System.Windows.Forms.Label();
+            comboBoxServerName = new System.Windows.Forms.ComboBox();
+            comboBoxLogin = new System.Windows.Forms.ComboBox();
+            textBoxPassword = new System.Windows.Forms.TextBox();
+            buttonConnect = new System.Windows.Forms.Button();
+            buttonCancel = new System.Windows.Forms.Button();
+            buttonHelp = new System.Windows.Forms.Button();
+            buttonOptions = new System.Windows.Forms.Button();
+            checkBoxRememberPassword = new System.Windows.Forms.CheckBox();
+            labelSQLServer = new System.Windows.Forms.Label();
+            comboBoxAuthentication = new System.Windows.Forms.ComboBox();
+            labelServerType = new System.Windows.Forms.Label();
+            comboBoxServerType = new System.Windows.Forms.ComboBox();
+            panel1 = new System.Windows.Forms.Panel();
+            panel2 = new System.Windows.Forms.Panel();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // labelServerName
             // 
-            this.labelServerName.AutoSize = true;
-            this.labelServerName.Location = new System.Drawing.Point(13, 108);
-            this.labelServerName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelServerName.Name = "labelServerName";
-            this.labelServerName.Size = new System.Drawing.Size(105, 13);
-            this.labelServerName.TabIndex = 0;
-            this.labelServerName.Text = "&Название сервера:";
+            labelServerName.AutoSize = true;
+            labelServerName.Location = new System.Drawing.Point(13, 108);
+            labelServerName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelServerName.Name = "labelServerName";
+            labelServerName.Size = new System.Drawing.Size(107, 13);
+            labelServerName.TabIndex = 0;
+            labelServerName.Text = "&Название сервера:";
             // 
             // labelAuthentication
             // 
-            this.labelAuthentication.AutoSize = true;
-            this.labelAuthentication.Location = new System.Drawing.Point(13, 136);
-            this.labelAuthentication.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelAuthentication.Name = "labelAuthentication";
-            this.labelAuthentication.Size = new System.Drawing.Size(61, 13);
-            this.labelAuthentication.TabIndex = 1;
-            this.labelAuthentication.Text = "&Тип входа:";
+            labelAuthentication.AutoSize = true;
+            labelAuthentication.Location = new System.Drawing.Point(13, 136);
+            labelAuthentication.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelAuthentication.Name = "labelAuthentication";
+            labelAuthentication.Size = new System.Drawing.Size(63, 13);
+            labelAuthentication.TabIndex = 1;
+            labelAuthentication.Text = "&Тип входа:";
             // 
             // labelLogin
             // 
-            this.labelLogin.AutoSize = true;
-            this.labelLogin.Location = new System.Drawing.Point(33, 162);
-            this.labelLogin.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(41, 13);
-            this.labelLogin.TabIndex = 2;
-            this.labelLogin.Text = "&Логин:";
+            labelLogin.AutoSize = true;
+            labelLogin.Location = new System.Drawing.Point(33, 162);
+            labelLogin.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelLogin.Name = "labelLogin";
+            labelLogin.Size = new System.Drawing.Size(43, 13);
+            labelLogin.TabIndex = 2;
+            labelLogin.Text = "&Логин:";
             // 
             // labelPassword
             // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(33, 187);
-            this.labelPassword.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(48, 13);
-            this.labelPassword.TabIndex = 3;
-            this.labelPassword.Text = "&Пароль:";
+            labelPassword.AutoSize = true;
+            labelPassword.Location = new System.Drawing.Point(33, 187);
+            labelPassword.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelPassword.Name = "labelPassword";
+            labelPassword.Size = new System.Drawing.Size(50, 13);
+            labelPassword.TabIndex = 3;
+            labelPassword.Text = "&Пароль:";
             // 
             // comboBoxServerName
             // 
-            this.comboBoxServerName.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBoxServerName.FormattingEnabled = true;
-            this.comboBoxServerName.Location = new System.Drawing.Point(171, 105);
-            this.comboBoxServerName.Margin = new System.Windows.Forms.Padding(1);
-            this.comboBoxServerName.Name = "comboBoxServerName";
-            this.comboBoxServerName.Size = new System.Drawing.Size(306, 21);
-            this.comboBoxServerName.TabIndex = 6;
-            this.comboBoxServerName.SelectedIndexChanged += new System.EventHandler(this.comboBoxServerName_SelectedIndexChanged);
+            comboBoxServerName.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            comboBoxServerName.FormattingEnabled = true;
+            comboBoxServerName.Location = new System.Drawing.Point(171, 105);
+            comboBoxServerName.Margin = new System.Windows.Forms.Padding(1);
+            comboBoxServerName.Name = "comboBoxServerName";
+            comboBoxServerName.Size = new System.Drawing.Size(306, 21);
+            comboBoxServerName.TabIndex = 6;
+            comboBoxServerName.SelectedIndexChanged += comboBoxServerName_SelectedIndexChanged;
             // 
             // comboBoxLogin
             // 
-            this.comboBoxLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBoxLogin.FormattingEnabled = true;
-            this.comboBoxLogin.Location = new System.Drawing.Point(191, 159);
-            this.comboBoxLogin.Margin = new System.Windows.Forms.Padding(1);
-            this.comboBoxLogin.Name = "comboBoxLogin";
-            this.comboBoxLogin.Size = new System.Drawing.Size(287, 21);
-            this.comboBoxLogin.TabIndex = 8;
+            comboBoxLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            comboBoxLogin.FormattingEnabled = true;
+            comboBoxLogin.Location = new System.Drawing.Point(191, 159);
+            comboBoxLogin.Margin = new System.Windows.Forms.Padding(1);
+            comboBoxLogin.Name = "comboBoxLogin";
+            comboBoxLogin.Size = new System.Drawing.Size(287, 21);
+            comboBoxLogin.TabIndex = 8;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPassword.Location = new System.Drawing.Point(191, 184);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(287, 20);
-            this.textBoxPassword.TabIndex = 9;
+            textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            textBoxPassword.Location = new System.Drawing.Point(191, 184);
+            textBoxPassword.Margin = new System.Windows.Forms.Padding(1);
+            textBoxPassword.Name = "textBoxPassword";
+            textBoxPassword.PasswordChar = '*';
+            textBoxPassword.Size = new System.Drawing.Size(287, 22);
+            textBoxPassword.TabIndex = 9;
             // 
             // buttonConnect
             // 
-            this.buttonConnect.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonConnect.Location = new System.Drawing.Point(112, 242);
-            this.buttonConnect.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonConnect.Name = "buttonConnect";
-            this.buttonConnect.Size = new System.Drawing.Size(110, 21);
-            this.buttonConnect.TabIndex = 10;
-            this.buttonConnect.Text = "&Подключится";
-            this.buttonConnect.UseVisualStyleBackColor = true;
-            this.buttonConnect.Click += new System.EventHandler(this.buttonConnect_Click);
+            buttonConnect.DialogResult = System.Windows.Forms.DialogResult.OK;
+            buttonConnect.Location = new System.Drawing.Point(112, 242);
+            buttonConnect.Margin = new System.Windows.Forms.Padding(1);
+            buttonConnect.Name = "buttonConnect";
+            buttonConnect.Size = new System.Drawing.Size(110, 21);
+            buttonConnect.TabIndex = 10;
+            buttonConnect.Text = "&Подключится";
+            buttonConnect.UseVisualStyleBackColor = true;
+            buttonConnect.Click += buttonConnect_Click;
             // 
             // buttonCancel
             // 
-            this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(228, 242);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(69, 21);
-            this.buttonCancel.TabIndex = 11;
-            this.buttonCancel.Text = "Отмена";
-            this.buttonCancel.UseVisualStyleBackColor = true;
-            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            buttonCancel.Location = new System.Drawing.Point(228, 242);
+            buttonCancel.Margin = new System.Windows.Forms.Padding(1);
+            buttonCancel.Name = "buttonCancel";
+            buttonCancel.Size = new System.Drawing.Size(69, 21);
+            buttonCancel.TabIndex = 11;
+            buttonCancel.Text = "Отмена";
+            buttonCancel.UseVisualStyleBackColor = true;
+            buttonCancel.Click += buttonCancel_Click;
             // 
             // buttonHelp
             // 
-            this.buttonHelp.Location = new System.Drawing.Point(302, 241);
-            this.buttonHelp.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(81, 22);
-            this.buttonHelp.TabIndex = 12;
-            this.buttonHelp.Text = "&Помощь";
-            this.buttonHelp.UseVisualStyleBackColor = true;
+            buttonHelp.Location = new System.Drawing.Point(302, 241);
+            buttonHelp.Margin = new System.Windows.Forms.Padding(1);
+            buttonHelp.Name = "buttonHelp";
+            buttonHelp.Size = new System.Drawing.Size(81, 22);
+            buttonHelp.TabIndex = 12;
+            buttonHelp.Text = "&Помощь";
+            buttonHelp.UseVisualStyleBackColor = true;
             // 
             // buttonOptions
             // 
-            this.buttonOptions.Location = new System.Drawing.Point(385, 242);
-            this.buttonOptions.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonOptions.Name = "buttonOptions";
-            this.buttonOptions.Size = new System.Drawing.Size(91, 21);
-            this.buttonOptions.TabIndex = 13;
-            this.buttonOptions.Text = "&Настройки >>";
-            this.buttonOptions.UseVisualStyleBackColor = true;
+            buttonOptions.Location = new System.Drawing.Point(385, 242);
+            buttonOptions.Margin = new System.Windows.Forms.Padding(1);
+            buttonOptions.Name = "buttonOptions";
+            buttonOptions.Size = new System.Drawing.Size(91, 21);
+            buttonOptions.TabIndex = 13;
+            buttonOptions.Text = "&Настройки >>";
+            buttonOptions.UseVisualStyleBackColor = true;
             // 
             // checkBoxRememberPassword
             // 
-            this.checkBoxRememberPassword.AutoSize = true;
-            this.checkBoxRememberPassword.Location = new System.Drawing.Point(191, 212);
-            this.checkBoxRememberPassword.Margin = new System.Windows.Forms.Padding(1);
-            this.checkBoxRememberPassword.Name = "checkBoxRememberPassword";
-            this.checkBoxRememberPassword.Size = new System.Drawing.Size(121, 17);
-            this.checkBoxRememberPassword.TabIndex = 14;
-            this.checkBoxRememberPassword.Text = "Запомнить пароль";
-            this.checkBoxRememberPassword.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(11, 230);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(463, 4);
-            this.label1.TabIndex = 15;
+            checkBoxRememberPassword.AutoSize = true;
+            checkBoxRememberPassword.Location = new System.Drawing.Point(191, 212);
+            checkBoxRememberPassword.Margin = new System.Windows.Forms.Padding(1);
+            checkBoxRememberPassword.Name = "checkBoxRememberPassword";
+            checkBoxRememberPassword.Size = new System.Drawing.Size(127, 17);
+            checkBoxRememberPassword.TabIndex = 14;
+            checkBoxRememberPassword.Text = "Запомнить пароль";
+            checkBoxRememberPassword.UseVisualStyleBackColor = true;
             // 
             // labelSQLServer
             // 
-            this.labelSQLServer.AutoSize = true;
-            this.labelSQLServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSQLServer.Location = new System.Drawing.Point(153, 15);
-            this.labelSQLServer.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelSQLServer.Name = "labelSQLServer";
-            this.labelSQLServer.Size = new System.Drawing.Size(204, 36);
-            this.labelSQLServer.TabIndex = 16;
-            this.labelSQLServer.Text = "Авторизация";
+            labelSQLServer.AutoSize = true;
+            labelSQLServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelSQLServer.Location = new System.Drawing.Point(153, 15);
+            labelSQLServer.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelSQLServer.Name = "labelSQLServer";
+            labelSQLServer.Size = new System.Drawing.Size(204, 36);
+            labelSQLServer.TabIndex = 16;
+            labelSQLServer.Text = "Авторизация";
+            labelSQLServer.Click += labelSQLServer_Click;
             // 
             // comboBoxAuthentication
             // 
-            this.comboBoxAuthentication.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBoxAuthentication.FormattingEnabled = true;
-            this.comboBoxAuthentication.Location = new System.Drawing.Point(171, 133);
-            this.comboBoxAuthentication.Margin = new System.Windows.Forms.Padding(1);
-            this.comboBoxAuthentication.Name = "comboBoxAuthentication";
-            this.comboBoxAuthentication.Size = new System.Drawing.Size(306, 21);
-            this.comboBoxAuthentication.TabIndex = 7;
-            this.comboBoxAuthentication.SelectedIndexChanged += new System.EventHandler(this.comboBoxAuthentication_SelectedIndexChanged);
+            comboBoxAuthentication.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            comboBoxAuthentication.FormattingEnabled = true;
+            comboBoxAuthentication.Location = new System.Drawing.Point(171, 133);
+            comboBoxAuthentication.Margin = new System.Windows.Forms.Padding(1);
+            comboBoxAuthentication.Name = "comboBoxAuthentication";
+            comboBoxAuthentication.Size = new System.Drawing.Size(306, 21);
+            comboBoxAuthentication.TabIndex = 7;
+            comboBoxAuthentication.SelectedIndexChanged += comboBoxAuthentication_SelectedIndexChanged;
             // 
             // labelServerType
             // 
-            this.labelServerType.AutoSize = true;
-            this.labelServerType.Location = new System.Drawing.Point(13, 80);
-            this.labelServerType.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelServerType.Name = "labelServerType";
-            this.labelServerType.Size = new System.Drawing.Size(74, 13);
-            this.labelServerType.TabIndex = 17;
-            this.labelServerType.Text = "Тип сервера:";
+            labelServerType.AutoSize = true;
+            labelServerType.Location = new System.Drawing.Point(13, 80);
+            labelServerType.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelServerType.Name = "labelServerType";
+            labelServerType.Size = new System.Drawing.Size(76, 13);
+            labelServerType.TabIndex = 17;
+            labelServerType.Text = "Тип сервера:";
             // 
             // comboBoxServerType
             // 
-            this.comboBoxServerType.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBoxServerType.FormattingEnabled = true;
-            this.comboBoxServerType.Location = new System.Drawing.Point(171, 80);
-            this.comboBoxServerType.Margin = new System.Windows.Forms.Padding(1);
-            this.comboBoxServerType.Name = "comboBoxServerType";
-            this.comboBoxServerType.Size = new System.Drawing.Size(306, 21);
-            this.comboBoxServerType.TabIndex = 18;
+            comboBoxServerType.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            comboBoxServerType.FormattingEnabled = true;
+            comboBoxServerType.Location = new System.Drawing.Point(171, 80);
+            comboBoxServerType.Margin = new System.Windows.Forms.Padding(1);
+            comboBoxServerType.Name = "comboBoxServerType";
+            comboBoxServerType.Size = new System.Drawing.Size(306, 21);
+            comboBoxServerType.TabIndex = 18;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.labelSQLServer);
-            this.panel1.Location = new System.Drawing.Point(-11, -6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(512, 69);
-            this.panel1.TabIndex = 19;
+            panel1.BackColor = System.Drawing.Color.White;
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(labelSQLServer);
+            panel1.Location = new System.Drawing.Point(-11, -6);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(512, 69);
+            panel1.TabIndex = 19;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel2.Location = new System.Drawing.Point(0, 54);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(500, 10);
-            this.panel2.TabIndex = 17;
+            panel2.BackColor = System.Drawing.Color.DarkOrange;
+            panel2.Location = new System.Drawing.Point(0, 54);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(500, 10);
+            panel2.TabIndex = 17;
             // 
             // FormConnectToSQLServer
             // 
-            this.AcceptButton = this.buttonConnect;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(484, 282);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.comboBoxServerType);
-            this.Controls.Add(this.labelServerType);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBoxRememberPassword);
-            this.Controls.Add(this.buttonOptions);
-            this.Controls.Add(this.buttonHelp);
-            this.Controls.Add(this.buttonCancel);
-            this.Controls.Add(this.buttonConnect);
-            this.Controls.Add(this.textBoxPassword);
-            this.Controls.Add(this.comboBoxLogin);
-            this.Controls.Add(this.comboBoxAuthentication);
-            this.Controls.Add(this.comboBoxServerName);
-            this.Controls.Add(this.labelPassword);
-            this.Controls.Add(this.labelLogin);
-            this.Controls.Add(this.labelAuthentication);
-            this.Controls.Add(this.labelServerName);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(1);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormConnectToSQLServer";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Вход в систему";
-            this.Load += new System.EventHandler(this.FormConnectToSQLServer_Load);
-            this.Resize += new System.EventHandler(this.FormConnectToSQLServer_Resize);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = buttonConnect;
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            CancelButton = buttonCancel;
+            ClientSize = new System.Drawing.Size(484, 282);
+            Controls.Add(panel1);
+            Controls.Add(comboBoxServerType);
+            Controls.Add(labelServerType);
+            Controls.Add(checkBoxRememberPassword);
+            Controls.Add(buttonOptions);
+            Controls.Add(buttonHelp);
+            Controls.Add(buttonCancel);
+            Controls.Add(buttonConnect);
+            Controls.Add(textBoxPassword);
+            Controls.Add(comboBoxLogin);
+            Controls.Add(comboBoxAuthentication);
+            Controls.Add(comboBoxServerName);
+            Controls.Add(labelPassword);
+            Controls.Add(labelLogin);
+            Controls.Add(labelAuthentication);
+            Controls.Add(labelServerName);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            Margin = new System.Windows.Forms.Padding(1);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormConnectToSQLServer";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Вход в систему";
+            Load += FormConnectToSQLServer_Load;
+            Resize += FormConnectToSQLServer_Resize;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
-		}
+        #endregion
 
-		#endregion
-
-		private System.Windows.Forms.Label labelServerName;
-		private System.Windows.Forms.Label labelAuthentication;
-		private System.Windows.Forms.Label labelLogin;
-		private System.Windows.Forms.Label labelPassword;
-		private System.Windows.Forms.ComboBox comboBoxServerName;
-		private System.Windows.Forms.ComboBox comboBoxLogin;
-		private System.Windows.Forms.TextBox textBoxPassword;
-		private System.Windows.Forms.Button buttonConnect;
-		private System.Windows.Forms.Button buttonCancel;
-		private System.Windows.Forms.Button buttonHelp;
-		private System.Windows.Forms.Button buttonOptions;
-		private System.Windows.Forms.CheckBox checkBoxRememberPassword;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label labelSQLServer;
-		private System.Windows.Forms.ComboBox comboBoxAuthentication;
-		private System.Windows.Forms.Label labelServerType;
-		private System.Windows.Forms.ComboBox comboBoxServerType;
+        private System.Windows.Forms.Label labelServerName;
+        private System.Windows.Forms.Label labelAuthentication;
+        private System.Windows.Forms.Label labelLogin;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.ComboBox comboBoxServerName;
+        private System.Windows.Forms.ComboBox comboBoxLogin;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.Button buttonConnect;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonHelp;
+        private System.Windows.Forms.Button buttonOptions;
+        private System.Windows.Forms.CheckBox checkBoxRememberPassword;
+        private System.Windows.Forms.Label labelSQLServer;
+        private System.Windows.Forms.ComboBox comboBoxAuthentication;
+        private System.Windows.Forms.Label labelServerType;
+        private System.Windows.Forms.ComboBox comboBoxServerType;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
     }

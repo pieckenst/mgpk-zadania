@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.8": {
+    ".NETFramework,Version=v4.8.1": {
       "ControlzEx/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -972,6 +972,7 @@
       },
       "LogOnHelper/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.8.1",
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -989,7 +990,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win": {
+    ".NETFramework,Version=v4.8.1/win": {
       "ControlzEx/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -1950,6 +1951,7 @@
       },
       "LogOnHelper/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.8.1",
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -1967,7 +1969,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win-arm64": {
+    ".NETFramework,Version=v4.8.1/win-arm64": {
       "ControlzEx/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -2928,6 +2930,7 @@
       },
       "LogOnHelper/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.8.1",
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -2945,7 +2948,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win-x64": {
+    ".NETFramework,Version=v4.8.1/win-x64": {
       "ControlzEx/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -3906,6 +3909,7 @@
       },
       "LogOnHelper/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.8.1",
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -3923,7 +3927,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win-x86": {
+    ".NETFramework,Version=v4.8.1/win-x86": {
       "ControlzEx/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -4884,6 +4888,7 @@
       },
       "LogOnHelper/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.8.1",
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -6544,7 +6549,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.8": [
+    ".NETFramework,Version=v4.8.1": [
       "FastReport.Data.MsSql >= 2022.1.0",
       "FastReport.OpenSource >= 2022.1.0",
       "FastReport.OpenSource.Export.PdfSimple >= 2022.1.0",
@@ -6571,11 +6576,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+      "projectUniqueName": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
       "projectName": "KursovayaAvtoparkAvtobusov",
-      "projectPath": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+      "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
       "packagesPath": "C:\\Users\\Yvazh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\obj\\",
+      "outputPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -6587,27 +6592,27 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net48"
+        "net481"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net48": {
+        "net481": {
           "projectReferences": {
-            "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj": {
-              "projectPath": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj"
+            "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj": {
+              "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj"
             },
-            "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
-              "projectPath": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
+            "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+              "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "net48": {
+      "net481": {
         "dependencies": {
           "FastReport.Data.MsSql": {
             "target": "Package",
@@ -6669,7 +6674,12 @@
             "target": "Package",
             "version": "[4.5.0, )"
           }
-        }
+        },
+        "imports": [
+          "uap10.0.22000"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
       }
     },
     "runtimes": {

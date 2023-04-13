@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rectify11Installer.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,47 @@ namespace SQLServerLoginTemplate
         public string ConnectionString = ""; //The code that calls this form should retrieve the connection string from this public property
         public FormConnectToSQLServer()
         {
+            SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
+            if (System.Globalization.CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft)
+            {
+                RightToLeftLayout = true;
+                RightToLeft = RightToLeft.Yes;
+            }
             InitializeComponent();
+            DarkMode.RefreshTitleBarColor(Handle);
+            if (Theme.IsUsingDarkMode)
+            {
+                DarkMode.UpdateFrame(this, true);
+            }
+            Shown += FrmWizard_Shown;
+           
+
+        }
+        private void FrmWizard_Shown(object sender, EventArgs e)
+        {
+            if (Theme.IsUsingDarkMode)
+            {
+                BackColor = Color.Black;
+                ForeColor = Color.White;
+                labelSQLServer.ForeColor = Color.White;
+            }
+            else
+            {
+                BackColor = Color.White;
+                ForeColor = Color.Black;
+                labelSQLServer.ForeColor = Color.Black;
+                if ((NativeMethods.GetUbr() != -1
+                    && NativeMethods.GetUbr() < 51
+                    && Environment.OSVersion.Version.Build == 22000)
+                    || Environment.OSVersion.Version.Build is < 22000 and >= 21996)
+                {
+                    panel1.BackColor = Color.White;
+                    
+                    labelSQLServer.ForeColor = Color.White;
+                }
+            }
+
+            
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -291,5 +332,9 @@ namespace SQLServerLoginTemplate
             textBoxPassword.Width = this.Width - textBoxPassword.Left - rightoffset;
         }
 
+        private void labelSQLServer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

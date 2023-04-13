@@ -20,29 +20,28 @@ namespace SQLServerLoginTemplate
 		static void Main()
 		{
             
-            ProfileOptimization.SetProfileRoot(Path.Combine(Path.GetTempPath(), "Rectify11"));
-            ProfileOptimization.StartProfile("Startup.Profile");
+           
             if (Environment.OSVersion.Version.Build >= 10240)
             {
                 Theme.InitTheme();
                 if ((Environment.OSVersion.Version.Build >= 17763) && (Environment.OSVersion.Version.Build < 18362))
                 {
-                    DarkMode.AllowDarkModeForApp(true);
+                    Rectify11Installer.Win32.DarkMode.AllowDarkModeForApp(true);
                 }
                 else if (Environment.OSVersion.Version.Build >= 18362)
                 {
-                    DarkMode.SetPreferredAppMode(DarkMode.PreferredAppMode.AllowDark);
+                    Rectify11Installer.Win32.DarkMode.SetPreferredAppMode(Rectify11Installer.Win32.DarkMode.PreferredAppMode.AllowDark);
                 }
             }
-            if (!Directory.Exists(Variables.r11Folder))
+            if (!Directory.Exists(Environment.CurrentDirectory))
             {
-                Directory.CreateDirectory(Variables.r11Folder);
+                Directory.CreateDirectory(Environment.CurrentDirectory);
             }
 
-            if ((!File.Exists(Path.Combine(Variables.r11Folder, "Dark.msstyles"))) && (!File.Exists(Path.Combine(Variables.r11Folder, "light.msstyles"))))
+            if ((!File.Exists(Path.Combine(Environment.CurrentDirectory, "Dark.msstyles"))) && (!File.Exists(Path.Combine(Environment.CurrentDirectory, "light.msstyles"))))
             {
-                File.WriteAllBytes(Path.Combine(Variables.r11Folder, "Dark.msstyles"), Properties.Resources.Dark);
-                File.WriteAllBytes(Path.Combine(Variables.r11Folder, "light.msstyles"), Properties.Resources.light);
+                File.WriteAllBytes(Path.Combine(Environment.CurrentDirectory, "Dark.msstyles"), Properties.Resources.Dark);
+                File.WriteAllBytes(Path.Combine(Environment.CurrentDirectory, "light.msstyles"), Properties.Resources.light);
             }
             Theme.LoadTheme();
             Application.EnableVisualStyles();

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\kursovaya",
+    "\\kursovaya\\avtoparkavtobusov"
   ],
-  "SelectedNode": "\\C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania",
+  "SelectedNode": "\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov.sln",
   "PreviewInSolutionExplorer": false
 }

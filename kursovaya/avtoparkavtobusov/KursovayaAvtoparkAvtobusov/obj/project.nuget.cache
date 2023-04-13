@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/MszICimdbVUXg/eRN82P5LfYIKGvkFuAhkV4k0WRUPPrnuiBl0cuG3dHa0oui++Yq5ymaVlTuqGhXQfnXPSgA==",
+  "dgSpecHash": "SaEZOI/GuePYPl6IOaVMpLO9qFa8E+lWeC/DoxbuaTm4jpluxn9A3UpnUxUFnjSUCay/5PnRa8y2BnvoqhKhPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yvazh\\Source\\Repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+  "projectFilePath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yvazh\\.nuget\\packages\\controlzex\\5.0.1\\controlzex.5.0.1.nupkg.sha512",
     "C:\\Users\\Yvazh\\.nuget\\packages\\dynamicdata\\7.4.9\\dynamicdata.7.4.9.nupkg.sha512",

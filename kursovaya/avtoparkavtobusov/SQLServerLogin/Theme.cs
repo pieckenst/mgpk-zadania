@@ -36,8 +36,8 @@ namespace SQLServerLoginTemplate
 
 		public static void LoadTheme()
 		{
-			DarkStyle.Load(Path.Combine(Variables.r11Folder, "Dark.msstyles"));
-			LightStyle.Load(Path.Combine(Variables.r11Folder, "light.msstyles"));
+			DarkStyle.Load(Path.Combine(Environment.CurrentDirectory, "Dark.msstyles"));
+			LightStyle.Load(Path.Combine(Environment.CurrentDirectory, "light.msstyles"));
 		}
 
 		public static StylePart GetNavArrowPart(VisualStyle v, NavigationButtonType type)
@@ -67,7 +67,7 @@ namespace SQLServerLoginTemplate
 		{
 			return (from classes in v.Classes.Values where classes.ClassName == "Button" from parts in classes.Parts where parts.Value.PartName == "COMMANDLINKGLYPH" select parts.Value).FirstOrDefault();
 		}
-#nullable enable
+
 		public static StylePart? GetProgressbarBg(VisualStyle v)
 		{
 			return (from classes in v.Classes.Values where classes.ClassName == "Progress" from parts in classes.Parts where parts.Value.PartName == "BAR" select parts.Value).FirstOrDefault();
@@ -76,7 +76,7 @@ namespace SQLServerLoginTemplate
 		{
 			return (from classes in v.Classes.Values where classes.ClassName == "Progress" from parts in classes.Parts where parts.Value.PartName == "FILL" select parts.Value).FirstOrDefault();
 		}
-#nullable disable
+
 		public static StylePart GetButtonPart(VisualStyle v)
 		{
 			return (from classes in v.Classes.Values where classes.ClassName == "Button" from parts in classes.Parts where parts.Value.PartName == "PUSHBUTTON" select parts.Value).FirstOrDefault();

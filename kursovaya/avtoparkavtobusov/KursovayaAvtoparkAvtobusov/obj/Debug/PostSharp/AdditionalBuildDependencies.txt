@@ -1,2 +1,2 @@
 C:\ProgramData\PostSharp\6.10.5\bin.Release\net472\PostSharp.Compiler.Engine.dll
-C:\Users\user\.nuget\packages\PostSharp.Patterns.Diagnostics\6.10.5\tools\PostSharp.Patterns.Diagnostics.Weaver.dll
+C:\Users\Yvazh\.nuget\packages\PostSharp.Patterns.Diagnostics\6.10.5\tools\PostSharp.Patterns.Diagnostics.Weaver.dll

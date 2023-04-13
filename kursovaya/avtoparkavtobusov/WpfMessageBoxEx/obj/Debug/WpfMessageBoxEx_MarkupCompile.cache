@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\Yvazh\Source\Repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\
+C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\
 WpfMessageBoxEx
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 1490567397
 
-101241501421
+11-1131687754
 15767508510
 MessageBoxEx.xaml;
 
-False
+True
 
