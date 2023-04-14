@@ -38,7 +38,7 @@
                VerticalAlignment="Top" />
 		<TextBlock x:Name="Labos5" Text="Employed_Since" HorizontalAlignment="Left" Margin="13,241,0,0"
                VerticalAlignment="Top" />
-		<TextBlock x:Name="Labos6" Text="Job" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"  />
+		<TextBlock x:Name="Labos6" Text="Job" HorizontalAlignment="Left" Margin="13,280,0,0" VerticalAlignment="Top"  />
 		<TextBlock x:Name="Labos7" Text="Internship" HorizontalAlignment="Left" Margin="10,106,0,0"
                VerticalAlignment="Top" />
 		<TextBox x:Name="Exed1" HorizontalAlignment="Left" Margin="112,10,0,0" TextWrapping="Wrap" Text="TextBox"

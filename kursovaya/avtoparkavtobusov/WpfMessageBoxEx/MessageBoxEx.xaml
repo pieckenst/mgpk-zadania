@@ -9,7 +9,7 @@
 		MinWidth="200" MaxWidth="{Binding Path=MaxFormWidth}" 
 		Background="{Binding Path=MessageBackground}"
 		WindowStartupLocation="CenterScreen" ShowInTaskbar="False" 
-		WindowStyle="ToolWindow"  
+		WindowStyle="None"  
 		ResizeMode="NoResize"
 		SizeToContent="WidthAndHeight" 
 		SizeChanged="NotifiableWindow_SizeChanged" 
