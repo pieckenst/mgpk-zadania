@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\App.xaml
-6862653852
+14429401847
 
-221863846370
+140896852062
 238503130641
-Views\Pages\DashboardPage.xaml;Views\Pages\DataPage.xaml;Views\Pages\MaintenancePage.xaml;Views\Pages\SettingsPage.xaml;Views\Pages\TicketPage.xaml;Views\Windows\MainWindow.xaml;
+FluentKursovayaAvtoparkA\App.xaml;FluentKursovayaAvtoparkA\Views\Pages\DashboardPage.xaml;FluentKursovayaAvtoparkA\Views\Pages\DataPage.xaml;FluentKursovayaAvtoparkA\Views\Pages\MaintenancePage.xaml;FluentKursovayaAvtoparkA\Views\Pages\SettingsPage.xaml;FluentKursovayaAvtoparkA\Views\Pages\TicketPage.xaml;FluentKursovayaAvtoparkA\Views\Windows\MainWindow.xaml;Views\Pages\DashboardPage.xaml;Views\Pages\DataPage.xaml;Views\Pages\MaintenancePage.xaml;Views\Pages\SettingsPage.xaml;Views\Pages\TicketPage.xaml;Views\Windows\MainWindow.xaml;WpfMessageBoxEx\MessageBoxEx.xaml;
 
-True
+False
 

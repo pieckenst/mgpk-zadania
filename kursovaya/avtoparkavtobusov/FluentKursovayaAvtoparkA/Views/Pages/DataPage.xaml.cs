@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Windows;
 using System;
 using Wpf.Ui.Common.Interfaces;
+using System.Data;
 
 namespace FluentKursovayaAvtoparkA.Views.Pages
 {
@@ -80,6 +81,39 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 Console.WriteLine("Data inserted!\n Closing connection ");
                 cnn.Close();
                 Console.WriteLine("Connection has been closed , database ready for next operation!");
+            }
+            catch (Exception ex)
+            {
+                MsgBoxExtendedFunctionality ext = new MsgBoxExtendedFunctionality()
+                {
+                    DetailsText = ex.StackTrace
+                };
+                MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
+            }
+        }
+        private void UpdateGrid_Click(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+                SqlConnection cnn;
+                var conStr = SettingsPage.formations;
+
+                cnn = new SqlConnection(conStr);
+                cnn.Open();
+                Console.Write("OPENING DB CONNECTION!!! \n");
+                Console.Write("[MENU] Connect db clicked - test \n");
+                var select = "SELECT * FROM Marshuti";
+
+                var commandBuilder = new SqlCommand(select, cnn);
+                commandBuilder.ExecuteNonQuery();
+
+                var dataAdapter = new SqlDataAdapter(commandBuilder);
+                var ds = new DataTable("Avtobusx");
+                dataAdapter.Fill(ds);
+                dataGrid1.ItemsSource = ds.DefaultView;
+                Console.WriteLine("Connection established and the datagrid filled!");
+                cnn.Close();
             }
             catch (Exception ex)
             {

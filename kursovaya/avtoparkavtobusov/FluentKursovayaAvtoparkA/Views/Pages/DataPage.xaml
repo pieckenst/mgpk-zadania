@@ -55,5 +55,7 @@
                 VerticalAlignment="Top" Height="33" Width="218" Click="UpdateTransportTable_Click" Grid.Row="1" />
 		<Button x:Name="ClickSendDb" Content="Отправить данные в БД" Margin="15,411,0,0" VerticalAlignment="Top"
                 Height="33" Width="218" Click="Button_Click" Grid.Row="1" />
+		<ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="13,459,0,0" VerticalAlignment="Top" Width="253"
+                Click="UpdateGrid_Click" Height="41" />
     </Grid>
 </ui:UiPage>
