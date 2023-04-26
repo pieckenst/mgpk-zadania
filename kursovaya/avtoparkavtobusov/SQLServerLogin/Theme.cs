@@ -12,7 +12,9 @@ namespace SQLServerLoginTemplate
 		#region Variables
 		public static VisualStyle DarkStyle = new();
 		public static VisualStyle LightStyle = new();
-		public static bool IsUsingDarkMode { get; private set; }
+        
+        public static bool IsUsingDarkMode = getdarkmodeinfo();
+		
 		#endregion
 		#region Public Methods
 		public static void InitTheme()
@@ -31,6 +33,13 @@ namespace SQLServerLoginTemplate
 			}
 
 			SystemEvents.UserPreferenceChanged += SystemEvents_UserPreferenceChanged;
+		}
+		public static bool getdarkmodeinfo()
+		{
+            int res = (int)Registry.GetValue("HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize", "AppsUseLightTheme", -1);
+            if (res == 0) { return true;}
+			else { return false;}
+
 		}
 		public static event EventHandler OnThemeChanged;
 

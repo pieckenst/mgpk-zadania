@@ -97,6 +97,18 @@
           "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll": {}
         }
       },
+      "MaterialSkin.2/2.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0-windows7.0/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/MaterialSkin.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "Microsoft.CodeAnalysis.Analyzers/2.9.4": {
         "type": "package",
         "build": {
@@ -1219,6 +1231,19 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "LogOnHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8.1",
+        "dependencies": {
+          "MaterialSkin.2": "2.3.1"
+        },
+        "compile": {
+          "bin/placeholder/LogOnHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogOnHelper.dll": {}
+        }
+      },
       "WpfMessageBoxEx/1.0.0": {
         "type": "project",
         "compile": {
@@ -1344,6 +1369,23 @@
         "fastreport.opensource.export.pdfsimple.nuspec",
         "lib/net462/FastReport.OpenSource.Export.PdfSimple.dll",
         "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll"
+      ]
+    },
+    "MaterialSkin.2/2.3.1": {
+      "sha512": "w2vFxLNk4InCDU7pXDfBqPfv55HhBtuu8HRfEqQpeS3sNTS1pUzDs/hS0b5JW2/tKvt+P1of9OINP8a9omWDBg==",
+      "type": "package",
+      "path": "materialskin.2/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MaterialSkin.dll",
+        "lib/net461/MaterialSkin.dll",
+        "lib/net48/MaterialSkin.dll",
+        "lib/net5.0-windows7.0/MaterialSkin.dll",
+        "materialskin.2.2.3.1.nupkg.sha512",
+        "materialskin.2.nuspec",
+        "nugetIcon.png"
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/2.9.4": {
@@ -2927,6 +2969,11 @@
         "wpfui.png"
       ]
     },
+    "LogOnHelper/1.0.0": {
+      "type": "project",
+      "path": "../SQLServerLogin/LogOnHelper.csproj",
+      "msbuildProject": "../SQLServerLogin/LogOnHelper.csproj"
+    },
     "WpfMessageBoxEx/1.0.0": {
       "type": "project",
       "path": "../WpfMessageBoxEx/WpfMessageBoxEx.csproj",
@@ -2939,6 +2986,7 @@
       "FastReport.Data.MsSql >= 2023.2.0",
       "FastReport.OpenSource >= 2023.2.7",
       "FastReport.OpenSource.Export.PdfSimple >= 2023.2.7",
+      "LogOnHelper >= 1.0.0",
       "Microsoft.Extensions.Hosting >= 6.0.1",
       "System.Data.SqlClient >= 4.8.5",
       "WPF-UI >= 2.0.3",
@@ -2978,6 +3026,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj": {
+              "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj"
+            },
             "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
               "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
             }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9zgfKsY9UTzO79oG+HX4wuGP9LVz5eKbbxZ47oKhp9HGPRtdJN+BdAtWvNswreDAGJyTpWE3nbl8hMrKtrdnQQ==",
+  "dgSpecHash": "fhoV5Kw2E1KiUjL0PtvLtVzibiUDryGNZJCXmXbryRJ3uhEijDn+TDanBfuzwgJCDRNyJD8YfX/heZW+6Y/3Bg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\FluentKursovayaAvtoparkA\\FluentKursovayaAvtoparkA.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Yvazh\\.nuget\\packages\\fastreport.data.mssql\\2023.2.0\\fastreport.data.mssql.2023.2.0.nupkg.sha512",
     "C:\\Users\\Yvazh\\.nuget\\packages\\fastreport.opensource\\2023.2.7\\fastreport.opensource.2023.2.7.nupkg.sha512",
     "C:\\Users\\Yvazh\\.nuget\\packages\\fastreport.opensource.export.pdfsimple\\2023.2.7\\fastreport.opensource.export.pdfsimple.2023.2.7.nupkg.sha512",
+    "C:\\Users\\Yvazh\\.nuget\\packages\\materialskin.2\\2.3.1\\materialskin.2.2.3.1.nupkg.sha512",
     "C:\\Users\\Yvazh\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.4\\microsoft.codeanalysis.analyzers.2.9.4.nupkg.sha512",
     "C:\\Users\\Yvazh\\.nuget\\packages\\microsoft.codeanalysis.common\\3.3.1\\microsoft.codeanalysis.common.3.3.1.nupkg.sha512",
     "C:\\Users\\Yvazh\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.3.1\\microsoft.codeanalysis.csharp.3.3.1.nupkg.sha512",

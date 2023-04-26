@@ -33,6 +33,9 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
+              "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj": {
+                "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj"
+              },
               "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
                 "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
               }
@@ -98,6 +101,68 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.300-preview.23179.2\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj",
+        "projectName": "LogOnHelper",
+        "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj",
+        "packagesPath": "C:\\Users\\Yvazh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "D:\\sdk\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Yvazh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net481"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net481": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net481": {
+          "dependencies": {
+            "MaterialSkin.2": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "Microsoft.Net.Compilers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
         }
       }
     },

@@ -12,6 +12,7 @@
           "FastReport.Data.MsSql": "2023.2.0",
           "FastReport.OpenSource": "2023.2.7",
           "FastReport.OpenSource.Export.PdfSimple": "2023.2.7",
+          "LogOnHelper": "1.0.0",
           "Microsoft.Extensions.Hosting": "6.0.1",
           "System.Data.SqlClient": "4.8.5",
           "WPF-UI": "2.0.3",
@@ -78,6 +79,14 @@
           "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll": {
             "assemblyVersion": "2023.2.7.0",
             "fileVersion": "2023.2.7.0"
+          }
+        }
+      },
+      "MaterialSkin.2/2.3.1": {
+        "runtime": {
+          "lib/net5.0-windows7.0/MaterialSkin.dll": {
+            "assemblyVersion": "2.3.1.0",
+            "fileVersion": "2.3.1.0"
           }
         }
       },
@@ -721,6 +730,14 @@
           }
         }
       },
+      "LogOnHelper/1.0.0": {
+        "dependencies": {
+          "MaterialSkin.2": "2.3.1"
+        },
+        "runtime": {
+          "LogOnHelper.dll": {}
+        }
+      },
       "WpfMessageBoxEx/1.0.0": {
         "runtime": {
           "WpfMessageBoxEx.dll": {}
@@ -731,6 +748,14 @@
           "FastReport.Data.MsSql.dll": {
             "assemblyVersion": "2023.2.0.0",
             "fileVersion": "2023.2.0.0"
+          }
+        }
+      },
+      "libmsstyle/1.0.0.0": {
+        "runtime": {
+          "libmsstyle.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -776,6 +801,13 @@
       "sha512": "sha512-IzTCf0CoqLs2figDWIAnesdwSV3ekEt8euaa0wjAWdiNayVNohGDbsF6VlW3yGNVueyZ7YbEFm9vr4t1b209aQ==",
       "path": "fastreport.opensource.export.pdfsimple/2023.2.7",
       "hashPath": "fastreport.opensource.export.pdfsimple.2023.2.7.nupkg.sha512"
+    },
+    "MaterialSkin.2/2.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w2vFxLNk4InCDU7pXDfBqPfv55HhBtuu8HRfEqQpeS3sNTS1pUzDs/hS0b5JW2/tKvt+P1of9OINP8a9omWDBg==",
+      "path": "materialskin.2/2.3.1",
+      "hashPath": "materialskin.2.2.3.1.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.Analyzers/2.9.4": {
       "type": "package",
@@ -1155,12 +1187,22 @@
       "path": "wpf-ui/2.0.3",
       "hashPath": "wpf-ui.2.0.3.nupkg.sha512"
     },
+    "LogOnHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "WpfMessageBoxEx/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "FastReport.Data.MsSql.Reference/2023.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "libmsstyle/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

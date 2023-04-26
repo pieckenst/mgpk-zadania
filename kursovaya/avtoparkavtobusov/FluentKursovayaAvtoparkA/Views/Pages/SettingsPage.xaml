@@ -59,10 +59,22 @@
 				Height="37" Width="294"
 				Click="ComplexRepExport_Click"
 				/>
-		
+
+		<TextBlock
+            Margin="0,34,0,0"
+            FontSize="20"
+            FontWeight="Medium"
+            Text="Настройки подключения к серверу баз данных" />
+		<Button x:Name="DatabaseOptionbutton"
+				Content="Открыть настройки"
+				Margin="0,40,0,0"
+				 
+				Height="37" Width="294"
+				Click="DatabaseOptionbutton_Click"
+				/>
 
         <TextBlock
-            Margin="0,34,0,0"
+            Margin="0,50,0,0"
             FontSize="20"
             FontWeight="Medium"
             Text="О программе Автопарк Автобусов" />

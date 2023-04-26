@@ -30,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SQLServerLogin\LogOnHelper.csproj" />
     <ProjectReference Include="..\WpfMessageBoxEx\WpfMessageBoxEx.csproj" />
   </ItemGroup>
 

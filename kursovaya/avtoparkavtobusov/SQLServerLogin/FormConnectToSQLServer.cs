@@ -1,4 +1,6 @@
-﻿using Rectify11Installer.Win32;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using Rectify11Installer.Win32;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,8 +13,9 @@ using System.Windows.Forms;
 
 namespace SQLServerLoginTemplate
 {
-    public partial class FormConnectToSQLServer : Form
+    public partial class FormConnectToSQLServer : MaterialForm
     {
+        private readonly MaterialSkinManager materialSkinManager;
         private readonly string _WINDOWSAUTH = "Windows Authentication";
         private readonly string _SQLAUTH = "SQL Server Authentication";
         private readonly string _LOGINTYPEWINDOWS = "0";
@@ -22,48 +25,32 @@ namespace SQLServerLoginTemplate
         public string ConnectionString = ""; //The code that calls this form should retrieve the connection string from this public property
         public FormConnectToSQLServer()
         {
-            SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
-            if (System.Globalization.CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft)
-            {
-                RightToLeftLayout = true;
-                RightToLeft = RightToLeft.Yes;
-            }
-            InitializeComponent();
-            DarkMode.RefreshTitleBarColor(Handle);
-            if (Theme.IsUsingDarkMode)
-            {
-                DarkMode.UpdateFrame(this, true);
-            }
-            Shown += FrmWizard_Shown;
-           
 
-        }
-        private void FrmWizard_Shown(object sender, EventArgs e)
-        {
+            InitializeComponent();
+            // Initialize MaterialSkinManager
+            materialSkinManager = MaterialSkinManager.Instance;
+
+            // Set this to false to disable backcolor enforcing on non-materialSkin components
+            // This HAS to be set before the AddFormToManage()
+            materialSkinManager.EnforceBackcolorOnAllComponents = true;
+
+            // MaterialSkinManager properties
+            materialSkinManager.AddFormToManage(this);
             if (Theme.IsUsingDarkMode)
             {
-                BackColor = Color.Black;
-                ForeColor = Color.White;
-                labelSQLServer.ForeColor = Color.White;
+                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             }
             else
             {
-                BackColor = Color.White;
-                ForeColor = Color.Black;
-                labelSQLServer.ForeColor = Color.Black;
-                if ((NativeMethods.GetUbr() != -1
-                    && NativeMethods.GetUbr() < 51
-                    && Environment.OSVersion.Version.Build == 22000)
-                    || Environment.OSVersion.Version.Build is < 22000 and >= 21996)
-                {
-                    panel1.BackColor = Color.White;
-                    
-                    labelSQLServer.ForeColor = Color.White;
-                }
+                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             }
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
 
-            
+
+
+
         }
+
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
@@ -323,7 +310,7 @@ namespace SQLServerLoginTemplate
             if (!_highDPI)
             {
                 rightoffset = 28;
-                this.Height = 320;
+                this.Height = 628;
             }
             comboBoxServerType.Width = this.Width - comboBoxServerType.Left - rightoffset;
             comboBoxServerName.Width = this.Width - comboBoxServerName.Left - rightoffset;

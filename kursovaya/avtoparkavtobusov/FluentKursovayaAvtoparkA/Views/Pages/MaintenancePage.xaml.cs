@@ -68,16 +68,16 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
             {
                 var uiMessageBox = new MessageBox
                 {
-                    Title = "Error Handling",
+                    Title = "Обработка ошибок",
                     Content = new TextBlock
                     {
                         Text = ex.Message,
                         TextWrapping = TextWrapping.Wrap,
                     },
                     ButtonLeftName = "OK",
-                    ButtonRightName = "Cancel",
-                    Width = 500,
-                    Height = 500,
+                    ButtonRightName = "Отмена",
+                    Width = 800,
+                    Height = 300,
 
                 };
                 uiMessageBox.ButtonLeftClick += (s, e) =>
@@ -123,16 +123,16 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
             {
                 var uiMessageBox = new MessageBox
                 {
-                    Title = "Error Handling",
+                    Title = "Обработка ошибок",
                     Content = new TextBlock
                     {
                         Text = ex.Message,
                         TextWrapping = TextWrapping.Wrap,
                     },
                     ButtonLeftName = "OK",
-                    ButtonRightName = "Cancel",
-                    Width = 500,
-                    Height = 500,
+                    ButtonRightName = "Отмена",
+                    Width = 800,
+                    Height = 300,
 
                 };
                 uiMessageBox.ButtonLeftClick += (s, e) =>
@@ -181,16 +181,16 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
             {
                 var uiMessageBox = new MessageBox
                 {
-                    Title = "Error Handling",
+                    Title = "Обработка ошибок",
                     Content = new TextBlock
                     {
                         Text = ex.Message,
                         TextWrapping = TextWrapping.Wrap,
                     },
                     ButtonLeftName = "OK",
-                    ButtonRightName = "Cancel",
-                    Width = 500,
-                    Height = 500,
+                    ButtonRightName = "Отмена",
+                    Width = 800,
+                    Height = 300,
 
                 };
                 uiMessageBox.ButtonLeftClick += (s, e) =>

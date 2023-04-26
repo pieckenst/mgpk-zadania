@@ -140,6 +140,18 @@
           }
         }
       },
+      "MaterialSkin.2/2.3.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Design"
+        ],
+        "compile": {
+          "lib/net48/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/net48/MaterialSkin.dll": {}
+        }
+      },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
         "type": "package",
         "dependencies": {
@@ -973,6 +985,9 @@
       "LogOnHelper/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8.1",
+        "dependencies": {
+          "MaterialSkin.2": "2.3.1"
+        },
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -1127,6 +1142,18 @@
           "lib/net40-full/log4net.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "MaterialSkin.2/2.3.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Design"
+        ],
+        "compile": {
+          "lib/net48/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/net48/MaterialSkin.dll": {}
         }
       },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
@@ -1952,6 +1979,9 @@
       "LogOnHelper/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8.1",
+        "dependencies": {
+          "MaterialSkin.2": "2.3.1"
+        },
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -2108,6 +2138,18 @@
           }
         }
       },
+      "MaterialSkin.2/2.3.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Design"
+        ],
+        "compile": {
+          "lib/net48/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/net48/MaterialSkin.dll": {}
+        }
+      },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
         "type": "package",
         "dependencies": {
@@ -2931,6 +2973,9 @@
       "LogOnHelper/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8.1",
+        "dependencies": {
+          "MaterialSkin.2": "2.3.1"
+        },
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -3087,6 +3132,18 @@
           }
         }
       },
+      "MaterialSkin.2/2.3.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Design"
+        ],
+        "compile": {
+          "lib/net48/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/net48/MaterialSkin.dll": {}
+        }
+      },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
         "type": "package",
         "dependencies": {
@@ -3910,6 +3967,9 @@
       "LogOnHelper/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8.1",
+        "dependencies": {
+          "MaterialSkin.2": "2.3.1"
+        },
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -4066,6 +4126,18 @@
           }
         }
       },
+      "MaterialSkin.2/2.3.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Design"
+        ],
+        "compile": {
+          "lib/net48/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/net48/MaterialSkin.dll": {}
+        }
+      },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
         "type": "package",
         "dependencies": {
@@ -4889,6 +4961,9 @@
       "LogOnHelper/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8.1",
+        "dependencies": {
+          "MaterialSkin.2": "2.3.1"
+        },
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -5092,6 +5167,23 @@
         "lib/net40-full/log4net.xml",
         "log4net.2.0.0.nupkg.sha512",
         "log4net.nuspec"
+      ]
+    },
+    "MaterialSkin.2/2.3.1": {
+      "sha512": "w2vFxLNk4InCDU7pXDfBqPfv55HhBtuu8HRfEqQpeS3sNTS1pUzDs/hS0b5JW2/tKvt+P1of9OINP8a9omWDBg==",
+      "type": "package",
+      "path": "materialskin.2/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MaterialSkin.dll",
+        "lib/net461/MaterialSkin.dll",
+        "lib/net48/MaterialSkin.dll",
+        "lib/net5.0-windows7.0/MaterialSkin.dll",
+        "materialskin.2.2.3.1.nupkg.sha512",
+        "materialskin.2.nuspec",
+        "nugetIcon.png"
       ]
     },
     "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {

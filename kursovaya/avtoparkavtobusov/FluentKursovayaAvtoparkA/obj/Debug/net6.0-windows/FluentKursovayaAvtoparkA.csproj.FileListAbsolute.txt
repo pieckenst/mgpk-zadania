@@ -115,3 +115,8 @@ C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKurso
 C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\FluentKursovayaAvtoparkA.pdb
 C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\FluentKursovayaAvtoparkA.genruntimeconfig.cache
 C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\ref\FluentKursovayaAvtoparkA.dll
+C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\MaterialSkin.dll
+C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\LogOnHelper.dll
+C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\libmsstyle.dll
+C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\LogOnHelper.pdb
+C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\LogOnHelper.dll.config
