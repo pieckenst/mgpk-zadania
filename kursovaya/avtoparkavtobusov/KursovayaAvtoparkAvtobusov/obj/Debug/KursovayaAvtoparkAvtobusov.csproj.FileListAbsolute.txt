@@ -877,3 +877,4 @@ C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAv
 C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\AdditionalBuildDependencies.txt
 C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.csproj.CopyComplete
 C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\bin\Debug\LogOnHelper.exe.config

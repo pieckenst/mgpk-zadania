@@ -205,7 +205,7 @@ namespace FluentKursovayaAvtoparkA.Views.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FluentKursovayaAvtoparkA;component/views/pages/maintenancepage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FluentKursovayaAvtoparkA;V1.0.0.0;component/views/pages/maintenancepage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Pages\MaintenancePage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
