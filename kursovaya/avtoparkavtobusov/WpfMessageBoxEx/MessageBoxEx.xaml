@@ -15,7 +15,7 @@
 		SizeChanged="NotifiableWindow_SizeChanged" 
 		Loaded="Window_Loaded"
 		Closing="Window_Closing"
-		Height="Auto"
+		Height="371"
 		Width="Auto"
 		SourceInitialized="Window_SourceInitialized"
 		>

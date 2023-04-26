@@ -5,6 +5,10 @@ using System.Windows;
 using System;
 using Wpf.Ui.Common.Interfaces;
 using System.Data;
+using Wpf.Ui.Controls;
+using MessageBox = Wpf.Ui.Controls.MessageBox;
+using System.Windows.Controls;
+using System.Windows.Forms;
 
 namespace FluentKursovayaAvtoparkA.Views.Pages
 {
@@ -91,6 +95,9 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
             }
         }
+        private void MessageBox_LeftButtonClick() { 
+        
+        }
         private void UpdateGrid_Click(object sender, RoutedEventArgs e)
         {
 
@@ -117,11 +124,33 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
             }
             catch (Exception ex)
             {
-                MsgBoxExtendedFunctionality ext = new MsgBoxExtendedFunctionality()
+                var uiMessageBox = new MessageBox
                 {
-                    DetailsText = ex.StackTrace
+                    Title = "Error Handling",
+                    Content = new TextBlock
+                    {
+                        Text = ex.Message,
+                        TextWrapping = TextWrapping.Wrap,
+                    },
+                    ButtonLeftName = "OK",
+                    ButtonRightName = "Cancel",
+                    Width = 500,
+                    Height= 500,
+                    
                 };
-                MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
+                uiMessageBox.ButtonLeftClick += (s, e) =>
+                {
+                   
+                    uiMessageBox.Close();
+                };
+                uiMessageBox.ButtonRightClick += (s, e) =>
+                {
+                    
+                    uiMessageBox.Close();
+                };
+                
+
+                uiMessageBox.ShowDialog();
             }
         }
     }

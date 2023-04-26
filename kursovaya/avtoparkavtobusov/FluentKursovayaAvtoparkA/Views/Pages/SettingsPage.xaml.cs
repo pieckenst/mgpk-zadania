@@ -7,7 +7,7 @@ using System;
 using System.Drawing;
 using System.Windows;
 using Wpf.Ui.Common.Interfaces;
-
+using MessageBox = Wpf.Ui.Controls.MessageBox;
 
 namespace FluentKursovayaAvtoparkA.Views.Pages
 {

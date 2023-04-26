@@ -5,6 +5,8 @@ using System;
 using Wpf.Ui.Common.Interfaces;
 using System.Data.SqlClient;
 using MsgBoxEx;
+using System.Windows.Controls;
+using MessageBox = Wpf.Ui.Controls.MessageBox;
 
 namespace FluentKursovayaAvtoparkA.Views.Pages
 {
@@ -50,11 +52,33 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
             }
             catch (Exception ex)
             {
-                MsgBoxExtendedFunctionality ext = new MsgBoxExtendedFunctionality()
+                var uiMessageBox = new MessageBox
                 {
-                    DetailsText = ex.StackTrace
+                    Title = "Error Handling",
+                    Content = new TextBlock
+                    {
+                        Text = ex.Message,
+                        TextWrapping = TextWrapping.Wrap,
+                    },
+                    ButtonLeftName = "OK",
+                    ButtonRightName = "Cancel",
+                    Width = 500,
+                    Height = 500,
+
                 };
-                MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
+                uiMessageBox.ButtonLeftClick += (s, e) =>
+                {
+
+                    uiMessageBox.Close();
+                };
+                uiMessageBox.ButtonRightClick += (s, e) =>
+                {
+
+                    uiMessageBox.Close();
+                };
+
+
+                uiMessageBox.ShowDialog();
             }
         }
 
@@ -86,11 +110,33 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
             }
             catch (Exception ex)
             {
-                MsgBoxExtendedFunctionality ext = new MsgBoxExtendedFunctionality()
+                var uiMessageBox = new MessageBox
                 {
-                    DetailsText = ex.StackTrace
+                    Title = "Error Handling",
+                    Content = new TextBlock
+                    {
+                        Text = ex.Message,
+                        TextWrapping = TextWrapping.Wrap,
+                    },
+                    ButtonLeftName = "OK",
+                    ButtonRightName = "Cancel",
+                    Width = 500,
+                    Height = 500,
+
                 };
-                MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
+                uiMessageBox.ButtonLeftClick += (s, e) =>
+                {
+
+                    uiMessageBox.Close();
+                };
+                uiMessageBox.ButtonRightClick += (s, e) =>
+                {
+
+                    uiMessageBox.Close();
+                };
+
+
+                uiMessageBox.ShowDialog();
             }
         }
 
@@ -122,11 +168,33 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
 
             catch (Exception ex)
             {
-                MsgBoxExtendedFunctionality ext = new MsgBoxExtendedFunctionality()
+                var uiMessageBox = new MessageBox
                 {
-                    DetailsText = ex.StackTrace
+                    Title = "Error Handling",
+                    Content = new TextBlock
+                    {
+                        Text = ex.Message,
+                        TextWrapping = TextWrapping.Wrap,
+                    },
+                    ButtonLeftName = "OK",
+                    ButtonRightName = "Cancel",
+                    Width = 500,
+                    Height = 500,
+
                 };
-                MessageBoxEx.ShowEx("An error has occured! Traceback: " + ex.Message, "Unexpected situation handling", MessageBoxButtonEx.OK, MessageBoxImage.Error, ext);
+                uiMessageBox.ButtonLeftClick += (s, e) =>
+                {
+
+                    uiMessageBox.Close();
+                };
+                uiMessageBox.ButtonRightClick += (s, e) =>
+                {
+
+                    uiMessageBox.Close();
+                };
+
+
+                uiMessageBox.ShowDialog();
             }
         }
 

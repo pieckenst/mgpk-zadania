@@ -70,6 +70,7 @@
                         VerticalAlignment="Top"
                         FontSize="28"
                         Navigation="{Binding ElementName=RootNavigation, Mode=OneWay}" />
+					
                 </Grid>
             </Border>
         </Grid>
