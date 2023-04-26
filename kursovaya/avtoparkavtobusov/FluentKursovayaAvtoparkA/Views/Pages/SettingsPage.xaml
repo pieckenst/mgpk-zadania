@@ -53,7 +53,7 @@
 				Click="SimpleRepExport_Click" 
 				/>
 		<Button x:Name="ComplexRepExport"
-				Content="Экспортировать простой отчет"
+				Content="Экспортировать сложный отчет"
 				Margin="0,23,0,0"
 				 
 				Height="37" Width="294"
