@@ -66,6 +66,7 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 a = form1.ConnectionString;
                 formations = a + ";Initial Catalog=KursovayaAvtoparkAvtobusov";
                 form1.Close();
+                form1.Dispose();
 
 
             };
