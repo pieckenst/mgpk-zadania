@@ -37,10 +37,13 @@ namespace SQLServerLoginTemplate
 		public static bool getdarkmodeinfo()
 		{
             int res = (int)Registry.GetValue("HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize", "AppsUseLightTheme", -1);
-            if (res == 0) { return true;}
-			else { return false;}
-
-		}
+            return res switch
+            {
+                0 => true,
+                1 => false,
+                _ => false,
+            };
+        }
 		public static event EventHandler OnThemeChanged;
 
 		public static void LoadTheme()

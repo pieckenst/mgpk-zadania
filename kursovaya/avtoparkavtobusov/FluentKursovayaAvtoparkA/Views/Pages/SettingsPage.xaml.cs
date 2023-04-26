@@ -20,6 +20,7 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
     {
         public static string a;
         public static string formations = "server=localhost;Initial Catalog=KursovayaAvtoparkAvtobusov;User ID=sa;Password=ctrt55xx;";
+        public static string exporttheme = "theme_dark";
         public ViewModels.SettingsViewModel ViewModel
         {
             get;
@@ -61,6 +62,10 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
 
                 System.Windows.Forms.Application.EnableVisualStyles();
                 uiMessageBox.Close();
+                if (Wpf.Ui.Appearance.Theme.GetAppTheme() == Wpf.Ui.Appearance.ThemeType.Light)
+                {
+                    exporttheme = "theme_light";
+                }
                 var form1 = new FormConnectToSQLServer();
                 form1.ShowDialog();
                 a = form1.ConnectionString;
