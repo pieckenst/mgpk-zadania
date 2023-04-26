@@ -65,7 +65,9 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 form1.ShowDialog();
                 a = form1.ConnectionString;
                 formations = a + ";Initial Catalog=KursovayaAvtoparkAvtobusov";
-                
+                form1.Close();
+
+
             };
             uiMessageBox.ButtonRightClick += (s, e) =>
             {

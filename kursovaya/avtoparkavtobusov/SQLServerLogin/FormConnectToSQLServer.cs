@@ -182,12 +182,19 @@ namespace SQLServerLoginTemplate
                 }
 #if DEBUG
 
-                MessageBox.Show("Connection string " + connString + "    result: true");
+                MaterialDialog materialDialog = new MaterialDialog(this, "Подключение успешно", "Строка " + connString + "    Результат: true", "OK", false, "Отмена", true);
+
+                materialDialog.ShowDialog(this);
+                materialDialog.Close();
+
 #endif
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Cannot connect to " + selectedServer + "." + Environment.NewLine + Environment.NewLine + "Additional information: " + Environment.NewLine + ex.Message, "Connect to Server", MessageBoxButtons.OK);
+                MaterialDialog materialDialog = new MaterialDialog(this,"Ошибка", "Невозможно подключиться к серверу: " + selectedServer + "." + Environment.NewLine ,"OK",false,"Отмена",true);
+                
+                materialDialog.ShowDialog(this);
+                materialDialog.Close();
                 return false;
             }
             return true;

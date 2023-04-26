@@ -112,6 +112,7 @@
             comboBoxServerName.FormattingEnabled = true;
             comboBoxServerName.IntegralHeight = false;
             comboBoxServerName.ItemHeight = 43;
+            comboBoxServerName.Items.AddRange(new object[] { "localhost" });
             comboBoxServerName.Location = new System.Drawing.Point(176, 144);
             comboBoxServerName.Margin = new System.Windows.Forms.Padding(1);
             comboBoxServerName.MaxDropDownItems = 4;
@@ -137,6 +138,7 @@
             comboBoxLogin.FormattingEnabled = true;
             comboBoxLogin.IntegralHeight = false;
             comboBoxLogin.ItemHeight = 43;
+            comboBoxLogin.Items.AddRange(new object[] { "sa" });
             comboBoxLogin.Location = new System.Drawing.Point(195, 286);
             comboBoxLogin.Margin = new System.Windows.Forms.Padding(1);
             comboBoxLogin.MaxDropDownItems = 4;
@@ -329,7 +331,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             CancelButton = buttonCancel;
-            ClientSize = new System.Drawing.Size(798, 628);
+            ClientSize = new System.Drawing.Size(814, 667);
             Controls.Add(comboBoxServerType);
             Controls.Add(labelServerType);
             Controls.Add(checkBoxRememberPassword);
