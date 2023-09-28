@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>dvdcaseicon.ico</ApplicationIcon>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>ComposerAndWorksApp</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="dvdcaseicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="WPF-UI" Version="3.0.0-preview.4" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1 " />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1 " />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\wpfui-icon-256.png" />
+    <None Remove="Assets\wpfui-icon-1024.png" />
+    <None Remove="Views\Windows\dvdcaseicon.png" />
+    <None Remove="Views\Windows\[removal.ai]_d8864e13-ca18-4192-9e8e-2d21fc566456-190358782-vector-3d-realistic-blue-cd-dvd-with-case-isolated-on-white-cd-box-packaging-design-template-for_NS4ZLR.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\wpfui-icon-256.png" />
+    <Resource Include="Assets\wpfui-icon-1024.png" />
+    <Resource Include="Views\Windows\dvdcaseicon.png" />
+    <Resource Include="Views\Windows\[removal.ai]_d8864e13-ca18-4192-9e8e-2d21fc566456-190358782-vector-3d-realistic-blue-cd-dvd-with-case-isolated-on-white-cd-box-packaging-design-template-for_NS4ZLR.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,10 @@
+C:\Users\New_Comp\source\repos\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.exe.config
+C:\Users\New_Comp\source\repos\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.exe
+C:\Users\New_Comp\source\repos\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.pdb
+C:\Users\New_Comp\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csprojAssemblyReference.cache
+C:\Users\New_Comp\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Form1.resources
+C:\Users\New_Comp\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Properties.Resources.resources
+C:\Users\New_Comp\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.GenerateResource.cache
+C:\Users\New_Comp\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.CoreCompileInputs.cache
+C:\Users\New_Comp\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.exe
+C:\Users\New_Comp\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.pdb

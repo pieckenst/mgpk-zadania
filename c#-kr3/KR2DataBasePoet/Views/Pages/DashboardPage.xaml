@@ -1,0 +1,60 @@
+<Page
+    x:Class="ComposerAndTheirWorks.Views.Pages.DashboardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ComposerAndTheirWorks.Views.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="DashboardPage"
+    d:DataContext="{d:DesignInstance local:DashboardPage,
+                                     IsDesignTimeCreatable=False}"
+    d:DesignHeight="750"
+    d:DesignWidth="1200"
+    ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+    ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    mc:Ignorable="d">
+
+    <Grid >
+        <DataGrid x:Name="datagrid1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="28,20,34,279" IsReadOnly="True"/>
+        <Button x:Name="datagetter" Content="get data" Margin="843,515,0,0" VerticalAlignment="Top"  Width="84" Cursor=""/>
+        <Button Content="send data" Margin="843,552,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.616,2.388"/>
+        <TextBlock x:Name="lb1" Text="ComposerKey" HorizontalAlignment="Left" Margin="28,513,0,0"
+        VerticalAlignment="Top" />
+        <TextBlock x:Name="Lb2" Text="Name" HorizontalAlignment="Left" Margin="28,570,0,0"
+        VerticalAlignment="Top" />
+        <TextBlock x:Name="lb3" Text="Surname" HorizontalAlignment="Left" Margin="189,514,0,0"
+VerticalAlignment="Top" />
+        <TextBlock x:Name="lb4" Text="MiddleName" HorizontalAlignment="Left" Margin="190,571,0,0" VerticalAlignment="Top" />
+        <TextBlock x:Name="lb5" Text="Genre" HorizontalAlignment="Left" Margin="365,514,0,0"
+VerticalAlignment="Top" />
+        <TextBlock x:Name="lb6" Text="Numberofworks" HorizontalAlignment="Left" Margin="365,571,0,0"
+VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
+        <TextBlock x:Name="lb7" Text="BirthDate" HorizontalAlignment="Left" Margin="547,516,0,0"
+    VerticalAlignment="Top" RenderTransformOrigin="0.47,0.397" />
+        <TextBlock x:Name="lb8" Text="DeathDate" HorizontalAlignment="Left" Margin="547,571,0,0"
+    VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
+        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="28,531,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="157" />
+        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="28,591,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="157" />
+
+        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="190,531,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="170" />
+        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="190,591,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="170" />
+        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="365,533,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="159" />
+
+        <TextBox x:Name="Edit6" HorizontalAlignment="Left" Margin="365,591,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="177" />
+
+        <TextBox x:Name="Edit7" HorizontalAlignment="Left" Margin="547,533,0,0" TextWrapping="Wrap" Text="TextBox"
+            VerticalAlignment="Top" Width="158" />
+        <TextBox x:Name="Edit8" HorizontalAlignment="Left" Margin="547,591,0,0" TextWrapping="Wrap" Text="TextBox"
+            VerticalAlignment="Top" Width="190" />
+
+
+    </Grid>
+</Page>

@@ -1,0 +1,24 @@
+{
+  "runtimeOptions": {
+    "tfm": "net7.0",
+    "frameworks": [
+      {
+        "name": "Microsoft.NETCore.App",
+        "version": "7.0.0"
+      },
+      {
+        "name": "Microsoft.WindowsDesktop.App",
+        "version": "7.0.0"
+      }
+    ],
+    "additionalProbingPaths": [
+      "C:\\Users\\Andrey Savich\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Andrey Savich\\.nuget\\packages",
+      "D:\\sdk\\NuGetPackages"
+    ],
+    "configProperties": {
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+      "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
+    }
+  }
+}

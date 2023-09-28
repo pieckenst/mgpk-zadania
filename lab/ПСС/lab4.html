@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Заголовок</title>
+	<script type="text/javascript">
+		function colorize() {
+
+   var
+    r = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
+    g = ('0'+(Math.random()*255|0).toString(16)).slice(-2),
+    b = ('0'+(Math.random()*255|0).toString(16)).slice(-2);
+   return '#' +r+g+b;
+  }
+
+
+function change(){ 
+   var x = document.getElementById("1");
+    
+    x.style.background = colorize();
+     
+    x.style.color = colorize();
+    
+
+	}
+	</script>
+  
+
+</head>
+<body>
+
+ <table border="2" cellspacing="0" onmousedown="change()"id="1" >
+  <TR>
+<TH width="30" height="30" colspan="3" class="col1">     </TH>
+<TH width="30" height="30" class="col6">     </TH>
+<TH width="30" height="30" class="col4">     </TH>
+<TH width="30" height="30" colspan="3" class="col12">     </TH>
+</TR>
+<TR>
+<TH width="30" height="30" class="col9">     </TH>
+<TH width="30" height="30" class="col5">     </TH>
+<TH width="30" height="30" rowspan="2" class="col10">     </TH>
+<TH width="30" height="30" rowspan="2" class="col12">     </TH>
+<TH width="30" height="30" class="col7">     </TH>
+<TH width="30" height="30" rowspan="2" class="col8">     </TH>
+<TH width="30" height="30" class="col5">     </TH>
+<TH width="30" height="30" class="col3">     </TH>
+</TR>
+<TR>
+<TH width="30" height="30" rowspan="2" class="col8">     </TH>
+<TH width="30" height="30" class="col1">     </TH>
+<TH width="30" height="30" class="col6">     </TH>
+<TH width="30" height="30" class="col1">     </TH>
+<TH width="30" height="30" class="col9">     </TH>
+</TR>
+<TR>
+<TH width="30" height="30" colspan="2" class="col3">     </TH>
+<TH width="30" height="30" class="col11">     </TH>
+<TH width="30" height="30" rowspan="2" class="col3">     </TH>
+<TH width="30" height="30" class="col9">     </TH>
+<TH width="30" height="30" colspan="2" class="col12">     </TH>
+
+</TR>
+<TR>
+<TH width="30" height="30" class="col1">     </TH>
+<TH width="30" height="30" class="col3">     </TH>
+<TH width="30" height="30" class="col5">     </TH>
+<TH width="30" height="30" class="col12">     </TH>
+<TH width="30" height="30" class="col9">     </TH>
+<TH width="30" height="30" class="col2">     </TH>
+<TH width="30" height="30" class="col11">     </TH>
+</TR>
+<TR>
+<TH width="30" height="30" colspan="3" class="col7">     </TH>
+<TH width="30" height="30" class="col2">     </TH>
+<TH width="30" height="30" class="col4">     </TH>
+<TH width="30" height="30" colspan="3" class="col8">     </TH>
+</TR>
+</table> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>zadanie2</title>
+</head>
+
+<body>
+  <script> 
+     function checkAge(age) {
+      if (age > 18) {
+        return true;
+      } else {
+        return confirm('Родители разрешили?');
+      }
+     }
+
+       let str = checkAge(17);
+
+       if(str == true) {
+        alert(str);
+
+       }
+      
+      
+   </script>
+</body>
+</html>

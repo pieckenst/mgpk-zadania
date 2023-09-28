@@ -1,0 +1,26 @@
+ol {
+	font-family: : Arial;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 12pt;
+	line-height: 16px;
+
+}
+table {
+	font-family: Verdana;
+	font-style: italic;
+	font-size: 12pt;
+
+}
+body{
+	font-family: Courier New;
+	font-style: italic;
+	font-size: 18pt;
+	color:blue;
+}
+img{
+	size: 75%;
+	border-width:2px;
+	border-color: red; 
+
+}

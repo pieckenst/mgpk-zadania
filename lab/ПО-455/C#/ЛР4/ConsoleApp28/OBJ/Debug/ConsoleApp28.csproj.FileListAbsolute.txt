@@ -1,0 +1,12 @@
+E:\ПО-455\ConsoleApp28\bin\Debug\ConsoleApp28.exe.config
+E:\ПО-455\ConsoleApp28\obj\Debug\ConsoleApp28.csprojResolveAssemblyReference.cache
+E:\ПО-455\ConsoleApp28\bin\Debug\ConsoleApp28.exe
+E:\ПО-455\ConsoleApp28\bin\Debug\ConsoleApp28.pdb
+E:\ПО-455\ConsoleApp28\obj\Debug\ConsoleApp28.exe
+E:\ПО-455\ConsoleApp28\obj\Debug\ConsoleApp28.pdb
+G:\Лабы\ПО-455\C#\ЛР4\ConsoleApp28\bin\Debug\ConsoleApp28.exe.config
+G:\Лабы\ПО-455\C#\ЛР4\ConsoleApp28\obj\Debug\ConsoleApp28.exe
+G:\Лабы\ПО-455\C#\ЛР4\ConsoleApp28\obj\Debug\ConsoleApp28.pdb
+G:\Лабы\ПО-455\C#\ЛР4\ConsoleApp28\bin\Debug\ConsoleApp28.exe
+G:\Лабы\ПО-455\C#\ЛР4\ConsoleApp28\bin\Debug\ConsoleApp28.pdb
+G:\Лабы\ПО-455\C#\ЛР4\ConsoleApp28\obj\Debug\ConsoleApp28.csprojResolveAssemblyReference.cache

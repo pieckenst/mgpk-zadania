@@ -1,0 +1,97 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\KR2DataBase.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\KR2DataBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\KR2DataBase.csproj",
+        "projectName": "ComposerAndWorksApp",
+        "projectPath": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\KR2DataBase.csproj",
+        "packagesPath": "C:\\Users\\Andrey Savich\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\sdk\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andrey Savich\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            },
+            "WPF-UI": {
+              "target": "Package",
+              "version": "[3.0.0-preview.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x86",
+              "version": "[7.0.8, 7.0.8]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.100-preview.6.23330.14\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
