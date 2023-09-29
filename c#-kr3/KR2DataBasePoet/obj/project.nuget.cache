@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Uc2c9YsJDL2++zoXI/SpTS/UXzc1oOQKcH8yp5ar652vqB9tZtZ0r1GWovm63jamsdlJXl+8/qPD4vNAN1eOnA==",
+  "dgSpecHash": "zpaISHc2Fp6ouSozENAtFWyJw6ckOLESw8YJHYXriXKBpjQIm6VZHcEhzlyG9LoXS+w4qbMuBGSUK8WZUnWtFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\KR2DataBase.csproj",
+  "projectFilePath": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\KR2DataBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andrey Savich\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\Andrey Savich\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

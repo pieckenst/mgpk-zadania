@@ -19,9 +19,10 @@
     mc:Ignorable="d">
 
     <Grid >
-        <DataGrid x:Name="datagrid1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="28,20,34,279" IsReadOnly="True"/>
+        <DataGrid x:Name="datagrid1"  Margin="28,108,34,279" IsReadOnly="True"/>
         <Button x:Name="datagetter" Content="Получить данные" Margin="826,514,0,0" VerticalAlignment="Top" Click="Button_Click" Width="148"/>
-        <Button Content="Отправить данные" Margin="826,554,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.616,2.388" Width="148"/>
+        <Button Content="Отправить данные" Margin="826,554,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.616,2.388" Width="148" Click="Button_Click_1"/>
+        <Button Content="Удалить данные" Margin="826,596,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.616,2.388" Width="148" Click="Button_Click_2"/>
         <TextBlock x:Name="lb1" Text="Ключ" HorizontalAlignment="Left" Margin="28,513,0,0"
         VerticalAlignment="Top" />
         <TextBlock x:Name="Lb2" Text="Имя" HorizontalAlignment="Left" Margin="190,517,0,0"
@@ -29,20 +30,20 @@
         <TextBlock x:Name="lb3" Text="Фамилия" HorizontalAlignment="Left" Margin="366,516,0,0"
 VerticalAlignment="Top" />
         <TextBlock x:Name="lb4" Text="Отчество" HorizontalAlignment="Left" Margin="547,516,0,0" VerticalAlignment="Top" />
-        <TextBlock x:Name="lb5" Text="Жанр Музыки" HorizontalAlignment="Left" Margin="28,572,0,0"
+        <TextBlock x:Name="lb5" Text="Жанр Музыки" HorizontalAlignment="Left" Margin="192,574,0,0"
 VerticalAlignment="Top" />
-        <TextBlock x:Name="lb6" Text="Количество произведений" HorizontalAlignment="Left" Margin="365,571,0,0"
+        <TextBlock x:Name="lb6" Text="Количество произведений" HorizontalAlignment="Left" Margin="365,576,0,0"
 VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
-        <TextBlock x:Name="lb7" Text="Дата рождения" HorizontalAlignment="Left" Margin="190,574,0,0"
+        <TextBlock x:Name="lb7" Text="Дата рождения" HorizontalAlignment="Left" Margin="547,577,0,0"
     VerticalAlignment="Top" RenderTransformOrigin="0.47,0.397" />
-        <TextBlock x:Name="lb8" Text="Дата смерти" HorizontalAlignment="Left" Margin="547,571,0,0"
+        <TextBlock x:Name="lb8" Text="Дата смерти" HorizontalAlignment="Left" Margin="190,649,0,0"
     VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
-        <TextBlock x:Name="lb9" Text="Год рождения" HorizontalAlignment="Left" Margin="28,631,0,0"
+        <TextBlock x:Name="lb9" Text="Год рождения" HorizontalAlignment="Left" Margin="366,650,0,0"
     VerticalAlignment="Top" RenderTransformOrigin="0.47,0.397" />
-        <TextBlock x:Name="lb10" Text="Год смерти" HorizontalAlignment="Left" Margin="189,631,0,0"
+        <TextBlock x:Name="lb10" Text="Год смерти" HorizontalAlignment="Left" Margin="547,657,0,0"
     VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
-        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="28,531,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="157" />
+        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="27,535,0,0" TextWrapping="Wrap" Text="Для удаления данных вам нужно только сюда ввести ключ"
+         VerticalAlignment="Top" Width="157" />
         <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="190,533,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="157" />
 
@@ -50,21 +51,29 @@ VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
                  VerticalAlignment="Top" Width="170" />
         <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="547,533,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="170" />
-        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="28,591,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="192,593,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="159" />
 
-        <TextBox x:Name="Edit6" HorizontalAlignment="Left" Margin="365,591,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit6" HorizontalAlignment="Left" Margin="365,596,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="177" />
 
-        <TextBox x:Name="Edit7" HorizontalAlignment="Left" Margin="190,591,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit7" HorizontalAlignment="Left" Margin="547,594,0,0" TextWrapping="Wrap" Text="TextBox"
             VerticalAlignment="Top" Width="158" />
-        <TextBox x:Name="Edit8" HorizontalAlignment="Left" Margin="547,591,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit8" HorizontalAlignment="Left" Margin="190,669,0,0" TextWrapping="Wrap" Text="TextBox"
+            VerticalAlignment="Top" Width="151" />
+
+        <TextBox x:Name="Edit9" HorizontalAlignment="Left" Margin="366,673,0,0" TextWrapping="Wrap" Text="TextBox"
+            VerticalAlignment="Top" Width="158" />
+        <TextBox x:Name="Edit10" HorizontalAlignment="Left" Margin="547,673,0,0" TextWrapping="Wrap" Text="TextBox"
             VerticalAlignment="Top" Width="190" />
 
-        <TextBox x:Name="Edit9" HorizontalAlignment="Left" Margin="28,647,0,0" TextWrapping="Wrap" Text="TextBox"
-            VerticalAlignment="Top" Width="158" />
-        <TextBox x:Name="Edit10" HorizontalAlignment="Left" Margin="189,647,0,0" TextWrapping="Wrap" Text="TextBox"
-            VerticalAlignment="Top" Width="190" />
+        <TextBox x:Name="searchbox" HorizontalAlignment="Left" Margin="94,21,0,0" TextWrapping="Wrap" Text="Поиск по базе данных" VerticalAlignment="Top" Width="166"/>
+        <Button Content="🔎" Margin="28,21,0,0" VerticalAlignment="Top" Height="53" Width="61" Click="Button_Click_3"/>
+        <RadioButton x:Name="genre1" Content="Cочетание Электронной и Классической музыки" Margin="415,27,0,0" VerticalAlignment="Top" Click="RadioButton_Click" GroupName="FilterGroup"/>
+        <RadioButton x:Name="genre2" Content="Классическая музыка" Margin="415,64,0,0" VerticalAlignment="Top" Cursor="" GroupName="FilterGroup" Click="genre2_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="415,6,0,0" TextWrapping="Wrap" Text="Фильтрация по жанру" VerticalAlignment="Top"/>
+        <RadioButton x:Name="genre3" Content="Современная классическая музыка" Margin="780,27,0,0" VerticalAlignment="Top" GroupName="FilterGroup" Checked="genre3_Checked"/>
+
 
 
 

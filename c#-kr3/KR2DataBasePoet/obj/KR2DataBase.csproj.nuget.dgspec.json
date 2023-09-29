@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\KR2DataBase.csproj": {}
+    "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\KR2DataBase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\KR2DataBase.csproj": {
+    "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\KR2DataBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\KR2DataBase.csproj",
+        "projectUniqueName": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\KR2DataBase.csproj",
         "projectName": "ComposerAndWorksApp",
-        "projectPath": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\KR2DataBase.csproj",
+        "projectPath": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\KR2DataBase.csproj",
         "packagesPath": "C:\\Users\\Andrey Savich\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBaseCDmagazin\\obj\\",
+        "outputPath": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\sdk\\NuGetPackages"

@@ -17,27 +17,21 @@
     mc:Ignorable="d">
 
     <Grid >
-        <DataGrid x:Name="datagrid1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="28,20,34,279" IsReadOnly="True"/>
-        <Button x:Name="datagetter" Content="get data" Margin="843,515,0,0" VerticalAlignment="Top"  Width="84" Cursor=""/>
-        <Button Content="send data" Margin="843,552,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.616,2.388"/>
-        <TextBlock x:Name="lb1" Text="ComposerKey" HorizontalAlignment="Left" Margin="28,513,0,0"
+        <Button x:Name="datagetter" Content="Получить данные" Margin="765,545,0,0" VerticalAlignment="Top" Click="Button_Click" Width="148"/>
+        <Button Content="Отправить данные" Margin="765,583,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.616,2.388" Width="149" Click="Button_Click_1"/>
+        <Button Content="Удалить данные" Margin="765,625,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.616,2.388" Width="148" Click="Button_Click_2"/>
+        <TextBlock x:Name="lb1" Text="Код произведения" HorizontalAlignment="Left" Margin="28,513,0,0"
         VerticalAlignment="Top" />
-        <TextBlock x:Name="Lb2" Text="Name" HorizontalAlignment="Left" Margin="28,570,0,0"
+        <TextBlock x:Name="Lb2" Text="Название" HorizontalAlignment="Left" Margin="27,638,0,0"
         VerticalAlignment="Top" />
-        <TextBlock x:Name="lb3" Text="Surname" HorizontalAlignment="Left" Margin="189,514,0,0"
+        <TextBlock x:Name="lb3" Text="Дата создания" HorizontalAlignment="Left" Margin="189,514,0,0"
 VerticalAlignment="Top" />
-        <TextBlock x:Name="lb4" Text="MiddleName" HorizontalAlignment="Left" Margin="190,571,0,0" VerticalAlignment="Top" />
-        <TextBlock x:Name="lb5" Text="Genre" HorizontalAlignment="Left" Margin="365,514,0,0"
+        <TextBlock x:Name="lb4" Text="Код композитора" HorizontalAlignment="Left" Margin="190,571,0,0" VerticalAlignment="Top" />
+        <TextBlock x:Name="lb5" Text="Имя и фамилия композитора" HorizontalAlignment="Left" Margin="365,514,0,0"
 VerticalAlignment="Top" />
-        <TextBlock x:Name="lb6" Text="Numberofworks" HorizontalAlignment="Left" Margin="365,571,0,0"
-VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
-        <TextBlock x:Name="lb7" Text="BirthDate" HorizontalAlignment="Left" Margin="547,516,0,0"
-    VerticalAlignment="Top" RenderTransformOrigin="0.47,0.397" />
-        <TextBlock x:Name="lb8" Text="DeathDate" HorizontalAlignment="Left" Margin="547,571,0,0"
-    VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
-        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="28,531,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="27,535,0,0" TextWrapping="Wrap" Text="Для удаления данных вам нужно только сюда ввести ключ"
                  VerticalAlignment="Top" Width="157" />
-        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="28,591,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="28,654,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="157" />
 
         <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="190,531,0,0" TextWrapping="Wrap" Text="TextBox"
@@ -46,14 +40,9 @@ VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
                  VerticalAlignment="Top" Width="170" />
         <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="365,533,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="159" />
-
-        <TextBox x:Name="Edit6" HorizontalAlignment="Left" Margin="365,591,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="177" />
-
-        <TextBox x:Name="Edit7" HorizontalAlignment="Left" Margin="547,533,0,0" TextWrapping="Wrap" Text="TextBox"
-            VerticalAlignment="Top" Width="158" />
-        <TextBox x:Name="Edit8" HorizontalAlignment="Left" Margin="547,591,0,0" TextWrapping="Wrap" Text="TextBox"
-            VerticalAlignment="Top" Width="190" />
+        <DataGrid x:Name="datagrid1"  Margin="27,89,43,258"/>
+        <TextBox x:Name="searchbox" HorizontalAlignment="Left" Margin="94,21,0,0" TextWrapping="Wrap" Text="Поиск по базе данных" VerticalAlignment="Top" Width="166"/>
+        <Button Content="🔎" Margin="28,21,0,0" VerticalAlignment="Top" Height="53" Width="61" Click="Button_Click_3"/>
 
 
     </Grid>
