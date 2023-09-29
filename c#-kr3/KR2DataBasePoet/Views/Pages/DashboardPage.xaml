@@ -40,7 +40,7 @@ VerticalAlignment="Top" />
                  VerticalAlignment="Top" Width="170" />
         <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="365,533,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="159" />
-        <DataGrid x:Name="datagrid1"  Margin="27,89,43,258"/>
+        <DataGrid x:Name="datagrid1"  Margin="27,89,43,258" IsReadOnly="True"/>
         <TextBox x:Name="searchbox" HorizontalAlignment="Left" Margin="94,21,0,0" TextWrapping="Wrap" Text="Поиск по базе данных" VerticalAlignment="Top" Width="166"/>
         <Button Content="🔎" Margin="28,21,0,0" VerticalAlignment="Top" Height="53" Width="61" Click="Button_Click_3"/>
 
