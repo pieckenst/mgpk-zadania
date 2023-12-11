@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MovQSDWDxI7/uO8JZgSf1J9rqhsvu6czl6lv5HDpNLXDaPWlV4DazseWpK8Ccz2XhrRIarFUPQw76lhc5mQ6VQ==",
+  "dgSpecHash": "LG2G5yX2+mftndy+Vg+6yf9lxs1bt7ZoB9lQ3ezvTL4W2QKzp/Vbhdd7KeVB982aoUv7aHLZtujZJPhXnPLQIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,8 @@
     "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\7.0.0\\microsoft.extensions.options.configurationextensions.7.0.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
@@ -41,11 +43,15 @@
     "C:\\Users\\Andrey\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.1\\system.diagnostics.diagnosticsource.7.0.1.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\system.diagnostics.eventlog\\7.0.0\\system.diagnostics.eventlog.7.0.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\wpf-ui\\3.0.0-preview.4\\wpf-ui.3.0.0-preview.4.nupkg.sha512"
+    "C:\\Users\\Andrey\\.nuget\\packages\\wpf-ui\\3.0.0-preview.4\\wpf-ui.3.0.0-preview.4.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.23\\microsoft.aspnetcore.app.runtime.win-x64.6.0.23.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.23\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.23.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.23\\microsoft.netcore.app.runtime.win-x64.6.0.23.nupkg.sha512"
   ],
   "logs": []
 }
