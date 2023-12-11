@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\KR2DataBase.csproj": {}
+    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\KR2DataBase.csproj": {
+    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\KR2DataBase.csproj",
+        "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
         "projectName": "ComposerAndWorksApp",
-        "projectPath": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\KR2DataBase.csproj",
-        "packagesPath": "C:\\Users\\Andrey Savich\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrey Savich\\source\\repos\\KR2DataBaseCDmagazin\\KR2DataBasePoet\\obj\\",
+        "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
+        "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\sdk\\NuGetPackages"
+          "E:\\sdk\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrey Savich\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,9 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -75,12 +72,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x86",
-              "version": "[7.0.8, 7.0.8]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -89,7 +80,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.100-preview.6.23330.14\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
         }
       }
     }

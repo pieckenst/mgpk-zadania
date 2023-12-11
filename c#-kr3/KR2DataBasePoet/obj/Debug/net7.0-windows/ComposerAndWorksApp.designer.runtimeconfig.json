@@ -12,9 +12,9 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Andrey Savich\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Andrey Savich\\.nuget\\packages",
-      "D:\\sdk\\NuGetPackages"
+      "C:\\Users\\Andrey\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Andrey\\.nuget\\packages",
+      "E:\\sdk\\NuGetPackages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
