@@ -3117,19 +3117,19 @@
   },
   "packageFolders": {
     "C:\\Users\\Andrey\\.nuget\\packages\\": {},
-    "E:\\sdk\\NuGetPackages": {}
+    "D:\\sdk\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
+      "projectUniqueName": "C:\\Users\\Andrey\\Source\\Repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
       "projectName": "ComposerAndWorksApp",
-      "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
+      "projectPath": "C:\\Users\\Andrey\\Source\\Repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
       "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\obj\\",
+      "outputPath": "C:\\Users\\Andrey\\Source\\Repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\sdk\\NuGetPackages"
+        "D:\\sdk\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3141,6 +3141,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3202,15 +3203,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.23, 6.0.23]"
+            "version": "[6.0.25, 6.0.25]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.23, 6.0.23]"
+            "version": "[6.0.25, 6.0.25]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.23, 6.0.23]"
+            "version": "[6.0.25, 6.0.25]"
           }
         ],
         "frameworkReferences": {
@@ -3221,7 +3222,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

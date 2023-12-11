@@ -10,6 +10,8 @@ using ComposerAndTheirWorks.Views.Windows;
 using System.Data;
 using System.Windows.Controls;
 using System.Windows;
+using MessageBox = Wpf.Ui.Controls.MessageBox;
+using TextBlock = Wpf.Ui.Controls.TextBlock;
 
 namespace ComposerAndTheirWorks.Views.Pages
 {
@@ -54,7 +56,19 @@ namespace ComposerAndTheirWorks.Views.Pages
             }
             catch (Exception ex)
             {
-                Console.Write("Error");
+                var uiMessageBox = new MessageBox
+                {
+                    Title = "Обработка ошибок",
+                    Content =  $"В приложении произошла следующая ошибка \n {ex.Message}",
+                    PrimaryButtonText = "ОК",
+                    CloseButtonText = "Закрыть",
+                    
+
+                };
+
+
+
+                uiMessageBox.ShowDialogAsync();
             }
         }
 
@@ -89,7 +103,19 @@ namespace ComposerAndTheirWorks.Views.Pages
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                var uiMessageBox = new MessageBox
+                {
+                    Title = "Обработка ошибок",
+                    Content =  $"В приложении произошла следующая ошибка \n {ex.Message}",
+                    PrimaryButtonText = "ОК",
+                    CloseButtonText = "Закрыть",
+                    
+
+                };
+
+
+
+                uiMessageBox.ShowDialogAsync();
             }
         }
 
@@ -98,20 +124,33 @@ namespace ComposerAndTheirWorks.Views.Pages
             SqlConnection cnn;
             var conStr = MainWindow.formations;
 
-            cnn = new SqlConnection(conStr);
-            cnn.Open();
-            Console.Write("OPENING DB CONNECTION!!! \n");
-            var select = "DELETE FROM ComposerList WHERE ComposerKey=@a2";
-            var commandBuilder = new SqlCommand(select, cnn);
-            commandBuilder.Parameters.AddWithValue("a2", Edit1.Text);
+            
             try
             {
+                cnn = new SqlConnection(conStr);
+                cnn.Open();
+                Console.Write("OPENING DB CONNECTION!!! \n");
+                var select = "DELETE FROM ComposerList WHERE ComposerKey=@a2";
+                var commandBuilder = new SqlCommand(select, cnn);
+                commandBuilder.Parameters.AddWithValue("a2", Edit1.Text);
                 commandBuilder.ExecuteNonQuery();
                 Console.WriteLine("Delete operation successful!");
             }
             catch (SqlException ex)
             {
-                Console.WriteLine(ex.ToString());
+                var uiMessageBox = new MessageBox
+                {
+                    Title = "Обработка ошибок",
+                    Content =  $"В приложении произошла следующая ошибка \n {ex.Message}",
+                    PrimaryButtonText = "ОК",
+                    CloseButtonText = "Закрыть",
+                    
+
+                };
+
+
+
+                uiMessageBox.ShowDialogAsync();
             }
         }
 
@@ -142,7 +181,19 @@ namespace ComposerAndTheirWorks.Views.Pages
             }
             catch (Exception ex)
             {
-                Console.Write("Error");
+                var uiMessageBox = new MessageBox
+                {
+                    Title = "Обработка ошибок",
+                    Content =  $"В приложении произошла следующая ошибка \n {ex.Message}",
+                    PrimaryButtonText = "ОК",
+                    IsSecondaryButtonEnabled = false,
+                    
+
+                };
+
+
+
+                uiMessageBox.ShowDialogAsync();
             }
         }
 
@@ -173,7 +224,19 @@ namespace ComposerAndTheirWorks.Views.Pages
             }
             catch (Exception ex)
             {
-                Console.Write("Error");
+                var uiMessageBox = new MessageBox
+                {
+                    Title = "Обработка ошибок",
+                    Content =  $"В приложении произошла следующая ошибка \n {ex.Message}",
+                    PrimaryButtonText = "ОК",
+                    CloseButtonText = "Закрыть",
+                    
+
+                };
+
+
+
+                uiMessageBox.ShowDialogAsync();
             }
         }
 
@@ -204,7 +267,19 @@ namespace ComposerAndTheirWorks.Views.Pages
             }
             catch (Exception ex)
             {
-                Console.Write("Error");
+                var uiMessageBox = new MessageBox
+                {
+                    Title = "Обработка ошибок",
+                    Content =  $"В приложении произошла следующая ошибка \n {ex.Message}",
+                    PrimaryButtonText = "ОК",
+                    CloseButtonText = "Закрыть",
+                    
+
+                };
+
+
+
+                uiMessageBox.ShowDialogAsync();
             }
         }
 
@@ -235,7 +310,21 @@ namespace ComposerAndTheirWorks.Views.Pages
             }
             catch (Exception ex)
             {
-                Console.Write("Error");
+                var uiMessageBox = new MessageBox
+                {
+                    Title = "Обработка ошибок",
+                    Content =  $"В приложении произошла следующая ошибка \n {ex.Message}",
+                    PrimaryButtonText = "ОК",
+                    CloseButtonText = "Закрыть",
+                    IsSecondaryButtonEnabled = false,
+                    Width = 500,
+                    Height = 220,
+
+                };
+
+
+
+                uiMessageBox.ShowDialogAsync();
             }
         }
     }

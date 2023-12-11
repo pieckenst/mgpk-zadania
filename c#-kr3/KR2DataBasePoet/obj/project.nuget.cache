@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LG2G5yX2+mftndy+Vg+6yf9lxs1bt7ZoB9lQ3ezvTL4W2QKzp/Vbhdd7KeVB982aoUv7aHLZtujZJPhXnPLQIA==",
+  "dgSpecHash": "ImVs/3BK6YBJdRPpc2unaWkOrzlbFBYD08wq+rmFXzuLr9cz6hMsjy8VxwCMMPKxK+LJzHWrO2UoxTfoPwWSDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
   "expectedPackageFiles": [
@@ -49,9 +49,9 @@
     "C:\\Users\\Andrey\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\wpf-ui\\3.0.0-preview.4\\wpf-ui.3.0.0-preview.4.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.23\\microsoft.aspnetcore.app.runtime.win-x64.6.0.23.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.23\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.23.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.23\\microsoft.netcore.app.runtime.win-x64.6.0.23.nupkg.sha512"
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.25\\microsoft.aspnetcore.app.runtime.win-x64.6.0.25.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.25\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.25.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.25\\microsoft.netcore.app.runtime.win-x64.6.0.25.nupkg.sha512"
   ],
   "logs": []
 }
