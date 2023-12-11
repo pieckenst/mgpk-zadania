@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ComposerAndWorksApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+977699f877a59be658472225a4c038010d42320a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ComposerAndWorksApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ComposerAndWorksApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
