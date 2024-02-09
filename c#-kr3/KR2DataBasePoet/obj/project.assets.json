@@ -3122,11 +3122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrey\\Source\\Repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
+      "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
       "projectName": "ComposerAndWorksApp",
-      "projectPath": "C:\\Users\\Andrey\\Source\\Repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
+      "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\KR2DataBase.csproj",
       "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrey\\Source\\Repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\obj\\",
+      "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\c#-kr3\\KR2DataBasePoet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\sdk\\NuGetPackages"
@@ -3202,16 +3202,32 @@
         "warn": true,
         "downloadDependencies": [
           {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.25, 6.0.25]"
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.25, 6.0.25]"
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.25, 6.0.25]"
+            "version": "[6.0.26, 6.0.26]"
           }
         ],
         "frameworkReferences": {
@@ -3222,7 +3238,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -3230,5 +3246,18 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.SqlClient' 4.8.5 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net6.0-windows7.0",
+        "net6.0-windows7.0/win-x64"
+      ]
+    }
+  ]
 }
