@@ -3,7 +3,8 @@ using FluentKursovayaAvtoparkA.Models;
 using System;
 using System.Collections.Generic;
 using System.Windows.Media;
-using Wpf.Ui.Common.Interfaces;
+
+using Wpf.Ui.Controls;
 
 namespace FluentKursovayaAvtoparkA.ViewModels
 {

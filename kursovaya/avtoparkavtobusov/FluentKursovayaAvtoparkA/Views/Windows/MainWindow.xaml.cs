@@ -1,64 +1,91 @@
-﻿using System;
+// This Source Code Form is subject to the terms of the MIT License.
+// If a copy of the MIT was not distributed with this file, You can obtain one at https://opensource.org/licenses/MIT.
+// Copyright (C) Leszek Pomianowski and WPF UI Contributors.
+// All Rights Reserved.
+
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using Wpf.Ui.Controls.Interfaces;
-using Wpf.Ui.Mvvm.Contracts;
+using Wpf.Ui.Controls;
+using FluentKursovayaAvtoparkA.Services.Contracts;
+using FluentKursovayaAvtoparkA.ViewModels;
+using FluentKursovayaAvtoparkA.ViewModels.Windows;
+using Wpf.Ui;
+using Wpf.Ui.Appearance;
 
-namespace FluentKursovayaAvtoparkA.Views.Windows
+namespace FluentKursovayaAvtoparkA.Views.Windows;
+
+public partial class MainWindow : IWindow
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : INavigationWindow
+    public MainWindow(
+        MainWindowViewModel viewModel,
+        INavigationService navigationService,
+        IServiceProvider serviceProvider,
+        ISnackbarService snackbarService,
+        IContentDialogService contentDialogService
+    )
     {
-        public ViewModels.MainWindowViewModel ViewModel
+        SystemThemeWatcher.Watch(this);
+
+        ViewModel = viewModel;
+        DataContext = this;
+
+        InitializeComponent();
+
+        snackbarService.SetSnackbarPresenter(SnackbarPresenter);
+        navigationService.SetNavigationControl(NavigationView);
+        contentDialogService.SetContentPresenter(RootContentDialog);
+
+        NavigationView.SetServiceProvider(serviceProvider);
+    }
+
+    public MainWindowViewModel ViewModel { get; }
+
+    private bool _isUserClosedPane;
+
+    private bool _isPaneOpenedOrClosedFromCode;
+
+    private void OnNavigationSelectionChanged(object sender, RoutedEventArgs e)
+    {
+        if (sender is not Wpf.Ui.Controls.NavigationView navigationView)
         {
-            get;
+            return;
         }
 
-        public MainWindow(ViewModels.MainWindowViewModel viewModel, IPageService pageService, INavigationService navigationService)
+        NavigationView.HeaderVisibility =
+            navigationView.SelectedItem?.TargetPageType != typeof(DashboardPage)
+                ? Visibility.Visible
+                : Visibility.Collapsed;
+    }
+
+    private void MainWindow_OnSizeChanged(object sender, SizeChangedEventArgs e)
+    {
+        if (_isUserClosedPane)
         {
-            ViewModel = viewModel;
-            DataContext = this;
-
-            InitializeComponent();
-            SetPageService(pageService);
-
-            navigationService.SetNavigationControl(RootNavigation);
+            return;
         }
 
-        #region INavigationWindow methods
+        _isPaneOpenedOrClosedFromCode = true;
+        NavigationView.IsPaneOpen = !(e.NewSize.Width <= 1200);
+        _isPaneOpenedOrClosedFromCode = false;
+    }
 
-        public Frame GetFrame()
-            => RootFrame;
-
-        public INavigation GetNavigation()
-            => RootNavigation;
-
-        public bool Navigate(Type pageType)
-            => RootNavigation.Navigate(pageType);
-
-        public void SetPageService(IPageService pageService)
-            => RootNavigation.PageService = pageService;
-
-        public void ShowWindow()
-            => Show();
-
-        public void CloseWindow()
-            => Close();
-
-        #endregion INavigationWindow methods
-
-        /// <summary>
-        /// Raises the closed event.
-        /// </summary>
-        protected override void OnClosed(EventArgs e)
+    private void NavigationView_OnPaneOpened(NavigationView sender, RoutedEventArgs args)
+    {
+        if (_isPaneOpenedOrClosedFromCode)
         {
-            base.OnClosed(e);
-
-            // Make sure that closing this window will begin the process of closing the application.
-            Application.Current.Shutdown();
+            return;
         }
-        
+
+        _isUserClosedPane = false;
+    }
+
+    private void NavigationView_OnPaneClosed(NavigationView sender, RoutedEventArgs args)
+    {
+        if (_isPaneOpenedOrClosedFromCode)
+        {
+            return;
+        }
+
+        _isUserClosedPane = true;
     }
 }

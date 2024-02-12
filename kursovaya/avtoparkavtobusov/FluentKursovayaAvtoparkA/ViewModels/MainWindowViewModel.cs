@@ -1,92 +1,68 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using System;
+// This Source Code Form is subject to the terms of the MIT License.
+// If a copy of the MIT was not distributed with this file, You can obtain one at https://opensource.org/licenses/MIT.
+// Copyright (C) Leszek Pomianowski and WPF UI Contributors.
+// All Rights Reserved.
+
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Wpf.Ui.Common;
+using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
+using CommunityToolkit.Mvvm.ComponentModel;
 using Wpf.Ui.Controls;
-using Wpf.Ui.Controls.Interfaces;
-using Wpf.Ui.Mvvm.Contracts;
+using FluentKursovayaAvtoparkA.Views.Pages;
 
-namespace FluentKursovayaAvtoparkA.ViewModels
+
+namespace FluentKursovayaAvtoparkA.ViewModels.Windows;
+
+public partial class MainWindowViewModel : ObservableObject
 {
-    public partial class MainWindowViewModel : ObservableObject
+    [ObservableProperty]
+    private string _applicationTitle = "WPF UI Gallery";
+
+    [ObservableProperty]
+    private ICollection<object> _menuItems = new ObservableCollection<object>
     {
-        private bool _isInitialized = false;
-
-        [ObservableProperty]
-        private string _applicationTitle = String.Empty;
-
-        [ObservableProperty]
-        private ObservableCollection<INavigationControl> _navigationItems = new();
-
-        [ObservableProperty]
-        private ObservableCollection<INavigationControl> _navigationFooter = new();
-
-        [ObservableProperty]
-        private ObservableCollection<MenuItem> _trayMenuItems = new();
-
-        public MainWindowViewModel(INavigationService navigationService)
+        new NavigationViewItem()
         {
-            if (!_isInitialized)
-                InitializeViewModel();
-        }
-
-        private void InitializeViewModel()
+            Content = "Информация о сотрудниках",
+            PageTag = "dashboard",
+            Icon = SymbolRegular.Person24,
+            PageType = typeof(Views.Pages.DashboardPage)
+        },
+        new NavigationItem()
         {
-            ApplicationTitle = "Автопарк Автобусов";
-
-            NavigationItems = new ObservableCollection<INavigationControl>
-            {
-                new NavigationItem()
-                {
-                    Content = "Информация о сотрудниках",
-                    PageTag = "dashboard",
-                    Icon = SymbolRegular.Person24,
-                    PageType = typeof(Views.Pages.DashboardPage)
-                },
-                new NavigationItem()
-                {
-                    Content = "Продажа билетов",
-                    PageTag = "ticketsale",
-                    Icon = SymbolRegular.TicketDiagonal24,
-                    PageType = typeof(Views.Pages.TicketPage)
-                },
-                new NavigationItem()
-                {
-                    Content = "Информация о маршрутах",
-                    PageTag = "transportroutes",
-                    Icon = SymbolRegular.VehicleBus24,
-                    PageType = typeof(Views.Pages.DataPage)
-                },
-                new NavigationItem()
-                {
-                    Content = "Состояние Автобусного Парка",
-                    PageTag = "transportstatus",
-                    Icon = SymbolRegular.Wrench24,
-                    PageType = typeof(Views.Pages.MaintenancePage)
-                }
-            };
-
-            NavigationFooter = new ObservableCollection<INavigationControl>
-            {
-                new NavigationItem()
-                {
-                    Content = "Настройки",
-                    PageTag = "settings",
-                    Icon = SymbolRegular.Settings24,
-                    PageType = typeof(Views.Pages.SettingsPage)
-                }
-            };
-
-            TrayMenuItems = new ObservableCollection<MenuItem>
-            {
-                new MenuItem
-                {
-                    Header = "Home",
-                    Tag = "tray_home"
-                }
-            };
-
-            _isInitialized = true;
+            Content = "Продажа билетов",
+            PageTag = "ticketsale",
+            Icon = SymbolRegular.TicketDiagonal24,
+            PageType = typeof(Views.Pages.TicketPage)
+        },
+        new NavigationItem()
+        {
+            Content = "Информация о маршрутах",
+            PageTag = "transportroutes",
+            Icon = SymbolRegular.VehicleBus24,
+            PageType = typeof(Views.Pages.DataPage)
+        },
+        new NavigationItem()
+        {
+            Content = "Состояние Автобусного Парка",
+            PageTag = "transportstatus",
+            Icon = SymbolRegular.Wrench24,
+            PageType = typeof(Views.Pages.MaintenancePage)
         }
-    }
+    };
+
+    [ObservableProperty]
+    private ICollection<object> _footerMenuItems = new ObservableCollection<object>()
+    {
+        new NavigationViewItem("Settings", SymbolRegular.Settings24, typeof(SettingsPage))
+    };
+
+    [ObservableProperty]
+    private ObservableCollection<Wpf.Ui.Controls.MenuItem> _trayMenuItems =
+        new()
+        {
+            new Wpf.Ui.Controls.MenuItem { Header = "Home", Tag = "tray_home" },
+            new Wpf.Ui.Controls.MenuItem { Header = "Close", Tag = "tray_close" }
+        };
 }

@@ -19,7 +19,7 @@
     <PackageReference Include="FastReport.OpenSource" Version="2023.2.7" />
     <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2023.2.7" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
-    <PackageReference Include="WPF-UI" Version="2.1.0" />
+    <PackageReference Include="WPF-UI" Version="3.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
   </ItemGroup>
@@ -37,6 +37,15 @@
   <ItemGroup>
     <Resource Include="Assets\applicationIcon-1024.png" />
     <Resource Include="Assets\applicationIcon-256.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Services\Contracts\" />
+    <Folder Include="ViewModels\Windows\" />
+    <Folder Include="Views\Windows\" />
   </ItemGroup>
 
 </Project>
