@@ -1,6 +1,6 @@
 ﻿using MaterialSkin;
 using MaterialSkin.Controls;
-using Rectify11Installer.Win32;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,7 +36,8 @@ namespace SQLServerLoginTemplate
 
             // MaterialSkinManager properties
             materialSkinManager.AddFormToManage(this);
-            if (Theme.IsUsingDarkMode)
+            var v = Microsoft.Win32.Registry.GetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "AppsUseLightTheme", "1");
+            if (v != null && v.ToString() == "0")
             {
                 materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             }

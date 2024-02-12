@@ -41,15 +41,15 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
         {
             try
             {
-                var Num = AvEditor1.Text;
-                var ModAvtobus = AvEditor2.Text;
+                var Num = int.Parse(AvEditor1.Text);
+                var ModAvtobus = int.Parse(AvEditor2.Text);
                 var DatObslug = AvEditor3.Text;
                 var Engineer = AvEditor4.Text;
                 var ErAvto = AvEditor5.Text;
                 var DatSlegObslug = AvEditor6.Text;
                 var GodDorog = AvEditor7.Text;
                 var query =
-                    "INSERT INTO Maintenance(Num, Model_Avtobusa, Data_Poslednego_Obsluzhivania, Ingener_Obsluzhivania,Problemi_Avtobusa,Data_Sledueschego_Obsluzivania,Goden_K_Doroge) " +
+                    "INSERT INTO Obsluzhivanie(Num, Model_AvtobusaKey, Data_Poslednego_Obsluzhivania, Ingener_Obsluzhivania,Problemi_Avtobusa,Data_Sledueschego_Obsluzivania,Goden_K_Doroge) " +
                     "Values('" + Num + "', '" + ModAvtobus + "', '" + DatObslug + "', '" + Engineer + "','" + ErAvto +
                     "','" + DatSlegObslug + "','" + GodDorog + "')";
                 SqlConnection cnn;
@@ -107,7 +107,7 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 cnn.Open();
                 Console.Write("OPENING DB CONNECTION!!! \n");
                 Console.Write("[MENU] Connect db clicked - test \n");
-                var select = "SELECT * FROM Maintenance";
+                var select = "SELECT * FROM Obsluzhivanie";
 
                 var commandBuilder = new SqlCommand(select, cnn);
                 commandBuilder.ExecuteNonQuery();
@@ -162,9 +162,9 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 cnn.Open();
                 Console.Write("OPENING DB CONNECTION!!! \n");
                 var querier =
-                    "UPDATE Maintenance SET Model_Avtobusa=@a1,Data_Poslednego_Obsluzhivania=@a2,Ingener_Obsluzhivania=@a3,Problemi_Avtobusa=@a4,Data_Sledueschego_Obsluzivania=@a5,Goden_K_Doroge=@a6 WHERE Num=@a7";
+                    "UPDATE Obsluzhivanie SET ModelAvtobusaKey=@a1,Data_Poslednego_Obsluzhivania=@a2,Ingener_Obsluzhivania=@a3,Problemi_Avtobusa=@a4,Data_Sledueschego_Obsluzivania=@a5,Goden_K_Doroge=@a6 WHERE Num=@a7";
                 var commandBuilders = new SqlCommand(querier, cnn);
-                commandBuilders.Parameters.AddWithValue("a1", AvEditor2.Text);
+                commandBuilders.Parameters.AddWithValue("a1", int.Parse(AvEditor2.Text));
                 commandBuilders.Parameters.AddWithValue("a2", AvEditor3.Text);
                 commandBuilders.Parameters.AddWithValue("a3", AvEditor4.Text);
                 commandBuilders.Parameters.AddWithValue("a4", AvEditor5.Text);

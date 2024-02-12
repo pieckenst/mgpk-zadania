@@ -1,39 +1,84 @@
 {
   "version": 2,
-  "dgSpecHash": "4zKz1gDjAebSrJoZDXPN4/3NvwynfxKsFd8cBl8pcKEUcs963Lc4/TNZMSZLfWdbFNE9y94nnMHXsnOYMrSPmw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+  "dgSpecHash": "F03lNNTGU1HkvehtcdNsO6gZscEkSNJirg0MaeqBEMhgM0ThJRNlUB66uTWkXsbSjA81WbtiCZzx5yUCsNyPLg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Yvazh\\.nuget\\packages\\controlzex\\5.0.1\\controlzex.5.0.1.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\dynamicdata\\7.4.9\\dynamicdata.7.4.9.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\fastreport.compat\\2021.3.0\\fastreport.compat.2021.3.0.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\fastreport.data.mssql\\2022.1.0\\fastreport.data.mssql.2022.1.0.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\fastreport.opensource\\2022.1.0\\fastreport.opensource.2022.1.0.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\fastreport.opensource.export.pdfsimple\\2022.1.0\\fastreport.opensource.export.pdfsimple.2022.1.0.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\fluent.ribbon\\9.0.1\\fluent.ribbon.9.0.1.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\log4net\\2.0.0\\log4net.2.0.0.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\materialskin.2\\2.3.1\\materialskin.2.2.3.1.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.22000.196\\microsoft.windows.sdk.contracts.10.0.22000.196.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\modernwpfui\\0.9.4\\modernwpfui.0.9.4.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\postsharp\\6.10.5\\postsharp.6.10.5.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\postsharp.patterns.common\\6.10.5\\postsharp.patterns.common.6.10.5.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\postsharp.patterns.common.redist\\6.10.5\\postsharp.patterns.common.redist.6.10.5.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\postsharp.patterns.diagnostics\\6.10.5\\postsharp.patterns.diagnostics.6.10.5.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\postsharp.patterns.diagnostics.log4net\\6.10.5\\postsharp.patterns.diagnostics.log4net.6.10.5.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\postsharp.patterns.diagnostics.redist\\6.10.5\\postsharp.patterns.diagnostics.redist.6.10.5.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\postsharp.redist\\6.10.5\\postsharp.redist.6.10.5.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\reactiveui\\17.1.17\\reactiveui.17.1.17.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\reactiveui.wpf\\17.1.17\\reactiveui.wpf.17.1.17.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\splat\\14.1.17\\splat.14.1.17.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\system.data.sqlclient\\4.4.3\\system.data.sqlclient.4.4.3.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\system.runtime.windowsruntime\\4.7.0\\system.runtime.windowsruntime.4.7.0.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\system.runtime.windowsruntime.ui.xaml\\4.7.0\\system.runtime.windowsruntime.ui.xaml.4.7.0.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Yvazh\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "C:\\Users\\Andrey\\.nuget\\packages\\controlzex\\5.0.1\\controlzex.5.0.1.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\dynamicdata\\7.4.9\\dynamicdata.7.4.9.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\fastreport.compat\\2021.3.0\\fastreport.compat.2021.3.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\fastreport.data.mssql\\2022.1.0\\fastreport.data.mssql.2022.1.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\fastreport.opensource\\2022.1.0\\fastreport.opensource.2022.1.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\fastreport.opensource.export.pdfsimple\\2022.1.0\\fastreport.opensource.export.pdfsimple.2022.1.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\fluent.ribbon\\9.0.1\\fluent.ribbon.9.0.1.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\log4net\\2.0.0\\log4net.2.0.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.22000.196\\microsoft.windows.sdk.contracts.10.0.22000.196.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\modernwpfui\\0.9.4\\modernwpfui.0.9.4.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\postsharp\\6.10.5\\postsharp.6.10.5.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\postsharp.patterns.common\\6.10.5\\postsharp.patterns.common.6.10.5.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\postsharp.patterns.common.redist\\6.10.5\\postsharp.patterns.common.redist.6.10.5.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\postsharp.patterns.diagnostics\\6.10.5\\postsharp.patterns.diagnostics.6.10.5.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\postsharp.patterns.diagnostics.log4net\\6.10.5\\postsharp.patterns.diagnostics.log4net.6.10.5.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\postsharp.patterns.diagnostics.redist\\6.10.5\\postsharp.patterns.diagnostics.redist.6.10.5.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\postsharp.redist\\6.10.5\\postsharp.redist.6.10.5.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\reactiveui\\17.1.17\\reactiveui.17.1.17.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\reactiveui.wpf\\17.1.17\\reactiveui.wpf.17.1.17.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\splat\\14.1.17\\splat.14.1.17.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\system.data.sqlclient\\4.4.3\\system.data.sqlclient.4.4.3.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\system.runtime.windowsruntime\\4.7.0\\system.runtime.windowsruntime.4.7.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\system.runtime.windowsruntime.ui.xaml\\4.7.0\\system.runtime.windowsruntime.ui.xaml.4.7.0.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Andrey\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект LogOnHelper несовместим с net481 (.NETFramework,Version=v4.8.1). Проект LogOnHelper поддерживает: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "LogOnHelper",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8.1"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект LogOnHelper несовместим с net481 (.NETFramework,Version=v4.8.1) / win. Проект LogOnHelper поддерживает: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "LogOnHelper",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8.1/win"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект LogOnHelper несовместим с net481 (.NETFramework,Version=v4.8.1) / win-arm64. Проект LogOnHelper поддерживает: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "LogOnHelper",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8.1/win-arm64"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект LogOnHelper несовместим с net481 (.NETFramework,Version=v4.8.1) / win-x64. Проект LogOnHelper поддерживает: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "LogOnHelper",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8.1/win-x64"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект LogOnHelper несовместим с net481 (.NETFramework,Version=v4.8.1) / win-x86. Проект LogOnHelper поддерживает: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "LogOnHelper",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8.1/win-x86"
+      ]
+    }
+  ]
 }

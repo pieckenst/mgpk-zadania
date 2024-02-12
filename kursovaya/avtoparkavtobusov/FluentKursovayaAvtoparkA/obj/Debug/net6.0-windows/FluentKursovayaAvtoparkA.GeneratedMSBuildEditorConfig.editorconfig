@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FluentKursovayaAvtoparkA
-build_property.ProjectDir = C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\
+build_property.ProjectDir = C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

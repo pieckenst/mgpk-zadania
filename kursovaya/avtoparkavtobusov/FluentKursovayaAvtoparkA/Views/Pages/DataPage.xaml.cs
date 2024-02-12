@@ -39,12 +39,12 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 cnn.Open();
                 Console.Write("OPENING DB CONNECTION!!! \n");
                 var select =
-                    "UPDATE Marshuti SET Nachalni_Punkt=@a1,Konechni_Punkt=@a2,Voditel=@a3,Model_Avtobusa=@a4,Vremya_Proezda=@a5 WHERE Nomer_Marshuta=@a6";
+                    "UPDATE Marshuti SET Nachalni_Punkt=@a1,Konechni_Punkt=@a2,Emp_Num=@a3,ModelAvtobusaKey=@a4,Vremya_Proezda=@a5 WHERE Nomer_Marshuta=@a6";
                 var commandBuilder = new SqlCommand(select, cnn);
                 commandBuilder.Parameters.AddWithValue("a1", Edit2.Text);
                 commandBuilder.Parameters.AddWithValue("a2", Edit3.Text);
-                commandBuilder.Parameters.AddWithValue("a3", Edit4.Text);
-                commandBuilder.Parameters.AddWithValue("a4", Edit5.Text);
+                commandBuilder.Parameters.AddWithValue("a3", int.Parse(Edit4.Text));
+                commandBuilder.Parameters.AddWithValue("a4", int.Parse(Edit5.Text));
                 commandBuilder.Parameters.AddWithValue("a5", Edit6.Text);
                 commandBuilder.Parameters.AddWithValue("a6", int.Parse(Edit1.Text));
                 commandBuilder.ExecuteNonQuery();
@@ -68,11 +68,11 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 var NomeMarshuta = Edit1.Text;
                 var NachalnPunkt = Edit2.Text;
                 var KonechnPunkt = Edit3.Text;
-                var Vodit = Edit4.Text;
-                var Modelvtobusa = Edit5.Text;
+                var Vodit = int.Parse(Edit4.Text);
+                var Modelvtobusa = int.Parse(Edit5.Text);
                 var VremProezda = Edit6.Text;
                 var query =
-                    "INSERT INTO Marshuti(Nomer_Marshuta, Nachalni_Punkt, Konechni_Punkt, Voditel,Model_Avtobusa,Vremya_Proezda) " +
+                    "INSERT INTO Marshuti(Nomer_Marshuta, Nachalni_Punkt, Konechni_Punkt, Emp_Num,ModelAvtobusaKey,Vremya_Proezda) " +
                     "Values('" + NomeMarshuta + "', '" + NachalnPunkt + "', '" + KonechnPunkt + "', '" + Vodit + "','" +
                     Modelvtobusa + "', '" + VremProezda + "')";
                 SqlConnection cnn;

@@ -1,2 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:Boolean x:Key="/Default/Housekeeping/ProjectModelSynchronizer/ProjectPathsToLoadFromDisk/=KursovayaAvtoparkAvtobusov_005CKursovayaAvtoparkAvtobusov_002Ecsproj/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005CAndrey_005Csource_005Crepos_005Cmgpk_002Dzadania_005Ckursovaya_005Cavtoparkavtobusov_005CSQLServerLogin_005Clibmsstyle_002Edll/@EntryIndexedValue">True</s:Boolean>
+	
+	<s:Boolean x:Key="/Default/Housekeeping/ProjectModelSynchronizer/ProjectPathsToLoadFromDisk/=KursovayaAvtoparkAvtobusov_005CKursovayaAvtoparkAvtobusov_002Ecsproj/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=97945356_002Dc5b5_002D4f40_002Da12f_002Daf1b1ec162de_0023KursovayaAvtoparkAvtobusov/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=f00f9c8d_002D4fad_002D4aca_002Dbd40_002D75ceb10c6760_0023WpfMessageBoxEx/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

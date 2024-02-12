@@ -50,14 +50,19 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 Console.Write("OPENING DB CONNECTION!!! \n");
                 Console.Write("[MENU] Connect db clicked - test \n");
                 var select = "SELECT * FROM Prodazhi";
-
+                var select2 = "SELECT * FROM Bilety";
                 var commandBuilder = new SqlCommand(select, cnn);
                 commandBuilder.ExecuteNonQuery();
-
+                var commandBuilder2 = new SqlCommand(select2, cnn);
+                commandBuilder2.ExecuteNonQuery();
                 var dataAdapter = new SqlDataAdapter(commandBuilder);
+                var dataAdapter2 = new SqlDataAdapter(commandBuilder2);
                 var ds = new DataTable("Avtobusx");
                 dataAdapter.Fill(ds);
+                var ds2 = new DataTable("Avtobusxi");
+                dataAdapter2.Fill(ds2);
                 dataGrid1.ItemsSource = ds.DefaultView;
+                dataGrid2.ItemsSource = ds2.DefaultView;
                 Console.WriteLine("Connection established and the datagrid filled!");
                 cnn.Close();
             }
@@ -99,12 +104,12 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
             {
                 var Num = Edit1.Text;
                 var SaleDat = Edit2.Text;
-                var NomAvtobus = Edit3.Text;
-                var Punkt = Edit4.Text;
-                var Stoimost = Edit5.Text;
-                var query = "INSERT INTO Prodazhi(Num, Sale_Date, Nomer_Avtobusa, Punkt_Posadki,Stoimost) " +
-                            "Values('" + Num + "', '" + SaleDat + "', '" + NomAvtobus + "', '" + Punkt + "','" +
-                            Stoimost + "')";
+                var NomBiltetaKey = int.Parse(Edit3.Text);
+                var Nomer_Biletaex = Edit4.Text;
+                var Nomer_MarshutaKey = Edit5.Text;
+                var Stoimost = Edit6.Text;
+                var query = "INSERT INTO Prodazhi(Num, Sale_Date, Nomer_BiletaKey) " +
+                            "Values('" + Num + "', '" + SaleDat + "', '" + NomBiltetaKey  + "')";
                 SqlConnection cnn;
                 var conStr = SettingsPage.formations;
 
@@ -229,6 +234,10 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
         private void Edit5_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Edit5.Clear();
+        }
+        private void Edit6_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Edit6.Clear();
         }
     }
 }

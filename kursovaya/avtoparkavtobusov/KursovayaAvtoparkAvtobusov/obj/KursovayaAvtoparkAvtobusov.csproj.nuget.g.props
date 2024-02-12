@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">False</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Yvazh\.nuget\packages\;D:\sdk\NuGetPackages</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Andrey\.nuget\packages\;D:\sdk\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.6.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.8.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\Yvazh\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\Andrey\.nuget\packages\" />
     <SourceRoot Include="D:\sdk\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
@@ -20,8 +20,8 @@
     <Import Project="$(NuGetPackageRoot)fastreport.data.mssql\2022.1.0\buildTransitive\net452\FastReport.Data.MsSql.props" Condition="Exists('$(NuGetPackageRoot)fastreport.data.mssql\2022.1.0\buildTransitive\net452\FastReport.Data.MsSql.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgPostSharp_Patterns_Common Condition=" '$(PkgPostSharp_Patterns_Common)' == '' ">C:\Users\Yvazh\.nuget\packages\postsharp.patterns.common\6.10.5</PkgPostSharp_Patterns_Common>
-    <PkgPostSharp_Patterns_Diagnostics Condition=" '$(PkgPostSharp_Patterns_Diagnostics)' == '' ">C:\Users\Yvazh\.nuget\packages\postsharp.patterns.diagnostics\6.10.5</PkgPostSharp_Patterns_Diagnostics>
-    <PkgMicrosoft_Xaml_Behaviors_Wpf Condition=" '$(PkgMicrosoft_Xaml_Behaviors_Wpf)' == '' ">C:\Users\Yvazh\.nuget\packages\microsoft.xaml.behaviors.wpf\1.1.31</PkgMicrosoft_Xaml_Behaviors_Wpf>
+    <PkgPostSharp_Patterns_Common Condition=" '$(PkgPostSharp_Patterns_Common)' == '' ">C:\Users\Andrey\.nuget\packages\postsharp.patterns.common\6.10.5</PkgPostSharp_Patterns_Common>
+    <PkgPostSharp_Patterns_Diagnostics Condition=" '$(PkgPostSharp_Patterns_Diagnostics)' == '' ">C:\Users\Andrey\.nuget\packages\postsharp.patterns.diagnostics\6.10.5</PkgPostSharp_Patterns_Diagnostics>
+    <PkgMicrosoft_Xaml_Behaviors_Wpf Condition=" '$(PkgMicrosoft_Xaml_Behaviors_Wpf)' == '' ">C:\Users\Andrey\.nuget\packages\microsoft.xaml.behaviors.wpf\1.1.31</PkgMicrosoft_Xaml_Behaviors_Wpf>
   </PropertyGroup>
 </Project>

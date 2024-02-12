@@ -140,18 +140,6 @@
           }
         }
       },
-      "MaterialSkin.2/2.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Design"
-        ],
-        "compile": {
-          "lib/net48/MaterialSkin.dll": {}
-        },
-        "runtime": {
-          "lib/net48/MaterialSkin.dll": {}
-        }
-      },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
         "type": "package",
         "dependencies": {
@@ -984,10 +972,7 @@
       },
       "LogOnHelper/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.8.1",
-        "dependencies": {
-          "MaterialSkin.2": "2.3.1"
-        },
+        "framework": "Unsupported,Version=v0.0",
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -1142,18 +1127,6 @@
           "lib/net40-full/log4net.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "MaterialSkin.2/2.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Design"
-        ],
-        "compile": {
-          "lib/net48/MaterialSkin.dll": {}
-        },
-        "runtime": {
-          "lib/net48/MaterialSkin.dll": {}
         }
       },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
@@ -1978,10 +1951,7 @@
       },
       "LogOnHelper/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.8.1",
-        "dependencies": {
-          "MaterialSkin.2": "2.3.1"
-        },
+        "framework": "Unsupported,Version=v0.0",
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -2138,18 +2108,6 @@
           }
         }
       },
-      "MaterialSkin.2/2.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Design"
-        ],
-        "compile": {
-          "lib/net48/MaterialSkin.dll": {}
-        },
-        "runtime": {
-          "lib/net48/MaterialSkin.dll": {}
-        }
-      },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
         "type": "package",
         "dependencies": {
@@ -2972,10 +2930,7 @@
       },
       "LogOnHelper/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.8.1",
-        "dependencies": {
-          "MaterialSkin.2": "2.3.1"
-        },
+        "framework": "Unsupported,Version=v0.0",
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -3132,18 +3087,6 @@
           }
         }
       },
-      "MaterialSkin.2/2.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Design"
-        ],
-        "compile": {
-          "lib/net48/MaterialSkin.dll": {}
-        },
-        "runtime": {
-          "lib/net48/MaterialSkin.dll": {}
-        }
-      },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
         "type": "package",
         "dependencies": {
@@ -3966,10 +3909,7 @@
       },
       "LogOnHelper/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.8.1",
-        "dependencies": {
-          "MaterialSkin.2": "2.3.1"
-        },
+        "framework": "Unsupported,Version=v0.0",
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -4126,18 +4066,6 @@
           }
         }
       },
-      "MaterialSkin.2/2.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Design"
-        ],
-        "compile": {
-          "lib/net48/MaterialSkin.dll": {}
-        },
-        "runtime": {
-          "lib/net48/MaterialSkin.dll": {}
-        }
-      },
       "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
         "type": "package",
         "dependencies": {
@@ -4960,10 +4888,7 @@
       },
       "LogOnHelper/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.8.1",
-        "dependencies": {
-          "MaterialSkin.2": "2.3.1"
-        },
+        "framework": "Unsupported,Version=v0.0",
         "compile": {
           "bin/placeholder/LogOnHelper.dll": {}
         },
@@ -5167,23 +5092,6 @@
         "lib/net40-full/log4net.xml",
         "log4net.2.0.0.nupkg.sha512",
         "log4net.nuspec"
-      ]
-    },
-    "MaterialSkin.2/2.3.1": {
-      "sha512": "w2vFxLNk4InCDU7pXDfBqPfv55HhBtuu8HRfEqQpeS3sNTS1pUzDs/hS0b5JW2/tKvt+P1of9OINP8a9omWDBg==",
-      "type": "package",
-      "path": "materialskin.2/2.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net45/MaterialSkin.dll",
-        "lib/net461/MaterialSkin.dll",
-        "lib/net48/MaterialSkin.dll",
-        "lib/net5.0-windows7.0/MaterialSkin.dll",
-        "materialskin.2.2.3.1.nupkg.sha512",
-        "materialskin.2.nuspec",
-        "nugetIcon.png"
       ]
     },
     "Microsoft.Windows.SDK.Contracts/10.0.22000.196": {
@@ -6662,24 +6570,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yvazh\\.nuget\\packages\\": {},
+    "C:\\Users\\Andrey\\.nuget\\packages\\": {},
     "D:\\sdk\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+      "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
       "projectName": "KursovayaAvtoparkAvtobusov",
-      "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
-      "packagesPath": "C:\\Users\\Yvazh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\obj\\",
+      "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\KursovayaAvtoparkAvtobusov.csproj",
+      "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\KursovayaAvtoparkAvtobusov\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "D:\\sdk\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Yvazh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6693,11 +6601,11 @@
       "frameworks": {
         "net481": {
           "projectReferences": {
-            "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj": {
-              "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj"
+            "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj": {
+              "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj"
             },
-            "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
-              "projectPath": "C:\\Users\\Yvazh\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
+            "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+              "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
             }
           }
         }
@@ -6788,5 +6696,52 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект LogOnHelper несовместим с net481 (.NETFramework,Version=v4.8.1). Проект LogOnHelper поддерживает: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "LogOnHelper",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8.1"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект LogOnHelper несовместим с net481 (.NETFramework,Version=v4.8.1) / win. Проект LogOnHelper поддерживает: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "LogOnHelper",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8.1/win"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект LogOnHelper несовместим с net481 (.NETFramework,Version=v4.8.1) / win-arm64. Проект LogOnHelper поддерживает: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "LogOnHelper",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8.1/win-arm64"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект LogOnHelper несовместим с net481 (.NETFramework,Version=v4.8.1) / win-x64. Проект LogOnHelper поддерживает: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "LogOnHelper",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8.1/win-x64"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект LogOnHelper несовместим с net481 (.NETFramework,Version=v4.8.1) / win-x86. Проект LogOnHelper поддерживает: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "LogOnHelper",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8.1/win-x86"
+      ]
+    }
+  ]
 }

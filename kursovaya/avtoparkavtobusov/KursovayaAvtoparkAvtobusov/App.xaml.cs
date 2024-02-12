@@ -16,7 +16,7 @@ namespace KursovayaAvtoparkAvtobusov
         {
             
             var textWriterTraceListener = new TextWriterTraceListener(Console.Out);
-            Debug.Listeners.Add(textWriterTraceListener);
+            Trace.Listeners.Add(textWriterTraceListener);
 #if DEBUG
             Console.WriteLine("STARTING DEBUG SESSION !!!");
 #else

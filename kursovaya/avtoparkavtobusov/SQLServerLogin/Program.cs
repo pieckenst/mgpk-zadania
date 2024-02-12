@@ -21,18 +21,7 @@ namespace SQLServerLoginTemplate
 		{
             
            
-            if (Environment.OSVersion.Version.Build >= 10240)
-            {
-                Theme.InitTheme();
-                if ((Environment.OSVersion.Version.Build >= 17763) && (Environment.OSVersion.Version.Build < 18362))
-                {
-                    Rectify11Installer.Win32.DarkMode.AllowDarkModeForApp(true);
-                }
-                else if (Environment.OSVersion.Version.Build >= 18362)
-                {
-                    Rectify11Installer.Win32.DarkMode.SetPreferredAppMode(Rectify11Installer.Win32.DarkMode.PreferredAppMode.AllowDark);
-                }
-            }
+            
             if (!Directory.Exists(Environment.CurrentDirectory))
             {
                 Directory.CreateDirectory(Environment.CurrentDirectory);
@@ -43,7 +32,7 @@ namespace SQLServerLoginTemplate
                 File.WriteAllBytes(Path.Combine(Environment.CurrentDirectory, "Dark.msstyles"), Properties.Resources.Dark);
                 File.WriteAllBytes(Path.Combine(Environment.CurrentDirectory, "light.msstyles"), Properties.Resources.light);
             }
-            Theme.LoadTheme();
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("ko");
