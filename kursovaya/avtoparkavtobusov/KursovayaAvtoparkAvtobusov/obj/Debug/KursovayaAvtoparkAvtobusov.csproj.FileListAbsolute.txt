@@ -878,3 +878,5 @@ C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAv
 C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.exe
 C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.pdb
 C:\Users\Yvazh\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.exe
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\KursovayaAvtoparkAvtobusov\obj\Debug\KursovayaAvtoparkAvtobusov.pdb

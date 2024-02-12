@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33606.364
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KursovayaAvtoparkAvtobusov", "KursovayaAvtoparkAvtobusov\KursovayaAvtoparkAvtobusov.csproj", "{97945356-C5B5-4F40-A12F-AF1B1EC162DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMessageBoxEx", "WpfMessageBoxEx\WpfMessageBoxEx.csproj", "{F00F9C8D-4FAD-4ACA-BD40-75CEB10C6760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfMessageBoxEx", "WpfMessageBoxEx\WpfMessageBoxEx.csproj", "{F00F9C8D-4FAD-4ACA-BD40-75CEB10C6760}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfReporter", "WpfReporter\WpfReporter.csproj", "{67981666-92AC-4CA6-8311-B6A65296A700}"
 EndProject

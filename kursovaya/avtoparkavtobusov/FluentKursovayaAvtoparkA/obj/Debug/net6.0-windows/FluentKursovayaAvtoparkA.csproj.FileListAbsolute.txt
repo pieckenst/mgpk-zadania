@@ -130,6 +130,7 @@ C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKurs
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\FastReport.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\FastReport.OpenSource.Export.PdfSimple.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\MaterialSkin.dll
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\MaterialSkin2DotNet.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
@@ -158,7 +159,9 @@ C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKurs
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\System.Drawing.Common.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\Wpf.Ui.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\de\Microsoft.CodeAnalysis.resources.dll
@@ -200,12 +203,14 @@ C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKurs
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\runtimes\any\lib\netcoreapp3.0\FastReport.Compat.dll
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\FastReport.Data.MsSql.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\LogOnHelper.dll
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\WpfMessageBoxEx.dll
@@ -242,4 +247,3 @@ C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKurs
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\FluentKursovayaAvtoparkA.pdb
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\FluentKursovayaAvtoparkA.genruntimeconfig.cache
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\ref\FluentKursovayaAvtoparkA.dll
-C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\bin\Debug\net6.0-windows\MaterialSkin2DotNet.dll

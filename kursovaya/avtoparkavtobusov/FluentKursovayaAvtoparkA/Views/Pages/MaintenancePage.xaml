@@ -17,15 +17,8 @@
     mc:Ignorable="d">
 
     <Grid Margin="56,0">
-        <DataGrid x:Name="dataGrid1" Margin="338,5,1,53" RenderTransformOrigin="0.5,0.5">
-            <DataGrid.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform />
-                    <SkewTransform AngleX="-0.209" />
-                    <RotateTransform />
-                    <TranslateTransform X="0.996" />
-                </TransformGroup>
-            </DataGrid.RenderTransform>
+        <DataGrid x:Name="dataGrid1" Margin="338,5,1,53">
+            
         </DataGrid>
         <ui:Button x:Name="XdbSend" Content="Отправить данные в БД" Margin="12,376,0,0" VerticalAlignment="Top"
                 Height="32" Width="200" Click="Button_Click" />

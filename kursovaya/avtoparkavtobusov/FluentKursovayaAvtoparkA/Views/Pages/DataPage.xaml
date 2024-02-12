@@ -41,15 +41,8 @@
 		<TextBlock x:Name="lb6" Text="Vremya_Proezda" HorizontalAlignment="Left" Margin="8,217,0,0"
                VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
 		
-		<DataGrid x:Name="dataGrid1" Margin="338,5,1,29" RenderTransformOrigin="0.5,0.5">
-			<DataGrid.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform />
-					<SkewTransform AngleX="-0.209" />
-					<RotateTransform />
-					<TranslateTransform X="0.996" />
-				</TransformGroup>
-			</DataGrid.RenderTransform>
+		<DataGrid x:Name="dataGrid1" Margin="338,5,1,29" >
+			
 		</DataGrid>
 		<Button x:Name="UpdateTransportTable" Content="Обновить данные в БД" Margin="13,455,0,0"
                 VerticalAlignment="Top" Height="33" Width="218" Click="UpdateTransportTable_Click" Grid.Row="1" />
