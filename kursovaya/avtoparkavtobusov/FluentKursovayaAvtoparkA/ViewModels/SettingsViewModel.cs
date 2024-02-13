@@ -11,6 +11,7 @@ namespace FluentKursovayaAvtoparkA.ViewModels
 {
     public partial class SettingsViewModel : ObservableObject, INavigationAware
     {
+        
         private bool _isInitialized = false;
 
         [ObservableProperty]
