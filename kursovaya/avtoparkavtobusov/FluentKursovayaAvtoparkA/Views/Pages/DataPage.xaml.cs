@@ -1,14 +1,11 @@
-﻿using FluentKursovayaAvtoparkA.Views.Windows;
-using MsgBoxEx;
+﻿using MsgBoxEx;
 using System.Data.SqlClient;
 using System.Windows;
 using System;
-using Wpf.Ui.Common.Interfaces;
 using System.Data;
 using Wpf.Ui.Controls;
 using MessageBox = Wpf.Ui.Controls.MessageBox;
 using System.Windows.Controls;
-using System.Windows.Forms;
 
 namespace FluentKursovayaAvtoparkA.Views.Pages
 {
@@ -127,30 +124,20 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 var uiMessageBox = new MessageBox
                 {
                     Title = "Обработка ошибок",
-                    Content = new TextBlock
+                    Content = new Wpf.Ui.Controls.TextBlock
                     {
                         Text = ex.Message,
                         TextWrapping = TextWrapping.Wrap,
                     },
-                    ButtonLeftName = "OK",
-                    ButtonRightName = "Отмена",
+                    
                     Width = 800,
                     Height= 500,
                     
                 };
-                uiMessageBox.ButtonLeftClick += (s, e) =>
-                {
-                   
-                    uiMessageBox.Close();
-                };
-                uiMessageBox.ButtonRightClick += (s, e) =>
-                {
-                    
-                    uiMessageBox.Close();
-                };
+                
                 
 
-                uiMessageBox.ShowDialog();
+                uiMessageBox.ShowDialogAsync();
             }
         }
     }

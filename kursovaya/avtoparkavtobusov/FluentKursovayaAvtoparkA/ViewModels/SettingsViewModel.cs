@@ -1,6 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System;
+using System.Windows.Input;
+using System.Windows.Media;
+using Wpf.Ui.Appearance;
+
 using Wpf.Ui.Controls;
 
 namespace FluentKursovayaAvtoparkA.ViewModels
@@ -13,7 +17,10 @@ namespace FluentKursovayaAvtoparkA.ViewModels
         private string _appVersion = String.Empty;
 
         [ObservableProperty]
-        private Wpf.Ui.Appearance.ThemeType _currentTheme = Wpf.Ui.Appearance.ThemeType.Unknown;
+        private Wpf.Ui.Appearance.ApplicationTheme _currentApplicationTheme = Wpf.Ui
+            .Appearance
+            .ApplicationTheme
+            .Unknown;
 
         public void OnNavigatedTo()
         {
@@ -21,21 +28,20 @@ namespace FluentKursovayaAvtoparkA.ViewModels
                 InitializeViewModel();
         }
 
-        public void OnNavigatedFrom()
-        {
-        }
+        public void OnNavigatedFrom() { }
 
         private void InitializeViewModel()
         {
-            CurrentTheme = Wpf.Ui.Appearance.Theme.GetAppTheme();
-            AppVersion = $"Версия Программы - {GetAssemblyVersion()}";
+            CurrentApplicationTheme = Wpf.Ui.Appearance.ApplicationThemeManager.GetAppTheme();
+            AppVersion = $"Автопарк Автобус - {GetAssemblyVersion()}";
 
             _isInitialized = true;
         }
 
         private string GetAssemblyVersion()
         {
-            return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? String.Empty;
+            return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version?.ToString()
+                   ?? String.Empty;
         }
 
         [RelayCommand]
@@ -44,23 +50,24 @@ namespace FluentKursovayaAvtoparkA.ViewModels
             switch (parameter)
             {
                 case "theme_light":
-                    if (CurrentTheme == Wpf.Ui.Appearance.ThemeType.Light)
+                    if (CurrentApplicationTheme == Wpf.Ui.Appearance.ApplicationTheme.Light)
                         break;
 
-                    Wpf.Ui.Appearance.Theme.Apply(Wpf.Ui.Appearance.ThemeType.Light);
-                    CurrentTheme = Wpf.Ui.Appearance.ThemeType.Light;
+                    Wpf.Ui.Appearance.ApplicationThemeManager.Apply(Wpf.Ui.Appearance.ApplicationTheme.Light);
+                    CurrentApplicationTheme = Wpf.Ui.Appearance.ApplicationTheme.Light;
 
                     break;
 
                 default:
-                    if (CurrentTheme == Wpf.Ui.Appearance.ThemeType.Dark)
+                    if (CurrentApplicationTheme == Wpf.Ui.Appearance.ApplicationTheme.Dark)
                         break;
 
-                    Wpf.Ui.Appearance.Theme.Apply(Wpf.Ui.Appearance.ThemeType.Dark);
-                    CurrentTheme = Wpf.Ui.Appearance.ThemeType.Dark;
+                    Wpf.Ui.Appearance.ApplicationThemeManager.Apply(Wpf.Ui.Appearance.ApplicationTheme.Dark);
+                    CurrentApplicationTheme = Wpf.Ui.Appearance.ApplicationTheme.Dark;
 
                     break;
             }
         }
     }
 }
+

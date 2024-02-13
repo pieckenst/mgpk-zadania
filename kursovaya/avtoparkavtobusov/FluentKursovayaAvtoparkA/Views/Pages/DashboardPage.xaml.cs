@@ -1,12 +1,10 @@
-﻿using FluentKursovayaAvtoparkA.Views.Windows;
-using System.Data;
+﻿using System.Data;
 using System.Windows;
 using System;
-using Wpf.Ui.Common.Interfaces;
 using System.Data.SqlClient;
-using MsgBoxEx;
-using System.Windows.Controls;
+using Wpf.Ui.Controls;
 using MessageBox = Wpf.Ui.Controls.MessageBox;
+using TextBlock = System.Windows.Controls.TextBlock;
 
 namespace FluentKursovayaAvtoparkA.Views.Pages
 {
@@ -60,25 +58,15 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                         Text = ex.Message,
                         TextWrapping = TextWrapping.Wrap,
                     },
-                    ButtonLeftName = "OK",
-                    ButtonRightName = "Отмена",
+                    
                     Width = 800,
                     Height = 300,
 
                 };
-                uiMessageBox.ButtonLeftClick += (s, e) =>
-                {
-
-                    uiMessageBox.Close();
-                };
-                uiMessageBox.ButtonRightClick += (s, e) =>
-                {
-
-                    uiMessageBox.Close();
-                };
+               
 
 
-                uiMessageBox.ShowDialog();
+                uiMessageBox.ShowDialogAsync();
             }
         }
 
@@ -118,25 +106,15 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                         Text = ex.Message,
                         TextWrapping = TextWrapping.Wrap,
                     },
-                    ButtonLeftName = "OK",
-                    ButtonRightName = "Отмена",
+                    
                     Width = 800,
                     Height = 300,
 
                 };
-                uiMessageBox.ButtonLeftClick += (s, e) =>
-                {
-
-                    uiMessageBox.Close();
-                };
-                uiMessageBox.ButtonRightClick += (s, e) =>
-                {
-
-                    uiMessageBox.Close();
-                };
+                
 
 
-                uiMessageBox.ShowDialog();
+                uiMessageBox.ShowDialogAsync();
             }
         }
 
@@ -176,25 +154,15 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                         Text = ex.Message,
                         TextWrapping = TextWrapping.Wrap,
                     },
-                    ButtonLeftName = "OK",
-                    ButtonRightName = "Отмена",
+                   
                     Width = 800,
                     Height = 300,
 
                 };
-                uiMessageBox.ButtonLeftClick += (s, e) =>
-                {
-
-                    uiMessageBox.Close();
-                };
-                uiMessageBox.ButtonRightClick += (s, e) =>
-                {
-
-                    uiMessageBox.Close();
-                };
+               
 
 
-                uiMessageBox.ShowDialog();
+                uiMessageBox.ShowDialogAsync();
             }
         }
 

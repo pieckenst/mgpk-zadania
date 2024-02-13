@@ -6,7 +6,7 @@ using System;
 using System.Drawing;
 using System.Windows;
 using System.Windows.Controls;
-
+using FluentKursovayaAvtoparkA.Views.Pages;
 using MessageBox = Wpf.Ui.Controls.MessageBox;
 
 namespace FluentKursovayaAvtoparkA.Services
@@ -557,25 +557,15 @@ namespace FluentKursovayaAvtoparkA.Services
                         Text = ex.Message,
                         TextWrapping = TextWrapping.Wrap,
                     },
-                    ButtonLeftName = "OK",
-                    ButtonRightName = "Отмена",
+                    
                     Width = 800,
                     Height = 300,
 
                 };
-                uiMessageBox.ButtonLeftClick += (s, e) =>
-                {
-
-                    uiMessageBox.Close();
-                };
-                uiMessageBox.ButtonRightClick += (s, e) =>
-                {
-
-                    uiMessageBox.Close();
-                };
+                
 
 
-                uiMessageBox.ShowDialog();
+                uiMessageBox.ShowDialogAsync();
             }
         }
 
@@ -1237,25 +1227,14 @@ namespace FluentKursovayaAvtoparkA.Services
                         Text = ex.Message,
                         TextWrapping = TextWrapping.Wrap,
                     },
-                    ButtonLeftName = "OK",
-                    ButtonRightName = "Отмена",
                     Width = 800,
                     Height = 300,
 
                 };
-                uiMessageBox.ButtonLeftClick += (s, e) =>
-                {
-
-                    uiMessageBox.Close();
-                };
-                uiMessageBox.ButtonRightClick += (s, e) =>
-                {
-
-                    uiMessageBox.Close();
-                };
+                
 
 
-                uiMessageBox.ShowDialog();
+                uiMessageBox.ShowDialogAsync();
             }
 
         }

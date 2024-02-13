@@ -5,8 +5,6 @@
 
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Wpf.Ui.Controls;
 using FluentKursovayaAvtoparkA.Views.Pages;
@@ -17,45 +15,23 @@ namespace FluentKursovayaAvtoparkA.ViewModels.Windows;
 public partial class MainWindowViewModel : ObservableObject
 {
     [ObservableProperty]
-    private string _applicationTitle = "WPF UI Gallery";
+    private string _applicationTitle = "Автопарк Автобусов";
 
     [ObservableProperty]
-    private ICollection<object> _menuItems = new ObservableCollection<object>
+     private ICollection<object> _menuItems = new ObservableCollection<object>
     {
-        new NavigationViewItem()
-        {
-            Content = "Информация о сотрудниках",
-            PageTag = "dashboard",
-            Icon = SymbolRegular.Person24,
-            PageType = typeof(Views.Pages.DashboardPage)
-        },
-        new NavigationItem()
-        {
-            Content = "Продажа билетов",
-            PageTag = "ticketsale",
-            Icon = SymbolRegular.TicketDiagonal24,
-            PageType = typeof(Views.Pages.TicketPage)
-        },
-        new NavigationItem()
-        {
-            Content = "Информация о маршрутах",
-            PageTag = "transportroutes",
-            Icon = SymbolRegular.VehicleBus24,
-            PageType = typeof(Views.Pages.DataPage)
-        },
-        new NavigationItem()
-        {
-            Content = "Состояние Автобусного Парка",
-            PageTag = "transportstatus",
-            Icon = SymbolRegular.Wrench24,
-            PageType = typeof(Views.Pages.MaintenancePage)
-        }
+        new NavigationViewItem("Информация о сотрудниках", SymbolRegular.Person24, typeof(DashboardPage)),
+        new NavigationViewItem("Продажа билетов", SymbolRegular.TicketDiagonal24, typeof(TicketPage)),
+        new NavigationViewItem("Информация о маршрутах", SymbolRegular.VehicleBus24, typeof(DataPage)),
+        new NavigationViewItem("Состояние Автобусного Парка", SymbolRegular.Wrench24, typeof(MaintenancePage)),
+
+        
     };
 
     [ObservableProperty]
     private ICollection<object> _footerMenuItems = new ObservableCollection<object>()
     {
-        new NavigationViewItem("Settings", SymbolRegular.Settings24, typeof(SettingsPage))
+        new NavigationViewItem("Настройки", SymbolRegular.Settings24, typeof(SettingsPage))
     };
 
     [ObservableProperty]

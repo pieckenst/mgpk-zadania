@@ -1,15 +1,8 @@
-﻿using FastReport;
-using FastReport.Data;
-using FastReport.Export.PdfSimple;
-using FastReport.Utils;
-using MsgBoxEx;
-using SQLServerLoginTemplate;
-using System;
-using System.Drawing;
+﻿using SQLServerLoginTemplate;
 using System.Windows;
-using System.Windows.Controls;
-using Wpf.Ui.Common.Interfaces;
+using Wpf.Ui.Controls;
 using MessageBox = Wpf.Ui.Controls.MessageBox;
+using TextBlock = System.Windows.Controls.TextBlock;
 
 namespace FluentKursovayaAvtoparkA.Views.Pages
 {
@@ -21,14 +14,12 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
         public static string a;
         public static string formations = "server=localhost;Initial Catalog=KursovayaAvtoparkAvtobusov;User ID=sa;Password=ctrt55xx;";
         public static string exporttheme = "theme_dark";
-        public ViewModels.SettingsViewModel ViewModel
-        {
-            get;
-        }
+        public ViewModels.SettingsViewModel ViewModel { get; }
 
         public SettingsPage(ViewModels.SettingsViewModel viewModel)
         {
             ViewModel = viewModel;
+            DataContext = this;
 
             InitializeComponent();
         }
@@ -51,13 +42,12 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                     Text = "Вы хотите использовать значение по умолчанию или открыть панель настроек?",
                     TextWrapping = TextWrapping.Wrap,
                 },
-                ButtonLeftName = "Открыть панель настроек",
-                ButtonRightName = "Использовать значение по умолчанию",
+                
                 Width = 800,
                 Height = 200,
 
             };
-            uiMessageBox.ButtonLeftClick += (s, e) =>
+            /*uiMessageBox.ButtonLeftClick += (s, e) =>
             {
 
                 System.Windows.Forms.Application.EnableVisualStyles();
@@ -79,10 +69,10 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
             {
                 formations= "server=localhost;Initial Catalog=KursovayaAvtoparkAvtobusov;User ID=sa;Password=ctrt55xx;";
                 uiMessageBox.Close();
-            };
+            };*/
 
 
-            uiMessageBox.ShowDialog();
+            uiMessageBox.ShowDialogAsync();
             
         }
 

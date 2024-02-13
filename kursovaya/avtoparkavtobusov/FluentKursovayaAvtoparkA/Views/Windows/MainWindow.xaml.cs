@@ -7,42 +7,59 @@ using System;
 using System.Windows;
 using Wpf.Ui.Controls;
 using FluentKursovayaAvtoparkA.Services.Contracts;
-using FluentKursovayaAvtoparkA.ViewModels;
 using FluentKursovayaAvtoparkA.ViewModels.Windows;
+using FluentKursovayaAvtoparkA.Views.Pages;
 using Wpf.Ui;
 using Wpf.Ui.Appearance;
 
 namespace FluentKursovayaAvtoparkA.Views.Windows;
 
-public partial class MainWindow : IWindow
+public partial class MainWindow : INavigationWindow
 {
-    public MainWindow(
-        MainWindowViewModel viewModel,
-        INavigationService navigationService,
-        IServiceProvider serviceProvider,
-        ISnackbarService snackbarService,
-        IContentDialogService contentDialogService
-    )
-    {
-        SystemThemeWatcher.Watch(this);
-
-        ViewModel = viewModel;
-        DataContext = this;
-
-        InitializeComponent();
-
-        snackbarService.SetSnackbarPresenter(SnackbarPresenter);
-        navigationService.SetNavigationControl(NavigationView);
-        contentDialogService.SetContentPresenter(RootContentDialog);
-
-        NavigationView.SetServiceProvider(serviceProvider);
-    }
-
-    public MainWindowViewModel ViewModel { get; }
-
+    public FluentKursovayaAvtoparkA.ViewModels.Windows.MainWindowViewModel ViewModel { get; }
     private bool _isUserClosedPane;
 
     private bool _isPaneOpenedOrClosedFromCode;
+
+
+    public MainWindow(
+        FluentKursovayaAvtoparkA.ViewModels.Windows.MainWindowViewModel viewModel,
+        IPageService pageService,
+        INavigationService navigationService
+    )
+    {
+        ViewModel = viewModel;
+        DataContext = this;
+
+        SystemThemeWatcher.Watch(this);
+
+        InitializeComponent();
+        SetPageService(pageService);
+
+        navigationService.SetNavigationControl(NavigationView);
+    }
+
+    #region INavigationWindow methods
+
+    public INavigationView GetNavigation() => NavigationView;
+
+    public bool Navigate(Type pageType) => NavigationView.Navigate(pageType);
+    public void SetServiceProvider(IServiceProvider serviceProvider)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void SetPageService(IPageService pageService) => NavigationView.SetPageService(pageService);
+
+    public void ShowWindow() => Show();
+
+    public void CloseWindow() => Close();
+
+    #endregion INavigationWindow methods
+
+    /// <summary>
+    /// Raises the closed event.
+    /// </summary>
 
     private void OnNavigationSelectionChanged(object sender, RoutedEventArgs e)
     {

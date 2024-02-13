@@ -7,6 +7,7 @@ using System.IO;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Threading;
+using FluentKursovayaAvtoparkA.Services.Contracts;
 using Wpf.Ui;
 
 namespace FluentKursovayaAvtoparkA
@@ -43,7 +44,7 @@ namespace FluentKursovayaAvtoparkA
 
                 // Main window with navigation
                 services.AddScoped<INavigationWindow, Views.Windows.MainWindow>();
-                services.AddScoped<ViewModels.MainWindowViewModel>();
+                services.AddScoped<FluentKursovayaAvtoparkA.ViewModels.Windows.MainWindowViewModel>();
 
                 // Views and ViewModels
                 services.AddScoped<Views.Pages.DashboardPage>();

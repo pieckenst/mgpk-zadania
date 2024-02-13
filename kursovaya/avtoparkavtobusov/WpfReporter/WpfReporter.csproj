@@ -16,6 +16,9 @@
 
 	
 	<BaseIntermediateOutputPath>\obj</BaseIntermediateOutputPath>
+
+	
+	<LangVersion>12</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove=".gitignore" />

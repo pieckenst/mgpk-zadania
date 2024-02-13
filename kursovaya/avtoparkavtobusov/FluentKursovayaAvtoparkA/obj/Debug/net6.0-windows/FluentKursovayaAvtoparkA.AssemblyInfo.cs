@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FluentKursovayaAvtoparkA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce788d7dd866d62d20bfe02a73df3599fafb0a1f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14ff220e5391508571f2423d74903d971b59cdb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluentKursovayaAvtoparkA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluentKursovayaAvtoparkA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
