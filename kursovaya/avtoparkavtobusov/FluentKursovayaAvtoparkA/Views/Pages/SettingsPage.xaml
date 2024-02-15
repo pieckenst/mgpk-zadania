@@ -85,6 +85,5 @@
 		<TextBlock Margin="0,20,0,0" Text="ПО-455"  />
 		<TextBlock Margin="0,20,0,0" Text="Учащийся"   />
 		<TextBlock Margin="0,20,0,0" Text="Савич Андрей Олегович"  />
-        <ContentPresenter x:Name="RootContentDialog" Grid.Row="0" />
     </StackPanel>
 </Page>

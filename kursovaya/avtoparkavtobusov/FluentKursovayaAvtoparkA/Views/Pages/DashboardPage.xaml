@@ -17,38 +17,39 @@
 
 
 
-        <DataGrid x:Name="dataGrid1" Margin="338,5,1,53" >
+        <DataGrid x:Name="dataGrid1" Margin="379,37,10,308" >
 
         </DataGrid>
         <ui:Button x:Name="XdbSend" Content="Отправить данные в БД" Margin="13,424,0,0" VerticalAlignment="Top"
                 Height="40" Width="253" Click="Button_Click" />
         <ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="13,525,0,0" VerticalAlignment="Top" Width="253"
                 Click="UpdateGrid_Click" Height="41" />
-        <TextBlock x:Name="Labos1" Text="Num" HorizontalAlignment="Left" Margin="14,44,0,0" VerticalAlignment="Top" />
-        <TextBlock x:Name="Labos2" Text="Surname" HorizontalAlignment="Left" Margin="14,141,0,0" VerticalAlignment="Top" />
-        <TextBlock x:Name="Labos3" Text="Name" HorizontalAlignment="Left" Margin="16,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.461,1.182" />
-        <TextBlock x:Name="Labos4" Text="Patronym" HorizontalAlignment="Left" Margin="16,179,0,0"
+        <TextBlock x:Name="Labos1" Text="Ключ(Num)" HorizontalAlignment="Left" Margin="14,44,0,0" VerticalAlignment="Top" />
+        <TextBlock x:Name="Labos2" Text="Фамилия(Surname)" HorizontalAlignment="Left" Margin="14,141,0,0" VerticalAlignment="Top" />
+        <TextBlock x:Name="Labos3" Text="Имя(Name)" HorizontalAlignment="Left" Margin="16,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.461,1.182" />
+        <TextBlock x:Name="Labos4" Text="Отчество(Patronym)" HorizontalAlignment="Left" Margin="16,179,0,0"
                VerticalAlignment="Top" />
-        <TextBlock x:Name="Labos5" Text="Employed_Since" HorizontalAlignment="Left" Margin="10,269,0,0"
+        <TextBlock x:Name="Labos5" Text="Работает С Числа(Employed_Since)" HorizontalAlignment="Left" Margin="10,269,0,0"
                VerticalAlignment="Top" />
-        <TextBlock x:Name="Labos6" Text="Job" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" />
-        <TextBlock x:Name="Labos7" Text="Internship" HorizontalAlignment="Left" Margin="13,223,0,0"
+        <TextBlock x:Name="Labos6" Text="Номер Должности(Job_Num)" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" />
+        <TextBlock x:Name="Labos7" Text="Стажировка(Internship)" HorizontalAlignment="Left" Margin="13,223,0,0"
                VerticalAlignment="Top" RenderTransformOrigin="-5.684,0.629" />
-        <TextBox x:Name="Exed1" HorizontalAlignment="Left" Margin="121,37,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Exed1"  HorizontalAlignment="Left" Margin="121,37,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed1_MouseDown" />
-        <TextBox x:Name="Exed3" HorizontalAlignment="Left" Margin="121,215,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed3_MouseDown" />
-        <TextBox x:Name="Exed2" HorizontalAlignment="Left" Margin="121,171,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed2_MouseDown" />
-        <TextBox x:Name="Exed4" HorizontalAlignment="Left" Margin="121,78,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed4_MouseDown" />
-        <TextBox x:Name="Exed6" HorizontalAlignment="Left" Margin="121,0,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Center" Width="120" MouseDoubleClick="Exed6_MouseDown" />
-        <TextBox x:Name="Exed5" HorizontalAlignment="Left" Margin="121,260,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Exed5" HorizontalAlignment="Left" Margin="181,211,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed5_MouseDown" />
-        <TextBox x:Name="Exed7" HorizontalAlignment="Left" Margin="121,125,0,0" TextWrapping="Wrap" Text="TextBox"
-                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed7_MouseDown" />
+        <TextBox x:Name="Exed4" HorizontalAlignment="Left" Margin="157,171,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed4_MouseDown" />
+        <TextBox x:Name="Exed2" HorizontalAlignment="Left" Margin="121,78,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed2_MouseDown" />
+        <TextBox x:Name="Exed7" HorizontalAlignment="Left" Margin="217,0,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Center" Width="120" MouseDoubleClick="Exed7_MouseDown" Cursor="IBeam" />
+        <TextBox x:Name="Exed6" HorizontalAlignment="Left" Margin="254,262,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed6_MouseDown" />
+        <TextBox x:Name="Exed3" HorizontalAlignment="Left" Margin="157,132,0,0" TextWrapping="Wrap" Text="TextBox"
+                 VerticalAlignment="Top" Width="120" MouseDoubleClick="Exed3_MouseDown" />
         <ui:Button x:Name="EmpUpdat" Content="Обновить данные" Margin="13,469,0,0" VerticalAlignment="Top" Width="253"
                 Height="41" Click="EmpUpdat_Click" />
+        <DataGrid x:Name="dataGrid2" Margin="379,365,10,69" />
     </Grid>
 </Page>

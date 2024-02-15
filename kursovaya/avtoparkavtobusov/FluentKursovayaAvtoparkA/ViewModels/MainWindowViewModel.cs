@@ -8,12 +8,26 @@ using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Wpf.Ui.Controls;
 using FluentKursovayaAvtoparkA.Views.Pages;
+using System;
+using Wpf.Ui.Appearance;
+using Wpf.Ui;
 
 
 namespace FluentKursovayaAvtoparkA.ViewModels.Windows;
 
 public partial class MainWindowViewModel : ObservableObject
 {
+    
+    private readonly IServiceProvider _serviceProvider;
+    public IContentDialogService _dialogService;
+    public MainWindowViewModel( IContentDialogService dialogService, IServiceProvider serviceProvider)
+    {
+        
+
+        _dialogService = dialogService;
+        //_snackbarService = snackbarService;
+        _serviceProvider = serviceProvider;
+    }
     [ObservableProperty]
     private string _applicationTitle = "Автопарк Автобусов";
 

@@ -243,5 +243,5 @@ C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKurs
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\FluentKursovayaAvtoparkA.pdb
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\FluentKursovayaAvtoparkA.genruntimeconfig.cache
 C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\ref\FluentKursovayaAvtoparkA.dll
-C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\Controls\TermsOfUseContentDialog.g.cs
-C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\Controls\TermsOfUseContentDialog.baml
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\Controls\CALLsqlconnectionsettingsContentDialog.g.cs
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\FluentKursovayaAvtoparkA\obj\Debug\net6.0-windows\Controls\CALLsqlconnectionsettingsContentDialog.baml

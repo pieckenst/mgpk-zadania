@@ -10,7 +10,7 @@
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
     Title="{Binding ViewModel.ApplicationTitle, Mode=OneWay}"
     Width="1450"
-    Height="802"
+    Height="815"
     MinWidth="900"
     d:DataContext="{d:DesignInstance local:MainWindow,
                                      IsDesignTimeCreatable=False}"
@@ -23,7 +23,9 @@
     WindowBackdropType="Mica"
     WindowCornerPreference="Default"
     WindowStartupLocation="CenterScreen"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Loaded="FluentWindow_Loaded"
+    >
 
     <ui:FluentWindow.InputBindings>
         <KeyBinding

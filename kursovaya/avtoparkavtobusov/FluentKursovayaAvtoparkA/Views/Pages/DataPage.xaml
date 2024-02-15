@@ -10,46 +10,46 @@
     Title="DataPage"
     d:DataContext="{d:DesignInstance local:DataPage,
                                      IsDesignTimeCreatable=False}"
-    d:DesignHeight="450"
-    d:DesignWidth="800"
+    d:DesignHeight="650"
+    d:DesignWidth="850"
     d:Background="{DynamicResource ApplicationBackgroundBrush}"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     mc:Ignorable="d">
 
     <Grid Margin="56,0">
-		<TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="116,23,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="255,14,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-		<TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="116,60,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="13,96,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-		<TextBlock x:Name="lb1" Text="Nomer_Marshuta" HorizontalAlignment="Left" Margin="10,30,0,0"
+        <TextBlock x:Name="lb1" Text="Номер Маршрута (Nomer_Marshuta)" HorizontalAlignment="Left" Margin="8,22,0,0"
                VerticalAlignment="Top" />
-		<TextBlock x:Name="Lb2" Text="Nachalni_Punkt" HorizontalAlignment="Left" Margin="13,67,0,0"
+        <TextBlock x:Name="Lb2" Text="Начальная Точка Маршрута (Nachalni_Punkt)" HorizontalAlignment="Left" Margin="13,67,0,0"
                VerticalAlignment="Top" />
-		<TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="116,94,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="21,165,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-		<TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="116,132,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="21,235,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-		<TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="116,169,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="10,297,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-		<TextBlock x:Name="lb3" Text="Konechni_Punkt" HorizontalAlignment="Left" Margin="12,100,0,0"
+        <TextBlock x:Name="lb3" Text="Конечная Остановка(Konechni_Punkt)" HorizontalAlignment="Left" Margin="12,142,0,0"
                VerticalAlignment="Top" />
-		<TextBlock x:Name="lb4" Text="Voditel" HorizontalAlignment="Left" Margin="13,139,0,0" VerticalAlignment="Top" />
-		<TextBlock x:Name="lb5" Text="Model_Avtobusa" HorizontalAlignment="Left" Margin="10,176,0,0"
+        <TextBlock x:Name="lb4" Text="Водитель(Voditel)" HorizontalAlignment="Left" Margin="13,205,0,0" VerticalAlignment="Top" />
+        <TextBlock x:Name="lb5" Text="Модель Автобуса(Model_Avtobusa)" HorizontalAlignment="Left" Margin="10,274,0,0"
                VerticalAlignment="Top" />
-		<TextBox x:Name="Edit6" HorizontalAlignment="Left" Margin="116,210,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit6" HorizontalAlignment="Left" Margin="12,359,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-		<TextBlock x:Name="lb6" Text="Vremya_Proezda" HorizontalAlignment="Left" Margin="8,217,0,0"
-               VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" />
-		
-		<DataGrid x:Name="dataGrid1" Margin="338,5,1,29" >
-			
-		</DataGrid>
-		<Button x:Name="UpdateTransportTable" Content="Обновить данные в БД" Margin="13,455,0,0"
-                VerticalAlignment="Top" Height="33" Width="218" Click="UpdateTransportTable_Click" Grid.Row="1" />
-		<Button x:Name="ClickSendDb" Content="Отправить данные в БД" Margin="15,411,0,0" VerticalAlignment="Top"
-                Height="33" Width="218" Click="Button_Click" Grid.Row="1" />
-		<ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="13,500,0,0" VerticalAlignment="Top" Width="253"
-                Click="UpdateGrid_Click" Height="41" />
-		
+        <TextBlock x:Name="lb6" Text="Время от начальной до конечной остановки(Vremya_Proezda)" HorizontalAlignment="Left" Margin="15,335,0,0"
+               VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" Height="24" Width="430" />
+
+        <DataGrid x:Name="dataGrid1" Margin="12,411,10,12" >
+
+        </DataGrid>
+        <Button x:Name="UpdateTransportTable" Content="Обновить данные в БД" Margin="493,76,0,0"
+                VerticalAlignment="Top" Height="33" Width="218" Click="UpdateTransportTable_Click" />
+        <Button x:Name="ClickSendDb" Content="Отправить данные в БД" Margin="493,22,0,0" VerticalAlignment="Top"
+                Height="33" Width="218" Click="Button_Click" />
+        <ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="493,126,27,0" VerticalAlignment="Top"
+                Click="UpdateGrid_Click" Height="41" Width="218" />
+
     </Grid>
 </Page>

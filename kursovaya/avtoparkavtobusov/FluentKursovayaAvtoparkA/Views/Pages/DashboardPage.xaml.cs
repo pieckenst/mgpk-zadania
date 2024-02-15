@@ -76,13 +76,13 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
             {
                 var Num = Exed1.Text;
                 var EmpName = Exed2.Text;
-                var EmpsName = Exed3.Text;
+                var EmpsurName = Exed3.Text;
                 var Emppat = Exed4.Text;
                 var EmpES = Exed5.Text;
                 var Emptitle = int.Parse(Exed6.Text);
                 var Empint = Exed7.Text;
                 var query = "INSERT INTO Employees(Num, Surname, Name, Patronym,Employed_Since,Job_Num) " +
-                            "Values('" + Num + "', '" + EmpName + "', '" + EmpsName + "', '" + Emppat + "','" + EmpES +
+                            "Values('" + Num + "', '" + EmpName + "', '" + EmpsurName + "', '" + Emppat + "','" + EmpES +
                             "','" + Emptitle  + "')";
                 SqlConnection cnn;
                 var conStr = SettingsPage.formations;
@@ -120,6 +120,14 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
 
         private void EmpUpdat_Click(object sender, RoutedEventArgs e)
         {
+
+            var Num = Exed1.Text;
+            var EmpName = Exed2.Text;
+            var EmpsurName = Exed3.Text;
+            var Emppat = Exed4.Text;
+            var EmpES = Exed6.Text;
+            var Emptitle = Exed6.Text;
+            var Empint = Exed7.Text;
             try
             {
                 SqlConnection cnn;
@@ -131,13 +139,13 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 var select =
                     "UPDATE Employees SET Surname=@a1,Name=@a2,Patronym=@a3,Employed_Since=@a4,Job_Num=@a5 WHERE Num=@a7";
                 var commandBuilder = new SqlCommand(select, cnn);
-                commandBuilder.Parameters.AddWithValue("a1", Exed2.Text);
-                commandBuilder.Parameters.AddWithValue("a2", Exed3.Text);
-                commandBuilder.Parameters.AddWithValue("a3", Exed4.Text);
-                commandBuilder.Parameters.AddWithValue("a4", Exed5.Text);
-                commandBuilder.Parameters.AddWithValue("a5", int.Parse(Exed6.Text));
+                commandBuilder.Parameters.AddWithValue("a1",EmpsurName);
+                commandBuilder.Parameters.AddWithValue("a2", EmpName);
+                commandBuilder.Parameters.AddWithValue("a3", Emppat);
+                commandBuilder.Parameters.AddWithValue("a4", EmpES);
+                commandBuilder.Parameters.AddWithValue("a5", Empint);
                 
-                commandBuilder.Parameters.AddWithValue("a7", int.Parse(Exed1.Text));
+                commandBuilder.Parameters.AddWithValue("a7", int.Parse(Num));
                 commandBuilder.ExecuteNonQuery();
                 Console.WriteLine("Connection established and the table updated!");
                 cnn.Close();

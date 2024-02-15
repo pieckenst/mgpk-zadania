@@ -5,12 +5,14 @@
 
 using System;
 using System.Windows;
+using System.Windows.Controls;
 using Wpf.Ui.Controls;
 using FluentKursovayaAvtoparkA.Services.Contracts;
 using FluentKursovayaAvtoparkA.ViewModels.Windows;
 using FluentKursovayaAvtoparkA.Views.Pages;
 using Wpf.Ui;
 using Wpf.Ui.Appearance;
+using FluentKursovayaAvtoparkA.Controls;
 
 namespace FluentKursovayaAvtoparkA.Views.Windows;
 
@@ -20,25 +22,41 @@ public partial class MainWindow : INavigationWindow
     private bool _isUserClosedPane;
 
     private bool _isPaneOpenedOrClosedFromCode;
+    public static FluentKursovayaAvtoparkA.ViewModels.Windows.MainWindowViewModel ViewModelexport { get; set; }
+    //public static ContentPresenter ContentPresenterexport { get; set; }
 
 
     public MainWindow(
         FluentKursovayaAvtoparkA.ViewModels.Windows.MainWindowViewModel viewModel,
         IPageService pageService,
-        INavigationService navigationService
+        INavigationService navigationService,
+        IServiceProvider serviceProvider, 
+       //ISnackbarService snackbarService,
+        IContentDialogService contentDialogService
     )
     {
         ViewModel = viewModel;
+        ViewModelexport = viewModel;
         DataContext = this;
+        
+
+
 
         SystemThemeWatcher.Watch(this);
 
         InitializeComponent();
+        //navigationService.SetNavigationControl(NavigationView);
+        ViewModel._dialogService.SetContentPresenter(RootContentDialog);
+
         SetPageService(pageService);
+        //NavigationView.SetServiceProvider(serviceProvider);
 
-        navigationService.SetNavigationControl(NavigationView);
+        
+        //_snackbarService = snackbarService;
+       // _serviceProvider = serviceProvider;
     }
-
+    
+ 
     #region INavigationWindow methods
 
     public INavigationView GetNavigation() => NavigationView;
@@ -104,5 +122,12 @@ public partial class MainWindow : INavigationWindow
         }
 
         _isUserClosedPane = true;
+    }
+
+    public async void FluentWindow_Loaded(object sender, RoutedEventArgs e)
+    {
+        var termsOfUseContentDialog = new CallSQLConnectionSettingsContentDialog(ViewModel._dialogService.GetContentPresenter(), ViewModel);
+
+        _ = await termsOfUseContentDialog.ShowAsync();
     }
 }

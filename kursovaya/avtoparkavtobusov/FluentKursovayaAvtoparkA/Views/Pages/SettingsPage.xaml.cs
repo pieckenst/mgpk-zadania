@@ -12,6 +12,8 @@ using Wpf.Ui.Controls;
 using Wpf.Ui;
 using Wpf.Ui.Extensions;
 using FluentKursovayaAvtoparkA.Controls;
+using FluentKursovayaAvtoparkA.ViewModels.Windows;
+using FluentKursovayaAvtoparkA.Views.Windows;
 
 namespace FluentKursovayaAvtoparkA.Views.Pages
 {
@@ -47,12 +49,9 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
         }
 
         [RelayCommand]
-        public async Task OnShowSignInContentDialog()
+        public async Task OnShowSignInContentDialog(MainWindowViewModel  ViewModel)
         {
             
-            var termsOfUseContentDialog = new TermsOfUseContentDialog(contentDialogService.GetContentPresenter());
-
-            _ = await termsOfUseContentDialog.ShowAsync();
         }
     }
 
@@ -89,11 +88,18 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
         {
             try
             {
+                Console.WriteLine("В процессе разработки");
+                
                 ContentDialogService servics = new ContentDialogService();
-                servics.SetContentPresenter(RootContentDialog);
-                ContentDialogViewModel dialoger = new ContentDialogViewModel(servics);
-                await dialoger.OnShowSignInContentDialog();
 
+              
+                   // ContentPresenter fcontentpresenter = MainWindow.ContentPresenterexport;
+                
+               
+                   // var termsOfUseContentDialog = new CallSQLConnectionSettingsContentDialog(fcontentpresenter,MainWindow.ViewModelexport);
+
+                    //_ = await termsOfUseContentDialog.ShowAsync();
+                
             }
             catch (Exception exception)
             {
