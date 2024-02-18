@@ -21,40 +21,40 @@
             <ColumnDefinition Width="223*"/>
             <ColumnDefinition Width="515*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="33,177,0,0" TextWrapping="Wrap" Text="TextBox"
-             VerticalAlignment="Top" Width="190" />
-        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="20,178,0,0" TextWrapping="Wrap" Text="TextBox"
-             VerticalAlignment="Top" Width="190" Grid.Column="1" />
-        <TextBlock x:Name="lb1" Text="Номер(Num)" HorizontalAlignment="Left" Margin="25,155,0,0"
+        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="33,209,0,0" TextWrapping="Wrap" Text="TextBox"
+             VerticalAlignment="Top" MouseDoubleClick="Edit1_MouseDown" Width="190" />
+        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="20,210,0,0" TextWrapping="Wrap" Text="TextBox"
+             VerticalAlignment="Top" Width="190" MouseDoubleClick="Edit2_MouseDown" Grid.Column="1" />
+        <TextBlock x:Name="lb1" Text="Номер(Num)" HorizontalAlignment="Left" Margin="25,187,0,0"
            VerticalAlignment="Top" />
-        <TextBlock x:Name="Lb2" Text="Дата Продажи(Sale_Date)" HorizontalAlignment="Left" Margin="18,159,0,0"
+        <TextBlock x:Name="Lb2" Text="Дата Продажи(Sale_Date)" HorizontalAlignment="Left" Margin="18,191,0,0"
            VerticalAlignment="Top" Grid.Column="1" />
-        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="33,237,0,0" TextWrapping="Wrap" Text="TextBox"
-             VerticalAlignment="Top" Width="190" Cursor="IBeam" />
-        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="33,300,0,0" TextWrapping="Wrap" Text="TextBox"
-             VerticalAlignment="Top" Width="190" />
-        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="33,364,0,0" TextWrapping="Wrap" Text="TextBox"
-             VerticalAlignment="Top" Width="190" />
+        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="33,272,0,0" TextWrapping="Wrap" Text="TextBox"
+             VerticalAlignment="Top" Width="190" MouseDoubleClick="Edit3_MouseDown" Cursor="IBeam" />
+        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="33,332,0,0" TextWrapping="Wrap" Text="TextBox"
+             VerticalAlignment="Top" Width="190" MouseDoubleClick="Edit4_MouseDown"/>
+        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="20,332,0,0" TextWrapping="Wrap" Text="TextBox"
+             VerticalAlignment="Top" Width="190" MouseDoubleClick="Edit5_MouseDown" Grid.Column="1" />
         <TextBox x:Name="Edit6" HorizontalAlignment="Left"  TextWrapping="Wrap"
-                 Text="TextBox" Width="94" MouseDoubleClick="Edit5_MouseDown" VerticalAlignment="Top" Grid.Column="1" Margin="19,237,0,0" />
-        <TextBlock x:Name="lb3" Text="Номер Билета(Nomer_Bileta)" HorizontalAlignment="Left" Margin="24,215,0,0"
+                 Text="TextBox" Width="94" MouseDoubleClick="Edit6_MouseDown" VerticalAlignment="Top" Grid.Column="1" Margin="19,272,0,0" />
+        <TextBlock x:Name="lb3" Text="Номер Билета(Nomer_Bileta)" HorizontalAlignment="Left" Margin="24,250,0,0"
            VerticalAlignment="Top" />
-        <TextBlock x:Name="lb4" Text="Номер Билета(Nomer_BiletaKey)" HorizontalAlignment="Left" Margin="25,272,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" />
-        <TextBlock x:Name="lb6" Text="Стоимость Билета(Stoimost)" HorizontalAlignment="Left" Margin="20,215,0,0"
+        <TextBlock x:Name="lb4" Text="Номер Билета(Nomer_BiletaKey)" HorizontalAlignment="Left" Margin="25,312,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <TextBlock x:Name="lb6" Text="Стоимость Билета(Stoimost)" HorizontalAlignment="Left" Margin="20,250,0,0"
            VerticalAlignment="Top" Grid.Column="1" />
 
         <DataGrid x:Name="dataGrid1" Margin="12,418,10,20" Grid.ColumnSpan="2" >
 
         </DataGrid>
-        <Button x:Name="UpdateTable" Content="Обновить данные в БД" Margin="270,238,0,0"
-            VerticalAlignment="Top" Height="33" Width="218" Click="SaleUpdateDB_Click" Grid.Column="1" />
-        <Button x:Name="ClickSendDb" Content="Отправить данные в БД" Margin="270,184,0,0" VerticalAlignment="Top"
-            Height="33" Width="218" Click="Button_Click" Grid.Column="1" />
-        <ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="270,288,0,0" VerticalAlignment="Top"
-            Click="UpdateGrid_Click" Height="41" Width="218" Grid.Column="1" />
-        <DataGrid x:Name="dataGrid2" Margin="12,10,10,513" Grid.ColumnSpan="2" />
-        <TextBlock x:Name="lb5" Text="Номер Маршрута(Nomer_MarshutaKey)" HorizontalAlignment="Left" Margin="27,340,0,0"
-            VerticalAlignment="Top" Grid.ColumnSpan="2" Width="273" />
+        <Button x:Name="UpdateTable" Content="Обновить данные в БД" Margin="293,238,0,0"
+            VerticalAlignment="Top" Height="33" Width="195" Click="SaleUpdateDB_Click" Grid.Column="1" />
+        <Button x:Name="ClickSendDb" Content="Отправить данные в БД" Margin="293,198,0,0" VerticalAlignment="Top"
+            Height="33" Width="195" Click="Button_Click" Grid.Column="1" />
+        <ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="293,279,0,0" VerticalAlignment="Top"
+            Click="UpdateGrid_Click" Height="41" Width="195" Grid.Column="1" />
+        <DataGrid x:Name="dataGrid2" Margin="12,10,10,532" Grid.ColumnSpan="2" />
+        <TextBlock x:Name="lb5" Text="Номер Маршрута(Nomer_MarshutaKey)" HorizontalAlignment="Left" Margin="20,312,0,0"
+            VerticalAlignment="Top" Width="273" Grid.Column="1" />
 
     </Grid>
 </Page>

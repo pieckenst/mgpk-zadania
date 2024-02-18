@@ -10,49 +10,54 @@
     Title="DataPage"
     d:DataContext="{d:DesignInstance local:DataPage,
                                      IsDesignTimeCreatable=False}"
-    d:DesignHeight="450"
-    d:DesignWidth="800"
+    d:DesignHeight="650"
+    d:DesignWidth="850"
     d:Background="{DynamicResource ApplicationBackgroundBrush}"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     mc:Ignorable="d">
 
     <Grid Margin="56,0">
-        <DataGrid x:Name="dataGrid1" Margin="338,5,1,53">
-            
+        <DataGrid x:Name="dataGrid1" Margin="10,553,10,10">
+
         </DataGrid>
-        <ui:Button x:Name="XdbSend" Content="Отправить данные в БД" Margin="12,376,0,0" VerticalAlignment="Top"
-                Height="32" Width="200" Click="Button_Click" />
-        <ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="12,342,0,0" VerticalAlignment="Top" Width="200"
-                Click="UpdateGrid_Click" />
-        <TextBlock x:Name="Labos1" Text="Num" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.843,2.204" />
-        <TextBox x:Name="AvEditor1" HorizontalAlignment="Left" Margin="137,0,0,0" TextWrapping="Wrap" Text="TextBox"
+        <ui:Button x:Name="XdbSend" Content="Отправить данные в БД" Margin="448,240,0,0" VerticalAlignment="Top"
+        Height="40" Width="253" Click="Button_Click" />
+        <ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="448,346,0,0" VerticalAlignment="Top" Width="253"
+        Click="UpdateGrid_Click" Height="40" />
+        <TextBlock x:Name="Labos1" Text="Номер(Num)" HorizontalAlignment="Left" Margin="8,227,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.843,2.204" />
+        <TextBox x:Name="AvEditor1" HorizontalAlignment="Left" Margin="8,250,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="156" MouseDoubleClick="AvEditor1_MouseDown" />
-        <TextBox x:Name="AvEditor2" HorizontalAlignment="Left" Margin="137,46,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="AvEditor2" HorizontalAlignment="Left" Margin="171,256,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="156" MouseDoubleClick="AvEditor2_MouseDown" />
-        <TextBox x:Name="AvEditor3" HorizontalAlignment="Left" Margin="137,88,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="AvEditor3" HorizontalAlignment="Left" Margin="16,334,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="156" MouseDoubleClick="AvEditor3_MouseDown" />
-        <TextBox x:Name="AvEditor4" HorizontalAlignment="Left" Margin="137,137,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="AvEditor4" HorizontalAlignment="Left" Margin="248,336,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="156" MouseDoubleClick="AvEditor4_MouseDown" />
-        <TextBox x:Name="AvEditor5" HorizontalAlignment="Left" Margin="137,184,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="AvEditor5" HorizontalAlignment="Left" Margin="14,414,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="156" MouseDoubleClick="AvEditor5_MouseDown" />
-        <TextBox x:Name="AvEditor6" HorizontalAlignment="Left" Margin="137,236,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="AvEditor6" HorizontalAlignment="Left" Margin="175,415,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="156" MouseDoubleClick="AvEditor6_MouseDown" />
-        <TextBox x:Name="AvEditor7" HorizontalAlignment="Left" Margin="137,280,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="AvEditor7" HorizontalAlignment="Left" Margin="14,508,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="122" MouseDoubleClick="AvEditor7_MouseDown" Height="35" />
-        <TextBlock x:Name="Labos2" Text="Model_Avtobusa" HorizontalAlignment="Left" Margin="10,55,0,0"
-               VerticalAlignment="Top" />
-        <TextBlock x:Name="Labos3" Text="Last_Maintenance" HorizontalAlignment="Left" Margin="10,95,0,0"
-               VerticalAlignment="Top" FontSize="14" />
-        <TextBlock x:Name="Labos4" Text="Ingener_Obsluzhivania" HorizontalAlignment="Left" Margin="10,141,0,0"
-               VerticalAlignment="Top" />
-        <TextBlock x:Name="Labos5" Text="Problemi_Avtobusa" HorizontalAlignment="Left" Margin="10,184,0,0"
-               VerticalAlignment="Top" />
-        <TextBlock x:Name="Labos6" Text="Next_Maintenance" HorizontalAlignment="Left" Margin="10,236,0,0"
-               VerticalAlignment="Top" FontSize="14" Width="122" />
-        <TextBlock x:Name="Labos7" Text="Goden_K_Doroge" HorizontalAlignment="Left" Margin="10,280,0,0"
-               VerticalAlignment="Top" />
-        <ui:Button x:Name="UpdateMaintenaceTable" Content="Обновить данные о обслуживании автобусов" Margin="10,414,0,0"
-                VerticalAlignment="Top" Height="32" Width="253" Click="UpdateMaintenaceTable_Click" FontSize="10" />
+        <TextBlock x:Name="Labos2" TextWrapping="WrapWithOverflow"  Text="Номер Модели Автобуса(Model_AvtobusaKey)" HorizontalAlignment="Left" Margin="171,219,0,0"
+               VerticalAlignment="Top" Height="41" Width="238" />
+        <TextBlock x:Name="Labos3" TextWrapping="WrapWithOverflow"  Text="Дата последнего обслуживания(Data_Poslednego_Obsluzhivania)" HorizontalAlignment="Left" Margin="14,294,0,0"
+               VerticalAlignment="Top" FontSize="14" Height="39" Width="218" />
+        <TextBlock x:Name="Labos4" TextWrapping="WrapWithOverflow"  Text="Инженер(Ingener_Obsluzhivania)" HorizontalAlignment="Left" Margin="248,296,0,0"
+               VerticalAlignment="Top" Height="41" Width="200" />
+        <TextBlock x:Name="Labos5" TextWrapping="WrapWithOverflow"  Text="Проблемы Автобуса(Problemi_Avtobusa)" HorizontalAlignment="Left" Margin="14,374,0,0"
+               VerticalAlignment="Top" Height="41" Width="156" />
+        <TextBlock x:Name="Labos6" TextWrapping="WrapWithOverflow"  Text="Дата Следующего Обслуживания(Data_Sledueschego_Obsluzivania)" HorizontalAlignment="Left" Margin="173,378,0,0"
+               VerticalAlignment="Top" FontSize="14" Width="236" />
+        <TextBlock x:Name="Labos7" TextWrapping="WrapWithOverflow" Text="Годен к дороге(Goden_K_Doroge)" HorizontalAlignment="Left" Margin="16,463,0,0"
+               VerticalAlignment="Top" Height="42" Width="159" />
+        <ui:Button x:Name="UpdateMaintenaceTable" Content="Обновить данные в БД" Margin="448,293,0,0"
+                VerticalAlignment="Top" Height="42" Width="253" Click="UpdateMaintenaceTable_Click" FontSize="10" />
+        <DataGrid x:Name="dataGrid2" Margin="10,10,10,536"/>
+        <TextBox x:Name="AvEditor8" HorizontalAlignment="Left" Margin="175,498,0,0" TextWrapping="Wrap" Text="TextBox"
+            VerticalAlignment="Top" Width="122" MouseDoubleClick="AvEditor7_MouseDown" Height="35" />
+        <TextBlock x:Name="Labos8" Text="Наименование модели автобуса(Model_Avtobusa)" HorizontalAlignment="Left" Margin="175,474,0,0"
+            VerticalAlignment="Top" />
 
     </Grid>
 </Page>

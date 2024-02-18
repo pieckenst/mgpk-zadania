@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using SQLServerLoginTemplate;
 using System.Windows;
@@ -14,6 +15,7 @@ using Wpf.Ui.Extensions;
 using FluentKursovayaAvtoparkA.Controls;
 using FluentKursovayaAvtoparkA.ViewModels.Windows;
 using FluentKursovayaAvtoparkA.Views.Windows;
+using Wpf.Ui.Appearance;
 
 namespace FluentKursovayaAvtoparkA.Views.Pages
 {
@@ -107,6 +109,67 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 throw;
             }
             
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {   
+            ComboBoxItem typeItem = (ComboBoxItem)cmbSelect.SelectedItem;
+            string value = typeItem.Content.ToString();
+            var CurrentApplicationTheme = ApplicationThemeManager.GetAppTheme();
+            var selectedthemedef = CurrentApplicationTheme.ToString();
+            Console.WriteLine(selectedthemedef);
+            
+
+            
+            switch (value)
+            {
+                case "Темная":
+                    if (CurrentApplicationTheme != ApplicationTheme.Dark)
+                    {
+                        ApplicationThemeManager.Apply(ApplicationTheme.Dark);
+                        CurrentApplicationTheme = ApplicationTheme.Dark;
+                    }
+                    else
+                        break;
+                    
+                    break;
+                
+                case "Светлая":
+                    if (CurrentApplicationTheme != ApplicationTheme.Light)
+                    {
+                        ApplicationThemeManager.Apply(ApplicationTheme.Light);
+                        CurrentApplicationTheme = ApplicationTheme.Light;
+                    }
+                    else
+                        break;
+
+
+                    break;
+                
+                case "Высокий контраст":
+                    if (CurrentApplicationTheme != ApplicationTheme.HighContrast)
+                    {
+                        ApplicationThemeManager.Apply(ApplicationTheme
+                            .HighContrast);
+                        CurrentApplicationTheme = ApplicationTheme.HighContrast;
+                    }
+                    else
+                        break;
+
+
+                    break;
+
+                
+
+
+                    break;
+                default:
+                    ApplicationThemeManager.Apply(ApplicationTheme.Dark); 
+                    CurrentApplicationTheme = ApplicationTheme.Dark;
+                    
+                    
+                    break;
+            }
         }
     }
 }

@@ -14,9 +14,9 @@ internal sealed class ThemeToIndexConverter : IValueConverter
 {
     public object Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
-        if (value is ApplicationTheme.Dark)
+        if (value is ApplicationTheme.Light)
         {
-            return 1;
+            return 0;
         }
 
         if (value is ApplicationTheme.HighContrast)
@@ -24,14 +24,14 @@ internal sealed class ThemeToIndexConverter : IValueConverter
             return 2;
         }
 
-        return 0;
+        return 1;
     }
 
     public object ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
-        if (value is 1)
+        if (value is 0)
         {
-            return ApplicationTheme.Dark;
+            return ApplicationTheme.Light;
         }
 
         if (value is 2)
@@ -39,6 +39,6 @@ internal sealed class ThemeToIndexConverter : IValueConverter
             return ApplicationTheme.HighContrast;
         }
 
-        return ApplicationTheme.Light;
+        return ApplicationTheme.Dark;
     }
 }

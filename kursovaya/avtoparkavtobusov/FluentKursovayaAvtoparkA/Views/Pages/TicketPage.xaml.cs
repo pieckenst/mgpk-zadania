@@ -87,11 +87,15 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 var Stoimost = Edit6.Text;
                 var query = "INSERT INTO Prodazhi(Num, Sale_Date, Nomer_BiletaKey) " +
                             "Values('" + Num + "', '" + SaleDat + "', '" + NomBiltetaKey  + "')";
+                var query2 = "INSERT INTO Bilety(Nomer_Bileta, Nomer_MarshutaKey, Stoimost) " +
+                             "Values('" + Nomer_Biletaex + "', '" + Nomer_MarshutaKey + "', '" + Stoimost + "')";
                 SqlConnection cnn;
                 var conStr = SettingsPage.formations;
 
                 cnn = new SqlConnection(conStr);
                 cnn.Open();
+                var command2 = new SqlCommand(query2, cnn);
+                command2.ExecuteNonQuery();
                 var command = new SqlCommand(query, cnn);
                 command.ExecuteNonQuery();
                 Console.WriteLine("Data inserted!\n Closing connection ");
@@ -124,6 +128,12 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
 
         private void SaleUpdateDB_Click(object sender, RoutedEventArgs e)
         {
+            var Num = int.Parse(Edit1.Text);
+            var SaleDat = Edit2.Text;
+            var NomBiltetaKey = int.Parse(Edit3.Text);
+            var Nomer_Biletaex = Edit4.Text;
+            var Nomer_MarshutaKey = Edit5.Text;
+            var Stoimost = Edit6.Text;
             try
             {
                 SqlConnection cnn;
@@ -133,14 +143,19 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
                 cnn.Open();
                 Console.Write("OPENING DB CONNECTION!!! \n");
                 var querier =
-                    "UPDATE Prodazhi SET Sale_Date=@a1,Nomer_Avtobusa=@a2,Punkt_Posadki=@a3,Stoimost=@a4 WHERE Num=@a5";
+                    "UPDATE Prodazhi SET Sale_Date=@a1,Nomer_BiletaKey=@a2 WHERE Num=@a5";
+                var querier2 =
+                    "UPDATE Bilety SET Stoimost=@a4,Nomer_MarshutaKey=@a3 WHERE Nomer_Bileta=@a6";
                 var commandBuilder = new SqlCommand(querier, cnn);
-                commandBuilder.Parameters.AddWithValue("a1", Edit2.Text);
-                commandBuilder.Parameters.AddWithValue("a2", int.Parse(Edit3.Text));
-                commandBuilder.Parameters.AddWithValue("a3", Edit4.Text);
-                commandBuilder.Parameters.AddWithValue("a4", Edit5.Text);
-                commandBuilder.Parameters.AddWithValue("a5", int.Parse(Edit1.Text));
+                var commandBuilder2 = new SqlCommand(querier2, cnn);
+                commandBuilder.Parameters.AddWithValue("a1", SaleDat);
+                commandBuilder.Parameters.AddWithValue("a2", NomBiltetaKey);
+                commandBuilder2.Parameters.AddWithValue("a3", Nomer_MarshutaKey);
+                commandBuilder2.Parameters.AddWithValue("a4", Stoimost);
+                commandBuilder.Parameters.AddWithValue("a5", Num);
+                commandBuilder2.Parameters.AddWithValue("a6", Nomer_Biletaex);
                 commandBuilder.ExecuteNonQuery();
+                commandBuilder2.ExecuteNonQuery();
                 Console.WriteLine("Connection established and the table updated!");
                 cnn.Close();
                 UpdateGrid_Click(sender, e);

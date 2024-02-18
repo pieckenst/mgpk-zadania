@@ -25,9 +25,9 @@
                VerticalAlignment="Top" />
         <TextBlock x:Name="Lb2" Text="Начальная Точка Маршрута (Nachalni_Punkt)" HorizontalAlignment="Left" Margin="13,67,0,0"
                VerticalAlignment="Top" />
-        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="21,165,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="13,166,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="21,235,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="11,234,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
         <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="10,297,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
