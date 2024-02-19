@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FluentKursovayaAvtoparkA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ddb56411a8839b99e9759196efe0b4aed6a7604")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a1a3da6fb8c5379b58e351fec2ad05ae5ffa2f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluentKursovayaAvtoparkA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluentKursovayaAvtoparkA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

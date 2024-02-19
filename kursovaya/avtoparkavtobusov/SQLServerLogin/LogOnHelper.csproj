@@ -15,6 +15,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="MaterialSkin.2" Version="2.3.1" />

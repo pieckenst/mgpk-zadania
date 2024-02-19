@@ -10,6 +10,7 @@ using FluentKursovayaAvtoparkA.Views.Pages;
 using Wpf.Ui;
 using Wpf.Ui.Appearance;
 using FluentKursovayaAvtoparkA.Controls;
+using Microsoft.Toolkit.Uwp.Notifications;
 
 namespace FluentKursovayaAvtoparkA.Views.Windows;
 
@@ -123,6 +124,14 @@ public partial class MainWindow : INavigationWindow
 
     public async void FluentWindow_Loaded(object sender, RoutedEventArgs e)
     {
+#if WINDOWS10_0_17763_0_OR_GREATER
+            new ToastContentBuilder()
+                 .AddArgument("action", "viewConversation")
+                 .AddArgument("conversationId", 9813)
+                 .AddText("Автопарк Автобусов")
+                 .AddText("Добро пожаловать в информационную систему!Следуйте инструкции на главном окне приложения чтобы указать параметры соединения с БД!")
+                 .Show();
+#endif
         var termsOfUseContentDialog = new CallSQLConnectionSettingsContentDialog(ViewModel._dialogService.GetContentPresenter(), ViewModel);
 
         _ = await termsOfUseContentDialog.ShowAsync();

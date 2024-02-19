@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Windows;
 using System.Windows.Threading;
 using FluentKursovayaAvtoparkA.Services.Contracts;
+using Microsoft.Toolkit.Uwp.Notifications;
 using Wpf.Ui;
 
 namespace FluentKursovayaAvtoparkA
@@ -79,7 +80,17 @@ namespace FluentKursovayaAvtoparkA
         /// </summary>
         private async void OnStartup(object sender, StartupEventArgs e)
         {
+#if WINDOWS10_0_17763_0_OR_GREATER
+            new ToastContentBuilder()
+                .AddArgument("action", "viewConversation")
+                .AddArgument("conversationId", 9813)
+                .AddText("Автопарк Автобусов")
+                .AddText("Происходит инициализация приложения")
+                .Show();
+#endif
+            System.Threading.Thread.Sleep(2300);
             await _host.StartAsync();
+
         }
 
         /// <summary>

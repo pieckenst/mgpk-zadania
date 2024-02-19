@@ -13,12 +13,24 @@
     <SourceRoot Include="C:\Users\Andrey\.nuget\packages\" />
     <SourceRoot Include="D:\sdk\NuGetPackages\" />
   </ItemGroup>
-  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+  <ImportGroup Condition=" '$(TargetFramework)' == '' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)fastreport.opensource\2023.2.7\buildMultiTargeting\FastReport.OpenSource.props" Condition="Exists('$(NuGetPackageRoot)fastreport.opensource\2023.2.7\buildMultiTargeting\FastReport.OpenSource.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-windows10.0.20348.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\6.0.1\buildTransitive\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\6.0.1\buildTransitive\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props')" />
     <Import Project="$(NuGetPackageRoot)fastreport.opensource\2023.2.7\buildTransitive\FastReport.OpenSource.props" Condition="Exists('$(NuGetPackageRoot)fastreport.opensource\2023.2.7\buildTransitive\FastReport.OpenSource.props')" />
     <Import Project="$(NuGetPackageRoot)fastreport.data.mssql\2023.2.0\buildTransitive\netstandard2.0\FastReport.Data.MsSql.props" Condition="Exists('$(NuGetPackageRoot)fastreport.data.mssql\2023.2.0\buildTransitive\netstandard2.0\FastReport.Data.MsSql.props')" />
   </ImportGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-windows7' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\6.0.1\buildTransitive\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\6.0.1\buildTransitive\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.opensource\2023.2.7\buildTransitive\FastReport.OpenSource.props" Condition="Exists('$(NuGetPackageRoot)fastreport.opensource\2023.2.7\buildTransitive\FastReport.OpenSource.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.data.mssql\2023.2.0\buildTransitive\netstandard2.0\FastReport.Data.MsSql.props" Condition="Exists('$(NuGetPackageRoot)fastreport.data.mssql\2023.2.0\buildTransitive\netstandard2.0\FastReport.Data.MsSql.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-windows10.0.20348.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgWPF-UI Condition=" '$(PkgWPF-UI)' == '' ">C:\Users\Andrey\.nuget\packages\wpf-ui\3.0.0</PkgWPF-UI>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Andrey\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4</PkgMicrosoft_CodeAnalysis_Analyzers>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-windows7' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgWPF-UI Condition=" '$(PkgWPF-UI)' == '' ">C:\Users\Andrey\.nuget\packages\wpf-ui\3.0.0</PkgWPF-UI>
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Andrey\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4</PkgMicrosoft_CodeAnalysis_Analyzers>
   </PropertyGroup>
