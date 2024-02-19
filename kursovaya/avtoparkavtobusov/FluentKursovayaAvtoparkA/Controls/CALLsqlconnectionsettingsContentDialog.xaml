@@ -8,12 +8,14 @@
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
     Title="Параметры соединения с базой данных"
     
-    d:DesignHeight="1000"
-    d:DesignWidth="750"
+    d:DesignHeight="650"
+    d:DesignWidth="650"
     ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
     ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     CloseButtonText="Продолжить"
-    DialogMaxWidth="750"
+    
+    DialogMaxHeight="1350"
+    DialogMaxWidth="950"
     mc:Ignorable="d">
 
     <ui:ContentDialog.Resources>
