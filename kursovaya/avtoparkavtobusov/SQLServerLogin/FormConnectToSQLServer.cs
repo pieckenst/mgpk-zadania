@@ -192,8 +192,8 @@ namespace SQLServerLoginTemplate
             }
             catch (Exception ex)
             {
-                MaterialDialog materialDialog = new MaterialDialog(this,"Ошибка", "Невозможно подключиться к серверу: " + selectedServer + "." + Environment.NewLine ,"OK",false,"Отмена",true);
-                
+                MaterialDialog materialDialog = new MaterialDialog(this, "Ошибка", "Невозможно подключиться к серверу: " + selectedServer + "." + Environment.NewLine, "OK", false, "Отмена", true);
+
                 materialDialog.ShowDialog(this);
                 materialDialog.Close();
                 return false;
@@ -328,6 +328,11 @@ namespace SQLServerLoginTemplate
         }
 
         private void labelSQLServer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
         {
 
         }
