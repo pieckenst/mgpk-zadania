@@ -11,8 +11,8 @@
     Title="SettingsPage"
     d:DataContext="{d:DesignInstance local:SettingsPage,
                                      IsDesignTimeCreatable=False}"
-    d:DesignHeight="500"
-    d:DesignWidth="800"
+    d:DesignHeight="750"
+    d:DesignWidth="950"
     d:Background="{DynamicResource ApplicationBackgroundBrush}"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     mc:Ignorable="d">
@@ -25,35 +25,35 @@
             FontSize="20"
             FontWeight="Medium"
             Text="Персонализация" />
-        <ui:CardControl Margin="0,0,0,12" Icon="{ui:SymbolIcon Color24}">
-	        <ui:CardControl.Header>
-		        <Grid>
-			        <Grid.RowDefinitions>
-				        <RowDefinition Height="Auto" />
-				        <RowDefinition Height="Auto" />
-			        </Grid.RowDefinitions>
-			        <ui:TextBlock
+        <ui:CardControl Margin="0,0,0,18" Icon="{ui:SymbolIcon Color24}">
+            <ui:CardControl.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <ui:TextBlock
 				        Grid.Row="0"
 				        FontTypography="Body"
 				        Text="Тема" />
-			        <ui:TextBlock
+                    <ui:TextBlock
 				        Grid.Row="1"
 				        Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}"
 				        Text="Выберите какую тему приложения использовать." />
-		        </Grid>
-	        </ui:CardControl.Header>
-	        <ComboBox
+                </Grid>
+            </ui:CardControl.Header>
+            <ComboBox
 		        Grid.Column="1"
 		        x:Name="cmbSelect"
 		        MinWidth="200"
 		        SelectionChanged="ComboBox_SelectionChanged"
 		        SelectedIndex="{Binding ViewModel.CurrentApplicationTheme, Converter={StaticResource ThemeToIndexConverter}, Mode=TwoWay}">
-		        <ComboBoxItem Content="Светлая" />
-		        <ComboBoxItem Content="Темная" />
-		        <ComboBoxItem Content="Высокий контраст" />
-	        </ComboBox>
+                <ComboBoxItem Content="Светлая" />
+                <ComboBoxItem Content="Темная" />
+                <ComboBoxItem Content="Высокий контраст" />
+            </ComboBox>
         </ui:CardControl>
-        
+
         <!--<RadioButton
 	        Margin="0,12,0,0"
 	        Command="{Binding ViewModel.ChangeThemeCommand, Mode=OneWay}"
@@ -74,8 +74,8 @@
 	        FontSize="20"
 	        FontWeight="Medium"
 	        Text="Отчетность" />
-        
-         <ui:CardExpander ContentPadding="0" Icon="{ui:SymbolIcon Document24}">
+
+        <ui:CardExpander ContentPadding="0" Icon="{ui:SymbolIcon Document24}">
             <ui:CardExpander.Header>
                 <Grid>
                     <Grid.RowDefinitions>
@@ -96,7 +96,7 @@
                         Grid.Column="0"
                         Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}"
                         Text="Экспортируйте отчет быстро и просто!" />
-                    
+
                 </Grid>
             </ui:CardExpander.Header>
             <StackPanel>
@@ -105,16 +105,16 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
-	                <Button x:Name="SimpleRepExport" 
+                    <Button x:Name="SimpleRepExport" 
 	                        Content="Экспортировать простой отчет" 
 	                        
 				 
 	                        Height="37" Width="294" 
 	                        Click="SimpleRepExport_Click" 
 	                />
-	                
+
                 </Grid>
-	            <ui:Anchor
+                <ui:Anchor
 		            Margin="0"
 		            Padding="16"
 		            HorizontalAlignment="Stretch"
@@ -123,32 +123,95 @@
 		            BorderThickness="0,1,0,0"
 		            CornerRadius="0"
 		            >
-		            <Grid>
-			            <Grid.ColumnDefinitions>
-				            <ColumnDefinition Width="*" />
-				            <ColumnDefinition Width="Auto" />
-			            </Grid.ColumnDefinitions>
-			            <Button x:Name="ComplexRepExport"
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="ComplexRepExport"
 			                    Content="Экспортировать сложный отчет"
 			                    
 				 
 			                    Height="37" Width="294"
 			                    Click="ComplexRepExport_Click"
 			            />
-		            </Grid>
-	            </ui:Anchor>
+                    </Grid>
+                </ui:Anchor>
             </StackPanel>
         </ui:CardExpander>
-        
-		
-		
 
-		<!--<TextBlock
-            Margin="0,34,0,0"
-            FontSize="20"
-            FontWeight="Medium"
-            Text="Настройки подключения к серверу баз данных" />
-		<Button x:Name="DatabaseOptionbutton"
+
+
+
+        <TextBlock
+          Margin="0,34,0,0"
+          FontSize="20"
+          FontWeight="Medium"
+          Text="Управление базой данных" />
+
+        <ui:CardExpander ContentPadding="0" Icon="{ui:SymbolIcon Database24}">
+            <ui:CardExpander.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <ui:TextBlock
+                Grid.Row="0"
+                Grid.Column="0"
+                FontTypography="Body"
+                Text="Открыть настройки соединения с  базой данных  и подсистему удаления данных из БД" />
+                    <ui:TextBlock
+                Grid.Row="1"
+                Grid.Column="0"
+                Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}"
+                Text="Управление базой данных" />
+
+                </Grid>
+            </ui:CardExpander.Header>
+            <StackPanel>
+                <Grid Height="211">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="DatabaseOptionbutton"
+				            Content="Открыть настройки"
+				           Margin="10,6,0,0"
+				 
+				          Height="37" Width="294"
+				          Click="DatabaseOptionbutton_OnClick" VerticalAlignment="Top"/>
+                    <Button x:Name="deletedbdata" Content="Удалить из таблицы" Margin="10,158,0,0"
+         VerticalAlignment="Top" Height="39" Width="294" Click="deletedbdata_Click"
+         RenderTransformOrigin="0.522,-2.704" />
+                    <Label Content="Ключ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="45"
+        RenderTransformOrigin="0.481,0.218" Margin="222,68,0,0" />
+                    <TextBox x:Name="keybox" HorizontalAlignment="Left" Margin="222,94,0,0" TextWrapping="Wrap" Text="TextBox"
+          VerticalAlignment="Top" Width="229" Height="37" />
+                    <Label Content="Удаление данных из БД" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Height="26"
+        Width="180" />
+                    <ComboBox x:Name="SlctTable" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Width="180">
+                        <ComboBoxItem Content="Marshuti"/>
+                        <ComboBoxItem Content="Prodazhi"/>
+                        <ComboBoxItem Content="Obsluzivanie"/>
+                        <ComboBoxItem Content="Employees"/>
+                        <ComboBoxItem Content="Avtobusy"/>
+                        <ComboBoxItem Content="Jobs"/>
+                        <ComboBoxItem Content="Bilety"/>
+                    </ComboBox>
+                    <Label Content="Таблица" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Height="26"
+                        Width="180" />
+
+                </Grid>
+
+            </StackPanel>
+        </ui:CardExpander>
+
+        <!-- <Button x:Name="DatabaseOptionbutton"
 				Content="Открыть настройки"
 				Margin="0,40,0,0"
 				 
@@ -156,12 +219,15 @@
 				Click="DatabaseOptionbutton_OnClick"
 				/>-->
 
+
+
+
         <TextBlock
             Margin="0,50,0,0"
             FontSize="20"
             FontWeight="Medium"
             Text="О программе Автопарк Автобусов" />
-        
+
         <ui:CardExpander ContentPadding="0" Icon="{ui:SymbolIcon VehicleBus24}">
             <ui:CardExpander.Header>
                 <Grid>
@@ -189,23 +255,23 @@
                         Grid.Row="2"
                         Grid.Column="0"
                         Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}"
-                        Text="© 2024 МГПК Учебная Группа ПО-455 | Савич Андрей Олегович  + " />
-                    
+                        Text="© 2024 МГПК Учебная Группа ПО-455 | Савич Андрей Олегович" />
+
                 </Grid>
             </ui:CardExpander.Header>
             <StackPanel>
-	            <Grid Margin="16">
-		            <Grid.ColumnDefinitions>
-			            <ColumnDefinition Width="*" />
-			            <ColumnDefinition Width="Auto" />
-		            </Grid.ColumnDefinitions>
-		            <TextBlock Grid.Column="0" Text="Сделанно в 2024 году учащимся Могилевского государственного политехнического колледжа " />
-		            <TextBlock
+                <Grid Margin="16">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Сделанно в 2024 году учащимся Могилевского государственного политехнического колледжа " />
+                    <TextBlock
 			            Grid.Column="1"
 			            Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}"
 			            Text="Учебная группа ПО-455" />
-	            </Grid>
-	            <ui:Anchor
+                </Grid>
+                <ui:Anchor
 		            Margin="0"
 		            Padding="16"
 		            HorizontalAlignment="Stretch"
@@ -214,15 +280,15 @@
 		            BorderThickness="0,1,0,0"
 		            CornerRadius="0"
 		            >
-		            <Grid>
-			            <Grid.ColumnDefinitions>
-				            <ColumnDefinition Width="*" />
-				            <ColumnDefinition Width="Auto" />
-			            </Grid.ColumnDefinitions>
-			            <TextBlock Grid.Column="0" Text="Программа сделанна для курсовой работы по теме Автопарк Автобусов" />
-			            <ui:SymbolIcon Grid.Column="1" Symbol="Question24" />
-		            </Grid>
-	            </ui:Anchor>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Программа сделанна для курсовой работы по теме Автопарк Автобусов" />
+                        <ui:SymbolIcon Grid.Column="1" Symbol="Question24" />
+                    </Grid>
+                </ui:Anchor>
             </StackPanel>
         </ui:CardExpander>
         <!--<TextBlock Margin="0,12,0,0" Text="{Binding ViewModel.AppVersion, Mode=OneWay}" />

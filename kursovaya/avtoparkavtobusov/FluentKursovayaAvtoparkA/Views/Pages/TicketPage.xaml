@@ -43,7 +43,7 @@
         <TextBlock x:Name="lb6" Text="Стоимость Билета(Stoimost)" HorizontalAlignment="Left" Margin="20,250,0,0"
            VerticalAlignment="Top" Grid.Column="1" />
 
-        <DataGrid x:Name="dataGrid1" Margin="12,418,10,20" Grid.ColumnSpan="2" >
+        <DataGrid Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}" Background="{DynamicResource ApplicationBackgroundBrush}" x:Name="dataGrid1" Margin="12,418,10,20" Grid.ColumnSpan="2" >
 
         </DataGrid>
         <Button x:Name="UpdateTable" Content="Обновить данные в БД" Margin="293,238,0,0"
@@ -52,7 +52,7 @@
             Height="33" Width="195" Click="Button_Click" Grid.Column="1" />
         <ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="293,279,0,0" VerticalAlignment="Top"
             Click="UpdateGrid_Click" Height="41" Width="195" Grid.Column="1" />
-        <DataGrid x:Name="dataGrid2" Margin="12,10,10,532" Grid.ColumnSpan="2" />
+        <DataGrid Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}" Background="{DynamicResource ApplicationBackgroundBrush}" x:Name="dataGrid2" Margin="12,10,10,532" Grid.ColumnSpan="2" Height="145" />
         <TextBlock x:Name="lb5" Text="Номер Маршрута(Nomer_MarshutaKey)" HorizontalAlignment="Left" Margin="20,312,0,0"
             VerticalAlignment="Top" Width="273" Grid.Column="1" />
 

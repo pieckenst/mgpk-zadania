@@ -131,16 +131,17 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
 
         private void UpdateMaintenaceTable_Click(object sender, RoutedEventArgs e)
         {
-            var Num = int.Parse(AvEditor1.Text);
-            var ModAvtobus = int.Parse(AvEditor2.Text);
-            var DatObslug = AvEditor3.Text;
-            var Engineer = AvEditor4.Text;
-            var ErAvto = AvEditor5.Text;
-            var DatSlegObslug = AvEditor6.Text;
-            var GodDorog = AvEditor7.Text;
-            var ModelAvtobusaText = AvEditor8.Text;
+            
             try
             {
+                var Num = int.Parse(AvEditor1.Text);
+                var ModAvtobus = int.Parse(AvEditor2.Text);
+                var DatObslug = AvEditor3.Text;
+                var Engineer = AvEditor4.Text;
+                var ErAvto = AvEditor5.Text;
+                var DatSlegObslug = AvEditor6.Text;
+                var GodDorog = AvEditor7.Text;
+                var ModelAvtobusaText = AvEditor8.Text;
                 SqlConnection cnn;
                 var conStrs = SettingsPage.formations;
 

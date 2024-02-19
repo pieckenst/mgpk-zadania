@@ -41,7 +41,7 @@
         <TextBlock x:Name="lb6" Text="Время от начальной до конечной остановки(Vremya_Proezda)" HorizontalAlignment="Left" Margin="15,335,0,0"
                VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" Height="24" Width="430" />
 
-        <DataGrid x:Name="dataGrid1" Margin="12,411,10,12" >
+        <DataGrid Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}" Background="{DynamicResource ApplicationBackgroundBrush}" x:Name="dataGrid1" Margin="12,411,10,12" >
 
         </DataGrid>
         <Button x:Name="UpdateTransportTable" Content="Обновить данные в БД" Margin="493,76,0,0"

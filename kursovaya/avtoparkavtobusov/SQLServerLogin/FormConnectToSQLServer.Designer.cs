@@ -50,8 +50,8 @@
             labelServerName.AutoSize = true;
             labelServerName.Depth = 0;
             labelServerName.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            labelServerName.Location = new System.Drawing.Point(13, 158);
-            labelServerName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelServerName.Location = new System.Drawing.Point(20, 149);
+            labelServerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             labelServerName.MouseState = MaterialSkin.MouseState.HOVER;
             labelServerName.Name = "labelServerName";
             labelServerName.Size = new System.Drawing.Size(151, 19);
@@ -63,8 +63,8 @@
             labelAuthentication.AutoSize = true;
             labelAuthentication.Depth = 0;
             labelAuthentication.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            labelAuthentication.Location = new System.Drawing.Point(13, 222);
-            labelAuthentication.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelAuthentication.Location = new System.Drawing.Point(20, 342);
+            labelAuthentication.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             labelAuthentication.MouseState = MaterialSkin.MouseState.HOVER;
             labelAuthentication.Name = "labelAuthentication";
             labelAuthentication.Size = new System.Drawing.Size(92, 19);
@@ -76,8 +76,8 @@
             labelLogin.AutoSize = true;
             labelLogin.Depth = 0;
             labelLogin.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            labelLogin.Location = new System.Drawing.Point(34, 290);
-            labelLogin.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelLogin.Location = new System.Drawing.Point(51, 446);
+            labelLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             labelLogin.MouseState = MaterialSkin.MouseState.HOVER;
             labelLogin.Name = "labelLogin";
             labelLogin.Size = new System.Drawing.Size(60, 19);
@@ -89,8 +89,8 @@
             labelPassword.AutoSize = true;
             labelPassword.Depth = 0;
             labelPassword.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            labelPassword.Location = new System.Drawing.Point(34, 364);
-            labelPassword.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelPassword.Location = new System.Drawing.Point(51, 560);
+            labelPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             labelPassword.MouseState = MaterialSkin.MouseState.HOVER;
             labelPassword.Name = "labelPassword";
             labelPassword.Size = new System.Drawing.Size(71, 19);
@@ -113,12 +113,12 @@
             comboBoxServerName.IntegralHeight = false;
             comboBoxServerName.ItemHeight = 43;
             comboBoxServerName.Items.AddRange(new object[] { "localhost" });
-            comboBoxServerName.Location = new System.Drawing.Point(176, 144);
-            comboBoxServerName.Margin = new System.Windows.Forms.Padding(1);
+            comboBoxServerName.Location = new System.Drawing.Point(264, 128);
+            comboBoxServerName.Margin = new System.Windows.Forms.Padding(2);
             comboBoxServerName.MaxDropDownItems = 4;
             comboBoxServerName.MouseState = MaterialSkin.MouseState.OUT;
             comboBoxServerName.Name = "comboBoxServerName";
-            comboBoxServerName.Size = new System.Drawing.Size(584, 49);
+            comboBoxServerName.Size = new System.Drawing.Size(874, 49);
             comboBoxServerName.StartIndex = 0;
             comboBoxServerName.TabIndex = 6;
             comboBoxServerName.SelectedIndexChanged += comboBoxServerName_SelectedIndexChanged;
@@ -139,12 +139,12 @@
             comboBoxLogin.IntegralHeight = false;
             comboBoxLogin.ItemHeight = 43;
             comboBoxLogin.Items.AddRange(new object[] { "sa" });
-            comboBoxLogin.Location = new System.Drawing.Point(195, 286);
-            comboBoxLogin.Margin = new System.Windows.Forms.Padding(1);
+            comboBoxLogin.Location = new System.Drawing.Point(292, 440);
+            comboBoxLogin.Margin = new System.Windows.Forms.Padding(2);
             comboBoxLogin.MaxDropDownItems = 4;
             comboBoxLogin.MouseState = MaterialSkin.MouseState.OUT;
             comboBoxLogin.Name = "comboBoxLogin";
-            comboBoxLogin.Size = new System.Drawing.Size(565, 49);
+            comboBoxLogin.Size = new System.Drawing.Size(846, 49);
             comboBoxLogin.StartIndex = 0;
             comboBoxLogin.TabIndex = 8;
             // 
@@ -156,8 +156,8 @@
             buttonConnect.DialogResult = System.Windows.Forms.DialogResult.OK;
             buttonConnect.HighEmphasis = true;
             buttonConnect.Icon = null;
-            buttonConnect.Location = new System.Drawing.Point(13, 474);
-            buttonConnect.Margin = new System.Windows.Forms.Padding(1);
+            buttonConnect.Location = new System.Drawing.Point(20, 729);
+            buttonConnect.Margin = new System.Windows.Forms.Padding(2);
             buttonConnect.MouseState = MaterialSkin.MouseState.HOVER;
             buttonConnect.Name = "buttonConnect";
             buttonConnect.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -177,8 +177,8 @@
             buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             buttonCancel.HighEmphasis = true;
             buttonCancel.Icon = null;
-            buttonCancel.Location = new System.Drawing.Point(159, 474);
-            buttonCancel.Margin = new System.Windows.Forms.Padding(1);
+            buttonCancel.Location = new System.Drawing.Point(238, 729);
+            buttonCancel.Margin = new System.Windows.Forms.Padding(2);
             buttonCancel.MouseState = MaterialSkin.MouseState.HOVER;
             buttonCancel.Name = "buttonCancel";
             buttonCancel.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -197,8 +197,8 @@
             buttonHelp.Depth = 0;
             buttonHelp.HighEmphasis = true;
             buttonHelp.Icon = null;
-            buttonHelp.Location = new System.Drawing.Point(243, 474);
-            buttonHelp.Margin = new System.Windows.Forms.Padding(1);
+            buttonHelp.Location = new System.Drawing.Point(364, 729);
+            buttonHelp.Margin = new System.Windows.Forms.Padding(2);
             buttonHelp.MouseState = MaterialSkin.MouseState.HOVER;
             buttonHelp.Name = "buttonHelp";
             buttonHelp.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -216,8 +216,8 @@
             buttonOptions.Depth = 0;
             buttonOptions.HighEmphasis = true;
             buttonOptions.Icon = null;
-            buttonOptions.Location = new System.Drawing.Point(343, 474);
-            buttonOptions.Margin = new System.Windows.Forms.Padding(1);
+            buttonOptions.Location = new System.Drawing.Point(514, 729);
+            buttonOptions.Margin = new System.Windows.Forms.Padding(2);
             buttonOptions.MouseState = MaterialSkin.MouseState.HOVER;
             buttonOptions.Name = "buttonOptions";
             buttonOptions.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -232,7 +232,7 @@
             // 
             checkBoxRememberPassword.AutoSize = true;
             checkBoxRememberPassword.Depth = 0;
-            checkBoxRememberPassword.Location = new System.Drawing.Point(13, 424);
+            checkBoxRememberPassword.Location = new System.Drawing.Point(20, 652);
             checkBoxRememberPassword.Margin = new System.Windows.Forms.Padding(0);
             checkBoxRememberPassword.MouseLocation = new System.Drawing.Point(-1, -1);
             checkBoxRememberPassword.MouseState = MaterialSkin.MouseState.HOVER;
@@ -259,12 +259,12 @@
             comboBoxAuthentication.FormattingEnabled = true;
             comboBoxAuthentication.IntegralHeight = false;
             comboBoxAuthentication.ItemHeight = 43;
-            comboBoxAuthentication.Location = new System.Drawing.Point(176, 206);
-            comboBoxAuthentication.Margin = new System.Windows.Forms.Padding(1);
+            comboBoxAuthentication.Location = new System.Drawing.Point(264, 317);
+            comboBoxAuthentication.Margin = new System.Windows.Forms.Padding(2);
             comboBoxAuthentication.MaxDropDownItems = 4;
             comboBoxAuthentication.MouseState = MaterialSkin.MouseState.OUT;
             comboBoxAuthentication.Name = "comboBoxAuthentication";
-            comboBoxAuthentication.Size = new System.Drawing.Size(584, 49);
+            comboBoxAuthentication.Size = new System.Drawing.Size(874, 49);
             comboBoxAuthentication.StartIndex = 0;
             comboBoxAuthentication.TabIndex = 7;
             comboBoxAuthentication.SelectedIndexChanged += comboBoxAuthentication_SelectedIndexChanged;
@@ -274,8 +274,8 @@
             labelServerType.AutoSize = true;
             labelServerType.Depth = 0;
             labelServerType.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            labelServerType.Location = new System.Drawing.Point(13, 94);
-            labelServerType.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            labelServerType.Location = new System.Drawing.Point(20, 97);
+            labelServerType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             labelServerType.MouseState = MaterialSkin.MouseState.HOVER;
             labelServerType.Name = "labelServerType";
             labelServerType.Size = new System.Drawing.Size(97, 19);
@@ -297,12 +297,12 @@
             comboBoxServerType.FormattingEnabled = true;
             comboBoxServerType.IntegralHeight = false;
             comboBoxServerType.ItemHeight = 43;
-            comboBoxServerType.Location = new System.Drawing.Point(176, 80);
-            comboBoxServerType.Margin = new System.Windows.Forms.Padding(1);
+            comboBoxServerType.Location = new System.Drawing.Point(264, 75);
+            comboBoxServerType.Margin = new System.Windows.Forms.Padding(2);
             comboBoxServerType.MaxDropDownItems = 4;
             comboBoxServerType.MouseState = MaterialSkin.MouseState.OUT;
             comboBoxServerType.Name = "comboBoxServerType";
-            comboBoxServerType.Size = new System.Drawing.Size(584, 49);
+            comboBoxServerType.Size = new System.Drawing.Size(874, 49);
             comboBoxServerType.StartIndex = 0;
             comboBoxServerType.TabIndex = 18;
             // 
@@ -313,14 +313,14 @@
             textBoxPassword.Depth = 0;
             textBoxPassword.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             textBoxPassword.LeadingIcon = null;
-            textBoxPassword.Location = new System.Drawing.Point(195, 347);
-            textBoxPassword.Margin = new System.Windows.Forms.Padding(1);
+            textBoxPassword.Location = new System.Drawing.Point(292, 534);
+            textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
             textBoxPassword.MaxLength = 50;
             textBoxPassword.MouseState = MaterialSkin.MouseState.OUT;
             textBoxPassword.Multiline = false;
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Password = true;
-            textBoxPassword.Size = new System.Drawing.Size(565, 50);
+            textBoxPassword.Size = new System.Drawing.Size(848, 50);
             textBoxPassword.TabIndex = 9;
             textBoxPassword.Text = "";
             textBoxPassword.TrailingIcon = null;
@@ -328,10 +328,10 @@
             // FormConnectToSQLServer
             // 
             AcceptButton = buttonConnect;
-            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             CancelButton = buttonCancel;
-            ClientSize = new System.Drawing.Size(814, 667);
+            ClientSize = new System.Drawing.Size(1239, 1115);
             Controls.Add(comboBoxServerType);
             Controls.Add(labelServerType);
             Controls.Add(checkBoxRememberPassword);
@@ -348,10 +348,11 @@
             Controls.Add(labelAuthentication);
             Controls.Add(labelServerName);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            Margin = new System.Windows.Forms.Padding(1);
+            Margin = new System.Windows.Forms.Padding(2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormConnectToSQLServer";
+            Padding = new System.Windows.Forms.Padding(4, 98, 4, 5);
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Вход в систему";
             Load += FormConnectToSQLServer_Load;

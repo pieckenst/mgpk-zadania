@@ -60,7 +60,7 @@ namespace FluentKursovayaAvtoparkA.ViewModels
         private void InitializeViewModel()
         {
             CurrentApplicationTheme = Wpf.Ui.Appearance.ApplicationThemeManager.GetAppTheme();
-            AppVersion = $" Информационная Система Автопарк Автобусов  - Версия: {GetAssemblyVersion()}";
+            AppVersion = $"Информационная Система Автопарк Автобусов  - Версия: {GetAssemblyVersion()}";
 
             ApplicationThemeManager.Changed += OnThemeChanged;
 
@@ -111,14 +111,10 @@ namespace FluentKursovayaAvtoparkA.ViewModels
 
                     break;
 
-                default:
-                    if (CurrentApplicationTheme != Wpf.Ui.Appearance.ApplicationTheme.Dark)
-                    {
-                        Wpf.Ui.Appearance.ApplicationThemeManager.Apply(Wpf.Ui.Appearance.ApplicationTheme.Dark);
-                        CurrentApplicationTheme = Wpf.Ui.Appearance.ApplicationTheme.Dark;
-                    }
-                    else
-                        break;
+                default: 
+                    Wpf.Ui.Appearance.ApplicationThemeManager.Apply(Wpf.Ui.Appearance.ApplicationTheme.Dark);
+                    CurrentApplicationTheme = Wpf.Ui.Appearance.ApplicationTheme.Dark;
+                    
 
 
                     break;

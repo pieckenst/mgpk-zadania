@@ -134,16 +134,19 @@ namespace FluentKursovayaAvtoparkA.Views.Pages
         private void EmpUpdat_Click(object sender, RoutedEventArgs e)
         {
 
-            var Num = Exed1.Text;
-            var EmpName = Exed2.Text;
-            var EmpsurName = Exed3.Text;
-            var Emppat = Exed4.Text;
-            var EmpES = Exed5.Text;
-            var Empnum = int.Parse(Exed6.Text);
-            var Empinternyesorno = Exed7.Text;
-            var Empjobtitle = Exed8.Text;
+            
+            
+            
             try
             {
+                var Num = Exed1.Text;
+                var EmpName = Exed2.Text;
+                var EmpsurName = Exed3.Text;
+                var Emppat = Exed4.Text;
+                var EmpES = Exed5.Text;
+                var Empnum = int.Parse(Exed6.Text);
+                var Empinternyesorno = Exed7.Text;
+                var Empjobtitle = Exed8.Text;
                 SqlConnection cnn;
                 var conStr = SettingsPage.formations;
 
