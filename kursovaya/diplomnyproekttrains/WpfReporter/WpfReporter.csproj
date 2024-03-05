@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+	<PublishSingleFile>true</PublishSingleFile>
+	
+	
+	<RuntimeIdentifiers>win-x64;linux-x64;osx-x64</RuntimeIdentifiers>
+
+	
+	<PublishReadyToRun>true</PublishReadyToRun>
+
+	
+	<BaseOutputPath>\bin</BaseOutputPath>
+
+	
+	<BaseIntermediateOutputPath>\obj</BaseIntermediateOutputPath>
+
+	
+	<LangVersion>12</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.10" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.10" />
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="0.10.10" />
+    <PackageReference Include="FastReport.OpenSource" Version="2022.1.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.0.1" />
+   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="WPFReports.axaml.cs">
+      <DependentUpon>WPFReports.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

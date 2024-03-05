@@ -1,0 +1,294 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\FluentKursovayaAvtoparkA\\FluentKursovayaAvtoparkA.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\FluentKursovayaAvtoparkA\\FluentKursovayaAvtoparkA.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\FluentKursovayaAvtoparkA\\FluentKursovayaAvtoparkA.csproj",
+        "projectName": "FluentKursovayaAvtoparkA",
+        "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\FluentKursovayaAvtoparkA\\FluentKursovayaAvtoparkA.csproj",
+        "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\FluentKursovayaAvtoparkA\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\sdk\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj": {
+                "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj"
+              },
+              "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+                "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "FastReport.Data.MsSql": {
+              "target": "Package",
+              "version": "[2023.2.0, )"
+            },
+            "FastReport.OpenSource": {
+              "target": "Package",
+              "version": "[2023.2.7, )"
+            },
+            "FastReport.OpenSource.Export.PdfSimple": {
+              "target": "Package",
+              "version": "[2023.2.7, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            },
+            "WPF-UI": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj",
+        "projectName": "LogOnHelper",
+        "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\LogOnHelper.csproj",
+        "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\SQLServerLogin\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\sdk\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "MaterialSkin.2": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "MaterialSkin2DotNet": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.Net.Compilers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Microsoft.Net.Compilers.Toolset": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+        "projectName": "WpfMessageBoxEx",
+        "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+        "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\avtoparkavtobusov\\WpfMessageBoxEx\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\sdk\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

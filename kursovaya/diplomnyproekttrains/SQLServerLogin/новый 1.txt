@@ -1,0 +1,20 @@
+<Grid Margin="0,0,0,-6">
+
+        <Label x:Name="labelSQLServer" Height="45" Width="159" FontSize="20" FontFamily="Segoe UI Semibold" TabIndex="16" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Вход в систему" Margin="25,46,0,0" Foreground="White" />
+        <ComboBox Name="comboBoxServerType" Height="21" Width="306" TabIndex="18" Margin="0,0,201,214" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+        <Label x:Name="labelServerType" Height="22" Width="131" FontSize="11" FontFamily="Segoe UI Light" TabIndex="17" Margin="25,101,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Название сервера:" Foreground="White" />
+        <Label Name="label1" Height="13" Width="472" FontSize="11" FontFamily="Segoe UI Light" TabIndex="15" Margin="0,0,1,83" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.ColumnSpan="4" ></Label>
+        <CheckBox x:Name="checkBoxRememberPassword" Height="17" Width="133" TabIndex="14" Margin="0,0,201,96" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Запомнить пароль" FontFamily="Segoe UI Light" Foreground="White" />
+        <Button x:Name="buttonOptions" Height="21" Width="83" TabIndex="13" Margin="0,0,185,51" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="0.479,-0.086" Content="Настройки &gt;&gt;" />
+        <Button x:Name="buttonHelp" Height="22" Width="110" TabIndex="12" Margin="253,293,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Помощь" />
+        <Button x:Name="buttonCancel" Height="21" Width="83" TabIndex="11" Click="buttonCancel_Click" Margin="0,0,405,50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Отмена" />
+        <Button x:Name="buttonConnect" Height="20" Width="110" TabIndex="10" Click="buttonConnect_Click" Margin="29,294,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Подключится" />
+        <TextBox Name="textBoxPassword" Height="20" Width="287" TabIndex="9" Margin="0,0,201,132" HorizontalAlignment="Right" VerticalAlignment="Bottom" TextWrapping="Wrap" />
+        <ComboBox Name="comboBoxLogin" Height="21" Width="287" TabIndex="8" Margin="0,0,201,160" HorizontalAlignment="Right" VerticalAlignment="Bottom" IsEditable="True" />
+        <ComboBox Name="comboBoxAuthentication" Height="21" Width="306" TabIndex="7" Margin="135,156,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionChanged="comboBoxAuthentication_SelectedIndexChanged" />
+        <ComboBox Name="comboBoxServerName" Height="22" Width="306" TabIndex="6" Margin="0,0,201,242" HorizontalAlignment="Right" VerticalAlignment="Bottom" SelectionChanged="comboBoxServerName_SelectedIndexChanged" />
+        <Label x:Name="labelPassword" Height="27" Width="57" FontSize="11" TabIndex="3" Margin="0,0,560,128" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Пароль" FontFamily="Segoe UI Light" Foreground="White" />
+        <Label x:Name="labelLogin" Height="22" Width="50" FontSize="11" FontFamily="Segoe UI Light" TabIndex="2" Margin="0,0,567,161" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Логин:" Foreground="White" />
+        <Label x:Name="labelAuthentication" Height="22" Width="114" FontSize="11" FontFamily="Segoe UI Light" TabIndex="1" Margin="25,154,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Тип Аунтефикации" Foreground="White" />
+        <Label x:Name="labelServerName" Height="22" Width="114" FontSize="11" FontFamily="Segoe UI Light" TabIndex="0" Margin="0,0,503,216" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Тип входа:" Foreground="White" />
+    </Grid>

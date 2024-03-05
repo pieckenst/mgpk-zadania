@@ -1,0 +1,74 @@
+﻿<ui:ContentDialog
+    x:Class="FluentKursovayaAvtoparkA.Controls.CallSQLConnectionSettingsContentDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FluentKursovayaAvtoparkA.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="Параметры соединения с базой данных"
+    
+    d:DesignHeight="650"
+    d:DesignWidth="650"
+    ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+    ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    CloseButtonText="Продолжить"
+    
+    DialogMaxHeight="1350"
+    DialogMaxWidth="950"
+    mc:Ignorable="d">
+
+    <ui:ContentDialog.Resources>
+        <Style BasedOn="{StaticResource {x:Type ui:ContentDialog}}" TargetType="{x:Type local:CallSQLConnectionSettingsContentDialog}" />
+    </ui:ContentDialog.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.Row="0"
+            FontSize="14"
+            
+            TextAlignment="Center"
+            TextWrapping="WrapWithOverflow">
+            <Run>
+                
+            </Run> Добро пожаловать в настройку базы данных <LineBreak/>
+            <Run> Нажмите на Checkbox  чтобы открыть настройку соединения с базой данных и нажмите продолжить</Run><LineBreak/>
+            <Run> Или воспользуйтесь  настройками соединения по умолчанию нажав продолжить без нажатия на Checkbox </Run><LineBreak/>
+            <Run>
+                
+            </Run><LineBreak />
+            <Run>
+                
+            </Run>
+        </TextBlock>
+
+        <StackPanel
+            Grid.Row="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+
+            <TextBlock
+                x:Name="TextBlock"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="16"
+                Foreground="WhiteSmoke"
+                Text="Включите checkbox чтобы открыть меню настроек"
+                Visibility="Collapsed" />
+
+            <CheckBox
+                x:Name="CheckBox"
+                Margin="0,15,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                VerticalContentAlignment="Center"
+                Content="Открыть параметры соединения с Базой Данных"
+                FontSize="16" />
+        </StackPanel>
+    </Grid>
+</ui:ContentDialog>

@@ -1,0 +1,17 @@
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\bin\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.deps.json
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\bin\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.dll
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\bin\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.pdb
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\MessageBoxEx.g.cs
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx_MarkupCompile.cache
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx_MarkupCompile.lref
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\MessageBoxEx.baml
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.g.resources
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.Properties.Resources.resources
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.csproj.GenerateResource.cache
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.csproj.CoreCompileInputs.cache
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.sourcelink.json
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.dll
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\refint\WpfMessageBoxEx.dll
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\WpfMessageBoxEx.pdb
+C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\avtoparkavtobusov\WpfMessageBoxEx\obj\Debug\net5.0-windows10.0.20348.0\ref\WpfMessageBoxEx.dll
