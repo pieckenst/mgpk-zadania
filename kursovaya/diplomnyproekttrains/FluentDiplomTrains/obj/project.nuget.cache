@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YsY1sQB3taByEKem/BRTItVSV7+pah9FD26O7riJ9WfTZBzPH14jFqeb5oDi/r4+WNnmMN3RfnlwSbBomM4PSA==",
+  "dgSpecHash": "v0EswuhVcO8k68eGrktpqv4Wp12RGnJ5qJE/Gsb6Ged4iiwgzwSoGOskdF9PhI3GcgAQ5f1Iuoc868fN0J6wBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\FluentDiplomTrains.csproj",
   "expectedPackageFiles": [
@@ -71,15 +71,7 @@
     "C:\\Users\\Andrey\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\Andrey\\.nuget\\packages\\wpf-ui\\3.0.0\\wpf-ui.3.0.0.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.20348.31\\microsoft.windows.sdk.net.ref.10.0.20348.31.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.20348.31\\microsoft.windows.sdk.net.ref.10.0.20348.31.nupkg.sha512"
   ],
   "logs": []
 }

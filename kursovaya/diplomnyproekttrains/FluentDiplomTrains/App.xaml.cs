@@ -84,7 +84,7 @@ namespace FluentKursovayaAvtoparkA
             new ToastContentBuilder()
                 .AddArgument("action", "viewConversation")
                 .AddArgument("conversationId", 9813)
-                .AddText("Автопарк Автобусов")
+                .AddText("Построение Железнодорожных Маршрутов")
                 .AddText("Происходит инициализация приложения")
                 .Show();
 #endif

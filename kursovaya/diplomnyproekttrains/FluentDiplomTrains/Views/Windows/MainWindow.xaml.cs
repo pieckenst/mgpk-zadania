@@ -128,7 +128,7 @@ public partial class MainWindow : INavigationWindow
             new ToastContentBuilder()
                  .AddArgument("action", "viewConversation")
                  .AddArgument("conversationId", 9813)
-                 .AddText("Автопарк Автобусов")
+                 .AddText("Построение Железнодорожных Маршрутов")
                  .AddText("Добро пожаловать в информационную систему!Следуйте инструкции на главном окне приложения чтобы указать параметры соединения с БД!")
                  .Show();
 #endif

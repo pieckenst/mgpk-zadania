@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:TrainsMauiHybrid"
+            xmlns:pages="clr-namespace:TrainsMauiHybrid.Components.Pages"
+            x:Class="TrainsMauiHybrid.MainPage"
+            >
+    
+    <pages:BlazorWEBviewhost/>
+    <pages:NewPage1/>
+
+
+    
+
+</TabbedPage>

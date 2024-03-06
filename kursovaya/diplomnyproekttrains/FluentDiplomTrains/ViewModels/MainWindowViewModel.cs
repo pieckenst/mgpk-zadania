@@ -26,7 +26,7 @@ public partial class MainWindowViewModel : ObservableObject
         _serviceProvider = serviceProvider;
     }
     [ObservableProperty]
-    private string _applicationTitle = "Автопарк Автобусов";
+    private string _applicationTitle = "Построение Железнодорожных Маршрутов";
 
     [ObservableProperty]
      private ICollection<object> _menuItems = new ObservableCollection<object>

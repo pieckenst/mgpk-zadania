@@ -10,38 +10,38 @@
     Title="DataPage"
     d:DataContext="{d:DesignInstance local:DataPage,
                                      IsDesignTimeCreatable=False}"
-    d:DesignHeight="650"
-    d:DesignWidth="850"
+    d:DesignHeight="750"
+    d:DesignWidth="870"
     d:Background="{DynamicResource ApplicationBackgroundBrush}"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     mc:Ignorable="d">
 
     <Grid Margin="56,0">
-        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="255,14,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit1" HorizontalAlignment="Left" Margin="255,46,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="13,96,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit2" HorizontalAlignment="Left" Margin="13,128,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-        <TextBlock x:Name="lb1" Text="Номер Маршрута (Nomer_Marshuta)" HorizontalAlignment="Left" Margin="8,22,0,0"
+        <TextBlock x:Name="lb1" Text="Номер Маршрута (Nomer_Marshuta)" HorizontalAlignment="Left" Margin="8,54,0,0"
                VerticalAlignment="Top" />
-        <TextBlock x:Name="Lb2" Text="Начальная Точка Маршрута (Nachalni_Punkt)" HorizontalAlignment="Left" Margin="13,67,0,0"
+        <TextBlock x:Name="Lb2" Text="Начальная Точка Маршрута (Nachalni_Punkt)" HorizontalAlignment="Left" Margin="13,98,0,0"
                VerticalAlignment="Top" />
-        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="13,166,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="13,254,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-        <TextBox x:Name="Edit4" HorizontalAlignment="Left" Margin="11,234,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="11,322,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-        <TextBox x:Name="Edit5" HorizontalAlignment="Left" Margin="10,297,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit6" HorizontalAlignment="Left" Margin="10,382,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-        <TextBlock x:Name="lb3" Text="Конечная Остановка(Konechni_Punkt)" HorizontalAlignment="Left" Margin="12,142,0,0"
+        <TextBlock x:Name="lb3" Text="Конечная Остановка(Konechni_Punkt)" HorizontalAlignment="Left" Margin="12,230,0,0"
                VerticalAlignment="Top" />
-        <TextBlock x:Name="lb4" Text="Водитель(Voditel)" HorizontalAlignment="Left" Margin="13,205,0,0" VerticalAlignment="Top" />
-        <TextBlock x:Name="lb5" Text="Модель Автобуса(Model_Avtobusa)" HorizontalAlignment="Left" Margin="10,274,0,0"
+        <TextBlock x:Name="lb4" Text="Машинист(TrainConductor)" HorizontalAlignment="Left" Margin="13,292,0,0" VerticalAlignment="Top" />
+        <TextBlock x:Name="lb5" Text="Производитель локомотива(ManufacturerLokomotiv)" HorizontalAlignment="Left" Margin="10,362,0,0"
                VerticalAlignment="Top" />
-        <TextBox x:Name="Edit6" HorizontalAlignment="Left" Margin="12,359,0,0" TextWrapping="Wrap" Text="TextBox"
+        <TextBox x:Name="Edit7" HorizontalAlignment="Left" Margin="12,446,0,0" TextWrapping="Wrap" Text="TextBox"
                  VerticalAlignment="Top" Width="190" />
-        <TextBlock x:Name="lb6" Text="Время от начальной до конечной остановки(Vremya_Proezda)" HorizontalAlignment="Left" Margin="15,335,0,0"
+        <TextBlock x:Name="lb6" Text="Время от начальной до конечной остановки(Vremya_Proezda)" HorizontalAlignment="Left" Margin="15,420,0,0"
                VerticalAlignment="Top" RenderTransformOrigin="0.468,1.345" Height="24" Width="430" />
 
-        <DataGrid Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}" Background="{DynamicResource ApplicationBackgroundBrush}" x:Name="dataGrid1" Margin="12,411,10,12" >
+        <DataGrid Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}" Background="{DynamicResource ApplicationBackgroundBrush}" x:Name="dataGrid1" Margin="12,530,10,12" Height="215" >
 
         </DataGrid>
         <Button x:Name="UpdateTransportTable" Content="Обновить данные в БД" Margin="493,76,0,0"
@@ -50,6 +50,10 @@
                 Height="33" Width="218" Click="Button_Click" />
         <ui:Button x:Name="UpdateGrid" Content="Обновить DataGrid" Margin="493,126,27,0" VerticalAlignment="Top"
                 Click="UpdateGrid_Click" Height="41" Width="218" />
+        <TextBox x:Name="Edit3" HorizontalAlignment="Left" Margin="13,196,0,0" TextWrapping="Wrap" Text="TextBox"
+            VerticalAlignment="Top" Width="190" />
+        <TextBlock x:Name="Lb3" Text="Промежуточная Точка Маршрута (Mid_Punkt)" HorizontalAlignment="Left" Margin="13,166,0,0"
+            VerticalAlignment="Top" />
 
     </Grid>
 </Page>

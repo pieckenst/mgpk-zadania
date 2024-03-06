@@ -12,6 +12,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogOnHelper", "SQLServerLog
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentDiplomTrains", "FluentDiplomTrains\FluentDiplomTrains.csproj", "{F63141B5-E83D-4F7D-9A30-90B9088E34F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseConnectors", "DataBaseConnectors\DataBaseConnectors.csproj", "{C4319231-16E9-4449-9832-5A6884353055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainsMauiHybrid", "TrainsMauiHybrid\TrainsMauiHybrid.csproj", "{A23FD064-C97B-4A3C-BFAC-56F9598A2420}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +42,14 @@ Global
 		{F63141B5-E83D-4F7D-9A30-90B9088E34F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F63141B5-E83D-4F7D-9A30-90B9088E34F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F63141B5-E83D-4F7D-9A30-90B9088E34F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4319231-16E9-4449-9832-5A6884353055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4319231-16E9-4449-9832-5A6884353055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4319231-16E9-4449-9832-5A6884353055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4319231-16E9-4449-9832-5A6884353055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A23FD064-C97B-4A3C-BFAC-56F9598A2420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23FD064-C97B-4A3C-BFAC-56F9598A2420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23FD064-C97B-4A3C-BFAC-56F9598A2420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23FD064-C97B-4A3C-BFAC-56F9598A2420}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

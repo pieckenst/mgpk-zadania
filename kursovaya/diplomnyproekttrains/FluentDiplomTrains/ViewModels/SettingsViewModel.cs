@@ -60,7 +60,7 @@ namespace FluentKursovayaAvtoparkA.ViewModels
         private void InitializeViewModel()
         {
             CurrentApplicationTheme = Wpf.Ui.Appearance.ApplicationThemeManager.GetAppTheme();
-            AppVersion = $"Информационная Система Автопарк Автобусов  - Версия: {GetAssemblyVersion()}";
+            AppVersion = $"Информационная Система Построение Железнодорожных Маршрутов  - Версия: {GetAssemblyVersion()}";
 
             ApplicationThemeManager.Changed += OnThemeChanged;
 

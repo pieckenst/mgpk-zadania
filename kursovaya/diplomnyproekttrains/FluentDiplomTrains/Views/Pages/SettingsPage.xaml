@@ -226,7 +226,7 @@
             Margin="0,50,0,0"
             FontSize="20"
             FontWeight="Medium"
-            Text="О программе Автопарк Автобусов" />
+            Text="О программе Построение Железнодорожных Маршрутов" />
 
         <ui:CardExpander ContentPadding="0" Icon="{ui:SymbolIcon VehicleBus24}">
             <ui:CardExpander.Header>
@@ -285,14 +285,14 @@
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="0" Text="Программа сделанна для курсовой работы по теме Автопарк Автобусов" />
+                        <TextBlock Grid.Column="0" Text="Программа сделанна для курсовой работы по теме Построение Железнодорожных Маршрутов" />
                         <ui:SymbolIcon Grid.Column="1" Symbol="Question24" />
                     </Grid>
                 </ui:Anchor>
             </StackPanel>
         </ui:CardExpander>
         <!--<TextBlock Margin="0,12,0,0" Text="{Binding ViewModel.AppVersion, Mode=OneWay}" />
-		<TextBlock Margin="0,12,0,0" Text="Сделанно в 2021 году для курсовой по теме &lt;&lt;Автопарк Автобусов&gt;&gt;" />
+		<TextBlock Margin="0,12,0,0" Text="Сделанно в 2021 году для курсовой по теме &lt;&lt;Построение Железнодорожных Маршрутов&gt;&gt;" />
 		<TextBlock Margin="0,20,0,0" Text="Учебная группа"   />
 		<TextBlock Margin="0,20,0,0" Text="ПО-455"  />
 		<TextBlock Margin="0,20,0,0" Text="Учащийся"   />
