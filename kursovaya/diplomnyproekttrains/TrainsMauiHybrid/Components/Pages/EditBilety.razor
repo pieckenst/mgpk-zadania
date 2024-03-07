@@ -1,0 +1,82 @@
+@page "/edit-bilety"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+
+<PageTitle>Edit Bilety</PageTitle>
+
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Bilety</RadzenAlert>
+        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Bilety" Data="@bilety" Visible="@(bilety != null)" Submit="@FormSubmit">
+          <RadzenStack>
+            <RadzenFormField Text="Nomer Bileta" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@bilety.Nomer_Bileta" Name="Nomer_Bileta" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Nomer_Bileta" Text="Nomer_Bileta is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Marshuti" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDownDataGrid Data="@marshutisForNomerMarshutaKey" TextProperty="Nachalni_Punkt" ValueProperty="Nomer_Marshuta" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@bilety.Nomer_MarshutaKey" Name="Nomer_MarshutaKey"
+                           />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Stoimost" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@bilety.Stoimost" Name="Stoimost" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Stoimost" Text="Stoimost is required" />
+                  </Helper>
+            </RadzenFormField>
+          </RadzenStack>
+          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+
+@code {
+
+    [Parameter]
+    public long Nomer_Bileta { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        bilety = await DiplomnyProektService.GetBiletyByNomerBileta(Nomer_Bileta);
+
+        marshutisForNomerMarshutaKey = await DiplomnyProektService.GetMarshutis();
+    }
+    protected bool errorVisible;
+    protected TrainsMauiHybrid.Models.Bilety bilety;
+
+    protected IEnumerable<TrainsMauiHybrid.Models.Marshuti> marshutisForNomerMarshutaKey;
+
+    protected async Task FormSubmit()
+    {
+        try
+        {
+            await DiplomnyProektService.UpdateBilety(Nomer_Bileta, bilety);
+            DialogService.Close(bilety);
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+        }
+    }
+
+    protected async Task CancelButtonClick(MouseEventArgs args)
+    {
+        DialogService.Close(null);
+    }
+}

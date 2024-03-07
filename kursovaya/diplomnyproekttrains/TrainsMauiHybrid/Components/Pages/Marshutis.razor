@@ -1,0 +1,105 @@
+@page "/marshutis"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+
+<PageTitle>Marshutis</PageTitle>
+<ErrorBoundary>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Marshutis" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@marshutis" TItem="TrainsMauiHybrid.Models.Marshuti" RowSelect="@EditRow">
+            <Columns>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Nomer_Marshuta" Title="Nomer Marshuta">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Nachalni_Punkt" Title="Nachalni Punkt">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Mid_Punkt" Title="Mid Punkt">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Konechni_Punkt" Title="Konechni Punkt">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Employee.Surname" Title="Employee">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Train.Model_Sostava_Vagonov" Title="Train">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Vremya_Proezda" Title="Vremya Proezda">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="marshuti">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, marshuti)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>
+</ErrorBoundary>
+@code {
+
+    protected IEnumerable<TrainsMauiHybrid.Models.Marshuti> marshutis;
+
+    protected RadzenDataGrid<TrainsMauiHybrid.Models.Marshuti> grid0;
+    protected override async Task OnInitializedAsync()
+    {
+        marshutis = await DiplomnyProektService.GetMarshutis(new Query { Expand = "Employee,Train" });
+    }
+
+    protected async Task AddButtonClick(MouseEventArgs args)
+    {
+        await DialogService.OpenAsync<AddMarshuti>("Add Marshuti", null);
+        await grid0.Reload();
+    }
+
+    protected async Task EditRow(TrainsMauiHybrid.Models.Marshuti args)
+    {
+        await DialogService.OpenAsync<EditMarshuti>("Edit Marshuti", new Dictionary<string, object> { {"Nomer_Marshuta", args.Nomer_Marshuta} });
+    }
+
+    protected async Task GridDeleteButtonClick(MouseEventArgs args, TrainsMauiHybrid.Models.Marshuti marshuti)
+    {
+        try
+        {
+            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+            {
+                var deleteResult = await DiplomnyProektService.DeleteMarshuti(marshuti.Nomer_Marshuta);
+
+                if (deleteResult != null)
+                {
+                    await grid0.Reload();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = $"Error",
+                Detail = $"Unable to delete Marshuti"
+            });
+        }
+    }
+}

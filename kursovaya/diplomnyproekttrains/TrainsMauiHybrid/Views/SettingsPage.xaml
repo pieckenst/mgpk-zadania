@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    x:Class="TrainsMauiHybrid.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dx="clr-namespace:DevExpress.Maui.Core;assembly=DevExpress.Maui.Core"
+    xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+    xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+    xmlns:helpers="clr-namespace:TrainsMauiHybrid.Helpers"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:local="clr-namespace:TrainsMauiHybrid">
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarStyle="{ AppThemeBinding Light=LightContent, Dark=LightContent }"
+                                   StatusBarColor=
+                                   "{AppThemeBinding Light={StaticResource Primary},
+                                   Dark={StaticResource MaterialDark}}" />
+    </ContentPage.Behaviors>
+    <ContentPage.BindingContext>
+        <local:SettingsViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <Style TargetType="dxe:FormItemBase" ApplyToDerivedTypes="True" x:Key="baseStyle">
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}"/>
+            <Setter Property="ImageColor" Value="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
+            <Setter Property="Padding" Value="0,8" />
+            <Setter Property="ShowSeparator" Value="False" />
+            <Setter Property="ImageWidth" Value="36" />
+            <Setter Property="ImageMargin" Value="0,0,10,0" />
+            <Setter Property="ImageHeight" Value="36" />
+            <Setter Property="Margin" Value="-1,0,-1,0" />
+        </Style>
+        <Style TargetType="dxe:FormItem" BasedOn="{StaticResource baseStyle}">
+            <Setter Property="Margin" Value="0,0,0,0" />
+        </Style>
+        <Style TargetType="dxe:FormSwitchItem" BasedOn="{StaticResource baseStyle}">
+        </Style>
+        <Style TargetType="dxe:FormListPickerItem" BasedOn="{StaticResource baseStyle}">
+            <Setter Property="PickerTitleColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray200}}"/>
+            <Setter Property="PickerBackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}"/>
+            <Setter Property="ArrowColor" Value="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}"/>
+        </Style>
+        <Style TargetType="dxe:FormGroupItem">
+            <Setter Property="HeaderColor" Value="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}"/>
+            <Setter Property="HeaderFontAttributes" Value="Bold" />
+            <Setter Property="HeaderMargin" Value="0,0,0,5" />
+            <Setter Property="Padding" Value="0,25,0,15" />
+            <Setter Property="HeaderFontSize" Value="15" />
+            <Setter Property="ItemSpacing" Value="0" />
+        </Style>
+    </ContentPage.Resources>
+    <ScrollView>
+        <dx:DXStackLayout Orientation="Vertical" Padding="20,0" ItemSpacing="10">
+
+            <dxe:FormGroupItem Header="Language">
+                <dxe:FormListPickerItem ImageSource="globe" InlineContent="{x:Null}" ItemsSource="{Binding Languages}" PickerTitle="Select Language"
+                    SelectedItem="{Binding Language, Mode=TwoWay}" Text="{Binding Language}" />
+            </dxe:FormGroupItem>
+
+            <dxe:FormGroupItem Header="Miscellaneous" ShowSeparator="false">
+
+                <dxe:FormListPickerItem ImageSource="check_24px" ItemsSource="{Binding Modes}"
+                                        PickerShowMode="Popup"
+                    PickerBackgroundColor="{AppThemeBinding
+                    Light=White, Dark={StaticResource MaterialDark}}"
+                                        SelectedItem="{Binding VibrationMode}"
+
+                    ShowSearchPanel="False" Text="Theme" />
+
+            </dxe:FormGroupItem>
+        </dx:DXStackLayout>
+    </ScrollView>
+</ContentPage>

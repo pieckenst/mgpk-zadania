@@ -1,42 +1,52 @@
 ﻿@using TrainsMauiHybrid.Helpers
+@using TrainsMauiHybrid.Services
+@using AlignItems = Radzen.AlignItems
+@using ButtonType = Radzen.ButtonType
+@using DialogService = Radzen.DialogService
+@using Orientation = Radzen.Orientation
+@using Variant = Radzen.Variant
 @inherits LayoutComponentBase
-@inject EventHandleHelper themeHelper
 
-<MudThemeProvider @ref="@_mudThemeProvider" @bind-IsDarkMode="@_isDarkMode" Theme="_theme" />
-<MudDialogProvider />
-<MudSnackbarProvider />
+<RadzenComponents />
 
-<MudLayout>
-    
-    
-    
-    
-   
-
-
-    <MudDrawer  @bind-Open="_drawerOpen" Elevation="1">
-        <MudDrawerHeader>
-
-            <MudNavLink Match="NavLinkMatch.All" IconColor="Color.Inherit" Href="/"> </MudNavLink>
-        </MudDrawerHeader>
-
-        <NavMenu/>
-        <MudSpacer/>
-        <MudToggleIconButton ToggledChanged="@ToggleDarkMode" Icon="@Icons.Material.Filled.LightMode"
-                             ToggledIcon="@Icons.Material.Filled.DarkMode"></MudToggleIconButton>
-    </MudDrawer>
-
-    <MudMainContent>
-        <MudContainer Class="pt-1">
+<RadzenLayout style="grid-template-areas: 'rz-sidebar rz-header' 'rz-sidebar rz-body';">
+    <RadzenHeader>
+        <RadzenRow JustifyContent="JustifyContent.Start" AlignItems="AlignItems.Center" Gap="0">
+            <RadzenColumn Size="5">
+                <RadzenSidebarToggle Click="@SidebarToggleClick"></RadzenSidebarToggle>
+            </RadzenColumn>
+            <RadzenColumn Size="7">
+                <RadzenStack AlignItems="AlignItems.Center" Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End"></RadzenStack>
+            </RadzenColumn>
+        </RadzenRow>
+    </RadzenHeader>
+    <RadzenBody Expanded="@sidebarExpanded">
+        <RadzenRow class="rz-mx-auto rz-px-4 rz-pt-2 rz-pt-md-4 rz-pt-lg-6 rz-pt-xl-12 rz-pb-2 rz-pb-lg-12" Style="max-width: 1440px;">
+            <RadzenColumn Size="12">
             @Body
+            </RadzenColumn>
+        </RadzenRow>
+    </RadzenBody>
+    <RadzenSidebar Expanded="@sidebarExpanded" style="z-index: 2">
+        <RadzenStack AlignItems="Radzen.AlignItems.Center" class="rz-py-4 rz-py-lg-6" Style="padding: var(--rz-panel-menu-item-padding); border-bottom: var(--rz-panel-menu-item-border);">
+            <RadzenImage Path="images/logo.png"  style="width: 48px; height: 48px;" AlternateText="Application logo"></RadzenImage>
             
+        </RadzenStack>
+        <RadzenPanelMenu>
+            <RadzenPanelMenuItem Text="Начало" Path="" />
+            <RadzenPanelMenuItem Text="Билеты" Path="bileties" />
+            <RadzenPanelMenuItem Text="Сотурудники" Path="employees" />
+            <RadzenPanelMenuItem Text="Должности" Path="jobs" />
+            <RadzenPanelMenuItem Text="Маршруты" Path="marshutis" />
+            <RadzenPanelMenuItem Text="Обслуживание" Path="obsluzhivanies" />
+            <RadzenPanelMenuItem Text="Продажи" Path="prodazhis" />
+            <RadzenPanelMenuItem Text="Поезда" Path="trains" />
+        </RadzenPanelMenu>
+        <RadzenStack AlignItems="Radzen.AlignItems.Center" Gap="0" class="rz-py-4 rz-py-lg-6" Style="padding: var(--rz-panel-menu-item-padding);">
             
-        </MudContainer>
-    </MudMainContent>
-    <MudScrollToTop Visible="true" OnClick="DrawerToggle" TopOffset="400" Style="z-index:2000;">
-                        <MudFab  Color="Color.Primary"  Label="Меню" Icon="@Icons.Material.Filled.Notes"  />
-                    </MudScrollToTop>
-
-</MudLayout>
+            <RadzenText Text="Все права принадлежат Могилёвскому государственному политехническому колледжу Ⓒ 2024" TextStyle="Radzen.Blazor.TextStyle.Caption" class="rz-mb-0" TagName="Radzen.Blazor.TagName.P" TextAlign="Radzen.TextAlign.Center" />
+        </RadzenStack>
+    </RadzenSidebar>
+</RadzenLayout>
 
 

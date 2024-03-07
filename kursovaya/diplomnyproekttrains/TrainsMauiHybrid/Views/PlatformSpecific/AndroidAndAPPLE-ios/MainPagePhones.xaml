@@ -53,11 +53,12 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+        <BlazorWebView  HostPage="wwwroot/index.html">
             <BlazorWebView.RootComponents>
-                <RootComponent Selector="#app" ComponentType="{x:Type trainsMauiHybrid:Routes}" />
+                <RootComponent Selector="#app" ComponentType="{x:Type pages:Home}" />
             </BlazorWebView.RootComponents>
         </BlazorWebView>
+
     </ContentPage.Content>
 
 

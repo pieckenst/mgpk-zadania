@@ -6,34 +6,39 @@
     <title>TrainsMauiHybrid</title>
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="_content/Radzen.Blazor/css/material3-base.css" />
+    <link href="css/site.css" rel="stylesheet" />
+
+
+
     <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 
-<body >
-<div id="app">
-    <div style="position:absolute; top:30vh; width:100%; text-align:center">
-        <h1>Инициализация приложения</h1>
-        <div style="display:flex; gap:10px; justify-content:center; align-items:center">
-            <div class="spinner-border" role="status"></div>
-            Ожидайте...
+<body>
+    <div id="app">
+        <div style="position:absolute; top:30vh; width:100%; text-align:center">
+            <h1>Инициализация приложения</h1>
+            <div style="display:flex; gap:10px; justify-content:center; align-items:center">
+                <div class="spinner-border" role="status"></div>
+                Ожидайте...
+            </div>
         </div>
     </div>
-</div>
 
     <div class="status-bar-safe-area"></div>
 
-    
+
 
     <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
+       Произошла ошибка в одном из модулей приложения.
+        <a href="" class="reload">Перезапуск приложения</a>
         <a class="dismiss">🗙</a>
     </div>
 
-    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+
+
     <script src="_framework/blazor.webview.js" autostart="false"></script>
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
 
 </body>
 

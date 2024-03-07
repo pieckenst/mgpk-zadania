@@ -1,0 +1,103 @@
+@page "/employees"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+
+<PageTitle>Employees</PageTitle>
+<ErrorBoundary>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Employees" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@employees" TItem="TrainsMauiHybrid.Models.Employee" RowSelect="@EditRow">
+            <Columns>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Employee" Property="Num" Title="Num">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Employee" Property="Surname" Title="Surname">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Employee" Property="Name" Title="Name">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Employee" Property="Patronym" Title="Patronym">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Employee" Property="Employed_Since" Title="Employed Since">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Employee" Property="Job.Job1" Title="Job">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Employee" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="employee">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, employee)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>
+</ErrorBoundary>
+@code {
+
+    protected IEnumerable<TrainsMauiHybrid.Models.Employee> employees;
+
+    protected RadzenDataGrid<TrainsMauiHybrid.Models.Employee> grid0;
+    protected override async Task OnInitializedAsync()
+    {
+        employees = await DiplomnyProektService.GetEmployees(new Query { Expand = "Job" });
+    }
+
+    protected async Task AddButtonClick(MouseEventArgs args)
+    {
+        await DialogService.OpenAsync<AddEmployee>("Add Employee", null);
+        await grid0.Reload();
+    }
+
+    protected async Task EditRow(TrainsMauiHybrid.Models.Employee args)
+    {
+        await DialogService.OpenAsync<EditEmployee>("Edit Employee", new Dictionary<string, object> { {"Num", args.Num} });
+    }
+
+    protected async Task GridDeleteButtonClick(MouseEventArgs args, TrainsMauiHybrid.Models.Employee employee)
+    {
+        try
+        {
+            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+            {
+                var deleteResult = await DiplomnyProektService.DeleteEmployee(employee.Num);
+
+                if (deleteResult != null)
+                {
+                    await grid0.Reload();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = $"Error",
+                Detail = $"Unable to delete Employee"
+            });
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@page "/add-job"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+
+<PageTitle>Add Job</PageTitle>
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Job</RadzenAlert>
+        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Job" Data="@job" Visible="@(job != null)" Submit="@FormSubmit">
+          <RadzenStack>
+            <RadzenFormField Text="Job Num" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@job.Job_Num" Name="Job_Num" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Job_Num" Text="Job_Num is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Job1" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@job.Job1" Name="Job1" />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Internship" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@job.Internship" Name="Internship" />
+              </ChildContent>
+            </RadzenFormField>
+          </RadzenStack>
+          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        job = new TrainsMauiHybrid.Models.Job();
+    }
+    protected bool errorVisible;
+    protected TrainsMauiHybrid.Models.Job job;
+
+    protected async Task FormSubmit()
+    {
+        try
+        {
+            await DiplomnyProektService.CreateJob(job);
+            DialogService.Close(job);
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+        }
+    }
+
+    protected async Task CancelButtonClick(MouseEventArgs args)
+    {
+        DialogService.Close(null);
+    }
+}

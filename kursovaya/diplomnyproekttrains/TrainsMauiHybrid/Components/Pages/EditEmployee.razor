@@ -1,0 +1,94 @@
+@page "/edit-employee"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+
+<PageTitle>Edit Employee</PageTitle>
+
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Employee</RadzenAlert>
+        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Employee" Data="@employee" Visible="@(employee != null)" Submit="@FormSubmit">
+          <RadzenStack>
+            <RadzenFormField Text="Num" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@employee.Num" Name="Num" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Num" Text="Num is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Surname" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Surname" Name="Surname" />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Name" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Name" Name="Name" />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Patronym" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Patronym" Name="Patronym" />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Employed Since" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Employed_Since" Name="Employed_Since" />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Job" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDownDataGrid Data="@jobsForJobNum" TextProperty="Job1" ValueProperty="Job_Num" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@employee.Job_Num" Name="Job_Num"
+                           />
+              </ChildContent>
+            </RadzenFormField>
+          </RadzenStack>
+          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+
+@code {
+
+    [Parameter]
+    public long Num { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        employee = await DiplomnyProektService.GetEmployeeByNum(Num);
+
+        jobsForJobNum = await DiplomnyProektService.GetJobs();
+    }
+    protected bool errorVisible;
+    protected TrainsMauiHybrid.Models.Employee employee;
+
+    protected IEnumerable<TrainsMauiHybrid.Models.Job> jobsForJobNum;
+
+    protected async Task FormSubmit()
+    {
+        try
+        {
+            await DiplomnyProektService.UpdateEmployee(Num, employee);
+            DialogService.Close(employee);
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+        }
+    }
+
+    protected async Task CancelButtonClick(MouseEventArgs args)
+    {
+        DialogService.Close(null);
+    }
+}

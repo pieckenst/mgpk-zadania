@@ -1,101 +1,37 @@
-using MudBlazor;
 using System.Net.NetworkInformation;
+using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
+using Radzen;
 using TrainsMauiHybrid.Texts;
+using DialogService = Radzen.DialogService;
 
 namespace TrainsMauiHybrid.Components.Layout
 {
     public partial class MainLayout
     {
-        //private MudTheme _theme = new();
-        private bool _isDarkMode;
-        private MudThemeProvider? _mudThemeProvider;
+        [Inject]
+        protected IJSRuntime JSRuntime { get; set; }
 
-        // Customize theme colors if you want rather than defaults.
-        // https://mudblazor.com/features/colors#material-colors-list-of-material-colors
-        MudTheme _theme = new MudTheme()
+        [Inject]
+        protected NavigationManager NavigationManager { get; set; }
+
+        [Inject]
+        protected DialogService DialogService { get; set; }
+
+        [Inject]
+        protected TooltipService TooltipService { get; set; }
+
+        [Inject]
+        protected ContextMenuService ContextMenuService { get; set; }
+
+        [Inject]
+        protected NotificationService NotificationService { get; set; }
+
+        private bool sidebarExpanded = true;
+
+        void SidebarToggleClick()
         {
-            //Palette = new Palette()
-            //{
-            //    Primary = MudBlazor.Colors.Yellow.Darken3,
-            //    Secondary = MudBlazor.Colors.Yellow.Accent4,
-            //    AppbarBackground = MudBlazor.Colors.Yellow.Darken4,
-            //},
-            //PaletteDark = new PaletteDark()
-            //{
-            //    Primary = MudBlazor.Colors.Yellow.Darken4,
-            //},
-
-            //LayoutProperties = new LayoutProperties()
-            //{
-            //    DrawerWidthLeft = "260px",
-            //    DrawerWidthRight = "300px"
-            //}
-        };
-
-        bool _drawerOpen = true;
-
-        void DrawerToggle()
-        {
-            _drawerOpen = !_drawerOpen;
-        }
-
-        protected override async Task OnInitializedAsync()
-        {
-            // check theme status
-            if (!string.IsNullOrWhiteSpace(SecureStorage.Default.GetAsync(SecureStorageKey.IsDarkMode).ToString()))
-            {
-                string status = await SecureStorage.Default.GetAsync(SecureStorageKey.IsDarkMode);
-                if (status != null && status == "True")
-                {
-                    _isDarkMode = true;
-                }
-                else
-                {
-                    if (_mudThemeProvider  != null)
-                    {
-                        try
-                        {
-                            _isDarkMode = await _mudThemeProvider.GetSystemPreference();
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine(ex.Message);
-                        }
-                    }
-                    else { _isDarkMode = true; }
-                   
-                }
-            }
-
-            StateHasChanged();
-
-            themeHelper.DarkModeChanged += HandleDarkModeChange;
-        }
-
-        // Event handler for DarkModeChanged event
-        private async void HandleDarkModeChange(bool isDarkMode)
-        {
-            _isDarkMode = isDarkMode;
-            
-
-            if (_isDarkMode)
-            {
-                _isDarkMode = false;
-                await InvokeAsync(StateHasChanged);
-            }
-            else if (!_isDarkMode)
-            {
-                _isDarkMode = true;
-                await InvokeAsync(StateHasChanged);
-            }
-            await SecureStorage.Default.SetAsync(SecureStorageKey.IsDarkMode, _isDarkMode.ToString());
-        }
-
-        // This event handler is called when the MudSwitch is toggled
-        private async Task ToggleDarkMode(bool value)
-        {
-            _isDarkMode = value;
-            themeHelper.RaiseDarkModeChanged(value);
+            sidebarExpanded = !sidebarExpanded;
         }
     }
 }

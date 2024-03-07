@@ -1,0 +1,78 @@
+@page "/add-prodazhi"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+
+<PageTitle>Add Prodazhi</PageTitle>
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Prodazhi</RadzenAlert>
+        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Prodazhi" Data="@prodazhi" Visible="@(prodazhi != null)" Submit="@FormSubmit">
+          <RadzenStack>
+            <RadzenFormField Text="Num" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@prodazhi.Num" Name="Num" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Num" Text="Num is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Sale Date" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@prodazhi.Sale_Date" Name="Sale_Date" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Sale_Date" Text="Sale_Date is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Bilety" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDownDataGrid Data="@biletiesForNomerBiletaKey" TextProperty="Stoimost" ValueProperty="Nomer_Bileta" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@prodazhi.Nomer_BiletaKey" Name="Nomer_BiletaKey"
+                           />
+              </ChildContent>
+            </RadzenFormField>
+          </RadzenStack>
+          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        prodazhi = new TrainsMauiHybrid.Models.Prodazhi();
+
+        biletiesForNomerBiletaKey = await DiplomnyProektService.GetBileties();
+    }
+    protected bool errorVisible;
+    protected TrainsMauiHybrid.Models.Prodazhi prodazhi;
+
+    protected IEnumerable<TrainsMauiHybrid.Models.Bilety> biletiesForNomerBiletaKey;
+
+    protected async Task FormSubmit()
+    {
+        try
+        {
+            await DiplomnyProektService.CreateProdazhi(prodazhi);
+            DialogService.Close(prodazhi);
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+        }
+    }
+
+    protected async Task CancelButtonClick(MouseEventArgs args)
+    {
+        DialogService.Close(null);
+    }
+}

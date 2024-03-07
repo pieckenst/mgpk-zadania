@@ -35,6 +35,23 @@
 
 
     </FlyoutItem>
+
+    <FlyoutItem Title="Cотрудники">
+        <Tab>
+            <ShellContent
+                ContentTemplate="{DataTemplate platformSpecific:EmployeesPhoneView}"
+                IsVisible="{Binding isVisible_iOS}"
+                Route="EmployeesPhoneView"
+                Title="Сотрудники" />
+        </Tab>
+        <Tab>
+            <ShellContent
+        ContentTemplate="{DataTemplate platformSpecific:EmployeesPhoneView}"
+        IsVisible="{Binding isVisible_Android}"
+        Route="EmployeesPhoneView"
+        Title="Сотрудники" />
+        </Tab>
+    </FlyoutItem>
     <FlyoutItem Title="Настройки">
         <Tab>
         <ShellContent

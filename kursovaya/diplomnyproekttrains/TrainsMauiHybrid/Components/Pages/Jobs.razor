@@ -1,0 +1,97 @@
+@page "/jobs"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+
+<PageTitle>Jobs</PageTitle>
+<ErrorBoundary>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Jobs" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@jobs" TItem="TrainsMauiHybrid.Models.Job" RowSelect="@EditRow">
+            <Columns>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Job" Property="Job_Num" Title="Job Num">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Job" Property="Job1" Title="Job1">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Job" Property="Internship" Title="Internship">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Job" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="job">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, job)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>
+</ErrorBoundary>
+@code {
+
+    protected IEnumerable<TrainsMauiHybrid.Models.Job> jobs;
+
+    protected RadzenDataGrid<TrainsMauiHybrid.Models.Job> grid0;
+    protected override async Task OnInitializedAsync()
+    {
+        jobs = await DiplomnyProektService.GetJobs();
+    }
+
+    protected async Task AddButtonClick(MouseEventArgs args)
+    {
+        await DialogService.OpenAsync<AddJob>("Add Job", null);
+        await grid0.Reload();
+    }
+
+    protected async Task EditRow(TrainsMauiHybrid.Models.Job args)
+    {
+        await DialogService.OpenAsync<EditJob>("Edit Job", new Dictionary<string, object> { {"Job_Num", args.Job_Num} });
+    }
+
+    protected async Task GridDeleteButtonClick(MouseEventArgs args, TrainsMauiHybrid.Models.Job job)
+    {
+        try
+        {
+            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+            {
+                var deleteResult = await DiplomnyProektService.DeleteJob(job.Job_Num);
+
+                if (deleteResult != null)
+                {
+                    await grid0.Reload();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = $"Error",
+                Detail = $"Unable to delete Job"
+            });
+        }
+    }
+}

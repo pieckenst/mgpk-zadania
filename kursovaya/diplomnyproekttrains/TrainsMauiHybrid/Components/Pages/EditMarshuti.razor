@@ -1,0 +1,117 @@
+@page "/edit-marshuti"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+
+<PageTitle>Edit Marshuti</PageTitle>
+
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Marshuti</RadzenAlert>
+        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Marshuti" Data="@marshuti" Visible="@(marshuti != null)" Submit="@FormSubmit">
+          <RadzenStack>
+            <RadzenFormField Text="Nomer Marshuta" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@marshuti.Nomer_Marshuta" Name="Nomer_Marshuta" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Nomer_Marshuta" Text="Nomer_Marshuta is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Nachalni Punkt" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Nachalni_Punkt" Name="Nachalni_Punkt" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Nachalni_Punkt" Text="Nachalni_Punkt is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Mid Punkt" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Mid_Punkt" Name="Mid_Punkt" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Mid_Punkt" Text="Mid_Punkt is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Konechni Punkt" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Konechni_Punkt" Name="Konechni_Punkt" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Konechni_Punkt" Text="Konechni_Punkt is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Employee" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDownDataGrid Data="@employeesForEmpNum" TextProperty="Surname" ValueProperty="Num" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@marshuti.Emp_Num" Name="Emp_Num"
+                           />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Train" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDownDataGrid Data="@trainsForModelTrainKey" TextProperty="Model_Sostava_Vagonov" ValueProperty="NumVagona" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@marshuti.ModelTrainKey" Name="ModelTrainKey"
+                           />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Vremya Proezda" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Vremya_Proezda" Name="Vremya_Proezda" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="Vremya_Proezda" Text="Vremya_Proezda is required" />
+                  </Helper>
+            </RadzenFormField>
+          </RadzenStack>
+          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+
+@code {
+
+    [Parameter]
+    public long Nomer_Marshuta { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        marshuti = await DiplomnyProektService.GetMarshutiByNomerMarshuta(Nomer_Marshuta);
+
+        employeesForEmpNum = await DiplomnyProektService.GetEmployees();
+
+        trainsForModelTrainKey = await DiplomnyProektService.GetTrains();
+    }
+    protected bool errorVisible;
+    protected TrainsMauiHybrid.Models.Marshuti marshuti;
+
+    protected IEnumerable<TrainsMauiHybrid.Models.Employee> employeesForEmpNum;
+
+    protected IEnumerable<TrainsMauiHybrid.Models.Train> trainsForModelTrainKey;
+
+    protected async Task FormSubmit()
+    {
+        try
+        {
+            await DiplomnyProektService.UpdateMarshuti(Nomer_Marshuta, marshuti);
+            DialogService.Close(marshuti);
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+        }
+    }
+
+    protected async Task CancelButtonClick(MouseEventArgs args)
+    {
+        DialogService.Close(null);
+    }
+}
