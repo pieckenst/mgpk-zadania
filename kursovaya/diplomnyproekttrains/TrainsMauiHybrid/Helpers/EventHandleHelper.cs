@@ -1,7 +1,16 @@
 ﻿
 
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.ComponentModel;
+using System.Globalization;
+using System.Runtime.CompilerServices;
+using System.Windows.Input;
+
 namespace TrainsMauiHybrid.Helpers
 {
+
+
     public class EventHandleHelper
     {
         // Define a global event using .NET event syntax
@@ -13,4 +22,6 @@ namespace TrainsMauiHybrid.Helpers
             DarkModeChanged?.Invoke(isDarkMode);
         }
     }
+
+
 }

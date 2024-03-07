@@ -51,7 +51,19 @@ namespace TrainsMauiHybrid.Components.Layout
                 }
                 else
                 {
-                    _isDarkMode = await _mudThemeProvider.GetSystemPreference();
+                    if (_mudThemeProvider  != null)
+                    {
+                        try
+                        {
+                            _isDarkMode = await _mudThemeProvider.GetSystemPreference();
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
+                    }
+                    else { _isDarkMode = true; }
+                   
                 }
             }
 

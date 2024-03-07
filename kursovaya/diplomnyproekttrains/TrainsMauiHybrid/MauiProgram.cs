@@ -1,4 +1,9 @@
-﻿using Microsoft.Extensions.Logging;
+﻿
+using CommunityToolkit.Maui;
+using CustomShellMaui;
+using DevExpress.Maui;
+using Material.Components.Maui.Extensions;
+using Microsoft.Extensions.Logging;
 using MudBlazor.Services;
 using TrainsMauiHybrid.Helpers;
 
@@ -11,6 +16,10 @@ namespace TrainsMauiHybrid
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
+                .UseCustomShellMaui()
+                .UseDevExpress()
+                .UseMaterialComponents()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

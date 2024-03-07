@@ -1,0 +1,58 @@
+<Shell
+    x:Class="TrainsMauiHybrid.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TrainsMauiHybrid"
+    xmlns:pages="clr-namespace:TrainsMauiHybrid.Components.Pages"
+    xmlns:views="clr-namespace:TrainsMauiHybrid.Views"
+    xmlns:platformSpecific="clr-namespace:TrainsMauiHybrid.Views.PlatformSpecific"
+    Title="Построение железнодорожных маршрутов"
+
+    Shell.FlyoutBehavior="Flyout"
+>
+
+
+
+
+    <FlyoutItem Title="Главная" >
+        <Tab>
+             <ShellContent
+                         Title="ЖД Маршруты"
+                         IsVisible="{Binding isVisible_Android}"
+                         ContentTemplate="{DataTemplate platformSpecific:MainPagePhoneView}"
+                         Route="MainPagePhoneView" />
+            <ShellContent
+                Title="ЖД Маршруты"
+                IsVisible="{Binding isVisible_iOS}"
+                ContentTemplate="{DataTemplate platformSpecific:MainPagePhoneView}"
+                Route="MainPagePhoneView" />
+            <ShellContent
+                Title="ЖД Маршруты"
+                IsVisible="{Binding isVisible_Desktop}"
+                ContentTemplate="{DataTemplate platformSpecific:MainPageDesktopView}"
+                Route="MainPagePhoneView" />
+        </Tab>
+
+
+    </FlyoutItem>
+    <FlyoutItem Title="Настройки">
+        <Tab>
+        <ShellContent
+                    ContentTemplate="{DataTemplate views:SettingsPage}"
+                    IsVisible="{Binding isVisible_iOS}"
+                    Route="SettingsPage"
+                    Title="Настройки" />
+        </Tab>
+        <Tab>
+        <ShellContent
+            ContentTemplate="{DataTemplate views:SettingsPage}"
+            IsVisible="{Binding isVisible_Android}"
+            Route="SettingsPage"
+            Title="Настройки" />
+        </Tab>
+    </FlyoutItem>
+
+
+
+
+</Shell>

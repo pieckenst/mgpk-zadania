@@ -16,10 +16,12 @@
         <OutputType>Exe</OutputType>
         <RootNamespace>TrainsMauiHybrid</RootNamespace>
         <UseMaui>true</UseMaui>
+		<UseInterpreter>true</UseInterpreter>
         <SingleProject>true</SingleProject>
         <ImplicitUsings>enable</ImplicitUsings>
         <EnableDefaultCssItems>false</EnableDefaultCssItems>
         <Nullable>enable</Nullable>
+		<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
 
         <!-- Display name -->
         <ApplicationTitle>TrainsMauiHybrid</ApplicationTitle>
@@ -58,11 +60,44 @@
     </ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-		<PackageReference Include="MudBlazor" Version="6.15.0" />
+    <PackageReference Include="CustomShellMaui" Version="1.0.6" />
+    <PackageReference Include="IconPacks.Material" Version="1.0.8807.17-build" />
+    <PackageReference Include="Material.Components.Maui" Version="0.2.2-preview" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.6" />
+    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+    <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+    <PackageReference Include="CommunityToolkit.Maui" Version="5.2.0" />
+    <PackageReference Include="DevExpress.Maui.Editors" Version="23.2.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+    <PackageReference Include="MudBlazor" Version="6.17.0" />
+  </ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Resources\Styles\" />
+	  <Folder Include="wwwroot\css\bootstrap\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\PlatformSpecific\AndroidAndAPPLE-ios\MainPagePhones.xaml">
+	    <SubType>Designer</SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PlatformSpecific\Desktop\MainPageDesktop.xaml">
+	    <SubType>Designer</SubType>
+	  </MauiXaml>
+	  <MauiXaml Remove="Views\MainPage.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\PlatformSpecific\AndroidAndAPPLE-ios\MainPagePhones.xaml.cs">
+	    <DependentUpon>MainPage.xaml</DependentUpon>
+	    <SubType>Code</SubType>
+	  </Compile>
+	  <Compile Update="Views\PlatformSpecific\Desktop\MainPageDesktop.xaml.cs">
+	    <DependentUpon>MainPagePhones.xaml</DependentUpon>
+	    <SubType>Code</SubType>
+	  </Compile>
+	  <Compile Remove="Views\MainPage.xaml.cs" />
+	  <Compile Remove="Controllers\UploadController.cs" />
 	</ItemGroup>
 
 </Project>

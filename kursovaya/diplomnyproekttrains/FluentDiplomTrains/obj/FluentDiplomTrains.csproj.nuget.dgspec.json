@@ -28,7 +28,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/hLWq46dguXDRwis25bLNz9Kfwj8i5kGvRLpVSo1o22lVCIJ5x2/api": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -209,7 +210,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/hLWq46dguXDRwis25bLNz9Kfwj8i5kGvRLpVSo1o22lVCIJ5x2/api": {}
         },
         "frameworks": {
           "net5.0-windows7.0": {
@@ -304,7 +306,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/hLWq46dguXDRwis25bLNz9Kfwj8i5kGvRLpVSo1o22lVCIJ5x2/api": {}
         },
         "frameworks": {
           "net5.0-windows7.0": {

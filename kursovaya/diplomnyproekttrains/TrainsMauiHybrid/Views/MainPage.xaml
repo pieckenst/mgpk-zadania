@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:TrainsMauiHybrid.Views"
+            xmlns:pages="clr-namespace:TrainsMauiHybrid.Components.Pages"
+            xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
+            xmlns:md="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
+            xmlns:mds="clr-namespace:Material.Components.Maui.Styles;assembly=Material.Components.Maui"
+            xmlns:mdc="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
+            xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+            xmlns:platformSpecific="clr-namespace:TrainsMauiHybrid.Views.PlatformSpecific"
+            x:Class="TrainsMauiHybrid.Views.MainPage"
+            >
+    
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarStyle="{ AppThemeBinding Light=DarkContent, Dark=LightContent }" 
+                                   StatusBarColor=
+                                   "{AppThemeBinding Light={StaticResource White}, 
+                                   Dark={StaticResource OffBlack}}" />
+    </ContentPage.Behaviors>
+    
+    <Grid >
+
+        <VerticalStackLayout
+            Grid.Row="0"
+            x:Name="VerticalLayout" />
+
+        <Grid>
+            
+            </Grid>
+
+    </Grid>
+
+    
+
+
+
+
+
+</ContentPage>

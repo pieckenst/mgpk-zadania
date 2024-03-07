@@ -7,27 +7,35 @@
 <MudSnackbarProvider />
 
 <MudLayout>
-    <MudAppBar Bottom="true" Dense="true">
-        <MudIconButton OnClick="DrawerToggle" Icon="@Icons.Material.Rounded.Notes" Color="Color.Inherit" Edge="Edge.Start" />
+    
+    
+    
+    
+   
+
+
+    <MudDrawer  @bind-Open="_drawerOpen" Elevation="1">
+        <MudDrawerHeader>
+
+            <MudNavLink Match="NavLinkMatch.All" IconColor="Color.Inherit" Href="/"> </MudNavLink>
+        </MudDrawerHeader>
+
+        <NavMenu/>
         <MudSpacer/>
         <MudToggleIconButton ToggledChanged="@ToggleDarkMode" Icon="@Icons.Material.Filled.LightMode"
                              ToggledIcon="@Icons.Material.Filled.DarkMode"></MudToggleIconButton>
-    </MudAppBar>
-
-    <MudDrawer @bind-Open="_drawerOpen" Elevation="1">
-        <MudDrawerHeader>
-            
-            <MudNavLink Match="NavLinkMatch.All" IconColor="Color.Inherit" Href="/"
-            > <h3>Построение Железнодорожных Маршрутов</h3></MudNavLink>
-        </MudDrawerHeader>
-        <NavMenu />
     </MudDrawer>
 
     <MudMainContent>
         <MudContainer Class="pt-1">
             @Body
+            
+            
         </MudContainer>
     </MudMainContent>
+    <MudScrollToTop Visible="true" OnClick="DrawerToggle" TopOffset="400" Style="z-index:2000;">
+                        <MudFab  Color="Color.Primary"  Label="Меню" Icon="@Icons.Material.Filled.Notes"  />
+                    </MudScrollToTop>
 
 </MudLayout>
 
