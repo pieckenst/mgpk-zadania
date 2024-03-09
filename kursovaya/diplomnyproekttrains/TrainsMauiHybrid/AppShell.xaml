@@ -8,19 +8,16 @@
     xmlns:platformSpecific="clr-namespace:TrainsMauiHybrid.Views.PlatformSpecific"
     Title="Построение железнодорожных маршрутов"
 
-    Shell.FlyoutBehavior="Flyout"
+    Shell.FlyoutBehavior="Disabled"
 >
-
-
-
-
-    <FlyoutItem Title="Главная" >
-        <Tab>
-             <ShellContent
-                         Title="ЖД Маршруты"
-                         IsVisible="{Binding isVisible_Android}"
-                         ContentTemplate="{DataTemplate platformSpecific:MainPagePhoneView}"
-                         Route="MainPagePhoneView" />
+    
+    <TabBar >
+        <Tab x:Name="HomeandroidTab" Icon="home.png" Title="Главная">
+            <ShellContent
+                Title="ЖД Маршруты"
+                IsVisible="{Binding isVisible_Android}"
+                ContentTemplate="{DataTemplate platformSpecific:MainPagePhoneView}"
+                Route="MainPagePhoneView" />
             <ShellContent
                 Title="ЖД Маршруты"
                 IsVisible="{Binding isVisible_iOS}"
@@ -30,46 +27,22 @@
                 Title="ЖД Маршруты"
                 IsVisible="{Binding isVisible_Desktop}"
                 ContentTemplate="{DataTemplate platformSpecific:MainPageDesktopView}"
-                Route="MainPagePhoneView" />
+                Route="MainPageDesktopView" />
+            
         </Tab>
-
-
-    </FlyoutItem>
-
-    <FlyoutItem Title="Cотрудники">
-        <Tab>
+        
+        <Tab x:Name="settingsandroidTab" Icon="appsetting.png" Title="Настройки">
             <ShellContent
-                ContentTemplate="{DataTemplate platformSpecific:EmployeesPhoneView}"
+                ContentTemplate="{DataTemplate views:SettingsPage}"
                 IsVisible="{Binding isVisible_iOS}"
-                Route="EmployeesPhoneView"
-                Title="Сотрудники" />
-        </Tab>
-        <Tab>
+                Route="SettingsPage"
+                Title="Настройки" />
             <ShellContent
-        ContentTemplate="{DataTemplate platformSpecific:EmployeesPhoneView}"
-        IsVisible="{Binding isVisible_Android}"
-        Route="EmployeesPhoneView"
-        Title="Сотрудники" />
+                ContentTemplate="{DataTemplate views:SettingsPage}"
+                IsVisible="{Binding isVisible_Android}"
+                Route="SettingsPage"
+                Title="Настройки" />
         </Tab>
-    </FlyoutItem>
-    <FlyoutItem Title="Настройки">
-        <Tab>
-        <ShellContent
-                    ContentTemplate="{DataTemplate views:SettingsPage}"
-                    IsVisible="{Binding isVisible_iOS}"
-                    Route="SettingsPage"
-                    Title="Настройки" />
-        </Tab>
-        <Tab>
-        <ShellContent
-            ContentTemplate="{DataTemplate views:SettingsPage}"
-            IsVisible="{Binding isVisible_Android}"
-            Route="SettingsPage"
-            Title="Настройки" />
-        </Tab>
-    </FlyoutItem>
-
-
-
-
+    </TabBar>
+    
 </Shell>

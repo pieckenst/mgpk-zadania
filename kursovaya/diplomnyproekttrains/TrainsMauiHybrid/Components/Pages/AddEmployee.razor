@@ -9,40 +9,40 @@
 
 @inject DiplomnyProektService DiplomnyProektService
 
-<PageTitle>Add Employee</PageTitle>
+<PageTitle>Добавить информацию о сотруднике</PageTitle>
     <RadzenColumn SizeMD=12>
-        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Employee</RadzenAlert>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Ошибка сохранения информации</RadzenAlert>
         <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Employee" Data="@employee" Visible="@(employee != null)" Submit="@FormSubmit">
           <RadzenStack>
-            <RadzenFormField Text="Num" Variant="Variant.Filled">
+            <RadzenFormField Text="Номер сотрудника" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenNumeric style="display: block; width: 100%" @bind-Value="@employee.Num" Name="Num" />
                   </ChildContent>    
                   <Helper>
-                    <RadzenRequiredValidator Component="Num" Text="Num is required" />
+                    <RadzenRequiredValidator Component="Num" Text="Номер сотрудника необходимо заполнить!" />
                   </Helper>
             </RadzenFormField>
-            <RadzenFormField Text="Surname" Variant="Variant.Filled">
+            <RadzenFormField Text="Фамилия" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Surname" Name="Surname" />
               </ChildContent>
             </RadzenFormField>
-            <RadzenFormField Text="Name" Variant="Variant.Filled">
+            <RadzenFormField Text="Имя" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Name" Name="Name" />
               </ChildContent>
             </RadzenFormField>
-            <RadzenFormField Text="Patronym" Variant="Variant.Filled">
+            <RadzenFormField Text="Отчество" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Patronym" Name="Patronym" />
               </ChildContent>
             </RadzenFormField>
-            <RadzenFormField Text="Employed Since" Variant="Variant.Filled">
+            <RadzenFormField Text="Работает с (числа)" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Employed_Since" Name="Employed_Since" />
               </ChildContent>
             </RadzenFormField>
-            <RadzenFormField Text="Job" Variant="Variant.Filled">
+            <RadzenFormField Text="Должность" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenDropDownDataGrid Data="@jobsForJobNum" TextProperty="Job1" ValueProperty="Job_Num" AllowClear=true
                           style="display: block; width: 100%" @bind-Value="@employee.Job_Num" Name="Job_Num"
@@ -51,8 +51,8 @@
             </RadzenFormField>
           </RadzenStack>
           <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
-                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Сохранить" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Отмена" Variant="Variant.Flat" Click="@CancelButtonClick"  />
           </RadzenStack>
         </RadzenTemplateForm>
     </RadzenColumn>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FluentDiplomTrains")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+557922bf14c23bb55ce9edbd35163587cd6da687")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a6998f0c91c12dd8a19d176f3df784abcf4b140")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluentDiplomTrains")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluentDiplomTrains")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

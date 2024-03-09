@@ -9,59 +9,72 @@
 
 @inject DiplomnyProektService DiplomnyProektService
 
-<PageTitle>Obsluzhivanies</PageTitle>
+<PageTitle>Обслуживание автобусов</PageTitle>
 <ErrorBoundary>
-<RadzenStack>
-    <RadzenRow AlignItems="AlignItems.Center">
-        <RadzenColumn Size="12" SizeMD="6">
-            <RadzenText Text="Obsluzhivanies" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
-        </RadzenColumn>
-        <RadzenColumn Size="12" SizeMD="6">
-            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
-            </RadzenStack>
-        </RadzenColumn>
-    </RadzenRow>
-    <RadzenRow>
-      <RadzenColumn SizeMD=12>
-        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
-            Data="@obsluzhivanies" TItem="TrainsMauiHybrid.Models.Obsluzhivanie" RowSelect="@EditRow">
-            <Columns>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="NomerObsluzhivania" Title="Nomer Obsluzhivania">
-                </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Train.Model_Sostava_Vagonov" Title="Train">
-                </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Data_Poslednego_Obsluzhivania" Title="Data Poslednego Obsluzhivania">
-                </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Ingener_Obsluzhivania" Title="Ingener Obsluzhivania">
-                </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Problemi_Sostava" Title="Problemi Sostava">
-                </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Data_Sledueschego_Obsluzivania" Title="Data Sledueschego Obsluzivania">
-                </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Goden_K_Doroge" Title="Goden K Doroge">
-                </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
-                    <Template Context="obsluzhivanie">
+    
+    <RadzenStack>
+        <RadzenRow AlignItems="AlignItems.Center">
+            <RadzenColumn Size="12" SizeMD="6">
+                <RadzenText Text="Obsluzhivanies" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0"/>
+            </RadzenColumn>
+            <RadzenColumn Size="12" SizeMD="6">
+                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton Icon="add_circle_outline" Text="Добавить информацию" Click="@AddButtonClick" Variant="Variant.Flat"/>
+                </RadzenStack>
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenTextBox Placeholder="Поиск по информации ..." style="display: block; width: 100%" @oninput="@Search" aria-label="Search by all string columns"/>
+        <RadzenRow>
+            <RadzenColumn SizeMD=12>
+                <RadzenDataGrid @ref="grid0" ColumnWidth="200px" AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[] { 5, 10, 20, 30 })
+                                Data="@obsluzhivanies" TItem="TrainsMauiHybrid.Models.Obsluzhivanie" RowSelect="@EditRow">
+                    <Columns>
+                        <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="NomerObsluzhivania" Title="Номер обслуживания">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Train.Model_Sostava_Vagonov" Title="Модель состава вагонов">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Data_Poslednego_Obsluzhivania" Title="Дата последнего обслуживания">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Ingener_Obsluzhivania" Title="Инженер обслуживания">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Problemi_Sostava" Title="Проблемы состава вагонов">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Data_Sledueschego_Obsluzivania" Title="Дата следующего обслуживания">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="Goden_K_Doroge" Title="Годен к дороге">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                            <Template Context="obsluzhivanie">
 
-                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
-                            Shade="Shade.Lighter" Variant="Variant.Flat"
-                            Click=@(args => GridDeleteButtonClick(args, obsluzhivanie)) @onclick:stopPropagation="true" />
-                    </Template>
-                </RadzenDataGridColumn>
-            </Columns>
+                                <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                                              Shade="Shade.Lighter" Variant="Variant.Flat"
+                                              Click=@(args => GridDeleteButtonClick(args, obsluzhivanie)) @onclick:stopPropagation="true" />
+                            </Template>
+                        </RadzenDataGridColumn>
+                    </Columns>
 
-        </RadzenDataGrid>
+                </RadzenDataGrid>
 
-    </RadzenColumn>
-  </RadzenRow>
-</RadzenStack>
+            </RadzenColumn>
+        </RadzenRow>
+    </RadzenStack>
+
 </ErrorBoundary>
 @code {
 
     protected IEnumerable<TrainsMauiHybrid.Models.Obsluzhivanie> obsluzhivanies;
 
     protected RadzenDataGrid<TrainsMauiHybrid.Models.Obsluzhivanie> grid0;
+    protected string search = "";
+
+    protected async Task Search(ChangeEventArgs args)
+    {
+        search = $"{args.Value}";
+
+        await grid0.GoToPage(0);
+
+        obsluzhivanies = await DiplomnyProektService.GetObsluzhivanies(new Query { Filter = $@"i => i.Data_Poslednego_Obsluzhivania.Contains(@0) || i.Ingener_Obsluzhivania.Contains(@0) || i.Problemi_Sostava.Contains(@0) || i.Data_Sledueschego_Obsluzivania.Contains(@0) || i.Goden_K_Doroge.Contains(@0)", FilterParameters = new object[] { search }, Expand = "Train" });
+    }
     protected override async Task OnInitializedAsync()
     {
         obsluzhivanies = await DiplomnyProektService.GetObsluzhivanies(new Query { Expand = "Train" });
@@ -82,7 +95,7 @@
     {
         try
         {
-            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+            if (await DialogService.Confirm("Вы уверены что хотите удалить данную строку?") == true)
             {
                 var deleteResult = await DiplomnyProektService.DeleteObsluzhivanie(obsluzhivanie.NomerObsluzhivania);
 
@@ -97,7 +110,7 @@
             NotificationService.Notify(new NotificationMessage
             {
                 Severity = NotificationSeverity.Error,
-                Summary = $"Error",
+                Summary = $"Ошибка",
                 Detail = $"Unable to delete Obsluzhivanie"
             });
         }

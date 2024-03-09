@@ -9,55 +9,55 @@
 
 @inject DiplomnyProektService DiplomnyProektService
 
-<PageTitle>Add Obsluzhivanie</PageTitle>
+<PageTitle>Добавить информацию о обслуживании</PageTitle>
     <RadzenColumn SizeMD=12>
-        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Obsluzhivanie</RadzenAlert>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Ошибка сохранения информации</RadzenAlert>
         <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Data="@obsluzhivanie" Visible="@(obsluzhivanie != null)" Submit="@FormSubmit">
           <RadzenStack>
-            <RadzenFormField Text="Nomer Obsluzhivania" Variant="Variant.Filled">
+            <RadzenFormField Text="Номер обслуживания" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenNumeric style="display: block; width: 100%" @bind-Value="@obsluzhivanie.NomerObsluzhivania" Name="NomerObsluzhivania" />
                   </ChildContent>    
                   <Helper>
-                    <RadzenRequiredValidator Component="NomerObsluzhivania" Text="NomerObsluzhivania is required" />
+                    <RadzenRequiredValidator Component="NomerObsluzhivania" Text="Номер обслуживания необходимо заполнить!" />
                   </Helper>
             </RadzenFormField>
-            <RadzenFormField Text="Train" Variant="Variant.Filled">
+            <RadzenFormField Text="Модель состава вагонов" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenDropDownDataGrid Data="@trainsForModelTrainKey" TextProperty="Model_Sostava_Vagonov" ValueProperty="NumVagona" AllowClear=true
                           style="display: block; width: 100%" @bind-Value="@obsluzhivanie.Model_TrainKey" Name="Model_TrainKey"
                            />
               </ChildContent>
             </RadzenFormField>
-            <RadzenFormField Text="Data Poslednego Obsluzhivania" Variant="Variant.Filled">
+            <RadzenFormField Text="Дата последнего обслуживания" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@obsluzhivanie.Data_Poslednego_Obsluzhivania" Name="Data_Poslednego_Obsluzhivania" />
               </ChildContent>
             </RadzenFormField>
-            <RadzenFormField Text="Ingener Obsluzhivania" Variant="Variant.Filled">
+            <RadzenFormField Text="Инженер обслуживания" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@obsluzhivanie.Ingener_Obsluzhivania" Name="Ingener_Obsluzhivania" />
               </ChildContent>
             </RadzenFormField>
-            <RadzenFormField Text="Problemi Sostava" Variant="Variant.Filled">
+            <RadzenFormField Text="Проблемы состава" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@obsluzhivanie.Problemi_Sostava" Name="Problemi_Sostava" />
               </ChildContent>
             </RadzenFormField>
-            <RadzenFormField Text="Data Sledueschego Obsluzivania" Variant="Variant.Filled">
+            <RadzenFormField Text="Дата следующего облсуживания" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@obsluzhivanie.Data_Sledueschego_Obsluzivania" Name="Data_Sledueschego_Obsluzivania" />
               </ChildContent>
             </RadzenFormField>
-            <RadzenFormField Text="Goden K Doroge" Variant="Variant.Filled">
+            <RadzenFormField Text="Годен к дороге" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@obsluzhivanie.Goden_K_Doroge" Name="Goden_K_Doroge" />
               </ChildContent>
             </RadzenFormField>
           </RadzenStack>
           <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
-                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Сохранить" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Отмена" Variant="Variant.Flat" Click="@CancelButtonClick"  />
           </RadzenStack>
         </RadzenTemplateForm>
     </RadzenColumn>

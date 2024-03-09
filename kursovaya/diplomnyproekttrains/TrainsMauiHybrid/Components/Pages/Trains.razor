@@ -9,17 +9,17 @@
 
 @inject DiplomnyProektService DiplomnyProektService
 
-<PageTitle>Trains</PageTitle>
+<PageTitle>Информация о поездах</PageTitle>
 <ErrorBoundary>
 
 <RadzenStack>
     <RadzenRow AlignItems="AlignItems.Center">
         <RadzenColumn Size="12" SizeMD="6">
-            <RadzenText Text="Trains" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+            <RadzenText Text="Информация о поездах" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
         </RadzenColumn>
         <RadzenColumn Size="12" SizeMD="6">
             <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+                <RadzenButton Icon="add_circle_outline" Text="Добавить информацию" Click="@AddButtonClick" Variant="Variant.Flat" />
             </RadzenStack>
         </RadzenColumn>
     </RadzenRow>
@@ -28,11 +28,11 @@
         <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
             Data="@trains" TItem="TrainsMauiHybrid.Models.Train" RowSelect="@EditRow">
             <Columns>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Train" Property="NumVagona" Title="Num Vagona">
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Train" Property="NumVagona" Title="Номер вагона">
                 </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Train" Property="Model_Sostava_Vagonov" Title="Model Sostava Vagonov">
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Train" Property="Model_Sostava_Vagonov" Title="Модель состава вагонов">
                 </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Train" Property="Kolichestvo_Mest" Title="Kolichestvo Mest">
+                    <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Train" Property="Kolichestvo_Mest" Title="Количество пассажирских мест">
                 </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Train" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
                     <Template Context="train">
@@ -75,7 +75,7 @@
     {
         try
         {
-            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+            if (await DialogService.Confirm("Вы уверены что хотите удалить данную строку?") == true)
             {
                 var deleteResult = await DiplomnyProektService.DeleteTrain(train.NumVagona);
 
@@ -90,7 +90,7 @@
             NotificationService.Notify(new NotificationMessage
             {
                 Severity = NotificationSeverity.Error,
-                Summary = $"Error",
+                Summary = $"Ошибка",
                 Detail = $"Unable to delete Train"
             });
         }

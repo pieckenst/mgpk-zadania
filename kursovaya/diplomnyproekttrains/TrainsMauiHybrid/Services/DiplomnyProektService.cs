@@ -750,7 +750,7 @@ namespace TrainsMauiHybrid.Services
                 if (!string.IsNullOrEmpty(query.Expand))
                 {
                     var propertiesToExpand = query.Expand.Split(',');
-                    foreach (var p in propertiesToExpand)
+                    foreach(var p in propertiesToExpand)
                     {
                         items = items.Include(p.Trim());
                     }

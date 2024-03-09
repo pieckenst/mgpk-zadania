@@ -88,9 +88,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\PlatformSpecific\AndroidAndAPPLE-ios\PageEmployes.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Views\PlatformSpecific\AndroidAndAPPLE-ios\MainPagePhones.xaml">
 	    <SubType>Designer</SubType>
 	  </MauiXaml>
@@ -101,9 +98,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Views\PlatformSpecific\AndroidAndAPPLE-ios\PageEmployes.xaml.cs">
-	    <DependentUpon>PageEmployes.xaml</DependentUpon>
-	  </Compile>
 	  <Compile Update="Views\PlatformSpecific\AndroidAndAPPLE-ios\MainPagePhones.xaml.cs">
 	    <DependentUpon>MainPage.xaml</DependentUpon>
 	    <SubType>Code</SubType>

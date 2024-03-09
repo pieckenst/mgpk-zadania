@@ -10,6 +10,7 @@ public partial class AppShell : Shell
 
     public bool isVisible_iOS { get; set; }
     public bool isVisible_Desktop { get; set; }
+    public bool isVisible_Mobileordesktop { get; set; }
 	public AppShell()
 	{
 		InitializeComponent();
@@ -19,7 +20,7 @@ public partial class AppShell : Shell
         Routing.RegisterRoute(nameof(EditBioPage), typeof(EditBioPage));
         Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
         Routing.RegisterRoute(nameof(MainPagePhoneView), typeof(MainPagePhoneView));
-        Routing.RegisterRoute(nameof(EmployeesPhoneView), typeof(EmployeesPhoneView));
+       
         Routing.RegisterRoute(nameof(MainPageDesktopView), typeof(MainPageDesktopView));
 
         Routing.RegisterRoute("SettingsPage/EditBioPage", typeof(EditBioPage));
