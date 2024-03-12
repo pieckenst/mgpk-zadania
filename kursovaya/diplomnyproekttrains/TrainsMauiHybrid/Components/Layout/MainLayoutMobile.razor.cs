@@ -9,6 +9,9 @@ namespace TrainsMauiHybrid.Components.Layout
 {
     public partial class MainLayoutMobile
     {
+        static AppTheme currentTheme = Application.Current.RequestedTheme;
+        string getwiptheme = currentTheme.ToString();
+        private bool _drawer;
         [Inject]
         protected IJSRuntime JSRuntime { get; set; }
 
@@ -32,6 +35,28 @@ namespace TrainsMauiHybrid.Components.Layout
         void SidebarToggleClick()
         {
             sidebarExpanded = !sidebarExpanded;
+        }
+        void hidedrawer()
+        {
+            _drawer = !_drawer;
+        }
+        bool _isDark;
+
+        protected override Task OnInitializedAsync()
+        {
+            _isDark = MasaBlazor?.Theme?.Dark ?? false;
+            return base.OnInitializedAsync();
+        }
+
+        private void IsDarkChanged(bool isDark)
+        {
+            if (getwiptheme == "Dark") {
+                _isDark = true;
+            } else {
+                _isDark = false;
+            }
+            _isDark = isDark;
+            MasaBlazor.ToggleTheme();
         }
     }
 }

@@ -1,0 +1,12 @@
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\bin\Debug\net6.0\DataBaseConnectors.deps.json
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\bin\Debug\net6.0\DataBaseConnectors.dll
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\bin\Debug\net6.0\DataBaseConnectors.pdb
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\obj\Debug\net6.0\DataBaseConnectors.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\obj\Debug\net6.0\DataBaseConnectors.AssemblyInfoInputs.cache
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\obj\Debug\net6.0\DataBaseConnectors.AssemblyInfo.cs
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\obj\Debug\net6.0\DataBaseConnectors.csproj.CoreCompileInputs.cache
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\obj\Debug\net6.0\DataBaseConnectors.sourcelink.json
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\obj\Debug\net6.0\DataBaseConnectors.dll
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\obj\Debug\net6.0\refint\DataBaseConnectors.dll
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\obj\Debug\net6.0\DataBaseConnectors.pdb
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\DataBaseConnectors\obj\Debug\net6.0\ref\DataBaseConnectors.dll

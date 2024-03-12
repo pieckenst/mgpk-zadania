@@ -31,7 +31,7 @@
             
         </Tab>
         
-        <Tab x:Name="settingsandroidTab" Icon="appsetting.png" Title="Настройки">
+        <!--<Tab x:Name="settingsandroidTab" Icon="appsetting.png" Title="Настройки">
             <ShellContent
                 ContentTemplate="{DataTemplate views:SettingsPage}"
                 IsVisible="{Binding isVisible_iOS}"
@@ -42,7 +42,7 @@
                 IsVisible="{Binding isVisible_Android}"
                 Route="SettingsPage"
                 Title="Настройки" />
-        </Tab>
+        </Tab>-->
     </TabBar>
     
 </Shell>

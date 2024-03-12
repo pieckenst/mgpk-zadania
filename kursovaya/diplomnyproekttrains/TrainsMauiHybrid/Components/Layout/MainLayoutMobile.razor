@@ -6,65 +6,96 @@
 @using Orientation = Radzen.Orientation
 @using Variant = Radzen.Variant
 @inherits LayoutComponentBase
-
+@inject MasaBlazor MasaBlazor
 
 
 <RadzenComponents />
 
-<MApp>
+<MApp >
     <MErrorHandler ShowDetail="true">
+        
+
+        @*<MNavigationDrawer App @bind-Value="_drawer">
+            <MList Nav Routable>
+                <MListItem Href="/" ActiveClass="primary--text">
+                    <MListItemIcon>
+                        <MIcon>mdi-home</MIcon>
+                    </MListItemIcon>
+                    <MListItemContent>
+                        <MListItemTitle>Home</MListItemTitle>
+                    </MListItemContent>
+                </MListItem>
+                <MListItem Href="/bileties" ActiveClass="primary--text">
+                    <MListItemIcon>
+                        <MIcon>mdi-plus</MIcon>
+                    </MListItemIcon>
+                    <MListItemContent>
+                        <MListItemTitle>Обслуживание</MListItemTitle>
+                    </MListItemContent>
+                </MListItem>
+                <MListItem Href="/bileties" ActiveClass="primary--text">
+                    <MListItemIcon>
+                        <MIcon>mdi-plus</MIcon>
+                    </MListItemIcon>
+                    <MListItemContent>
+                        <MListItemTitle>Билеты</MListItemTitle>
+                    </MListItemContent>
+                </MListItem>
+                <MListItem Href="/trains" ActiveClass="primary--text">
+                    <MListItemIcon>
+                        <MIcon>mdi-list-box</MIcon>
+                    </MListItemIcon>
+                    <MListItemContent>
+                        <MListItemTitle>Поезда</MListItemTitle>
+                    </MListItemContent>
+                </MListItem>
+            </MList>
+        </MNavigationDrawer>
+        *@
 
         @*<MNavigationDrawer App @bind-Value="drawer">
         <NavMenu />
         </MNavigationDrawer>*@
 
-        @*<MAppBar App="true">
-        <MAppBarNavIcon @onclick="()=> drawer = !drawer"></MAppBarNavIcon>
 
-        </MAppBar>*@
 
         <MMain>
             @Body
         </MMain>
 
-        <MBottomNavigation Grow App="true">
+        <MBottomNavigation Grow Color="purple" HideOnScroll>
 
-            <MButton Href="/">
-                <span>Начало</span>
-                <MIcon>mdi-calendar-text</MIcon>
-            </MButton>
 
-            <MButton Href="bileties">
-                <span>Билеты</span>
-                <MIcon>mdi-calendar-blank</MIcon>
-            </MButton>
-
-           
             <MButton Href="employees">
                 <span>Cотрудники</span>
-                <MIcon>mdi-emoticon-happy-outline</MIcon>
+                <MIcon>mdi-account</MIcon>
             </MButton>
             <MButton Href="jobs">
                 <span>Должности</span>
-                <MIcon>mdi-emoticon-happy-outline</MIcon>
+                <MIcon>mdi-card-text</MIcon>
             </MButton>
             <MButton Href="marshutis">
                 <span>Маршруты</span>
-                <MIcon>mdi-emoticon-happy-outline</MIcon>
+                <MIcon>mdi-train</MIcon>
             </MButton>
-            <MButton Href="obsluzhivanies" >
-                <span>Обслуживание</span>
-                <MIcon>mdi-emoticon-happy-outline</MIcon>
-            </MButton>
+
             <MButton Href="prodazhis">
                 <span>Продажи</span>
-                <MIcon>mdi-emoticon-happy-outline</MIcon>
+                <MIcon>mdi-ticket-confirmation</MIcon>
+            </MButton>
+            <MButton Href="bileties">
+                <span>Билеты</span>
+                <MIcon>mdi-passport</MIcon>
             </MButton>
             <MButton Href="trains">
                 <span>Поезда</span>
-                <MIcon>mdi-emoticon-happy-outline</MIcon>
+                <MIcon>mdi-train-car-container</MIcon>
             </MButton>
-
+            <MButton Href="obsluzhivanies">
+                <span>Обслуживание</span>
+                <MIcon>mdi-table-filter</MIcon>
+            </MButton>
+            <MSwitch Value="_isDark" TValue="bool" ValueChanged="IsDarkChanged" Label="@(_isDark ? "Темная" : "Светлая")" />
         </MBottomNavigation>
 
     </MErrorHandler>
