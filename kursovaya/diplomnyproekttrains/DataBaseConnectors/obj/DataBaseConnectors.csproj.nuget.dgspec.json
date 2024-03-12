@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\DataBaseConnectors.csproj": {}
+    "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\DataBaseConnectors.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\DataBaseConnectors.csproj": {
+    "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\DataBaseConnectors.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\DataBaseConnectors.csproj",
+        "projectUniqueName": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\DataBaseConnectors.csproj",
         "projectName": "DataBaseConnectors",
-        "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\DataBaseConnectors.csproj",
-        "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\obj\\",
+        "projectPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\DataBaseConnectors.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\sdk\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

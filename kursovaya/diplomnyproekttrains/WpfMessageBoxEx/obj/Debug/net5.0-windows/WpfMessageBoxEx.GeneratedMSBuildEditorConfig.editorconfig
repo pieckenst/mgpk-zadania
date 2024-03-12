@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WpfMessageBoxEx
-build_property.ProjectDir = C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\WpfMessageBoxEx\
+build_property.ProjectDir = D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\WpfMessageBoxEx\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

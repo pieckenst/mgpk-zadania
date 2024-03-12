@@ -62,13 +62,13 @@
 
     protected async Task AddButtonClick(MouseEventArgs args)
     {
-        await DialogService.OpenAsync<AddTrain>("Add Train", null);
+        await DialogService.OpenAsync<AddTrain>("Добавить информацию о моделях состава вагонов", null);
         await grid0.Reload();
     }
 
     protected async Task EditRow(TrainsMauiHybrid.Models.Train args)
     {
-        await DialogService.OpenAsync<EditTrain>("Edit Train", new Dictionary<string, object> { {"NumVagona", args.NumVagona} });
+        await DialogService.OpenAsync<EditTrain>("Редактировать информацию о моделях состава вагонов", new Dictionary<string, object> { { "NumVagona", args.NumVagona } });
     }
 
     protected async Task GridDeleteButtonClick(MouseEventArgs args, TrainsMauiHybrid.Models.Train train)

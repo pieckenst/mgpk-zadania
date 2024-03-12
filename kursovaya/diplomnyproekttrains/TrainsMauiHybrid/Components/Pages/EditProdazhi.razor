@@ -9,29 +9,29 @@
 
 @inject DiplomnyProektService DiplomnyProektService
 
-<PageTitle>Edit Prodazhi</PageTitle>
+<PageTitle>Редактирование информации о продажах</PageTitle>
 
     <RadzenColumn SizeMD=12>
         <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Prodazhi</RadzenAlert>
         <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Prodazhi" Data="@prodazhi" Visible="@(prodazhi != null)" Submit="@FormSubmit">
           <RadzenStack>
-            <RadzenFormField Text="Num" Variant="Variant.Filled">
+            <RadzenFormField Text="Номер продажи" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenNumeric style="display: block; width: 100%" @bind-Value="@prodazhi.Num" Name="Num" />
                   </ChildContent>    
                   <Helper>
-                    <RadzenRequiredValidator Component="Num" Text="Num is required" />
+                    <RadzenRequiredValidator Component="Num" Text="Номер продажи необходимо заполнить!" />
                   </Helper>
             </RadzenFormField>
-            <RadzenFormField Text="Sale Date" Variant="Variant.Filled">
+            <RadzenFormField Text="Дата продажи" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@prodazhi.Sale_Date" Name="Sale_Date" />
                   </ChildContent>    
                   <Helper>
-                    <RadzenRequiredValidator Component="Sale_Date" Text="Sale_Date is required" />
+                    <RadzenRequiredValidator Component="Sale_Date" Text="Дату продажи необходимо заполнить!" />
                   </Helper>
             </RadzenFormField>
-            <RadzenFormField Text="Bilety" Variant="Variant.Filled">
+            <RadzenFormField Text="Билет" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenDropDownDataGrid Data="@biletiesForNomerBiletaKey" TextProperty="Stoimost" ValueProperty="Nomer_Bileta" AllowClear=true
                           style="display: block; width: 100%" @bind-Value="@prodazhi.Nomer_BiletaKey" Name="Nomer_BiletaKey"
@@ -40,8 +40,8 @@
             </RadzenFormField>
           </RadzenStack>
           <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
-                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Сохранить" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Отмена" Variant="Variant.Flat" Click="@CancelButtonClick"  />
           </RadzenStack>
         </RadzenTemplateForm>
     </RadzenColumn>

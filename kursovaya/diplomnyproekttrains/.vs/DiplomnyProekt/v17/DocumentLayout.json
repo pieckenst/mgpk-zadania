@@ -1,876 +1,584 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\",
+  "WorkspaceRootPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\views\\platformspecific\\androidandapple-ios\\pageemployes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\views\\platformspecific\\androidandapple-ios\\pageemployes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\routesmobile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\routesmobile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\views\\platformspecific\\androidandapple-ios\\pageemployes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\views\\platformspecific\\androidandapple-ios\\pageemployes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\views\\platformspecific\\desktop\\mainpagedesktop.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\views\\platformspecific\\desktop\\mainpagedesktop.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\views\\platformspecific\\androidandapple-ios\\mainpagephones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\views\\platformspecific\\androidandapple-ios\\mainpagephones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\views\\platformspecific\\androidandapple-ios\\mainpagephones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\layout\\mainlayoutmobile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\layout\\mainlayoutmobile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\employees.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\employees.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editmarshuti.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editmarshuti.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\jobs.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\jobs.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\marshutis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\marshutis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\obsluzhivanies.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\obsluzhivanies.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\prodazhis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\prodazhis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\trains.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\trains.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addbilety.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addbilety.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addjob.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addjob.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addmarshuti.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addmarshuti.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addobsluzhivanie.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addobsluzhivanie.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addprodazhi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addprodazhi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addtrain.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addtrain.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\bileties.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\bileties.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editbilety.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editbilety.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editjob.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editjob.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editobsluzhivanie.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editobsluzhivanie.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editprodazhi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editprodazhi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\edittrain.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\edittrain.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\services\\diplomnyproektservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\services\\diplomnyproektservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\layout\\mainlayoutmobile.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\layout\\mainlayoutmobile.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\views\\platformspecific\\desktop\\mainpagedesktop.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\views\\platformspecific\\desktop\\mainpagedesktop.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\views\\platformspecific\\androidandapple-ios\\mainpagephones.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\views\\platformspecific\\androidandapple-ios\\mainpagephones.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F00F9C8D-4FAD-4ACA-BD40-75CEB10C6760}|WpfMessageBoxEx\\WpfMessageBoxEx.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\wpfmessageboxex\\wpfmessageboxex.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F00F9C8D-4FAD-4ACA-BD40-75CEB10C6760}|WpfMessageBoxEx\\WpfMessageBoxEx.csproj|solutionrelative:wpfmessageboxex\\wpfmessageboxex.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\trainsmauihybrid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\jobs.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\jobs.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\employees.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\employees.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\trains.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\trains.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\prodazhis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\prodazhis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\obsluzhivanies.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\obsluzhivanies.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\marshutis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\marshutis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\edittrain.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\edittrain.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editprodazhi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editprodazhi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editobsluzhivanie.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editobsluzhivanie.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editjob.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editjob.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editmarshuti.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editmarshuti.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\editbilety.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\editbilety.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addtrain.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addtrain.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addprodazhi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addprodazhi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addobsluzhivanie.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addobsluzhivanie.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addmarshuti.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addmarshuti.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addjob.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addjob.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\components\\pages\\addemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\components\\pages\\addemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.6\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|d:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\trainsmauihybrid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\trainsmauihybrid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrey\\.nuget\\packages\\microsoft.aspnetcore.components.webview.maui\\8.0.6\\build\\Microsoft.AspNetCore.Components.WebView.Maui.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\trainsmauihybrid\\helpers\\eventhandlehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A23FD064-C97B-4A3C-BFAC-56F9598A2420}|TrainsMauiHybrid\\TrainsMauiHybrid.csproj|solutionrelative:trainsmauihybrid\\helpers\\eventhandlehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4319231-16E9-4449-9832-5A6884353055}|DataBaseConnectors\\DataBaseConnectors.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\databaseconnectors\\databaseconnectors.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C4319231-16E9-4449-9832-5A6884353055}|DataBaseConnectors\\DataBaseConnectors.csproj|solutionrelative:databaseconnectors\\databaseconnectors.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F63141B5-E83D-4F7D-9A30-90B9088E34F0}|FluentDiplomTrains\\FluentDiplomTrains.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\fluentdiplomtrains\\views\\pages\\datapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F63141B5-E83D-4F7D-9A30-90B9088E34F0}|FluentDiplomTrains\\FluentDiplomTrains.csproj|solutionrelative:fluentdiplomtrains\\views\\pages\\datapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F63141B5-E83D-4F7D-9A30-90B9088E34F0}|FluentDiplomTrains\\FluentDiplomTrains.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\fluentdiplomtrains\\views\\pages\\datapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F63141B5-E83D-4F7D-9A30-90B9088E34F0}|FluentDiplomTrains\\FluentDiplomTrains.csproj|solutionrelative:fluentdiplomtrains\\views\\pages\\datapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F63141B5-E83D-4F7D-9A30-90B9088E34F0}|FluentDiplomTrains\\FluentDiplomTrains.csproj|c:\\users\\andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\fluentdiplomtrains\\views\\pages\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F63141B5-E83D-4F7D-9A30-90B9088E34F0}|FluentDiplomTrains\\FluentDiplomTrains.csproj|solutionrelative:fluentdiplomtrains\\views\\pages\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\MainPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrainsMauiHybrid\\MainPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\MainPage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrainsMauiHybrid\\MainPage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 200,
           "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\AppShell.xaml",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\AppShell.xaml",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\AppShell.xaml",
-              "RelativeToolTip": "TrainsMauiHybrid\\AppShell.xaml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADAAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-06T08:01:22.555Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\AppShell.xaml.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\AppShell.xaml.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\AppShell.xaml.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAvwBUAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T08:02:09.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PageEmployes.xaml",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\PageEmployes.xaml",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\PageEmployes.xaml",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\PageEmployes.xaml",
-              "RelativeToolTip": "TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\PageEmployes.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABRAAAA",
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\AppShell.xaml",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\AppShell.xaml",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\AppShell.xaml",
+              "RelativeToolTip": "TrainsMauiHybrid\\AppShell.xaml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACUAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-07T19:31:47.169Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PageEmployes.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\PageEmployes.xaml.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\PageEmployes.xaml.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\PageEmployes.xaml.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\PageEmployes.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T19:31:43.886Z",
+              "WhenOpened": "2024-03-12T13:07:24.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\App.xaml.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\App.xaml.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T16:55:05.242Z"
+              "Title": "MainLayoutMobile.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayoutMobile.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Layout\\MainLayoutMobile.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayoutMobile.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Layout\\MainLayoutMobile.razor",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:49:03.119Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\MauiProgram.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\MauiProgram.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T07:58:25.405Z"
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:47:19.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPagePhones.xaml",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml",
+              "RelativeToolTip": "TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAHUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-12T12:25:15.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoutesMobile.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\RoutesMobile.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\RoutesMobile.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\RoutesMobile.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\RoutesMobile.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:48:40.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\wwwroot\\index.html",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\wwwroot\\index.html",
+              "RelativeToolTip": "TrainsMauiHybrid\\wwwroot\\index.html",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAC4AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-12T12:10:48.639Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "MainPageDesktop.xaml",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\Desktop\\MainPageDesktop.xaml",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Views\\PlatformSpecific\\Desktop\\MainPageDesktop.xaml",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\Desktop\\MainPageDesktop.xaml",
-              "RelativeToolTip": "TrainsMauiHybrid\\Views\\PlatformSpecific\\Desktop\\MainPageDesktop.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-07T19:35:12.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAC2AAAA",
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\_Imports.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\_Imports.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\_Imports.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T16:58:01.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\wwwroot\\index.html",
-              "RelativeToolTip": "TrainsMauiHybrid\\wwwroot\\index.html",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-07T16:53:27.915Z"
+              "WhenOpened": "2024-03-12T12:57:47.568Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MainPagePhones.xaml",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml",
-              "RelativeToolTip": "TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-06T16:59:47.903Z"
+              "Title": "MainLayoutMobile.razor.cs",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayoutMobile.razor.cs",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Layout\\MainLayoutMobile.razor.cs",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayoutMobile.razor.cs",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Layout\\MainLayoutMobile.razor.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:49:06.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AddEmployee.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddEmployee.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddEmployee.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddEmployee.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddEmployee.razor",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:32:35.61Z"
+              "DocumentIndex": 8,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\MauiProgram.cs",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\MauiProgram.cs",
+              "RelativeToolTip": "TrainsMauiHybrid\\MauiProgram.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:57:03.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EditMarshuti.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditMarshuti.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditMarshuti.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditMarshuti.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditMarshuti.razor",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAkAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:31:15.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Employees.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Employees.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Employees.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Employees.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Employees.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T16:57:56.578Z"
+              "DocumentIndex": 9,
+              "Title": "MainLayout.razor.cs",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor.cs",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor.cs",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor.cs",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:47:28.302Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "TrainsMauiHybrid\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAAIAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-03-07T19:10:05.589Z"
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Routes.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Routes.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Routes.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Routes.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:25:36.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WpfMessageBoxEx",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+              "RelativeDocumentMoniker": "WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+              "RelativeToolTip": "WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-12T12:25:35.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Jobs.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Jobs.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Jobs.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Jobs.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Jobs.razor",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:21:49.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Employees.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Employees.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Employees.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Employees.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Employees.razor",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:21:42.462Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Jobs.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Jobs.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Jobs.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Jobs.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Jobs.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Title": "Trains.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Trains.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Trains.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Trains.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Trains.razor",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEYAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:01:24.593Z"
+              "WhenOpened": "2024-03-12T12:20:54.241Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Marshutis.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Marshutis.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Marshutis.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Marshutis.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Marshutis.razor",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADoAAAAAAAAA",
+              "Title": "Prodazhis.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Prodazhis.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Prodazhis.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Prodazhis.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Prodazhis.razor",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAEUAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:05:19.089Z"
+              "WhenOpened": "2024-03-12T12:20:30.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Marshutis.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Marshutis.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Marshutis.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Marshutis.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Marshutis.razor",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFkAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:19:50.551Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Obsluzhivanies.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Obsluzhivanies.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Obsluzhivanies.razor",
               "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Obsluzhivanies.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Obsluzhivanies.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Obsluzhivanies.razor",
               "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Obsluzhivanies.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFoAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:30:27.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Prodazhis.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Prodazhis.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Prodazhis.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Prodazhis.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Prodazhis.razor",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAAwAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:30:37.118Z"
+              "WhenOpened": "2024-03-12T12:19:11.607Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Trains.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Trains.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Trains.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Trains.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Trains.razor",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAADMAAAAQAAAA",
+              "Title": "EditTrain.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditTrain.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditTrain.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditTrain.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditTrain.razor",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACYAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:30:43.544Z"
+              "WhenOpened": "2024-03-12T12:17:30.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Routes.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Routes.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Routes.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Routes.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Routes.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Title": "EditProdazhi.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditProdazhi.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditProdazhi.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditProdazhi.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditProdazhi.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACsAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T17:00:05.654Z"
+              "WhenOpened": "2024-03-12T12:15:17.188Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAAAZAAAA",
+              "Title": "EditObsluzhivanie.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditObsluzhivanie.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditObsluzhivanie.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditObsluzhivanie.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditObsluzhivanie.razor",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADwAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-06T07:45:32.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AddMarshuti.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddMarshuti.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddMarshuti.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddMarshuti.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddMarshuti.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:32:18.63Z"
+              "WhenOpened": "2024-03-12T12:11:44.644Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "AddJob.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddJob.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddJob.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddJob.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddJob.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAVAAAA",
+              "Title": "EditMarshuti.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditMarshuti.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditMarshuti.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditMarshuti.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditMarshuti.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:32:25.871Z"
+              "WhenOpened": "2024-03-12T12:11:41.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EditEmployee.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditEmployee.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditEmployee.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditEmployee.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditEmployee.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:11:39.123Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "AddBilety.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddBilety.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddBilety.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddBilety.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddBilety.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAVAAAA",
+              "Title": "EditJob.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditJob.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditJob.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditJob.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditJob.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:32:42.232Z"
+              "WhenOpened": "2024-03-12T12:11:36.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "AddObsluzhivanie.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddObsluzhivanie.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddObsluzhivanie.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddObsluzhivanie.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddObsluzhivanie.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Title": "EditBilety.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditBilety.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditBilety.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditBilety.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditBilety.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:32:13.261Z"
+              "WhenOpened": "2024-03-12T12:11:34.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "AddProdazhi.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddProdazhi.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddProdazhi.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddProdazhi.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddProdazhi.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAOAAAA",
+              "Title": "AddTrain.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddTrain.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddTrain.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddTrain.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddTrain.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:32:07.46Z"
+              "WhenOpened": "2024-03-12T12:11:32.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "AddTrain.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddTrain.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddTrain.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddTrain.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddTrain.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAVAAAA",
+              "Title": "AddProdazhi.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddProdazhi.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddProdazhi.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddProdazhi.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddProdazhi.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:32:01.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "EditBilety.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditBilety.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditBilety.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditBilety.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditBilety.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:31:38.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "EditEmployee.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditEmployee.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditEmployee.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditEmployee.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditEmployee.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:31:31.501Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "EditJob.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditJob.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditJob.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditJob.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditJob.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:31:22.253Z"
+              "WhenOpened": "2024-03-12T12:11:30.362Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "Bileties.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Bileties.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Bileties.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Bileties.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Bileties.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
+              "Title": "AddObsluzhivanie.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddObsluzhivanie.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddObsluzhivanie.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddObsluzhivanie.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddObsluzhivanie.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T16:57:12.064Z"
+              "WhenOpened": "2024-03-12T12:11:24.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AddMarshuti.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddMarshuti.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddMarshuti.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddMarshuti.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddMarshuti.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:11:22.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AddJob.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddJob.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddJob.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddJob.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddJob.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:11:20.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AddEmployee.razor",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddEmployee.razor",
+              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\AddEmployee.razor",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\AddEmployee.razor",
+              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\AddEmployee.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T12:11:16.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "EditObsluzhivanie.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditObsluzhivanie.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditObsluzhivanie.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditObsluzhivanie.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditObsluzhivanie.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:31:07.189Z"
+              "Title": "Microsoft.Maui.Resizetizer.After.targets",
+              "DocumentMoniker": "C:\\Users\\user\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.6\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ToolTip": "C:\\Users\\user\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.6\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ViewState": "AQIAAHMCAAAAAAAAAAAowG4CAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-03-12T11:52:08.592Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "EditProdazhi.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditProdazhi.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditProdazhi.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditProdazhi.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditProdazhi.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:30:56.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "EditTrain.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditTrain.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\EditTrain.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\EditTrain.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\EditTrain.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T18:30:48.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "DiplomnyProektService.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Services\\DiplomnyProektService.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Services\\DiplomnyProektService.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Services\\DiplomnyProektService.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\Services\\DiplomnyProektService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T18:16:01.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\_Imports.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\_Imports.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\_Imports.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\_Imports.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T16:57:32.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Counter.razor",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Counter.razor",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\Counter.razor",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\Counter.razor",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\Counter.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-06T08:53:15.999Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\App.xaml",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\App.xaml",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\App.xaml",
-              "RelativeToolTip": "TrainsMauiHybrid\\App.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-07T16:55:07.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Microsoft.AspNetCore.Components.WebView.Maui.targets",
-              "DocumentMoniker": "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.aspnetcore.components.webview.maui\\8.0.6\\build\\Microsoft.AspNetCore.Components.WebView.Maui.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.aspnetcore.components.webview.maui\\8.0.6\\build\\Microsoft.AspNetCore.Components.WebView.Maui.targets",
-              "ToolTip": "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.aspnetcore.components.webview.maui\\8.0.6\\build\\Microsoft.AspNetCore.Components.WebView.Maui.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.aspnetcore.components.webview.maui\\8.0.6\\build\\Microsoft.AspNetCore.Components.WebView.Maui.targets",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-03-07T12:08:37.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "MainLayout.razor.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Layout\\MainLayout.razor.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T07:42:59.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "MainPageDesktop.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\Desktop\\MainPageDesktop.xaml.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Views\\PlatformSpecific\\Desktop\\MainPageDesktop.xaml.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\Desktop\\MainPageDesktop.xaml.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\Views\\PlatformSpecific\\Desktop\\MainPageDesktop.xaml.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAABBwA0AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T16:54:42.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "MainPagePhones.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\Views\\PlatformSpecific\\AndroidAndAPPLE-ios\\MainPagePhones.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAvwA0AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T16:54:30.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "NewPage1.xaml",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-06T16:53:35.61Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "NewPage1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\NewPage1.xaml.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T17:16:19.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "TrainsMauiHybrid.csproj",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\TrainsMauiHybrid.csproj",
+              "Title": "TrainsMauiHybrid",
+              "DocumentMoniker": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\TrainsMauiHybrid.csproj",
               "RelativeDocumentMoniker": "TrainsMauiHybrid\\TrainsMauiHybrid.csproj",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\TrainsMauiHybrid.csproj",
+              "ToolTip": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\TrainsMauiHybrid.csproj",
               "RelativeToolTip": "TrainsMauiHybrid\\TrainsMauiHybrid.csproj",
-              "ViewState": "AQIAABIAAAAAAAAAAIBJwBwAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-06T08:03:48.952Z"
-            },
+              "WhenOpened": "2024-03-12T11:50:22.078Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "EventHandleHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Helpers\\EventHandleHelper.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Helpers\\EventHandleHelper.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Helpers\\EventHandleHelper.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\Helpers\\EventHandleHelper.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAABRwBsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T17:17:37.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\MainPage.xaml.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\MainPage.xaml.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T09:10:22.971Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "BlazorWEBviewhost.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml.cs",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml.cs",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T08:52:55.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\MainPage.xaml",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\MainPage.xaml",
-              "RelativeToolTip": "TrainsMauiHybrid\\MainPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-06T07:41:30.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "BlazorWEBviewhost.xaml",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml",
-              "RelativeDocumentMoniker": "TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml",
-              "RelativeToolTip": "TrainsMauiHybrid\\Components\\Pages\\BlazorWEBviewhost.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-06T08:53:04.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "DataBaseConnectors.csproj",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\DataBaseConnectors.csproj",
-              "RelativeDocumentMoniker": "DataBaseConnectors\\DataBaseConnectors.csproj",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\DataBaseConnectors\\DataBaseConnectors.csproj",
-              "RelativeToolTip": "DataBaseConnectors\\DataBaseConnectors.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-05T13:50:28.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "DataPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\Views\\Pages\\DataPage.xaml.cs",
-              "RelativeDocumentMoniker": "FluentDiplomTrains\\Views\\Pages\\DataPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\Views\\Pages\\DataPage.xaml.cs",
-              "RelativeToolTip": "FluentDiplomTrains\\Views\\Pages\\DataPage.xaml.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAUwDoAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T12:09:22.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "DataPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\Views\\Pages\\DataPage.xaml",
-              "RelativeDocumentMoniker": "FluentDiplomTrains\\Views\\Pages\\DataPage.xaml",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\Views\\Pages\\DataPage.xaml",
-              "RelativeToolTip": "FluentDiplomTrains\\Views\\Pages\\DataPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-05T11:40:54.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "DashboardPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\Views\\Pages\\DashboardPage.xaml",
-              "RelativeDocumentMoniker": "FluentDiplomTrains\\Views\\Pages\\DashboardPage.xaml",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\Views\\Pages\\DashboardPage.xaml",
-              "RelativeToolTip": "FluentDiplomTrains\\Views\\Pages\\DashboardPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-05T11:40:38.222Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

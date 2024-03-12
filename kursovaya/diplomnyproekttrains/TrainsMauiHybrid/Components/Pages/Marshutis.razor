@@ -81,13 +81,13 @@
 
     protected async Task AddButtonClick(MouseEventArgs args)
     {
-        await DialogService.OpenAsync<AddMarshuti>("Add Marshuti", null);
+        await DialogService.OpenAsync<AddMarshuti>("Добавить информацию об маршрутах", null);
         await grid0.Reload();
     }
 
     protected async Task EditRow(TrainsMauiHybrid.Models.Marshuti args)
     {
-        await DialogService.OpenAsync<EditMarshuti>("Edit Marshuti", new Dictionary<string, object> { {"Nomer_Marshuta", args.Nomer_Marshuta} });
+        await DialogService.OpenAsync<EditMarshuti>("Редактировать информацию об маршрутах", new Dictionary<string, object> { { "Nomer_Marshuta", args.Nomer_Marshuta } });
     }
 
     protected async Task GridDeleteButtonClick(MouseEventArgs args, TrainsMauiHybrid.Models.Marshuti marshuti)

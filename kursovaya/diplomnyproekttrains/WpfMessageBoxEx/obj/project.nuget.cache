@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6/pMcDMe1hBprBJ2G8bEGDolnkzdMXe+sRA6oKr63kOPSnmW2Xua0JQcUIIOip+HvVyhOfQ0pDnqmmha0Unygg==",
+  "dgSpecHash": "GeqJ68Xha8hbN5YlqLuk69h/t/xfkkYeVRzlnkK6T2jsRn9z+PhRiqXIZo4WnMiHpbl3Vm1m0fMrLI+prDhQkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+  "projectFilePath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Andrey\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Andrey\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

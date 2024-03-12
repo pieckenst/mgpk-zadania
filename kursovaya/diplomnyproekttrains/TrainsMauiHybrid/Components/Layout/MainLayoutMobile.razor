@@ -1,0 +1,74 @@
+﻿@using TrainsMauiHybrid.Helpers
+@using TrainsMauiHybrid.Services
+@using AlignItems = Radzen.AlignItems
+@using ButtonType = Radzen.ButtonType
+@using DialogService = Radzen.DialogService
+@using Orientation = Radzen.Orientation
+@using Variant = Radzen.Variant
+@inherits LayoutComponentBase
+
+
+
+<RadzenComponents />
+
+<MApp>
+    <MErrorHandler ShowDetail="true">
+
+        @*<MNavigationDrawer App @bind-Value="drawer">
+        <NavMenu />
+        </MNavigationDrawer>*@
+
+        @*<MAppBar App="true">
+        <MAppBarNavIcon @onclick="()=> drawer = !drawer"></MAppBarNavIcon>
+
+        </MAppBar>*@
+
+        <MMain>
+            @Body
+        </MMain>
+
+        <MBottomNavigation Grow App="true">
+
+            <MButton Href="/">
+                <span>Начало</span>
+                <MIcon>mdi-calendar-text</MIcon>
+            </MButton>
+
+            <MButton Href="bileties">
+                <span>Билеты</span>
+                <MIcon>mdi-calendar-blank</MIcon>
+            </MButton>
+
+           
+            <MButton Href="employees">
+                <span>Cотрудники</span>
+                <MIcon>mdi-emoticon-happy-outline</MIcon>
+            </MButton>
+            <MButton Href="jobs">
+                <span>Должности</span>
+                <MIcon>mdi-emoticon-happy-outline</MIcon>
+            </MButton>
+            <MButton Href="marshutis">
+                <span>Маршруты</span>
+                <MIcon>mdi-emoticon-happy-outline</MIcon>
+            </MButton>
+            <MButton Href="obsluzhivanies" >
+                <span>Обслуживание</span>
+                <MIcon>mdi-emoticon-happy-outline</MIcon>
+            </MButton>
+            <MButton Href="prodazhis">
+                <span>Продажи</span>
+                <MIcon>mdi-emoticon-happy-outline</MIcon>
+            </MButton>
+            <MButton Href="trains">
+                <span>Поезда</span>
+                <MIcon>mdi-emoticon-happy-outline</MIcon>
+            </MButton>
+
+        </MBottomNavigation>
+
+    </MErrorHandler>
+</MApp>
+
+
+

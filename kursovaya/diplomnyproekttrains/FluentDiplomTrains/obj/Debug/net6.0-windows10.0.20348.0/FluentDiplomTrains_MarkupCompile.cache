@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\FluentDiplomTrains\obj\Debug\net6.0-windows10.0.20348.0\
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\FluentDiplomTrains\obj\Debug\net6.0-windows10.0.20348.0\
 FluentDiplomTrains
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Andrey\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\FluentDiplomTrains\App.xaml
+D:\source\repos\mgpk-zadania\kursovaya\diplomnyproekttrains\FluentDiplomTrains\App.xaml
 7-531588724
 
 40-1140707702
-2451444867335
+245532890886
 Controls\CALLsqlconnectionsettingsContentDialog.xaml;Views\Pages\DashboardPage.xaml;Views\Pages\DataPage.xaml;Views\Pages\MaintenancePage.xaml;Views\Pages\SettingsPage.xaml;Views\Pages\TicketPage.xaml;Views\Windows\MainWindow.xaml;
 
 True

@@ -3,9 +3,9 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Подсистема Windows для Android (Android 13.0 — API 33)</ActiveDebugProfile>
+    <ActiveDebugProfile>Pixel 6 Pro - API 34 (Android 14.0 — API 34)</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <DefaultDevice>Подсистема Windows для Android</DefaultDevice>
+    <DefaultDevice>pixel_6_pro_-_api_34</DefaultDevice>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
@@ -14,9 +14,5 @@
     <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
-  <ItemGroup>
-    <MauiXaml Update="Views\PlatformSpecific\AndroidAndAPPLE-ios\PageEmployes.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-  </ItemGroup>
+  <ItemGroup />
 </Project>

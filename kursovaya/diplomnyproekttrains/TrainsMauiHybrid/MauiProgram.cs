@@ -41,6 +41,7 @@ namespace TrainsMauiHybrid
                     });
             });
             builder.Services.AddMauiBlazorWebView();
+            builder.Services.AddMasaBlazor();
             builder.Services.AddRadzenComponents();
             
             builder.Services.AddSingleton<EventHandleHelper>();

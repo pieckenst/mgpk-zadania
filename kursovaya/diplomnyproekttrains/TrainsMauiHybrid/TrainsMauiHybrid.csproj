@@ -63,6 +63,7 @@
     <PackageReference Include="CustomShellMaui" Version="1.0.6" />
     <PackageReference Include="EntityFrameworkCore.UseRowNumberForPaging" Version="0.5.0" />
     <PackageReference Include="IconPacks.Material" Version="1.0.8807.17-build" />
+    <PackageReference Include="Masa.Blazor" Version="1.4.0-beta.2" />
     <PackageReference Include="Material.Components.Maui" Version="0.2.2-preview" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />

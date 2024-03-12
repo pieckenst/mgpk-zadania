@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\FluentDiplomTrains.csproj": {}
+    "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\FluentDiplomTrains.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\FluentDiplomTrains.csproj": {
+    "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\FluentDiplomTrains.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\FluentDiplomTrains.csproj",
+        "projectUniqueName": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\FluentDiplomTrains.csproj",
         "projectName": "FluentDiplomTrains",
-        "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\FluentDiplomTrains.csproj",
-        "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\obj\\",
+        "projectPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\FluentDiplomTrains.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\FluentDiplomTrains\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "D:\\sdk\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -35,22 +35,22 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows7",
             "projectReferences": {
-              "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj": {
-                "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj"
+              "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj": {
+                "projectPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj"
               },
-              "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
-                "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
+              "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+                "projectPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
               }
             }
           },
           "net6.0-windows10.0.20348": {
             "targetAlias": "net6.0-windows10.0.20348.0",
             "projectReferences": {
-              "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj": {
-                "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj"
+              "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj": {
+                "projectPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj"
               },
-              "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
-                "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
+              "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+                "projectPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj"
               }
             }
           }
@@ -187,20 +187,20 @@
         }
       }
     },
-    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj": {
+    "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj",
+        "projectUniqueName": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj",
         "projectName": "LogOnHelper",
-        "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj",
-        "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\obj\\",
+        "projectPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\LogOnHelper.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\SQLServerLogin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\sdk\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -283,20 +283,20 @@
         }
       }
     },
-    "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
+    "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+        "projectUniqueName": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
         "projectName": "WpfMessageBoxEx",
-        "projectPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
-        "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrey\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\obj\\",
+        "projectPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\WpfMessageBoxEx.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\mgpk-zadania\\kursovaya\\diplomnyproekttrains\\WpfMessageBoxEx\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\sdk\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

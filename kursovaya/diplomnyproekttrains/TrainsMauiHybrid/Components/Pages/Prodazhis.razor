@@ -61,13 +61,13 @@
 
     protected async Task AddButtonClick(MouseEventArgs args)
     {
-        await DialogService.OpenAsync<AddProdazhi>("Add Prodazhi", null);
+        await DialogService.OpenAsync<AddProdazhi>("Добавить информацию об продажах", null);
         await grid0.Reload();
     }
 
     protected async Task EditRow(TrainsMauiHybrid.Models.Prodazhi args)
     {
-        await DialogService.OpenAsync<EditProdazhi>("Edit Prodazhi", new Dictionary<string, object> { {"Num", args.Num} });
+        await DialogService.OpenAsync<EditProdazhi>("Редактировать информацию об продажах", new Dictionary<string, object> { { "Num", args.Num } });
     }
 
     protected async Task GridDeleteButtonClick(MouseEventArgs args, TrainsMauiHybrid.Models.Prodazhi prodazhi)
