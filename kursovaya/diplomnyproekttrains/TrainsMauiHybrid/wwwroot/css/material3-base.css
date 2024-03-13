@@ -577,7 +577,7 @@ div:has(.rz-search-input) {
     --rz-base-400: #c1b2d5;
     --rz-base-500: #cdc2e5;
     --rz-base-600: #dbcff3;
-    --rz-base-700: #74787e;
+    --rz-base-700: #a8a1b9;
     --rz-base-800: #45494f;
     --rz-base-900: #1b1d20;
     --rz-primary: #6750A4;
@@ -21052,14 +21052,14 @@ div:has(.rz-search-input) {
 :root {
     --rz-white: #ffffff;
     --rz-black: #000000;
-    --rz-base-50: #dac5e7;
+    --rz-base-50: #d7cefc;
     --rz-base-100: #f0eef4;
-    --rz-base-200: #e7ddec;
+    --rz-base-200: #d0c5ea;
     --rz-base-300: #daccef;
     --rz-base-400: #c1b2d5;
     --rz-base-500: #cdc2e5;
     --rz-base-600: #dbcff3;
-    --rz-base-700: #74787e;
+    --rz-base-700: #a8a1b9;
     --rz-base-800: #45494f;
     --rz-base-900: #1b1d20;
     --rz-primary: #6750A4;
