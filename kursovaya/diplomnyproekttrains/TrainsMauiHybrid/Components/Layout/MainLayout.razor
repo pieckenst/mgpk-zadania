@@ -34,19 +34,17 @@
             <RadzenImage Path="images/logo.png"  style="width: 48px; height: 48px;" AlternateText="Application logo"></RadzenImage>
             
         </RadzenStack>
-        <RadzenPanelMenu>
-            <RadzenPanelMenuItem Text="Начало" Path="" />
-            <RadzenPanelMenuItem Text="Билеты" Path="bileties" />
-             <RadzenPanelMenuItem Text="Продажи" Path="prodazhis" />
-            <RadzenPanelMenuItem Text="Сотурудники" Path="employees" />
-            <RadzenPanelMenuItem Text="Должности" Path="jobs" />
-            <RadzenPanelMenuItem Text="Маршруты" Path="marshutis" />
-            <RadzenPanelMenuItem Text="Поезда" Path="trains" />
-            <RadzenPanelMenuItem Text="Промежуточные пункты маршрутов" Path="promezhutochinye-punkties" />
-            <RadzenPanelMenuItem Text="Обслуживание" Path="obsluzhivanies" />
-           
-            
-        </RadzenPanelMenu>
+        <RadzenPanelMenu DisplayStyle="Radzen.MenuItemDisplayStyle.IconAndText">
+                      <RadzenPanelMenuItem Text="Главная" Path="" Icon="home" />
+                      <RadzenPanelMenuItem Text="Билеты" Path="bileties" Icon="confirmation_number" />
+                      <RadzenPanelMenuItem Text="Продажи" Path="prodazhis" Icon="point_of_sale" />
+                      <RadzenPanelMenuItem Text="Сотрудники" Path="employees" Icon="people" />
+                      <RadzenPanelMenuItem Text="Должности" Path="jobs" Icon="work" />
+                      <RadzenPanelMenuItem Text="Маршруты" Path="marshutis" Icon="train" />
+                      <RadzenPanelMenuItem Text="Промежуточные пункты маршрутов" Path="promezhutochinye-punkties" Icon="location_on" />
+                      <RadzenPanelMenuItem Text="Поезда" Path="trains" Icon="rv_hookup" />
+                      <RadzenPanelMenuItem Text="Обслуживание" Path="obsluzhivanies" Icon="build" />
+                  </RadzenPanelMenu>
         <RadzenStack AlignItems="Radzen.AlignItems.Center" Gap="0" class="rz-py-4 rz-py-lg-6" Style="padding: var(--rz-panel-menu-item-padding);">
             
             <RadzenText Text="Все права принадлежат Могилёвскому государственному политехническому колледжу Ⓒ 2024" TextStyle="Radzen.Blazor.TextStyle.Caption" class="rz-mb-0" TagName="Radzen.Blazor.TagName.P" TextAlign="Radzen.TextAlign.Center" />

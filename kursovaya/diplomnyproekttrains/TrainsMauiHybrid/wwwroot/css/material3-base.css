@@ -568,7 +568,7 @@ div:has(.rz-search-input) {
     src: local(""), url("../fonts/roboto-v30-latin-700.woff") format("woff");
 }
 :root {
-    --rz-white: #ffffff;
+    --rz-white: #f5f2f8;
     --rz-black: #000000;
     --rz-base-50: #d7cefc;
     --rz-base-100: #f0eef4;
@@ -21050,7 +21050,7 @@ div:has(.rz-search-input) {
     src: local(""), url("../fonts/roboto-v30-latin-700.woff") format("woff");
 }
 :root {
-    --rz-white: #ffffff;
+    --rz-white: #f5f2f8;
     --rz-black: #000000;
     --rz-base-50: #d7cefc;
     --rz-base-100: #f0eef4;
