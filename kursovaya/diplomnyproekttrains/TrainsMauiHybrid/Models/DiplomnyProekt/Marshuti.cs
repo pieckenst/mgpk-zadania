@@ -18,9 +18,6 @@ namespace TrainsMauiHybrid.Models
         public string Nachalni_Punkt { get; set; }
 
         [Required]
-        public string Mid_Punkt { get; set; }
-
-        [Required]
         public string Konechni_Punkt { get; set; }
 
         [Required]
@@ -35,6 +32,10 @@ namespace TrainsMauiHybrid.Models
 
         [Required]
         public string Vremya_Proezda { get; set; }
+
+        public long? Promezhutochny_PunktKey { get; set; }
+
+        public PromezhutochinyePunkty PromezhutochinyePunkty { get; set; }
 
         public ICollection<Bilety> Bileties { get; set; }
 

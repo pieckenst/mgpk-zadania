@@ -18,30 +18,33 @@
         </RadzenColumn>
         <RadzenColumn Size="12" SizeMD="6">
             <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                <RadzenButton Icon="add_circle_outline" Text="Добавить данные" Click="@AddButtonClick" Variant="Variant.Flat" />
+                <RadzenButton Icon="add_circle_outline" Text="Добавить информацию" Click="@AddButtonClick" Variant="Variant.Flat" />
             </RadzenStack>
         </RadzenColumn>
     </RadzenRow>
-    <RadzenTextBox Placeholder="Поиск по маршрутам ..." style="display: block; width: 100%" @oninput="@Search" aria-label="Search by all string columns" />
+    <RadzenTextBox Placeholder="Поиск ..." style="display: block; width: 100%" @oninput="@Search" aria-label="Поиск по информации" />
     <RadzenRow>
       <RadzenColumn SizeMD=12>
-        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+        <RadzenDataGrid @ref="grid0" ColumnWidth="250px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
+                                  PageTitleFormat="Страница {0}" PagingSummaryFormat="Страница {0} из {1} " PageSizeText="количество колонок на странице" Responsive="true"
+                                  ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30} )
             Data="@marshutis" TItem="TrainsMauiHybrid.Models.Marshuti" RowSelect="@EditRow">
             <Columns>
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Nomer_Marshuta" Title="Номер маршрута">
                 </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Nachalni_Punkt" Title="Начальный пункт">
                 </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Mid_Punkt" Title="Промежуточный пункт">
-                </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="PromezhutochinyePunkty.PunktPoint1" Title="Промежуточные пункты">
+                                </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Konechni_Punkt" Title="Конечный пункт">
                 </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Employee.Surname" Title="Фамилия сотрудника">
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Employee.Surname" Title="Сотрудник">
                 </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Train.Model_Sostava_Vagonov" Title="Модель состава вагонов">
                 </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Property="Vremya_Proezda" Title="Время проезда">
                 </RadzenDataGridColumn>
+                
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Marshuti" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
                     <Template Context="marshuti">
 
@@ -67,51 +70,51 @@
     protected string search = "";
 
     protected async Task Search(ChangeEventArgs args)
-    {
-        search = $"{args.Value}";
-
-        await grid0.GoToPage(0);
-
-        marshutis = await DiplomnyProektService.GetMarshutis(new Query { Filter = $@"i => i.Nachalni_Punkt.Contains(@0) || i.Mid_Punkt.Contains(@0) || i.Konechni_Punkt.Contains(@0) || i.Vremya_Proezda.Contains(@0)", FilterParameters = new object[] { search }, Expand = "Employee,Train" });
-    }
-    protected override async Task OnInitializedAsync()
-    {
-        marshutis = await DiplomnyProektService.GetMarshutis(new Query { Expand = "Employee,Train" });
-    }
-
-    protected async Task AddButtonClick(MouseEventArgs args)
-    {
-        await DialogService.OpenAsync<AddMarshuti>("Добавить информацию об маршрутах", null);
-        await grid0.Reload();
-    }
-
-    protected async Task EditRow(TrainsMauiHybrid.Models.Marshuti args)
-    {
-        await DialogService.OpenAsync<EditMarshuti>("Редактировать информацию об маршрутах", new Dictionary<string, object> { { "Nomer_Marshuta", args.Nomer_Marshuta } });
-    }
-
-    protected async Task GridDeleteButtonClick(MouseEventArgs args, TrainsMauiHybrid.Models.Marshuti marshuti)
-    {
-        try
         {
-            if (await DialogService.Confirm("Вы уверены что хотите удалить данную строку?") == true)
-            {
-                var deleteResult = await DiplomnyProektService.DeleteMarshuti(marshuti.Nomer_Marshuta);
+            search = $"{args.Value}";
 
-                if (deleteResult != null)
+            await grid0.GoToPage(0);
+
+            marshutis = await DiplomnyProektService.GetMarshutis(new Query { Filter = $@"i => i.Nachalni_Punkt.Contains(@0) || i.Konechni_Punkt.Contains(@0) || i.Vremya_Proezda.Contains(@0)", FilterParameters = new object[] { search }, Expand = "Employee,Train,PromezhutochinyePunkty" });
+        }
+        protected override async Task OnInitializedAsync()
+        {
+            marshutis = await DiplomnyProektService.GetMarshutis(new Query { Filter = $@"i => i.Nachalni_Punkt.Contains(@0) || i.Konechni_Punkt.Contains(@0) || i.Vremya_Proezda.Contains(@0)", FilterParameters = new object[] { search }, Expand = "Employee,Train,PromezhutochinyePunkty" });
+        }
+
+        protected async Task AddButtonClick(MouseEventArgs args)
+        {
+            await DialogService.OpenAsync<AddMarshuti>("Добавить информацию о маршрутах", null);
+            await grid0.Reload();
+        }
+
+        protected async Task EditRow(TrainsMauiHybrid.Models.Marshuti args)
+        {
+            await DialogService.OpenAsync<EditMarshuti>("Редактировать информацию о маршрутах", new Dictionary<string, object> { {"Nomer_Marshuta", args.Nomer_Marshuta} });
+        }
+
+        protected async Task GridDeleteButtonClick(MouseEventArgs args, TrainsMauiHybrid.Models.Marshuti marshuti)
+        {
+            try
+            {
+                if (await DialogService.Confirm("Вы уверены что хотите удалить данную строку?") == true)
                 {
-                    await grid0.Reload();
+                    var deleteResult = await DiplomnyProektService.DeleteMarshuti(marshuti.Nomer_Marshuta);
+
+                    if (deleteResult != null)
+                    {
+                        await grid0.Reload();
+                    }
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            NotificationService.Notify(new NotificationMessage
+            catch (Exception ex)
             {
-                Severity = NotificationSeverity.Error,
-                Summary = $"Ошибка",
-                Detail = $"Unable to delete Marshuti"
-            });
+                NotificationService.Notify(new NotificationMessage
+                {
+                    Severity = NotificationSeverity.Error,
+                    Summary = $"Ошибка",
+                    Detail = $"Ошибка удаления информации"
+                });
+            }
         }
-    }
 }

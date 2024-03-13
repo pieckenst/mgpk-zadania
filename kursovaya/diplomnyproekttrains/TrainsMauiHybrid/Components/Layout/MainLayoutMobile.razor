@@ -13,7 +13,8 @@
 
 <MApp >
     <MErrorHandler ShowDetail="true">
-        
+        <MSwitch Value="_isDark" TValue="bool" ValueChanged="IsDarkChanged" Label="@(_isDark ? "Темная" : "Светлая")" />
+
 
         @*<MNavigationDrawer App @bind-Value="_drawer">
             <MList Nav Routable>
@@ -95,7 +96,11 @@
                 <span>Обслуживание</span>
                 <MIcon>mdi-table-filter</MIcon>
             </MButton>
-            <MSwitch Value="_isDark" TValue="bool" ValueChanged="IsDarkChanged" Label="@(_isDark ? "Темная" : "Светлая")" />
+            <MButton Href="promezhutochinye-punkties">
+                            <span>Промежуточные пункты маршрутов</span>
+                            <MIcon>mdi-table-filter</MIcon>
+                        </MButton>
+
         </MBottomNavigation>
 
     </MErrorHandler>

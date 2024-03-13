@@ -1,0 +1,140 @@
+@page "/add-promezhutochinye-punkty"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+
+<PageTitle>Добавить промежуточные пункты</PageTitle>
+<RadzenColumn SizeMD=12>
+    <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Ошибка сохранения информации</RadzenAlert>
+    <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Data="@promezhutochinyePunkty" Visible="@(promezhutochinyePunkty != null)" Submit="@FormSubmit">
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Номер пункта" Component="PunktKey" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenNumeric style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktKey" Name="PunktKey" />
+                <RadzenRequiredValidator Component="PunktKey" Text="Номер пункта необходимо указать" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Промежуточный пункт 1" Component="PunktPoint1" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktPoint1" Name="PunktPoint1" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Промежуточный пункт 2" Component="PunktPoint2" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktPoint2" Name="PunktPoint2" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Промежуточный пункт 3" Component="PunktPoint3" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktPoint3" Name="PunktPoint3" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Промежуточный пункт 4" Component="PunktPoint4" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktPoint4" Name="PunktPoint4" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Промежуточный пункт 5" Component="PunktPoint5" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktPoint5" Name="PunktPoint5" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Промежуточный пункт 6" Component="PunktPoint6" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktPoint6" Name="PunktPoint6" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Промежуточный пункт 7" Component="PunktPoint7" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktPoint7" Name="PunktPoint7" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Промежуточный пункт 8" Component="PunktPoint8" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktPoint8" Name="PunktPoint8" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Промежуточный пункт 9" Component="PunktPoint9" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktPoint9" Name="PunktPoint9" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="3">
+                <RadzenLabel Text="Промежуточный пункт 10" Component="PunktPoint10" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="9">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@promezhutochinyePunkty.PunktPoint10" Name="PunktPoint10" />
+            </RadzenColumn>
+        </RadzenRow>
+        <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+            <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Сохранить" Variant="Variant.Flat" />
+            <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Отмена" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+        </RadzenStack>
+    </RadzenTemplateForm>
+</RadzenColumn>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        promezhutochinyePunkty = new TrainsMauiHybrid.Models.PromezhutochinyePunkty();
+    }
+
+    protected bool errorVisible;
+    protected TrainsMauiHybrid.Models.PromezhutochinyePunkty promezhutochinyePunkty;
+
+    protected async Task FormSubmit()
+    {
+        try
+        {
+            await DiplomnyProektService.CreatePromezhutochinyePunkty(promezhutochinyePunkty);
+            DialogService.Close(promezhutochinyePunkty);
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+        }
+    }
+
+    protected async Task CancelButtonClick(MouseEventArgs args)
+    {
+        DialogService.Close(null);
+    }
+
+}

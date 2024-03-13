@@ -24,7 +24,9 @@
     </RadzenRow>
     <RadzenRow>
       <RadzenColumn SizeMD=12>
-        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+        <RadzenDataGrid @ref="grid0" ColumnWidth="250px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
+                                  PageTitleFormat="Страница {0}" PagingSummaryFormat="Страница {0} из {1} " PageSizeText="количество колонок на странице" Responsive="true"
+                                  ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30} )
             Data="@jobs" TItem="TrainsMauiHybrid.Models.Job" RowSelect="@EditRow">
             <Columns>
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Job" Property="Job_Num" Title="Номер должности">

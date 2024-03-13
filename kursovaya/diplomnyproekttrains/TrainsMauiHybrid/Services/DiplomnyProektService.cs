@@ -73,12 +73,12 @@ namespace TrainsMauiHybrid.Services
 
         public async Task ExportBiletiesToExcel(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/bileties/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/bileties/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/bileties/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/bileties/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         public async Task ExportBiletiesToCSV(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/bileties/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/bileties/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/bileties/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/bileties/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         partial void OnBiletiesRead(ref IQueryable<TrainsMauiHybrid.Models.Bilety> items);
@@ -94,7 +94,7 @@ namespace TrainsMauiHybrid.Services
                 if (!string.IsNullOrEmpty(query.Expand))
                 {
                     var propertiesToExpand = query.Expand.Split(',');
-                    foreach (var p in propertiesToExpand)
+                    foreach(var p in propertiesToExpand)
                     {
                         items = items.Include(p.Trim());
                     }
@@ -119,7 +119,7 @@ namespace TrainsMauiHybrid.Services
                               .Where(i => i.Nomer_Bileta == nomerbileta);
 
             items = items.Include(i => i.Marshuti);
-
+ 
             OnGetBiletyByNomerBileta(ref items);
 
             var itemToReturn = items.FirstOrDefault();
@@ -142,8 +142,8 @@ namespace TrainsMauiHybrid.Services
 
             if (existingItem != null)
             {
-                throw new Exception("Item already available");
-            }
+               throw new Exception("Item already available");
+            }            
 
             try
             {
@@ -166,8 +166,8 @@ namespace TrainsMauiHybrid.Services
             var entityToCancel = Context.Entry(item);
             if (entityToCancel.State == EntityState.Modified)
             {
-                entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
-                entityToCancel.State = EntityState.Unchanged;
+              entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
+              entityToCancel.State = EntityState.Unchanged;
             }
 
             return item;
@@ -186,9 +186,9 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToUpdate == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
-
+                
             var entryToUpdate = Context.Entry(itemToUpdate);
             entryToUpdate.CurrentValues.SetValues(bilety);
             entryToUpdate.State = EntityState.Modified;
@@ -212,7 +212,7 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToDelete == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
 
             OnBiletyDeleted(itemToDelete);
@@ -234,15 +234,15 @@ namespace TrainsMauiHybrid.Services
 
             return itemToDelete;
         }
-
+    
         public async Task ExportEmployeesToExcel(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/employees/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/employees/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/employees/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/employees/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         public async Task ExportEmployeesToCSV(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/employees/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/employees/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/employees/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/employees/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         partial void OnEmployeesRead(ref IQueryable<TrainsMauiHybrid.Models.Employee> items);
@@ -258,7 +258,7 @@ namespace TrainsMauiHybrid.Services
                 if (!string.IsNullOrEmpty(query.Expand))
                 {
                     var propertiesToExpand = query.Expand.Split(',');
-                    foreach (var p in propertiesToExpand)
+                    foreach(var p in propertiesToExpand)
                     {
                         items = items.Include(p.Trim());
                     }
@@ -283,7 +283,7 @@ namespace TrainsMauiHybrid.Services
                               .Where(i => i.Num == num);
 
             items = items.Include(i => i.Job);
-
+ 
             OnGetEmployeeByNum(ref items);
 
             var itemToReturn = items.FirstOrDefault();
@@ -306,8 +306,8 @@ namespace TrainsMauiHybrid.Services
 
             if (existingItem != null)
             {
-                throw new Exception("Item already available");
-            }
+               throw new Exception("Item already available");
+            }            
 
             try
             {
@@ -330,8 +330,8 @@ namespace TrainsMauiHybrid.Services
             var entityToCancel = Context.Entry(item);
             if (entityToCancel.State == EntityState.Modified)
             {
-                entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
-                entityToCancel.State = EntityState.Unchanged;
+              entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
+              entityToCancel.State = EntityState.Unchanged;
             }
 
             return item;
@@ -350,9 +350,9 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToUpdate == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
-
+                
             var entryToUpdate = Context.Entry(itemToUpdate);
             entryToUpdate.CurrentValues.SetValues(employee);
             entryToUpdate.State = EntityState.Modified;
@@ -376,7 +376,7 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToDelete == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
 
             OnEmployeeDeleted(itemToDelete);
@@ -398,15 +398,15 @@ namespace TrainsMauiHybrid.Services
 
             return itemToDelete;
         }
-
+    
         public async Task ExportJobsToExcel(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/jobs/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/jobs/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/jobs/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/jobs/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         public async Task ExportJobsToCSV(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/jobs/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/jobs/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/jobs/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/jobs/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         partial void OnJobsRead(ref IQueryable<TrainsMauiHybrid.Models.Job> items);
@@ -421,7 +421,7 @@ namespace TrainsMauiHybrid.Services
                 if (!string.IsNullOrEmpty(query.Expand))
                 {
                     var propertiesToExpand = query.Expand.Split(',');
-                    foreach (var p in propertiesToExpand)
+                    foreach(var p in propertiesToExpand)
                     {
                         items = items.Include(p.Trim());
                     }
@@ -445,7 +445,7 @@ namespace TrainsMauiHybrid.Services
                               .AsNoTracking()
                               .Where(i => i.Job_Num == jobnum);
 
-
+ 
             OnGetJobByJobNum(ref items);
 
             var itemToReturn = items.FirstOrDefault();
@@ -468,8 +468,8 @@ namespace TrainsMauiHybrid.Services
 
             if (existingItem != null)
             {
-                throw new Exception("Item already available");
-            }
+               throw new Exception("Item already available");
+            }            
 
             try
             {
@@ -492,8 +492,8 @@ namespace TrainsMauiHybrid.Services
             var entityToCancel = Context.Entry(item);
             if (entityToCancel.State == EntityState.Modified)
             {
-                entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
-                entityToCancel.State = EntityState.Unchanged;
+              entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
+              entityToCancel.State = EntityState.Unchanged;
             }
 
             return item;
@@ -512,9 +512,9 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToUpdate == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
-
+                
             var entryToUpdate = Context.Entry(itemToUpdate);
             entryToUpdate.CurrentValues.SetValues(job);
             entryToUpdate.State = EntityState.Modified;
@@ -538,7 +538,7 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToDelete == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
 
             OnJobDeleted(itemToDelete);
@@ -560,15 +560,15 @@ namespace TrainsMauiHybrid.Services
 
             return itemToDelete;
         }
-
+    
         public async Task ExportMarshutisToExcel(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/marshutis/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/marshutis/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/marshutis/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/marshutis/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         public async Task ExportMarshutisToCSV(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/marshutis/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/marshutis/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/marshutis/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/marshutis/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         partial void OnMarshutisRead(ref IQueryable<TrainsMauiHybrid.Models.Marshuti> items);
@@ -579,13 +579,14 @@ namespace TrainsMauiHybrid.Services
 
             items = items.Include(i => i.Employee);
             items = items.Include(i => i.Train);
+            items = items.Include(i => i.PromezhutochinyePunkty);
 
             if (query != null)
             {
                 if (!string.IsNullOrEmpty(query.Expand))
                 {
                     var propertiesToExpand = query.Expand.Split(',');
-                    foreach (var p in propertiesToExpand)
+                    foreach(var p in propertiesToExpand)
                     {
                         items = items.Include(p.Trim());
                     }
@@ -611,7 +612,8 @@ namespace TrainsMauiHybrid.Services
 
             items = items.Include(i => i.Employee);
             items = items.Include(i => i.Train);
-
+            items = items.Include(i => i.PromezhutochinyePunkty);
+ 
             OnGetMarshutiByNomerMarshuta(ref items);
 
             var itemToReturn = items.FirstOrDefault();
@@ -634,8 +636,8 @@ namespace TrainsMauiHybrid.Services
 
             if (existingItem != null)
             {
-                throw new Exception("Item already available");
-            }
+               throw new Exception("Item already available");
+            }            
 
             try
             {
@@ -658,8 +660,8 @@ namespace TrainsMauiHybrid.Services
             var entityToCancel = Context.Entry(item);
             if (entityToCancel.State == EntityState.Modified)
             {
-                entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
-                entityToCancel.State = EntityState.Unchanged;
+              entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
+              entityToCancel.State = EntityState.Unchanged;
             }
 
             return item;
@@ -678,9 +680,9 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToUpdate == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
-
+                
             var entryToUpdate = Context.Entry(itemToUpdate);
             entryToUpdate.CurrentValues.SetValues(marshuti);
             entryToUpdate.State = EntityState.Modified;
@@ -704,7 +706,7 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToDelete == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
 
             OnMarshutiDeleted(itemToDelete);
@@ -726,15 +728,15 @@ namespace TrainsMauiHybrid.Services
 
             return itemToDelete;
         }
-
+    
         public async Task ExportObsluzhivaniesToExcel(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/obsluzhivanies/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/obsluzhivanies/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/obsluzhivanies/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/obsluzhivanies/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         public async Task ExportObsluzhivaniesToCSV(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/obsluzhivanies/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/obsluzhivanies/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/obsluzhivanies/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/obsluzhivanies/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         partial void OnObsluzhivaniesRead(ref IQueryable<TrainsMauiHybrid.Models.Obsluzhivanie> items);
@@ -775,7 +777,7 @@ namespace TrainsMauiHybrid.Services
                               .Where(i => i.NomerObsluzhivania == nomerobsluzhivania);
 
             items = items.Include(i => i.Train);
-
+ 
             OnGetObsluzhivanieByNomerObsluzhivania(ref items);
 
             var itemToReturn = items.FirstOrDefault();
@@ -798,8 +800,8 @@ namespace TrainsMauiHybrid.Services
 
             if (existingItem != null)
             {
-                throw new Exception("Item already available");
-            }
+               throw new Exception("Item already available");
+            }            
 
             try
             {
@@ -822,8 +824,8 @@ namespace TrainsMauiHybrid.Services
             var entityToCancel = Context.Entry(item);
             if (entityToCancel.State == EntityState.Modified)
             {
-                entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
-                entityToCancel.State = EntityState.Unchanged;
+              entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
+              entityToCancel.State = EntityState.Unchanged;
             }
 
             return item;
@@ -842,9 +844,9 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToUpdate == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
-
+                
             var entryToUpdate = Context.Entry(itemToUpdate);
             entryToUpdate.CurrentValues.SetValues(obsluzhivanie);
             entryToUpdate.State = EntityState.Modified;
@@ -867,7 +869,7 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToDelete == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
 
             OnObsluzhivanieDeleted(itemToDelete);
@@ -889,15 +891,15 @@ namespace TrainsMauiHybrid.Services
 
             return itemToDelete;
         }
-
+    
         public async Task ExportProdazhisToExcel(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/prodazhis/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/prodazhis/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/prodazhis/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/prodazhis/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         public async Task ExportProdazhisToCSV(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/prodazhis/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/prodazhis/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/prodazhis/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/prodazhis/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         partial void OnProdazhisRead(ref IQueryable<TrainsMauiHybrid.Models.Prodazhi> items);
@@ -913,7 +915,7 @@ namespace TrainsMauiHybrid.Services
                 if (!string.IsNullOrEmpty(query.Expand))
                 {
                     var propertiesToExpand = query.Expand.Split(',');
-                    foreach (var p in propertiesToExpand)
+                    foreach(var p in propertiesToExpand)
                     {
                         items = items.Include(p.Trim());
                     }
@@ -938,7 +940,7 @@ namespace TrainsMauiHybrid.Services
                               .Where(i => i.Num == num);
 
             items = items.Include(i => i.Bilety);
-
+ 
             OnGetProdazhiByNum(ref items);
 
             var itemToReturn = items.FirstOrDefault();
@@ -961,8 +963,8 @@ namespace TrainsMauiHybrid.Services
 
             if (existingItem != null)
             {
-                throw new Exception("Item already available");
-            }
+               throw new Exception("Item already available");
+            }            
 
             try
             {
@@ -985,8 +987,8 @@ namespace TrainsMauiHybrid.Services
             var entityToCancel = Context.Entry(item);
             if (entityToCancel.State == EntityState.Modified)
             {
-                entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
-                entityToCancel.State = EntityState.Unchanged;
+              entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
+              entityToCancel.State = EntityState.Unchanged;
             }
 
             return item;
@@ -1005,9 +1007,9 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToUpdate == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
-
+                
             var entryToUpdate = Context.Entry(itemToUpdate);
             entryToUpdate.CurrentValues.SetValues(prodazhi);
             entryToUpdate.State = EntityState.Modified;
@@ -1030,7 +1032,7 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToDelete == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
 
             OnProdazhiDeleted(itemToDelete);
@@ -1052,15 +1054,177 @@ namespace TrainsMauiHybrid.Services
 
             return itemToDelete;
         }
+    
+        public async Task ExportPromezhutochinyePunktiesToExcel(Query query = null, string fileName = null)
+        {
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/promezhutochinyepunkties/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/promezhutochinyepunkties/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+        }
 
+        public async Task ExportPromezhutochinyePunktiesToCSV(Query query = null, string fileName = null)
+        {
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/promezhutochinyepunkties/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/promezhutochinyepunkties/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+        }
+
+        partial void OnPromezhutochinyePunktiesRead(ref IQueryable<TrainsMauiHybrid.Models.PromezhutochinyePunkty> items);
+
+        public async Task<IQueryable<TrainsMauiHybrid.Models.PromezhutochinyePunkty>> GetPromezhutochinyePunkties(Query query = null)
+        {
+            var items = Context.PromezhutochinyePunkties.AsQueryable();
+
+
+            if (query != null)
+            {
+                if (!string.IsNullOrEmpty(query.Expand))
+                {
+                    var propertiesToExpand = query.Expand.Split(',');
+                    foreach(var p in propertiesToExpand)
+                    {
+                        items = items.Include(p.Trim());
+                    }
+                }
+
+                ApplyQuery(ref items, query);
+            }
+
+            OnPromezhutochinyePunktiesRead(ref items);
+
+            return await Task.FromResult(items);
+        }
+
+        partial void OnPromezhutochinyePunktyGet(TrainsMauiHybrid.Models.PromezhutochinyePunkty item);
+        partial void OnGetPromezhutochinyePunktyByPunktKey(ref IQueryable<TrainsMauiHybrid.Models.PromezhutochinyePunkty> items);
+
+
+        public async Task<TrainsMauiHybrid.Models.PromezhutochinyePunkty> GetPromezhutochinyePunktyByPunktKey(long punktkey)
+        {
+            var items = Context.PromezhutochinyePunkties
+                              .AsNoTracking()
+                              .Where(i => i.PunktKey == punktkey);
+
+ 
+            OnGetPromezhutochinyePunktyByPunktKey(ref items);
+
+            var itemToReturn = items.FirstOrDefault();
+
+            OnPromezhutochinyePunktyGet(itemToReturn);
+
+            return await Task.FromResult(itemToReturn);
+        }
+
+        partial void OnPromezhutochinyePunktyCreated(TrainsMauiHybrid.Models.PromezhutochinyePunkty item);
+        partial void OnAfterPromezhutochinyePunktyCreated(TrainsMauiHybrid.Models.PromezhutochinyePunkty item);
+
+        public async Task<TrainsMauiHybrid.Models.PromezhutochinyePunkty> CreatePromezhutochinyePunkty(TrainsMauiHybrid.Models.PromezhutochinyePunkty promezhutochinyepunkty)
+        {
+            OnPromezhutochinyePunktyCreated(promezhutochinyepunkty);
+
+            var existingItem = Context.PromezhutochinyePunkties
+                              .Where(i => i.PunktKey == promezhutochinyepunkty.PunktKey)
+                              .FirstOrDefault();
+
+            if (existingItem != null)
+            {
+               throw new Exception("Item already available");
+            }            
+
+            try
+            {
+                Context.PromezhutochinyePunkties.Add(promezhutochinyepunkty);
+                Context.SaveChanges();
+            }
+            catch
+            {
+                Context.Entry(promezhutochinyepunkty).State = EntityState.Detached;
+                throw;
+            }
+
+            OnAfterPromezhutochinyePunktyCreated(promezhutochinyepunkty);
+
+            return promezhutochinyepunkty;
+        }
+
+        public async Task<TrainsMauiHybrid.Models.PromezhutochinyePunkty> CancelPromezhutochinyePunktyChanges(TrainsMauiHybrid.Models.PromezhutochinyePunkty item)
+        {
+            var entityToCancel = Context.Entry(item);
+            if (entityToCancel.State == EntityState.Modified)
+            {
+              entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
+              entityToCancel.State = EntityState.Unchanged;
+            }
+
+            return item;
+        }
+
+        partial void OnPromezhutochinyePunktyUpdated(TrainsMauiHybrid.Models.PromezhutochinyePunkty item);
+        partial void OnAfterPromezhutochinyePunktyUpdated(TrainsMauiHybrid.Models.PromezhutochinyePunkty item);
+
+        public async Task<TrainsMauiHybrid.Models.PromezhutochinyePunkty> UpdatePromezhutochinyePunkty(long punktkey, TrainsMauiHybrid.Models.PromezhutochinyePunkty promezhutochinyepunkty)
+        {
+            OnPromezhutochinyePunktyUpdated(promezhutochinyepunkty);
+
+            var itemToUpdate = Context.PromezhutochinyePunkties
+                              .Where(i => i.PunktKey == promezhutochinyepunkty.PunktKey)
+                              .FirstOrDefault();
+
+            if (itemToUpdate == null)
+            {
+               throw new Exception("Item no longer available");
+            }
+                
+            var entryToUpdate = Context.Entry(itemToUpdate);
+            entryToUpdate.CurrentValues.SetValues(promezhutochinyepunkty);
+            entryToUpdate.State = EntityState.Modified;
+
+            Context.SaveChanges();
+
+            OnAfterPromezhutochinyePunktyUpdated(promezhutochinyepunkty);
+
+            return promezhutochinyepunkty;
+        }
+
+        partial void OnPromezhutochinyePunktyDeleted(TrainsMauiHybrid.Models.PromezhutochinyePunkty item);
+        partial void OnAfterPromezhutochinyePunktyDeleted(TrainsMauiHybrid.Models.PromezhutochinyePunkty item);
+
+        public async Task<TrainsMauiHybrid.Models.PromezhutochinyePunkty> DeletePromezhutochinyePunkty(long punktkey)
+        {
+            var itemToDelete = Context.PromezhutochinyePunkties
+                              .Where(i => i.PunktKey == punktkey)
+                              .Include(i => i.Marshutis)
+                              .FirstOrDefault();
+
+            if (itemToDelete == null)
+            {
+               throw new Exception("Item no longer available");
+            }
+
+            OnPromezhutochinyePunktyDeleted(itemToDelete);
+
+
+            Context.PromezhutochinyePunkties.Remove(itemToDelete);
+
+            try
+            {
+                Context.SaveChanges();
+            }
+            catch
+            {
+                Context.Entry(itemToDelete).State = EntityState.Unchanged;
+                throw;
+            }
+
+            OnAfterPromezhutochinyePunktyDeleted(itemToDelete);
+
+            return itemToDelete;
+        }
+    
         public async Task ExportTrainsToExcel(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/trains/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/trains/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/trains/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/trains/excel(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         public async Task ExportTrainsToCSV(Query query = null, string fileName = null)
         {
-            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/diplomnyproekt/trains/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/diplomnyproekt/trains/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
+            navigationManager.NavigateTo(query != null ? query.ToUrl($"export/rsncra_diplomnyproekt/trains/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')") : $"export/rsncra_diplomnyproekt/trains/csv(fileName='{(!string.IsNullOrEmpty(fileName) ? UrlEncoder.Default.Encode(fileName) : "Export")}')", true);
         }
 
         partial void OnTrainsRead(ref IQueryable<TrainsMauiHybrid.Models.Train> items);
@@ -1075,7 +1239,7 @@ namespace TrainsMauiHybrid.Services
                 if (!string.IsNullOrEmpty(query.Expand))
                 {
                     var propertiesToExpand = query.Expand.Split(',');
-                    foreach (var p in propertiesToExpand)
+                    foreach(var p in propertiesToExpand)
                     {
                         items = items.Include(p.Trim());
                     }
@@ -1099,7 +1263,7 @@ namespace TrainsMauiHybrid.Services
                               .AsNoTracking()
                               .Where(i => i.NumVagona == numvagona);
 
-
+ 
             OnGetTrainByNumVagona(ref items);
 
             var itemToReturn = items.FirstOrDefault();
@@ -1122,8 +1286,8 @@ namespace TrainsMauiHybrid.Services
 
             if (existingItem != null)
             {
-                throw new Exception("Item already available");
-            }
+               throw new Exception("Item already available");
+            }            
 
             try
             {
@@ -1146,8 +1310,8 @@ namespace TrainsMauiHybrid.Services
             var entityToCancel = Context.Entry(item);
             if (entityToCancel.State == EntityState.Modified)
             {
-                entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
-                entityToCancel.State = EntityState.Unchanged;
+              entityToCancel.CurrentValues.SetValues(entityToCancel.OriginalValues);
+              entityToCancel.State = EntityState.Unchanged;
             }
 
             return item;
@@ -1166,9 +1330,9 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToUpdate == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
-
+                
             var entryToUpdate = Context.Entry(itemToUpdate);
             entryToUpdate.CurrentValues.SetValues(train);
             entryToUpdate.State = EntityState.Modified;
@@ -1193,7 +1357,7 @@ namespace TrainsMauiHybrid.Services
 
             if (itemToDelete == null)
             {
-                throw new Exception("Item no longer available");
+               throw new Exception("Item no longer available");
             }
 
             OnTrainDeleted(itemToDelete);

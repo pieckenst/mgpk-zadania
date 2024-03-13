@@ -46,6 +46,12 @@ namespace TrainsMauiHybrid.Data
               .HasForeignKey(i => i.ModelTrainKey)
               .HasPrincipalKey(i => i.NumVagona);
 
+            builder.Entity<TrainsMauiHybrid.Models.Marshuti>()
+              .HasOne(i => i.PromezhutochinyePunkty)
+              .WithMany(i => i.Marshutis)
+              .HasForeignKey(i => i.Promezhutochny_PunktKey)
+              .HasPrincipalKey(i => i.PunktKey);
+
             builder.Entity<TrainsMauiHybrid.Models.Obsluzhivanie>()
               .HasOne(i => i.Train)
               .WithMany(i => i.Obsluzhivanies)
@@ -72,12 +78,15 @@ namespace TrainsMauiHybrid.Data
 
         public DbSet<TrainsMauiHybrid.Models.Prodazhi> Prodazhis { get; set; }
 
+        public DbSet<TrainsMauiHybrid.Models.PromezhutochinyePunkty> PromezhutochinyePunkties { get; set; }
+
         public DbSet<TrainsMauiHybrid.Models.Train> Trains { get; set; }
 
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
         {
             configurationBuilder.Conventions.Add(_ => new BlankTriggerAddingConvention());
         }
+    
     
     }
 }

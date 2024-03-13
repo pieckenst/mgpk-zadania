@@ -11,73 +11,86 @@
 
 <PageTitle>Редактировать информацию о маршрутах</PageTitle>
 
-    <RadzenColumn SizeMD=12>
-        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Ошибка сохранения информации</RadzenAlert>
-        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Marshuti" Data="@marshuti" Visible="@(marshuti != null)" Submit="@FormSubmit">
-          <RadzenStack>
-            <RadzenFormField Text="Nomer Marshuta" Variant="Variant.Filled">
-                  <ChildContent>
-                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@marshuti.Nomer_Marshuta" Name="Nomer_Marshuta" />
-                  </ChildContent>    
-                  <Helper>
-                    <RadzenRequiredValidator Component="Nomer_Marshuta" Text="Nomer_Marshuta is required" />
-                  </Helper>
-            </RadzenFormField>
-            <RadzenFormField Text="Nachalni Punkt" Variant="Variant.Filled">
-                  <ChildContent>
-                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Nachalni_Punkt" Name="Nachalni_Punkt" />
-                  </ChildContent>    
-                  <Helper>
-                    <RadzenRequiredValidator Component="Nachalni_Punkt" Text="Nachalni_Punkt is required" />
-                  </Helper>
-            </RadzenFormField>
-            <RadzenFormField Text="Mid Punkt" Variant="Variant.Filled">
-                  <ChildContent>
-                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Mid_Punkt" Name="Mid_Punkt" />
-                  </ChildContent>    
-                  <Helper>
-                    <RadzenRequiredValidator Component="Mid_Punkt" Text="Mid_Punkt is required" />
-                  </Helper>
-            </RadzenFormField>
-            <RadzenFormField Text="Konechni Punkt" Variant="Variant.Filled">
-                  <ChildContent>
-                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Konechni_Punkt" Name="Konechni_Punkt" />
-                  </ChildContent>    
-                  <Helper>
-                    <RadzenRequiredValidator Component="Konechni_Punkt" Text="Konechni_Punkt is required" />
-                  </Helper>
-            </RadzenFormField>
-            <RadzenFormField Text="Employee" Variant="Variant.Filled">
-                  <ChildContent>
-                    <RadzenDropDownDataGrid Data="@employeesForEmpNum" TextProperty="Surname" ValueProperty="Num" AllowClear=true
-                          style="display: block; width: 100%" @bind-Value="@marshuti.Emp_Num" Name="Emp_Num"
-                           />
-              </ChildContent>
-            </RadzenFormField>
-            <RadzenFormField Text="Train" Variant="Variant.Filled">
-                  <ChildContent>
-                    <RadzenDropDownDataGrid Data="@trainsForModelTrainKey" TextProperty="Model_Sostava_Vagonov" ValueProperty="NumVagona" AllowClear=true
-                          style="display: block; width: 100%" @bind-Value="@marshuti.ModelTrainKey" Name="ModelTrainKey"
-                           />
-              </ChildContent>
-            </RadzenFormField>
-            <RadzenFormField Text="Vremya Proezda" Variant="Variant.Filled">
-                  <ChildContent>
-                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Vremya_Proezda" Name="Vremya_Proezda" />
-                  </ChildContent>    
-                  <Helper>
-                    <RadzenRequiredValidator Component="Vremya_Proezda" Text="Vremya_Proezda is required" />
-                  </Helper>
-            </RadzenFormField>
-          </RadzenStack>
-          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
-                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
-          </RadzenStack>
-        </RadzenTemplateForm>
-    </RadzenColumn>
+     <RadzenColumn SizeMD=12>
+            <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Ошибка обновления информации</RadzenAlert>
+            <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Marshuti" Data="@marshuti" Visible="@(marshuti != null)" Submit="@FormSubmit">
+                <RadzenRow style="margin-bottom: 1rem">
+                                    <RadzenColumn SizeMD="3">
+                                        <RadzenLabel Text="Номер маршрута" Component="Nomer_Marshuta" style="width: 100%" />
+                                    </RadzenColumn>
+                                    <RadzenColumn SizeMD="9">
+                                        <RadzenNumeric style="display: block; width: 100%" @bind-Value="@marshuti.Nomer_Marshuta" Name="Nomer_Marshuta" />
+                                        <RadzenRequiredValidator Component="Nomer_Marshuta" Text="Номер маршрута необходимо заполнить!" />
+                                    </RadzenColumn>
+                                </RadzenRow>
+                <RadzenRow style="margin-bottom: 1rem">
+                    <RadzenColumn SizeMD="3">
+                        <RadzenLabel Text="Начальный пункт" Component="Nachalni_Punkt" style="width: 100%" />
+                    </RadzenColumn>
+                    <RadzenColumn SizeMD="9">
+                        <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Nachalni_Punkt" Name="Nachalni_Punkt" />
+                        <RadzenRequiredValidator Component="Nachalni_Punkt" Text="Начальный пункт необходимо заполнить!" />
+                    </RadzenColumn>
+                </RadzenRow>
+                <RadzenRow style="margin-bottom: 1rem">
+                      <RadzenColumn SizeMD="3">
+                           <RadzenLabel Text="Промежуточные пункты проезда маршрута" Component="PromezhutochinyePunkty" style="width: 100%" />
+                      </RadzenColumn>
+                       <RadzenColumn SizeMD="9">
+                        <RadzenDropDownDataGrid Data="@promezhutochinyePunktiesForPromezhutochnyPunktKey" TextProperty="PunktPoint1" ValueProperty="PunktKey" AllowClear=true
+                                                             Placeholder="Выберите промежуточные пункты проезда маршрута(Показан только первый пункт)" style="display: block; width: 100%" @bind-Value="@marshuti.Promezhutochny_PunktKey" Name="Promezhutochny_PunktKey"
+                                                               />
+                        </RadzenColumn>
+                </RadzenRow>
+                                <RadzenRow style="margin-bottom: 1rem">
+                                    <RadzenColumn SizeMD="3">
+                                        <RadzenLabel Text="Конечный пункт" Component="Konechni_Punkt" style="width: 100%" />
+                                    </RadzenColumn>
+                                    <RadzenColumn SizeMD="9">
+                                        <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Konechni_Punkt" Name="Konechni_Punkt" />
+                                        <RadzenRequiredValidator Component="Konechni_Punkt" Text="Конечный пункт необходимо заполнить!" />
+                                    </RadzenColumn>
+                                </RadzenRow>
+                                <RadzenRow style="margin-bottom: 1rem">
+                                    <RadzenColumn SizeMD="3">
+                                        <RadzenLabel Text="Сотрудник" Component="Employee" style="width: 100%" />
+                                    </RadzenColumn>
+                                    <RadzenColumn SizeMD="9">
+                                        <RadzenDropDownDataGrid Data="@employeesForEmpNum" TextProperty="Surname" ValueProperty="Num" AllowClear=true
+                                             Placeholder="Выберите сотрудника назначеного машинистом маршрута" style="display: block; width: 100%" @bind-Value="@marshuti.Emp_Num" Name="Emp_Num"
+                                               />
+                                    </RadzenColumn>
+                                </RadzenRow>
+                                <RadzenRow style="margin-bottom: 1rem">
+                                    <RadzenColumn SizeMD="3">
+                                        <RadzenLabel Text="Модель состава вагонов" Component="Train" style="width: 100%" />
+                                    </RadzenColumn>
+                                    <RadzenColumn SizeMD="9">
+                                        <RadzenDropDownDataGrid Data="@trainsForModelTrainKey" TextProperty="Model_Sostava_Vagonov" ValueProperty="NumVagona" AllowClear=true
+                                             Placeholder="Выберите модель состава вагонов" style="display: block; width: 100%" @bind-Value="@marshuti.ModelTrainKey" Name="ModelTrainKey"
+                                               />
+                                    </RadzenColumn>
+                                </RadzenRow>
+                                <RadzenRow style="margin-bottom: 1rem">
+                                    <RadzenColumn SizeMD="3">
+                                        <RadzenLabel Text="Время проезда" Component="Vremya_Proezda" style="width: 100%" />
+                                    </RadzenColumn>
+                                    <RadzenColumn SizeMD="9">
+                                        <RadzenTextBox style="display: block; width: 100%" @bind-Value="@marshuti.Vremya_Proezda" Name="Vremya_Proezda" />
+                                        <RadzenRequiredValidator Component="Vremya_Proezda" Text="Время проезда необходимо заполнить!" />
+                                    </RadzenColumn>
+                                </RadzenRow>
+                                
+              <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                        <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Сохранить" Variant="Variant.Flat" />
+                        <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Отмена" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+              </RadzenStack>
+            </RadzenTemplateForm>
+        </RadzenColumn>
 
 @code {
+
+    
 
     [Parameter]
     public long Nomer_Marshuta { get; set; }
@@ -89,6 +102,8 @@
         employeesForEmpNum = await DiplomnyProektService.GetEmployees();
 
         trainsForModelTrainKey = await DiplomnyProektService.GetTrains();
+
+        promezhutochinyePunktiesForPromezhutochnyPunktKey = await DiplomnyProektService.GetPromezhutochinyePunkties();
     }
     protected bool errorVisible;
     protected TrainsMauiHybrid.Models.Marshuti marshuti;
@@ -96,6 +111,8 @@
     protected IEnumerable<TrainsMauiHybrid.Models.Employee> employeesForEmpNum;
 
     protected IEnumerable<TrainsMauiHybrid.Models.Train> trainsForModelTrainKey;
+
+    protected IEnumerable<TrainsMauiHybrid.Models.PromezhutochinyePunkty> promezhutochinyePunktiesForPromezhutochnyPunktKey;
 
     protected async Task FormSubmit()
     {

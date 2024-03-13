@@ -26,7 +26,9 @@
         <RadzenTextBox Placeholder="Поиск по информации ..." style="display: block; width: 100%" @oninput="@Search" aria-label="Search by all string columns"/>
         <RadzenRow>
             <RadzenColumn SizeMD=12>
-                <RadzenDataGrid @ref="grid0" ColumnWidth="200px" AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[] { 5, 10, 20, 30 })
+                <RadzenDataGrid @ref="grid0" ColumnWidth="250px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
+                                          PageTitleFormat="Страница {0}" PagingSummaryFormat="Страница {0} из {1} " PageSizeText="количество колонок на странице" Responsive="true"
+                                          ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30} )
                                 Data="@obsluzhivanies" TItem="TrainsMauiHybrid.Models.Obsluzhivanie" RowSelect="@EditRow">
                     <Columns>
                         <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Obsluzhivanie" Property="NomerObsluzhivania" Title="Номер обслуживания">
@@ -111,7 +113,7 @@
             {
                 Severity = NotificationSeverity.Error,
                 Summary = $"Ошибка",
-                Detail = $"Unable to delete Obsluzhivanie"
+                Detail = $"Ошибка удаления информации"
             });
         }
     }

@@ -1,0 +1,126 @@
+@page "/promezhutochinye-punkties"
+
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+
+<PageTitle>Промежуточные пункты</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Промежуточные пункты маршрутов" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Добавить информацию" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenTextBox Placeholder="Поиск ..." style="display: block; width: 100%" @oninput="@Search" aria-label="Search by all string columns" />
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="250px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@promezhutochinyePunkties" TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" RowSelect="@EditRow" PageTitleFormat="Страница {0}" PagingSummaryFormat="Страница {0} из {1} " PageSizeText="количество колонок на странице" Responsive="true">
+            <Columns>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktKey" Title="Номер пункта">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktPoint1" Title="Промежуточный пункт 1">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktPoint2" Title="Промежуточный пункт 2">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktPoint3" Title="Промежуточный пункт 3">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktPoint4" Title="Промежуточный пункт 4">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktPoint5" Title="Промежуточный пункт 5">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktPoint6" Title="Промежуточный пункт 6">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktPoint7" Title="Промежуточный пункт 7">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktPoint8" Title="Промежуточный пункт 8">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktPoint9" Title="Промежуточный пункт 9">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Property="PunktPoint10" Title="Промежуточный пункт 10">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.PromezhutochinyePunkty" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="promezhutochinyePunkty">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, promezhutochinyePunkty)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>
+
+@code {
+
+    protected IEnumerable<TrainsMauiHybrid.Models.PromezhutochinyePunkty> promezhutochinyePunkties;
+
+        protected RadzenDataGrid<TrainsMauiHybrid.Models.PromezhutochinyePunkty> grid0;
+
+        protected string search = "";
+
+        protected async Task Search(ChangeEventArgs args)
+        {
+            search = $"{args.Value}";
+
+            await grid0.GoToPage(0);
+
+            promezhutochinyePunkties = await DiplomnyProektService.GetPromezhutochinyePunkties(new Query { Filter = $@"i => i.PunktPoint1.Contains(@0) || i.PunktPoint2.Contains(@0) || i.PunktPoint3.Contains(@0) || i.PunktPoint4.Contains(@0) || i.PunktPoint5.Contains(@0) || i.PunktPoint6.Contains(@0) || i.PunktPoint7.Contains(@0) || i.PunktPoint8.Contains(@0) || i.PunktPoint9.Contains(@0) || i.PunktPoint10.Contains(@0)", FilterParameters = new object[] { search } });
+        }
+        protected override async Task OnInitializedAsync()
+        {
+            promezhutochinyePunkties = await DiplomnyProektService.GetPromezhutochinyePunkties(new Query { Filter = $@"i => i.PunktPoint1.Contains(@0) || i.PunktPoint2.Contains(@0) || i.PunktPoint3.Contains(@0) || i.PunktPoint4.Contains(@0) || i.PunktPoint5.Contains(@0) || i.PunktPoint6.Contains(@0) || i.PunktPoint7.Contains(@0) || i.PunktPoint8.Contains(@0) || i.PunktPoint9.Contains(@0) || i.PunktPoint10.Contains(@0)", FilterParameters = new object[] { search } });
+        }
+
+        protected async Task AddButtonClick(MouseEventArgs args)
+        {
+            await DialogService.OpenAsync<AddPromezhutochinyePunkty>("Добавить информацию о промежуточном пункте маршрута", null);
+            await grid0.Reload();
+        }
+
+        protected async Task EditRow(TrainsMauiHybrid.Models.PromezhutochinyePunkty args)
+        {
+            await DialogService.OpenAsync<EditPromezhutochinyePunkty>("Редактировать информацию о промежуточном пункте маршрута", new Dictionary<string, object> { {"PunktKey", args.PunktKey} });
+        }
+
+        protected async Task GridDeleteButtonClick(MouseEventArgs args, TrainsMauiHybrid.Models.PromezhutochinyePunkty promezhutochinyePunkty)
+        {
+            try
+            {
+                if (await DialogService.Confirm("Вы уверены что хотите удалить данную строку?") == true)
+                {
+                    var deleteResult = await DiplomnyProektService.DeletePromezhutochinyePunkty(promezhutochinyePunkty.PunktKey);
+
+                    if (deleteResult != null)
+                    {
+                        await grid0.Reload();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                NotificationService.Notify(new NotificationMessage
+                {
+                    Severity = NotificationSeverity.Error,
+                    Summary = $"Error",
+                    Detail = $"Unable to delete PromezhutochinyePunkty"
+                });
+            }
+        }
+
+}
