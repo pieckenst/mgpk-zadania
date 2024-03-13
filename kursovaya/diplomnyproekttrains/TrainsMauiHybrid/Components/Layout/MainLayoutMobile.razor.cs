@@ -51,6 +51,12 @@ namespace TrainsMauiHybrid.Components.Layout
         private void IsDarkChanged(bool isDark)
         {
             
+            if (getwiptheme == "Dark") {
+                _isDark = true;
+            } else {
+                _isDark = false;
+            }
+            
             _isDark = isDark;
             MasaBlazor.ToggleTheme();
         }
