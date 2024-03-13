@@ -620,10 +620,10 @@ div:has(.rz-search-input) {
     --rz-on-secondary-lighter: #f1e9fa;
     --rz-on-secondary-dark: #704f9c;
     --rz-on-secondary-darker: #4a2f6e;
-    --rz-on-info: #ffffff;
-    --rz-on-info-light: #4a3a70;
+    --rz-on-info: #eeebf5;
+    --rz-on-info-light: #c8bde7;
     --rz-on-info-lighter: #DFD7F6;
-    --rz-on-info-dark: #ffffff;
+    --rz-on-info-dark: #795ba6;
     --rz-on-info-darker: #4a3a70;
     --rz-on-success: #ffffff;
     --rz-on-success-light: #194100;
@@ -21102,10 +21102,10 @@ div:has(.rz-search-input) {
     --rz-on-secondary-lighter: #f1e9fa;
     --rz-on-secondary-dark: #704f9c;
     --rz-on-secondary-darker: #4a2f6e;
-    --rz-on-info: #ffffff;
-    --rz-on-info-light: #4a3a70;
+    --rz-on-info: #eeebf5;
+    --rz-on-info-light: #c8bde7;
     --rz-on-info-lighter: #DFD7F6;
-    --rz-on-info-dark: #ffffff;
+    --rz-on-info-dark: #795ba6;
     --rz-on-info-darker: #4a3a70;
     --rz-on-success: #ffffff;
     --rz-on-success-light: #194100;
