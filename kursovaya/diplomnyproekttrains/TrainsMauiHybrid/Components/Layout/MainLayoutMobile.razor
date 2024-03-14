@@ -79,8 +79,43 @@
                 <span>Маршруты</span>
                 <MIcon>mdi-train</MIcon>
             </MButton>
+            
+            <MMenu
+                                Bottom
+                                Left>
+                                <ActivatorContent>
+                                    <MButton
+                                                                
+                                                                Icon
+                                                                @attributes="@context.Attrs">
+                                                                <MIcon>mdi-dots-vertical</MIcon>
+                                                            </MButton>
+                                </ActivatorContent>
+            
+                                <ChildContent>
+                                    <MList>
+                                        <MListItem  Class="m-list-item--default" Href="prodazhis">
+                                            <MListItemTitle>Продажи</MListItemTitle>
+                                        </MListItem>
+                                        <MListItem  Class="m-list-item--default" Href="bileties">
+                                            <MListItemTitle>Билеты</MListItemTitle>
+                                        </MListItem>
+                                        <MListItem  Class="m-list-item--default" Href="trains">
+                                            <MListItemTitle>Поезда</MListItemTitle>
+                                        </MListItem>
+                                        <MListItem  Class="m-list-item--default" Href="obsluzhivanies">
+                                            <MListItemTitle>Обслуживание</MListItemTitle>
+                                        </MListItem>
+                                        <MListItem  Class="m-list-item--default" Href="promezhutochinye-punkties">
+                                            <MListItemTitle>Промежуточные пункты маршрутов</MListItemTitle>
+                                        </MListItem>
+                                        
+                                        
+                                    </MList>
+                                </ChildContent>
+                            </MMenu>
 
-            <MButton Href="prodazhis">
+            @*<MButton Href="prodazhis">
                 <span>Продажи</span>
                 <MIcon>mdi-ticket-confirmation</MIcon>
             </MButton>
@@ -99,7 +134,7 @@
             <MButton Href="promezhutochinye-punkties">
                             <span>Промежуточные пункты маршрутов</span>
                             <MIcon>mdi-table-filter</MIcon>
-                        </MButton>
+                        </MButton>*@
 
         </MBottomNavigation>
 

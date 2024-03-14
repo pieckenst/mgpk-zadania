@@ -9,6 +9,13 @@ namespace TrainsMauiHybrid.Components.Layout
 {
     public partial class MainLayoutMobile
     {
+        string[] items =
+        {
+            "Click Me",
+            "Click Me",
+            "Click Me",
+            "Click Me 2"
+        };
         static AppTheme currentTheme = Application.Current.RequestedTheme;
         string getwiptheme = currentTheme.ToString();
         private bool _drawer;
