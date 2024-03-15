@@ -33,7 +33,7 @@ namespace TrainsMauiHybrid
             builder.Services.AddScoped<TrainsMauiHybrid.Services.DiplomnyProektService>();
             builder.Services.AddDbContext<TrainsMauiHybrid.Data.DiplomnyProektContext>(options =>
             {
-                options.UseSqlServer("Server=sql.bsite.net\\MSSQL2016;Persist Security Info=False;TrustServerCertificate=True;User ID=rsncra_DiplomnyProekt;Password=ctrt55xx;Initial Catalog=rsncra_DiplomnyProekt",
+                options.UseSqlServer("Server=sql.bsite.net\\MSSQL2016;Persist Security Info=False;TrustServerCertificate=True; Encrypt=false;User ID=rsncra_DiplomnyProekt;Password=ctrt55xx;Initial Catalog=rsncra_DiplomnyProekt",
                     sqlServerOptionsAction: sqlOptions =>
                     {
                         sqlOptions.EnableRetryOnFailure();; // retry 6 times on fail
