@@ -8,7 +8,7 @@
 @inject NotificationService NotificationService
 
 @inject DiplomnyProektService DiplomnyProektService
-
+@attribute [Authorize]
 <PageTitle>Редактировать информацию о должности</PageTitle>
 
     <RadzenColumn SizeMD=12>
@@ -43,6 +43,8 @@
 
 @code {
 
+    [Inject]
+    protected SecurityService Security { get; set; }
     [Parameter]
     public long Job_Num { get; set; }
 

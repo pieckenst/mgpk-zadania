@@ -8,7 +8,7 @@
 @inject NotificationService NotificationService
 
 @inject DiplomnyProektService DiplomnyProektService
-
+@attribute [Authorize]
 <PageTitle>Добавить промежуточные пункты</PageTitle>
 <RadzenColumn SizeMD=12>
     <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Ошибка сохранения информации</RadzenAlert>
@@ -111,6 +111,8 @@
 
 @code {
 
+    [Inject]
+    protected SecurityService Security { get; set; }
     protected override async Task OnInitializedAsync()
     {
         promezhutochinyePunkty = new TrainsMauiHybrid.Models.PromezhutochinyePunkty();

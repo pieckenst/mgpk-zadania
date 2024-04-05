@@ -8,7 +8,7 @@
 @inject NotificationService NotificationService
 
 @inject DiplomnyProektService DiplomnyProektService
-
+@attribute [Authorize]
 <PageTitle>Обслуживание автобусов</PageTitle>
 <ErrorBoundary>
     
@@ -64,6 +64,8 @@
 </ErrorBoundary>
 @code {
 
+    [Inject]
+    protected SecurityService Security { get; set; }
     protected IEnumerable<TrainsMauiHybrid.Models.Obsluzhivanie> obsluzhivanies;
 
     protected RadzenDataGrid<TrainsMauiHybrid.Models.Obsluzhivanie> grid0;

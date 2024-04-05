@@ -8,7 +8,7 @@
 @inject NotificationService NotificationService
 
 @inject DiplomnyProektService DiplomnyProektService
-
+@attribute [Authorize]
 <PageTitle>Редактировать информацию о маршрутах</PageTitle>
 
      <RadzenColumn SizeMD=12>
@@ -90,7 +90,8 @@
 
 @code {
 
-    
+    [Inject]
+    protected SecurityService Security { get; set; }
 
     [Parameter]
     public long Nomer_Marshuta { get; set; }

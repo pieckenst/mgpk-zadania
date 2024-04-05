@@ -1,0 +1,51 @@
+@layout LoginLayout
+@page "/login"
+@using TrainsMauiHybrid.Components.Layout
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+<PageTitle>Login</PageTitle>
+<RadzenRow>
+    <RadzenColumn SizeMD="12">
+        <RadzenTemplateForm Action="@($" account/login?redirectUrl={redirectUrl}")" Data="@("login")"
+            Method="post">
+            <RadzenAlert Shade="Radzen.Shade.Lighter" Variant="Radzen.Variant.Flat" Size="Radzen.AlertSize.Small" AlertStyle="Radzen.AlertStyle.Danger" Visible="@errorVisible">@error</RadzenAlert>
+            <RadzenAlert Shade="Radzen.Shade.Lighter" Variant="Radzen.Variant.Flat" Size="Radzen.AlertSize.Small" AlertStyle="Radzen.AlertStyle.Info" Visible="@infoVisible">@info</RadzenAlert>
+            <RadzenLogin AllowResetPassword="false" AllowRegister="false" FormFieldVariant="Variant.Filled" LoginText="Войти" PasswordText="Пароль" RegisterMessageText="У вас ещё нету аккаунта?" RegisterText="Регистрация" UserText="Имя пользователя"
+            />
+        </RadzenTemplateForm>
+    </RadzenColumn>
+</RadzenRow>
+@code {
+
+    protected string redirectUrl;
+    protected string error;
+    protected string info;
+    protected bool errorVisible;
+    protected bool infoVisible;
+
+    [Inject]
+    protected SecurityService Security { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var query = System.Web.HttpUtility.ParseQueryString(new Uri(NavigationManager.ToAbsoluteUri(NavigationManager.Uri).ToString()).Query);
+
+        error = query.Get("error");
+
+        info = query.Get("info");
+
+        redirectUrl = query.Get("redirectUrl");
+
+        errorVisible = !string.IsNullOrEmpty(error);
+
+        infoVisible = !string.IsNullOrEmpty(info);
+    }
+
+}

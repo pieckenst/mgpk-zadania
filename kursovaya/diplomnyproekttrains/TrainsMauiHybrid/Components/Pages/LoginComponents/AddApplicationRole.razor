@@ -1,0 +1,67 @@
+@page "/add-application-role"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+@attribute [Authorize]
+
+<RadzenRow>
+    <RadzenColumn SizeMD="12">
+        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.ApplicationRole" Data="@role" Visible="@(role != null)" Submit="@FormSubmit">
+            <RadzenAlert Title="Cannot create role" Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">@error</RadzenAlert>
+
+            <RadzenStack style="margin-bottom: 1rem;">
+                <RadzenFormField Text="Name" Variant="Variant.Filled">
+                    <ChildContent>
+                        <RadzenTextBox style="width: 100%" @bind-Value="@(role.Name)" Name="Name" />
+                    </ChildContent>
+                    <Helper>
+                        <RadzenRequiredValidator Component="Name" Text="Name is required" />
+                    </Helper>
+                </RadzenFormField>
+            </RadzenStack>
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Click="@CancelClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+</RadzenRow>
+@code {
+    protected TrainsMauiHybrid.Models.ApplicationRole role;
+    protected string error;
+    protected bool errorVisible;
+
+    protected SecurityService Security { get; set; }
+
+    protected async Task OnInitializedAsync()
+    {
+        role = new TrainsMauiHybrid.Models.ApplicationRole();
+    }
+
+    protected async Task FormSubmit(TrainsMauiHybrid.Models.ApplicationRole role)
+    {
+        try
+        {
+            await Security.CreateRole(role);
+
+            DialogService.Close(null);
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+            error = ex.Message;
+        }
+    }
+
+    protected async Task CancelClick()
+    {
+        DialogService.Close(null);
+    }
+
+}

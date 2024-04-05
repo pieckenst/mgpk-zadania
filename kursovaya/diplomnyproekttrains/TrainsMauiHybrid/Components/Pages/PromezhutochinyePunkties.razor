@@ -9,7 +9,7 @@
 @inject NotificationService NotificationService
 
 @inject DiplomnyProektService DiplomnyProektService
-
+@attribute [Authorize]
 <PageTitle>Промежуточные пункты</PageTitle>
 <RadzenStack>
     <RadzenRow AlignItems="AlignItems.Center">
@@ -68,6 +68,8 @@
 
 @code {
 
+    [Inject]
+    protected SecurityService Security { get; set; }
     protected IEnumerable<TrainsMauiHybrid.Models.PromezhutochinyePunkty> promezhutochinyePunkties;
 
         protected RadzenDataGrid<TrainsMauiHybrid.Models.PromezhutochinyePunkty> grid0;

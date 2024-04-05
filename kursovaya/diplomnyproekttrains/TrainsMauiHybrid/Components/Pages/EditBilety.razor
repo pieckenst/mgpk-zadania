@@ -8,7 +8,7 @@
 @inject NotificationService NotificationService
 
 @inject DiplomnyProektService DiplomnyProektService
-
+@attribute [Authorize]
 <PageTitle>Редактирование информации о билетах</PageTitle>
 
     <RadzenColumn SizeMD=12>
@@ -38,6 +38,7 @@
                     <RadzenRequiredValidator Component="Stoimost" Text="Стоимость необходимо заполнить!" />
                   </Helper>
             </RadzenFormField>
+            
           </RadzenStack>
           <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
                     <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Сохранить" Variant="Variant.Flat" />
@@ -47,6 +48,8 @@
     </RadzenColumn>
 
 @code {
+    [Inject]
+    protected SecurityService Security { get; set; }
 
     [Parameter]
     public long Nomer_Bileta { get; set; }

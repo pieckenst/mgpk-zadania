@@ -1,0 +1,92 @@
+@page "/application-users"
+@using TrainsMauiHybrid.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+@inject DiplomnyProektService DiplomnyProektService
+@attribute [Authorize]
+
+<PageTitle>Users</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Users" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+        <RadzenColumn SizeMD="12">
+            <RadzenAlert Size="AlertSize.Large" Shade="Shade.Light" AlertStyle="AlertStyle.Danger" Variant="Variant.Flat" Title="Cannot delete user" Visible="@errorVisible">@error</RadzenAlert>
+            <RadzenDataGrid @ref="grid0" AllowFiltering="true" AllowPaging="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30}) AllowSorting="true" Data="@users"
+                TItem="TrainsMauiHybrid.Models.ApplicationUser" RowSelect="@RowSelect">
+                <Columns>
+                    <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.ApplicationUser" Property="UserName" Title="User Name" />
+                    <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.ApplicationUser" Property="Email" Title="Email" />
+                    <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.ApplicationUser" Filterable="false" Sortable="false" TextAlign="TextAlign.Center" Width="70px">
+                        <Template Context="user">
+                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="close" Size="ButtonSize.Small"
+                                Variant="Variant.Flat" Shade="Shade.Lighter" Click="@(() => DeleteClick(user))" @onclick:stopPropagation="true" />
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+        </RadzenColumn>
+    </RadzenRow>
+</RadzenStack>
+
+@code {
+
+    protected IEnumerable<TrainsMauiHybrid.Models.ApplicationUser> users;
+    protected RadzenDataGrid<TrainsMauiHybrid.Models.ApplicationUser> grid0;
+    protected string error;
+    protected bool errorVisible;
+
+    [Inject]
+    protected SecurityService Security { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await Security.GetUsers();
+    }
+
+    protected async Task AddClick()
+    {
+        await DialogService.OpenAsync<AddApplicationUser>("Add Application User");
+
+        users = await Security.GetUsers();
+    }
+
+    protected async Task RowSelect(TrainsMauiHybrid.Models.ApplicationUser user)
+    {
+        await DialogService.OpenAsync<EditApplicationUser>("Edit Application User", new Dictionary<string, object>{ {"Id", user.Id} });
+
+        users = await Security.GetUsers();
+    }
+
+    protected async Task DeleteClick(TrainsMauiHybrid.Models.ApplicationUser user)
+    {
+        try
+        {
+            if (await DialogService.Confirm("Are you sure you want to delete this user?") == true)
+            {
+                await Security.DeleteUser($"{user.Id}");
+
+                users = await Security.GetUsers();
+            }
+        }
+        catch (Exception ex)
+        {
+            errorVisible = true;
+            error = ex.Message;
+        }
+    }
+
+}

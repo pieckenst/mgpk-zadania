@@ -8,7 +8,7 @@
 @inject NotificationService NotificationService
 
 @inject DiplomnyProektService DiplomnyProektService
-
+@attribute [Authorize]
 <PageTitle>Билеты</PageTitle>
 <RadzenStack>
     <RadzenRow AlignItems="AlignItems.Center">
@@ -34,6 +34,7 @@
                 </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Bilety" Property="Stoimost" Title="Стоимость">
                 </RadzenDataGridColumn>
+                
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Bilety" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
                     <Template Context="bilety">
 
@@ -50,6 +51,8 @@
   </RadzenRow>
 </RadzenStack>
 @code {
+    [Inject]
+    protected SecurityService Security { get; set; }
 
     protected IEnumerable<TrainsMauiHybrid.Models.Bilety> bileties;
 

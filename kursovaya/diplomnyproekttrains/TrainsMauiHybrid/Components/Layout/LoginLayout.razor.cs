@@ -1,15 +1,20 @@
-using System.Net.NetworkInformation;
+using System.Net.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Components.Routing;
+using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.Web.Virtualization;
 using Microsoft.JSInterop;
 using Radzen;
 using Radzen.Blazor;
 using TrainsMauiHybrid.Services;
-using TrainsMauiHybrid.Texts;
-using DialogService = Radzen.DialogService;
+
 
 namespace TrainsMauiHybrid.Components.Layout
 {
-    public partial class MainLayout
+    public partial class LoginLayout
     {
         [Inject]
         protected IJSRuntime JSRuntime { get; set; }
@@ -29,22 +34,7 @@ namespace TrainsMauiHybrid.Components.Layout
         [Inject]
         protected NotificationService NotificationService { get; set; }
 
-        private bool sidebarExpanded = true;
-
         [Inject]
         protected SecurityService Security { get; set; }
-
-        void SidebarToggleClick()
-        {
-            sidebarExpanded = !sidebarExpanded;
-        }
-
-        protected void ProfileMenuClick(RadzenProfileMenuItem args)
-        {
-            if (args.Value == "Logout")
-            {
-                Security.Logout();
-            }
-        }
     }
 }

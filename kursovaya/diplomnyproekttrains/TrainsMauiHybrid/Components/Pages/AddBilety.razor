@@ -8,7 +8,7 @@
 @inject NotificationService NotificationService
 
 @inject DiplomnyProektService DiplomnyProektService
-
+@attribute [Authorize]
 <PageTitle>Добавление информации о билетах</PageTitle>
     <RadzenColumn SizeMD=12>
         <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Ошибка сохранения информации</RadzenAlert>
@@ -30,13 +30,14 @@
               </ChildContent>
             </RadzenFormField>
             <RadzenFormField Text="Стоимость билета" Variant="Variant.Filled">
-                  <ChildContent>
+                <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@bilety.Stoimost" Name="Stoimost" />
-                  </ChildContent>    
-                  <Helper>
+                </ChildContent>    
+                <Helper>
                     <RadzenRequiredValidator Component="Stoimost" Text="Стоимость неоходимо заполнить!" />
-                  </Helper>
+                </Helper>
             </RadzenFormField>
+            
           </RadzenStack>
           <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
                     <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Сохранить" Variant="Variant.Flat" />
@@ -46,6 +47,9 @@
     </RadzenColumn>
 
 @code {
+    
+    [Inject]
+    protected SecurityService Security { get; set; }
 
     protected override async Task OnInitializedAsync()
     {

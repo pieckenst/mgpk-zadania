@@ -1,5 +1,6 @@
 ﻿@page "/counter"
-
+@using TrainsMauiHybrid.Services
+@attribute [Authorize]
 
 <h1>Counter</h1>
 
@@ -8,6 +9,8 @@
 <RadzenButton Variant="Variant.Filled" Color="Color.Primary" OnClick="IncrementCount">Click me</RadzenButton>
 
 @code {
+    [Inject]
+    protected SecurityService Security { get; set; }
     private int currentCount = 0;
 
     private void IncrementCount()
