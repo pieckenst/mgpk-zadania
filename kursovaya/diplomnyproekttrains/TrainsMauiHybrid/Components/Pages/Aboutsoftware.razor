@@ -1,0 +1,24 @@
+@page "/aboutsoftware"
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject DialogService DialogService
+@inject ContextMenuService ContextMenuService
+@inject TooltipService TooltipService
+@inject NotificationService NotificationService
+
+<PageTitle>Aboutsoftware</PageTitle>
+<RadzenRow>
+    <RadzenColumn Size="12">
+        <RadzenText Text="О программе" TextStyle="TextStyle.H3" TagName="TagName.H1" />
+    </RadzenColumn>
+</RadzenRow>
+<RadzenCard>
+    <RadzenImage Path="images/logo.png"  AlternateText="Application logo" Style="width: 125px" class="align-self-center"></RadzenImage><RadzenText Text="Автоматизированная система «Железнодорожные маршруты»" Style="text-align: center; text-transform: none; font-size: 50px; line-height: 45px; height: 199px; position: relative" />
+    <RadzenAlert Text="Программа создана для дипломной работы по теме РАЗРАБОТКА АВТОМАТИЗИРОВАННОЙ СИСТЕМЫ «ПОСТРОЕНИЕ ЖЕЛЕЗНОДОРОЖНЫХ МАРШРУТОВ» в 2024 году" AlertStyle="Radzen.AlertStyle.Base" ShowIcon="true" AllowClose="false"></RadzenAlert>
+    <RadzenAlert Text="Создано учащимся учебной группы ПО-455 Савичем Андреем Олеговичем" AllowClose="false"></RadzenAlert>
+    <RadzenAlert AllowClose="false" AlertStyle="Radzen.AlertStyle.Dark" Text="Все права принадлежат Могилевскому государственному политехническому колледжу" Size="Radzen.AlertSize.Large"></RadzenAlert>
+    
+</RadzenCard>
+@code {
+
+}

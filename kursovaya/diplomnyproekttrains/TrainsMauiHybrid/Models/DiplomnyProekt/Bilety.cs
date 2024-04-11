@@ -21,6 +21,8 @@ namespace TrainsMauiHybrid.Models
         [Required]
         public string Stoimost { get; set; }
 
+        public string Konechnaya_Ostanovka { get; set; }
+
         public ICollection<Prodazhi> Prodazhis { get; set; }
 
     }

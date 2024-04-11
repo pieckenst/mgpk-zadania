@@ -7,39 +7,49 @@
 @inject TooltipService TooltipService
 @inject NotificationService NotificationService
 
-@inject DiplomnyProektService DiplomnyProektService
-@attribute [Authorize]
-<PageTitle>Добавление информации о билетах</PageTitle>
+@inject DiplomnyProektService rsncra_DiplomnyProektService
+
+<PageTitle>Добавить билеты</PageTitle>
     <RadzenColumn SizeMD=12>
-        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Ошибка сохранения информации</RadzenAlert>
-        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Bilety" Data="@bilety" Visible="@(bilety != null)" Submit="@FormSubmit">
-          <RadzenStack>
-            <RadzenFormField Text="Номер билета" Variant="Variant.Filled">
-                  <ChildContent>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Bilety</RadzenAlert>
+        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Bilety" Data="@bilety" Visible="@(bilety != null && canEdit)" Submit="@FormSubmit">
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Номер билета" Component="Nomer_Bileta" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
                     <RadzenNumeric style="display: block; width: 100%" @bind-Value="@bilety.Nomer_Bileta" Name="Nomer_Bileta" />
-                  </ChildContent>    
-                  <Helper>
-                    <RadzenRequiredValidator Component="Nomer_Bileta" Text="Номер билета обязателен к заполнению!" />
-                  </Helper>
-            </RadzenFormField>
-            <RadzenFormField Text="Маршруты" Variant="Variant.Filled">
-                  <ChildContent>
+                    <RadzenRequiredValidator Component="Nomer_Bileta" Text="Номер билета необходимо заполнить!" />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Маршрут" Component="Marshuti" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
                     <RadzenDropDownDataGrid Data="@marshutisForNomerMarshutaKey" TextProperty="Nachalni_Punkt" ValueProperty="Nomer_Marshuta" AllowClear=true
-                          style="display: block; width: 100%" @bind-Value="@bilety.Nomer_MarshutaKey" Name="Nomer_MarshutaKey"
+                         Placeholder="Выберите маршрут" style="display: block; width: 100%" @bind-Value="@bilety.Nomer_MarshutaKey" Name="Nomer_MarshutaKey"
                            />
-              </ChildContent>
-            </RadzenFormField>
-            <RadzenFormField Text="Стоимость билета" Variant="Variant.Filled">
-                <ChildContent>
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Стоимость" Component="Stoimost" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@bilety.Stoimost" Name="Stoimost" />
-                </ChildContent>    
-                <Helper>
-                    <RadzenRequiredValidator Component="Stoimost" Text="Стоимость неоходимо заполнить!" />
-                </Helper>
-            </RadzenFormField>
-            
-          </RadzenStack>
-          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenRequiredValidator Component="Stoimost" Text="Стоимость необходимо заполнить!" />
+                </RadzenColumn>
+            </RadzenRow>
+           <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Конечная остановка пассажира" Component="Konechnaya_Ostanovka" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@bilety.Konechnaya_Ostanovka" Name="Konechnaya_Ostanovka" />
+                </RadzenColumn>
+            </RadzenRow>
+          <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
                     <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Сохранить" Variant="Variant.Flat" />
                     <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Отмена" Variant="Variant.Flat" Click="@CancelButtonClick"  />
           </RadzenStack>
@@ -47,15 +57,12 @@
     </RadzenColumn>
 
 @code {
-    
-    [Inject]
-    protected SecurityService Security { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         bilety = new TrainsMauiHybrid.Models.Bilety();
 
-        marshutisForNomerMarshutaKey = await DiplomnyProektService.GetMarshutis();
+        marshutisForNomerMarshutaKey = await rsncra_DiplomnyProektService.GetMarshutis();
     }
     protected bool errorVisible;
     protected TrainsMauiHybrid.Models.Bilety bilety;
@@ -66,11 +73,13 @@
     {
         try
         {
-            await DiplomnyProektService.CreateBilety(bilety);
+            await rsncra_DiplomnyProektService.CreateBilety(bilety);
             DialogService.Close(bilety);
         }
         catch (Exception ex)
         {
+            hasChanges = ex is Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException;
+            canEdit = !(ex is Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException);
             errorVisible = true;
         }
     }
@@ -79,4 +88,8 @@
     {
         DialogService.Close(null);
     }
+
+
+    protected bool hasChanges = false;
+    protected bool canEdit = true;
 }

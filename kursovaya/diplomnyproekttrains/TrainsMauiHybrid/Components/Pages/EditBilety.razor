@@ -7,40 +7,67 @@
 @inject TooltipService TooltipService
 @inject NotificationService NotificationService
 
-@inject DiplomnyProektService DiplomnyProektService
-@attribute [Authorize]
-<PageTitle>Редактирование информации о билетах</PageTitle>
+@inject DiplomnyProektService rsncra_DiplomnyProektService
+
+
+<PageTitle>Редактировать информацию о  билетах</PageTitle>
+<RadzenRow>
+    <RadzenColumn SizeMD="9">
+    <RadzenLabel style="font-weight: bold" Text="Item no longer available." Visible="@(!canEdit)" />
+    </RadzenColumn>
+    <RadzenColumn SizeMD="3">
+    <RadzenButton ButtonStyle="ButtonStyle.Secondary" style="margin-bottom: 20px" Text="Close" Visible="@(!canEdit)" Click="@CancelButtonClick" />
+    </RadzenColumn>
+</RadzenRow>
+<RadzenRow>
+    <RadzenColumn SizeMD="9">
+    <RadzenLabel style="font-weight: bold" Text="Another user has made conflicting changes to one or more of the fields you have modified. Please reload." Visible="@hasChanges" />
+    </RadzenColumn>
+    <RadzenColumn SizeMD="3">
+    <RadzenButton ButtonStyle="ButtonStyle.Secondary" Icon="autorenew" style="margin-bottom: 20px" Text="Reload" Visible="@hasChanges" Click="@ReloadButtonClick" />
+    </RadzenColumn>
+</RadzenRow>
 
     <RadzenColumn SizeMD=12>
-        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Ошибка сохранения информации</RadzenAlert>
-        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Bilety" Data="@bilety" Visible="@(bilety != null)" Submit="@FormSubmit">
-          <RadzenStack>
-            <RadzenFormField Text="Номер билета" Variant="Variant.Filled">
-                  <ChildContent>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Bilety</RadzenAlert>
+        <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Bilety" Data="@bilety" Visible="@(bilety != null && canEdit)" Submit="@FormSubmit">
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Номер билета" Component="Nomer_Bileta" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
                     <RadzenNumeric style="display: block; width: 100%" @bind-Value="@bilety.Nomer_Bileta" Name="Nomer_Bileta" />
-                  </ChildContent>    
-                  <Helper>
                     <RadzenRequiredValidator Component="Nomer_Bileta" Text="Номер билета необходимо заполнить!" />
-                  </Helper>
-            </RadzenFormField>
-            <RadzenFormField Text="Маршрут" Variant="Variant.Filled">
-                  <ChildContent>
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Маршрут" Component="Marshuti" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
                     <RadzenDropDownDataGrid Data="@marshutisForNomerMarshutaKey" TextProperty="Nachalni_Punkt" ValueProperty="Nomer_Marshuta" AllowClear=true
-                          style="display: block; width: 100%" @bind-Value="@bilety.Nomer_MarshutaKey" Name="Nomer_MarshutaKey"
+                         Placeholder="Выберите маршрут" style="display: block; width: 100%" @bind-Value="@bilety.Nomer_MarshutaKey" Name="Nomer_MarshutaKey"
                            />
-              </ChildContent>
-            </RadzenFormField>
-            <RadzenFormField Text="Стоимость" Variant="Variant.Filled">
-                  <ChildContent>
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Стоимость" Component="Stoimost" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@bilety.Stoimost" Name="Stoimost" />
-                  </ChildContent>    
-                  <Helper>
                     <RadzenRequiredValidator Component="Stoimost" Text="Стоимость необходимо заполнить!" />
-                  </Helper>
-            </RadzenFormField>
-            
-          </RadzenStack>
-          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Конечная остановка пассажира" Component="Konechnaya_Ostanovka" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@bilety.Konechnaya_Ostanovka" Name="Konechnaya_Ostanovka" />
+                </RadzenColumn>
+            </RadzenRow>
+          <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
                     <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Сохранить" Variant="Variant.Flat" />
                     <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Отмена" Variant="Variant.Flat" Click="@CancelButtonClick"  />
           </RadzenStack>
@@ -48,17 +75,15 @@
     </RadzenColumn>
 
 @code {
-    [Inject]
-    protected SecurityService Security { get; set; }
 
     [Parameter]
     public long Nomer_Bileta { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        bilety = await DiplomnyProektService.GetBiletyByNomerBileta(Nomer_Bileta);
+        bilety = await rsncra_DiplomnyProektService.GetBiletyByNomerBileta(Nomer_Bileta);
 
-        marshutisForNomerMarshutaKey = await DiplomnyProektService.GetMarshutis();
+        marshutisForNomerMarshutaKey = await rsncra_DiplomnyProektService.GetMarshutis();
     }
     protected bool errorVisible;
     protected TrainsMauiHybrid.Models.Bilety bilety;
@@ -69,11 +94,13 @@
     {
         try
         {
-            await DiplomnyProektService.UpdateBilety(Nomer_Bileta, bilety);
+            await rsncra_DiplomnyProektService.UpdateBilety(Nomer_Bileta, bilety);
             DialogService.Close(bilety);
         }
         catch (Exception ex)
         {
+            hasChanges = ex is Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException;
+            canEdit = !(ex is Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException);
             errorVisible = true;
         }
     }
@@ -81,5 +108,19 @@
     protected async Task CancelButtonClick(MouseEventArgs args)
     {
         DialogService.Close(null);
+    }
+
+
+    protected bool hasChanges = false;
+    protected bool canEdit = true;
+
+
+    protected async Task ReloadButtonClick(MouseEventArgs args)
+    {
+       rsncra_DiplomnyProektService.Reset();
+        hasChanges = false;
+        canEdit = true;
+
+        bilety = await rsncra_DiplomnyProektService.GetBiletyByNomerBileta(Nomer_Bileta);
     }
 }

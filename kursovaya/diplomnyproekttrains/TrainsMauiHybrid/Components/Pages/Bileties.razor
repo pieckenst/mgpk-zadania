@@ -7,8 +7,8 @@
 @inject TooltipService TooltipService
 @inject NotificationService NotificationService
 
-@inject DiplomnyProektService DiplomnyProektService
-@attribute [Authorize]
+@inject DiplomnyProektService rsncra_DiplomnyProektService
+
 <PageTitle>Билеты</PageTitle>
 <RadzenStack>
     <RadzenRow AlignItems="AlignItems.Center">
@@ -23,18 +23,19 @@
     </RadzenRow>
     <RadzenRow>
       <RadzenColumn SizeMD=12>
-        <RadzenDataGrid @ref="grid0" ColumnWidth="250px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
-                                  PageTitleFormat="Страница {0}" PagingSummaryFormat="Страница {0} из {1} " PageSizeText="количество колонок на странице" Responsive="true"
-                                  ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30} )
+       <RadzenDataGrid @ref="grid0" ColumnWidth="350px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
+                                         PageTitleFormat="Страница {0}" PagingSummaryFormat="Страница {0} из {1} " PageSizeText="количество колонок на странице" Responsive="true"
+                                         ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30} )
             Data="@bileties" TItem="TrainsMauiHybrid.Models.Bilety" RowSelect="@EditRow">
             <Columns>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Bilety" Property="Nomer_Bileta" Title="Номер билета">
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Bilety" Property="Nomer_Bileta" Title="Номер билеты">
                 </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Bilety" Property="Marshuti.Nachalni_Punkt" Title="Маршрут">
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Bilety" Property="Marshuti.Nachalni_Punkt" Title="Маршруты">
                 </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Bilety" Property="Stoimost" Title="Стоимость">
                 </RadzenDataGridColumn>
-                
+                <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Bilety" Property="Konechnaya_Ostanovka" Title="Конечная остановка пассажира">
+                </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="TrainsMauiHybrid.Models.Bilety" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
                     <Template Context="bilety">
 
@@ -51,35 +52,33 @@
   </RadzenRow>
 </RadzenStack>
 @code {
-    [Inject]
-    protected SecurityService Security { get; set; }
 
     protected IEnumerable<TrainsMauiHybrid.Models.Bilety> bileties;
 
     protected RadzenDataGrid<TrainsMauiHybrid.Models.Bilety> grid0;
     protected override async Task OnInitializedAsync()
     {
-        bileties = await DiplomnyProektService.GetBileties(new Query { Expand = "Marshuti" });
+        bileties = await rsncra_DiplomnyProektService.GetBileties(new Query { Expand = "Marshuti" });
     }
 
     protected async Task AddButtonClick(MouseEventArgs args)
     {
-        await DialogService.OpenAsync<AddBilety>("Add Bilety", null);
+        await DialogService.OpenAsync<AddBilety>("Добавить информацию о билетах", null);
         await grid0.Reload();
     }
 
     protected async Task EditRow(TrainsMauiHybrid.Models.Bilety args)
     {
-        await DialogService.OpenAsync<EditBilety>("Edit Bilety", new Dictionary<string, object> { {"Nomer_Bileta", args.Nomer_Bileta} });
+        await DialogService.OpenAsync<EditBilety>("Редактировать информацию о билетах", new Dictionary<string, object> { {"Nomer_Bileta", args.Nomer_Bileta} });
     }
 
     protected async Task GridDeleteButtonClick(MouseEventArgs args, TrainsMauiHybrid.Models.Bilety bilety)
     {
         try
         {
-            if (await DialogService.Confirm("Вы уверены что хотите удалить данную строку?") == true)
+            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
             {
-                var deleteResult = await DiplomnyProektService.DeleteBilety(bilety.Nomer_Bileta);
+                var deleteResult = await rsncra_DiplomnyProektService.DeleteBilety(bilety.Nomer_Bileta);
 
                 if (deleteResult != null)
                 {
