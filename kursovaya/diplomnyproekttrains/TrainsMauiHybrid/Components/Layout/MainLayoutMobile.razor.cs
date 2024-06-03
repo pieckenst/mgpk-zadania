@@ -2,6 +2,7 @@ using System.Net.NetworkInformation;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using Radzen;
+using TrainsMauiHybrid.Services;
 using TrainsMauiHybrid.Texts;
 using DialogService = Radzen.DialogService;
 
@@ -19,6 +20,9 @@ namespace TrainsMauiHybrid.Components.Layout
         static AppTheme currentTheme = Application.Current.RequestedTheme;
         string getwiptheme = currentTheme.ToString();
         private bool _drawer;
+        [Inject]
+        // Inject the theme service
+        private ThemeService ThemeService { get; set; }
         [Inject]
         protected IJSRuntime JSRuntime { get; set; }
 
@@ -47,25 +51,46 @@ namespace TrainsMauiHybrid.Components.Layout
         {
             _drawer = !_drawer;
         }
-        bool _isDark;
-
-        protected override Task OnInitializedAsync()
-        {
-            _isDark = MasaBlazor?.Theme?.Dark ?? false;
-            return base.OnInitializedAsync();
-        }
+        private bool _isDark { get; set; }
 
         private void IsDarkChanged(bool isDark)
         {
+            var appTheme = ThemeService.GetAppTheme();
+            // Whether the theme of the system is DARK, assigning a value for the ISDARK attribute
+            _isDark = appTheme == AppTheme.Dark;
             
-            if (getwiptheme == "Dark") {
-                _isDark = true;
-            } else {
-                _isDark = false;
-            }
+            Console.WriteLine(_isDark.ToString());
             
-            _isDark = isDark;
             MasaBlazor.ToggleTheme();
+            
+        }
+        
+       
+        
+
+        /// <summary>
+        /// Processing system theme switch
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void HandlerAppThemeChanged(object sender, AppThemeChangedEventArgs e)
+        {
+            _isDark = e.RequestedTheme == AppTheme.Dark;
+            InvokeAsync(StateHasChanged);
+        }
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+                // Get the system theme
+                var appTheme = ThemeService.GetAppTheme();
+                // Whether the theme of the system is DARK, assigning a value for the ISDARK attribute
+                _isDark = appTheme == AppTheme.Dark;
+                Console.WriteLine(_isDark.ToString());
+                ThemeService.ThemeChanged(HandlerAppThemeChanged);
+                StateHasChanged();
+            }
+            await base.OnAfterRenderAsync(firstRender);
         }
     }
 }

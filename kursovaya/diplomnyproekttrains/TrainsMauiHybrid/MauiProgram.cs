@@ -14,6 +14,7 @@ using Radzen;
 using TrainsMauiHybrid.Data;
 using TrainsMauiHybrid.Helpers;
 using TrainsMauiHybrid.Models;
+using TrainsMauiHybrid.Services;
 
 
 namespace TrainsMauiHybrid
@@ -39,6 +40,7 @@ namespace TrainsMauiHybrid
             builder.Services.AddAuthentication();
             builder.Services.AddAuthorizationCore();
             builder.Services.AddScoped<TrainsMauiHybrid.Services.SecurityService>();
+            builder.Services.AddSingleton<TrainsMauiHybrid.Services.ThemeService>();
             builder.Services.AddScoped<TrainsMauiHybrid.Services.DiplomnyProektService>();
             builder.Services.AddIdentity<ApplicationUser, ApplicationRole>().AddEntityFrameworkStores<ApplicationIdentityDbContext>().AddDefaultTokenProviders();
             

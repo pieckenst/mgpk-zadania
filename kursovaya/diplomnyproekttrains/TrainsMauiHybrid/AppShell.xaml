@@ -10,6 +10,12 @@
 
     Shell.FlyoutBehavior="Disabled"
 >
+    <Shell.TitleView>
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label  Text="ЖД Маршруты" FontSize="15" TextColor="{AppThemeBinding Light={StaticResource White},
+                                   Dark={StaticResource Primary}}" VerticalOptions="Center" HorizontalOptions="Center" />
+        </HorizontalStackLayout>
+    </Shell.TitleView>
     
     <TabBar >
         <Tab x:Name="HomeandroidTab" Icon="home.png" Title="Главная">

@@ -13,7 +13,7 @@
 
 <MApp >
     <MErrorHandler ShowDetail="true">
-        <MSwitch Value="_isDark" TValue="bool" ValueChanged="IsDarkChanged" Label="@(_isDark ? "Темная" : "Светлая")" />
+        
 
 
         @*<MNavigationDrawer App @bind-Value="_drawer">
@@ -61,10 +61,13 @@
 
 
         <MMain>
-            @Body
+            <!-- Provides the application the proper gutter -->
+            <MContainer Fluid>
+                @Body
+            </MContainer>
         </MMain>
 
-        <MBottomNavigation Grow Color="purple" HideOnScroll>
+        <MBottomNavigation  Grow Color="purple" >
 
 
             <MButton Href="employees">
@@ -82,7 +85,7 @@
             
             <MMenu
                                 Bottom
-                                Left>
+                                Left Transition="scale-transition" >
                                 <ActivatorContent>
                                     <MButton
                                                                 
@@ -109,6 +112,11 @@
                                         <MListItem  Class="m-list-item--default" Href="promezhutochinye-punkties">
                                             <MListItemTitle>Промежуточные пункты маршрутов</MListItemTitle>
                                         </MListItem>
+                                        <MListItem  Class="m-list-item--default" Href="aboutsoftware">
+                                            <MListItemTitle>О программе</MListItemTitle>
+                                        </MListItem>
+                                        
+                                        <MSwitch Value="_isDark" TValue="bool" ValueChanged="IsDarkChanged" Label="@(_isDark ? "Темная" : "Светлая")" />
                                         
                                         
                                     </MList>

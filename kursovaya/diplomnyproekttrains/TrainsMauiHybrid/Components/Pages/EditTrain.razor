@@ -9,34 +9,34 @@
 
 @inject DiplomnyProektService DiplomnyProektService
 @attribute [Authorize]
-<PageTitle>�������������� ���������� � ������� ������� �������</PageTitle>
+<PageTitle>Редактировать информацию о поездах</PageTitle>
 
     <RadzenColumn SizeMD=12>
         <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Train</RadzenAlert>
         <RadzenTemplateForm TItem="TrainsMauiHybrid.Models.Train" Data="@train" Visible="@(train != null)" Submit="@FormSubmit">
           <RadzenStack>
-            <RadzenFormField Text="����� ������" Variant="Variant.Filled">
+            <RadzenFormField Text="Номер вагона" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenNumeric style="display: block; width: 100%" @bind-Value="@train.NumVagona" Name="NumVagona" />
                   </ChildContent>    
                   <Helper>
-                    <RadzenRequiredValidator Component="NumVagona" Text="����� ������ ���������� ���������!" />
+                    <RadzenRequiredValidator Component="NumVagona" Text="Номер вагона необходимо заполнить!" />
                   </Helper>
             </RadzenFormField>
-            <RadzenFormField Text="������ ������� �������" Variant="Variant.Filled">
+            <RadzenFormField Text="Модель состава вагонов" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@train.Model_Sostava_Vagonov" Name="Model_Sostava_Vagonov" />
               </ChildContent>
             </RadzenFormField>
-            <RadzenFormField Text="���������� ����" Variant="Variant.Filled">
+            <RadzenFormField Text="Количество мест" Variant="Variant.Filled">
                   <ChildContent>
                     <RadzenNumeric style="display: block; width: 100%" @bind-Value="@train.Kolichestvo_Mest" Name="Kolichestvo_Mest" />
               </ChildContent>
             </RadzenFormField>
           </RadzenStack>
           <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="���������" Variant="Variant.Flat" />
-                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="������" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Сохранить" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Отмена" Variant="Variant.Flat" Click="@CancelButtonClick"  />
           </RadzenStack>
         </RadzenTemplateForm>
     </RadzenColumn>
