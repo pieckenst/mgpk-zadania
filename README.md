@@ -3,7 +3,7 @@
 
 Данный код можете взять за основу своей курсовой) или просто скопировать вставить мою
 
-В остальном соблюдайте лицензию Mozilla Public License 2.0
+
 
 ( БУДЕТ ПРИВАТНО ПОКА НЕ ЗАКОНЧУ КОЛЛЕДЖ )
 # English
@@ -27,6 +27,8 @@ kr2 - Контрольная работа 2- Первый Курс - Pascal/Delp
 ___
 ```
 kursovaya/aeroport - Курсовой Проект По теме Аэропорт - Первый Курс - Delphi
+kursovaya/avtoparkavtobusov - Курсовой проект по теме Автопарк Автобусов - Второй  и четвертый курс - C# , WPF , MS SQL SERVER
+kursovaya/diplomnyproekttrains- Дипломная работа по теме "Разработка Автоматизированной системы "Построение железнодорожных маршрутов"" - Четвертый курс - C# , Net.MAUI , Blazor , MS SQL SERVER
 ```
 ___
 ```
@@ -57,6 +59,8 @@ kr2 - Control Work  2 - First Course - Pascal / Delphi
 ___
 ```
 kursovaya/aeroport - Course Project With assigned topic being Airport - First Course - Delphi
+kursovaya/avtoparkavtobusov - Course project for assigned topic Autobus park management - Second and fourth course - C# , WPF , MS SQL SERVER
+kursovaya/diplomnyproekttrains- Diploma work for assigned topic Train station management system - Fourth course - C# , Net.MAUI , Blazor , MS SQL SERVER
 ```
 ___
 ```
