@@ -3,17 +3,16 @@
 
 Данный код можете взять за основу своей курсовой) или просто скопировать вставить мою
 
+Понятное дело pull реквесты принимаются если желаете улучшить код здесь
 
 
-( БУДЕТ ПРИВАТНО ПОКА НЕ ЗАКОНЧУ КОЛЛЕДЖ )
 # English
 Solutions for Mogilev State Polytechnic College tasks on speciality 2-40 01 01 Information technology software
 
 You can use this code for a coursework base or grab an already finished one
 
 Otherwise just follow Mozilla Public License 2.0
-__________________
-This repository will be private untill college graduation
+
 
 # Содержание
 
